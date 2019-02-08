@@ -1,23 +1,8 @@
 <template lang="html">
   <main style="display: flex">
-    <nav style="flex: 0 0 200px; margin-right:24px;">
-      <ul>
-        <li>Start Page</li>
-        <ul>
-          <li>Basic</li>
-          <li>Student</li>
-          <li>Evaluation</li>
-        </ul>
-        <li>Taste and Dominant Limb</li>
-        <ul>
-          <li>Basic</li>
-          <li>Student</li>
-          <li>Evaluation</li>
-        </ul>
-      </ul>
-    </nav>
+    <FormNav :items="[]" style="flex: 0 0 200px; margin-right:24px;"/>
     <div class="form-viewer">
-      <form class="" action="index.html" method="post">
+      <form class="">
         <h1 class="title">Neurodevelopmental Profile</h1>
         <div class="form-section">
           <div class="row" style="display:flex">
@@ -45,7 +30,7 @@
             <div class="labelled-input">
               <label for="name-input">Name</label>
               <input id="name-input" type="text" name="name"
-                :value="evaluation.firstName + ' ' + evaluation.lastName"/>
+                :value="student.firstName + ' ' + student.lastName"/>
             </div>
           </div>
           <div class="row">
@@ -78,11 +63,19 @@
 </template>
 
 <script>
+import FormNav from '@/components/FormNav'
+
 export default {
-  name:"EvaluationWrap",
+  name:"EvaluationViewer",
+  components: {
+    FormNav
+  },
   computed: {
     evaluation () {
       return this.$store.getters.getEvaluationById(this.$route.params.id)
+    },
+    student () {
+      return this.$store.getters.getStudentById(this.evaluation.studentId)
     }
   }
 }

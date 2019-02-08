@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="card" @click="openEvaluation()">
-    <h3 class='card__header'>{{evaluation.firstName}} {{evaluation.lastName}}</h3>
+    <h3 class='card__header'>{{student.firstName}} {{student.lastName}}</h3>
     <div class="card__main">
       <h4>Last Edited:</h4>
       <p>{{evaluation.lastEdited | niceDate}}</p>
@@ -16,6 +16,11 @@ export default {
     evaluation: {
       type: Object,
       required: true
+    }
+  },
+  computed: {
+    student () {
+      return this.$store.getters.getStudentById(this.evaluation.id)
     }
   },
   methods: {

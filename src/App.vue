@@ -21,7 +21,8 @@
 }
 
 #top-bar {
-
+  border-bottom: 2px solid black;
+  box-sizing: border-box;
 }
 
 #header-title {

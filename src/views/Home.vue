@@ -11,7 +11,8 @@
       <div class="evaluation-list">
         <EvalCard
           class="evaluation-card"
-          v-for="e in recentEvaluations"
+          v-for="(e, index) in recentEvaluations"
+          :key="index"
           :evaluation="e"/>
         <div class="evaluation-list-item --fake" @click="$router.push('evaluations')">
           <h1>View<br/>More</h1>

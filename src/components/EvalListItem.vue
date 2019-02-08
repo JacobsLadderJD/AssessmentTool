@@ -4,9 +4,9 @@
       <h2 class="title">{{fullName}}</h2>
       <div style="display:flex; width:100%;">
         <p style="margin-right: 20px">Last edited:
-          <span class="--underlined">{{lastEdited | niceDate}}</span>
+          <span class="--underlined">{{evaluation.lastEdited | niceDate}}</span>
         </p>
-        <p>By: <span class="--underlined">{{evaluator}}</span></p>
+        <p>By: <span class="--underlined">{{evaluation.evaluator}}</span></p>
       </div>
     </div>
     <div class="percent-wrap">
@@ -18,36 +18,22 @@
 <script>
 export default {
   props: {
-    id: {
-      type: Number,
-      required: true
-    },
-    firstName: {
-      type: String,
-      required: true
-    },
-    lastName: {
-      type: String,
-      required: true
-    },
-    lastEdited: {
-      type: Date,
-      required: true
-    },
-    evaluator: {
-      type: String,
+    evaluation: {
+      type: Object,
       required: true
     }
   },
   computed: {
+    student () {
+      return this.$store.getters.getStudentById(this.evaluation.id)
+    },
     fullName () {
-      return this.firstName + " " + this.lastName
+      return this.student.firstName + " " + this.student.lastName
     }
   },
   methods: {
     openEvaluation (id) {
-      console.log("asdf");
-      this.$router.push(`evaluations/${id}`)
+      this.$router.push(`evaluations/${this.evaluation.id}`)
     }
   }
 }

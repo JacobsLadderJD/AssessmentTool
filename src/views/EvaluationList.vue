@@ -9,11 +9,7 @@
         class="eval-list-item"
         v-for="ev in evaluations"
         :key="ev.id"
-        :id="ev.id"
-        :firstName="ev.firstName"
-        :lastName="ev.lastName"
-        :lastEdited="ev.lastEdited"
-        :evaluator="ev.evaluator"/>
+        :evaluation="ev"/>
     </ul>
   </main>
 </template>
