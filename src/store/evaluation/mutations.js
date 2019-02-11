@@ -7,3 +7,5 @@ const mutations = {
     state.evaluationIds.push(evaluation.id)
   }
 }
+
+export default mutations
