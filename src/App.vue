@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <header id="top-bar" style="display: flex; align-items: baseline;">
-      <h2 id="header-title"  style="flex: 1">Jacob's Ladder Center</h2>
+      <h2 id="header-title"  style="flex: 1">
+        <router-link class="unstyled-link" to="/">Jacob's Ladder Center</router-link></h2>
       <div id="nav" v-if="$route.path !== '/login'">
         <router-link to="/">Home</router-link> |
         <router-link to="/login">logout</router-link>
@@ -29,6 +30,16 @@
   padding: 16px;
   /* padding-bottom: 4px; */
   margin: 0;
+}
+
+.unstyled-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.unstyled-link:hover {
+  text-decoration: underline;
+  color: inherit;
 }
 
 #nav {

@@ -26,6 +26,7 @@
 </template>
 
 <script>
+import MockApi from "@/fixtures/api"
 export default {
   data: () => ({
     email: "",
@@ -34,10 +35,13 @@ export default {
   methods: {
     login () {
       // try to Login
-      if (this.email === "test@test.com" && this.password === "1234")
-        this.$router.push('/');
-      else
-        alert("Invalid username or password");
+      MockApi.login(this.email, this.password)
+        .then(token => {
+          this.$router.push('/');
+        })
+        .catch(err => {
+          alert(err.message);
+        })
     }
   }
 }
