@@ -71,6 +71,9 @@ export default {
     FormNav
   },
   computed: {
+    isNew () {
+      return this.$route.params.id === 'new'
+    },
     evaluation () {
       return this.$store.getters.getEvaluationById(this.$route.params.id)
     },

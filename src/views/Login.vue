@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import MockApi from "@/fixtures/api"
+import MockApi from "@/fixtures/MockApi"
 export default {
   data: () => ({
     email: "",
