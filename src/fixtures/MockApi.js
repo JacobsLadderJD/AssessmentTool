@@ -6,6 +6,9 @@ const user = {
     token: "987654321123456789"
   }
 }
+
+let EVAL_ID = 100;
+
 const MockJLCApi = {
   login (email, password) {
     if (user[email]) {
@@ -21,6 +24,14 @@ const MockJLCApi = {
   authenticate (token) { // eslint-disable-line
     // send the token back
     return Promise.resolve(true)
+  },
+  createEvaluation (studentId) {
+    return Promise.resolve({
+      id: EVAL_ID++,
+      studentId,
+      lastEdited: new Date(),
+      evaluator: "Some User"
+    })
   },
   searchStudentByNames (name) {
     return new Promise((resolve, reject) => {
@@ -46,7 +57,10 @@ const MockJLCApi = {
           diagnosis: "Cerebral Palsy",
           status: "Unclear"
         },
-      ].filter(s => s.firstName.includes(name) || s.lastName.includes(name))
+      ].filter(s =>
+        (s.firstName + " " + s.lastName).includes(name) ||
+        s.firstName.includes(name) ||
+        s.lastName.includes(name))
       if (matchingStudents.length < 1) {
         reject(errors.NOT_FOUND)
       } else {

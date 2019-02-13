@@ -17,7 +17,8 @@
         </div>
         <div class="card__footer">
           <div class="--right-align">
-            <button @click.stop.prevent="login" type="button" name="submit">Log in</button>
+            <button type="button" name="submit"
+              @click.stop.prevent="login">Log in</button>
           </div>
         </div>
       </form>

@@ -1,5 +1,6 @@
 const types = {
-  ADD: "EVALUATION_ADD",
+  CREATE_EVALUATION: "CREATE_EVALUATION",
+  ADD_EVALUATION: "ADD_EVALUATION",
 }
 
 export default types

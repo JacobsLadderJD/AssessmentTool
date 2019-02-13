@@ -25,7 +25,8 @@ export default {
   },
   computed: {
     student () {
-      return this.$store.getters.getStudentById(this.evaluation.id)
+      return this.$store.getters
+        .getStudentById(this.evaluation.studentId)
     },
     fullName () {
       return this.student.firstName + " " + this.student.lastName

@@ -1,7 +1,8 @@
 <template>
   <div class="home">
     <div class="button-wrap">
-      <button class="btn --full-width" @click="$router.push('evaluations/3')">+ NEW EVALUATION</button>
+      <button class="btn --full-width"
+        @click="$router.push({ name: 'create-evaluation'})">+ NEW EVALUATION</button>
     </div>
     <div class="recent-evals">
       <div class="recent-evals__title">
@@ -14,7 +15,8 @@
           v-for="(e, index) in recentEvaluations"
           :key="index"
           :evaluation="e"/>
-        <div class="evaluation-list-item --fake" @click="$router.push('evaluations')">
+        <div class="evaluation-list-item --fake"
+          @click="$router.push({name: 'evaluations'})">
           <h1>View<br/>More</h1>
         </div>
       </div>
@@ -33,7 +35,9 @@ export default {
   },
   computed: {
     recentEvaluations () {
-      return this.$store.getters.allEvaluations;
+      return this.$store.getters.allEvaluations
+        .sort((d1,d2) => (d1.lastEdited >= d2.lastEdited) ? -1 : 1)
+        .slice(0,3)
     }
   },
 }
