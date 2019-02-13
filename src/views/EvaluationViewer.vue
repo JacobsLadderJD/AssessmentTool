@@ -3,7 +3,7 @@
     <FormNav :items="[]" style="flex: 0 0 200px; margin-right:24px;"/>
     <div class="form-viewer">
       <form class="">
-        <div class="form-page">
+        <div class="form-page" v-if="page===1">
           <h1 class="title">Neurodevelopmental Profile</h1>
           <div class="form-section">
             <div class="row" style="display:flex">
@@ -56,13 +56,25 @@
             </div>
           </div>
           <div class="form-section form-page-nav">
-            <button class="btn btn-info" style="font-size: 1.3em;" @click.prevent="">Next</button>
+            <button class="btn btn-info" style="font-size: 1.3em;" @click.prevent="nextPage()">Next</button>
           </div>
         </div>
 
         <!-- form page 2 -->
 
-        <div class="form-page">
+        <div class="form-page" v-if="page===2">
+          <div class="form-section">
+            <h1 class="title">Channel Totals</h1>
+            <label class="label">INPUT</label>
+            <div class="row" style="display:flex">
+              <div class="labelled-input">
+                <label for="tactility-raw-score">Tactility</label>
+                <input id="tactility-raw-score" type="text" name="tactilityRawScore" :value="evaluation.tactilityRawScore"/>
+                <label for="auditory-raw-score">Auditory</label>
+                <input id="auditory-raw-score" type="text" name="auditoryRawScore" :value="evaluation.auditoryRawScore"/>
+              </div>
+            </div>
+          </div>
         </div>
 
       </form>
@@ -79,10 +91,10 @@ export default {
   }),
   methods: {
       nextPage() {
-
+        this.page++;
       },
       prevPage() {
-
+        this.page--;
       },
   },
   name:"EvaluationViewer",
