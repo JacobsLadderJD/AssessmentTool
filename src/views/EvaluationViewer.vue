@@ -63,83 +63,55 @@
         <!-- form page 2 -->
 
         <div class="form-page" v-if="page===2">
-          <div class="form-section">
+
+
+          <table>
             <h1 class="title">Channel Totals</h1>
-            <!-- input -->
-            <div class="w3-cell-row" style="margin-bottom:20px">
-              <label class="label"><strong>INPUT</strong></label>
-            </div>
-            <div class="w3-cell-row" style="margin-bottom:20px">
-              <div class="w3-container w3-cell">
-                <div class="labelled-input">
-                  <label for="tactility-raw-score">Tactility</label>
-                  <input id="tactility-raw-score" type="text" name="tactilityRawScore" :value="evaluation.tactilityRawScore"/>
-                </div>
-              </div>
-              <div class="w3-container w3-cell">
-                <label>PERCENTAGE GOES HERE</label>
-              </div>
-            </div>
-            <div class="w3-cell-row" style="margin-bottom:20px">
-              <div class="labelled-input">
-                <label for="auditory-raw-score">Auditory</label>
+            <tbody>
+              <tr>
+                <th></th>
+                <th>RAW SCORE</th>
+                <th>TOTAL POINTS</th>
+                <th>PERCENTAGE</th>
+              </tr>
+              <tr>
+                <th>INPUT</th>
+              </tr>
+              <tr>
+                <td style="text-align:right">Tactility</td>
+                <input id="tactility-raw-score" type="text" name="tactilityRawScore" :value="evaluation.tactilityRawScore"/>
+                <td>/ 132</td>
+              </tr>
+              <tr>
+                <td style="text-align:right">Auditory</td>
                 <input id="auditory-raw-score" type="text" name="auditoryRawScore" :value="evaluation.auditoryRawScore"/>
-              </div>
-              <div class="w3-container w3-cell">
-                <label>PERCENTAGE GOES HERE</label>
-              </div>
-            </div>
-            <div class="w3-cell-row" style="margin-bottom:20px">
-              <div class="w3-container w3-cell">
-                <div class="labelled-input">
-                  <label for="visual-raw-score">Visual</label>
-                  <input id="visual-raw-score" type="text" name="visualRawScore" :value="evaluation.visualRawScore"/>
-                </div>
-              </div>
-              <div class="w3-container w3-cell">
-                <label>PERCENTAGE GOES HERE</label>
-              </div>
-            </div>
-            <!-- OUTPUT -->
-            <div class="w3-cell-row" style="margin-bottom:20px">
-              <label class="label"><strong>OUTPUT</strong></label>
-            </div>
-            <div class="w3-cell-row" style="margin-bottom:20px">
-              <div class="w3-container w3-cell">
-                <div class="labelled-input">
-                  <label for="manual-raw-score">Manual</label>
-                  <input id="manual-raw-score" type="text" name="manualRawScore" :value="evaluation.manualRawScore"/>
-                </div>
-              </div>
-              <div class="w3-container w3-cell">
-                <label>PERCENTAGE GOES HERE</label>
-              </div>
-            </div>
-            <div class="w3-cell-row" style="margin-bottom:20px">
-              <div class="w3-container w3-cell">
-                <div class="labelled-input">
-                  <label for="language-raw-score">Language</label>
-                  <input id="language-raw-score" type="text" name="languageRawScore" :value="evaluation.languageRawScore"/>
-                </div>
-              </div>
-              <div class="w3-container w3-cell">
-                <label>PERCENTAGE GOES HERE</label>
-              </div>
-            </div>
-            <div class="w3-cell-row" style="margin-bottom:20px">
-              <div class="w3-container w3-cell">
-                <div class="labelled-input">
-                  <label for="mobility-raw-score">Mobility</label>
-                  <input id="mobility-raw-score" type="text" name="mobilityRawScore" :value="evaluation.mobilityRawScore"/>
-                </div>
-              </div>
-              <div class="w3-container w3-cell">
-                <label>PERCENTAGE GOES HERE</label>
-              </div>
-            </div>
-
-
-          </div>
+                <td>/ 42</td>
+              </tr>
+              <tr>
+                <td style="text-align:right">Visual</td>
+                <input id="visual-raw-score" type="text" name="visualRawScore" :value="evaluation.visualRawScore"/>
+                <td>/ 54</td>
+              </tr>
+              <tr>
+                <th>OUTPUT</th>
+              </tr>
+              <tr>
+                <td style="text-align:right">Manual</td>
+                <input id="manual-raw-score" type="text" name="manualRawScore" :value="evaluation.manualRawScore"/>
+                <td>/ 90</td>
+              </tr>
+              <tr>
+                <td style="text-align:right">Language</td>
+                <input id="language-raw-score" type="text" name="languageRawScore" :value="evaluation.languageRawScore"/>
+                <td>/ 69</td>
+              </tr>
+              <tr>
+                <td style="text-align:right">Mobility</td>
+                <input id="mobility-raw-score" type="text" name="mobilityRawScore" :value="evaluation.mobilityRawScore"/>
+                <td>/ 108</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
       </form>
@@ -188,6 +160,29 @@ export default {
 
 nav {
   border-right: 1px solid grey;
+}
+
+table {
+  display: table;
+  margin-left: 15px;
+  vertical-align: middle;
+}
+th {
+  display: table-cell;
+  vertical-align: inherit;
+  text-align: left;
+  padding-right:15px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+tr {
+
+}
+td {
+  padding-right:15px;
+  padding-left:15px;
+  text-align: center;
 }
 
 .form-viewer {
