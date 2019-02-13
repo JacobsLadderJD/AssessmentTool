@@ -65,13 +65,38 @@
         <div class="form-page" v-if="page===2">
           <div class="form-section">
             <h1 class="title">Channel Totals</h1>
-            <label class="label">INPUT</label>
+            <!-- input -->
+            <label class="label"><strong>INPUT</strong></label>
             <div class="row" style="display:flex">
               <div class="labelled-input">
                 <label for="tactility-raw-score">Tactility</label>
                 <input id="tactility-raw-score" type="text" name="tactilityRawScore" :value="evaluation.tactilityRawScore"/>
+              </div>
+            </div>
+            <div class="row" style="display:flex">
+              <div class="labelled-input">
                 <label for="auditory-raw-score">Auditory</label>
                 <input id="auditory-raw-score" type="text" name="auditoryRawScore" :value="evaluation.auditoryRawScore"/>
+              </div>
+            </div>
+            <div class="row" style="display:flex">
+              <div class="labelled-input">
+                <label for="visual-raw-score">Visual</label>
+                <input id="visual-raw-score" type="text" name="visualRawScore" :value="evaluation.visualRawScore"/>
+              </div>
+            </div>
+            <!-- output -->
+            <label class="label"><strong>OUTPUT</strong></label>
+            <div class="row" style="display:flex">
+              <div class="labelled-input">
+                <label for="manual-raw-score">Manual</label>
+                <input id="manual-raw-score" type="text" name="manualRawScore" :value="evaluation.manualRawScore"/>
+              </div>
+            </div>
+            <div class="row" style="display:flex">
+              <div class="labelled-input">
+                <label for="language-raw-score">Language</label>
+                <input id="language-raw-score" type="text" name="languageRawScore" :value="evaluation.languageRawScore"/>
               </div>
             </div>
           </div>
