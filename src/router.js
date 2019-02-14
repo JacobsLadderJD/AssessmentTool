@@ -5,9 +5,14 @@ import Login from './views/Login.vue'
 import EvaluationList from './views/EvaluationList.vue'
 import EvaluationViewer from './views/EvaluationViewer.vue'
 import CreateEvaluation from './views/CreateEvaluation.vue'
+
+import store from '@/store/store'
+import authTypes from '@/store/auth/types'
 Vue.use(Router)
 
-export default new Router({
+const WhiteList = ['/login']
+
+const router = new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
@@ -43,6 +48,34 @@ export default new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+    },
+    {
+      path: '/logout',
+      beforeEnter: (to, from, next) => {
+        if (!store.state.auth.accessToken)
+          return next(false)
+        store.dispatch('logout')
+        return next('/login')
+      }
+    },
+    {
+      path: '*',
+      redirect: '/login'
     }
   ]
 })
+
+router.beforeEach((to, from, next) => {
+  store.dispatch(authTypes.FETCH_ACCESS_TOKEN)
+  if ((!store.state.auth.accessToken) && (to.fullPath !== '/login')) {
+    // there's no access token and not going to login
+    return next('/login')
+  }
+  if (store.state.auth.accessToken && to.fullPath === '/login') {
+    // there's a token, and we are going to login
+    return next('/')
+  }
+  next()
+});
+
+export default router

@@ -9,7 +9,7 @@
       <!-- TODO: make this auth-based -->
       <div id="nav" v-if="$route.path !== '/login'">
         <router-link to="/">Home</router-link> |
-        <router-link to="/login">logout</router-link>
+        <router-link to="/logout">logout</router-link>
       </div>
     </header>
     <router-view/>

@@ -13,7 +13,11 @@ const MockJLCApi = {
   login (email, password) {
     if (user[email]) {
       if (user[email].password === password) {
-        return Promise.resolve(user[email].token)
+        return Promise.resolve({
+            data: {
+              token: user[email].token
+            }
+          })
       }
     }
     return Promise.reject(errors.INVALID_AUTH)

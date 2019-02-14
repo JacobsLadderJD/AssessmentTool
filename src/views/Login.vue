@@ -50,7 +50,10 @@ export default {
         alert('Valid email and password required')
         return
       }
-      MockApi.login(this.email, this.password)
+      this.$store.dispatch('login', {
+        email: this.email,
+        password:this.password
+      })
         .then(() => {
           this.$router.push('/');
         })
