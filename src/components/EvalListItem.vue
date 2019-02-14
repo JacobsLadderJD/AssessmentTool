@@ -1,5 +1,5 @@
 <template lang="html">
-  <li class="eval-list-item" @click="openEvaluation(id)">
+  <li class="eval-list-item" @click="openEvaluation()">
     <div class="info-wrap">
       <h2 class="title">{{fullName}}</h2>
       <div style="display:flex; width:100%;">
@@ -33,7 +33,7 @@ export default {
     }
   },
   methods: {
-    openEvaluation (id) {
+    openEvaluation () {
       this.$router.push(`evaluations/${this.evaluation.id}`)
     }
   }

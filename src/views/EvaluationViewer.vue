@@ -71,14 +71,14 @@ export default {
     FormNav
   },
   computed: {
-    isNew () {
-      return this.$route.params.id === 'new'
-    },
     evaluation () {
       return this.$store.getters.getEvaluationById(this.$route.params.id)
     },
     student () {
-      return this.$store.getters.getStudentById(this.evaluation.studentId)
+      console.log(this.route.query.studentId);
+      let sId = (this.evaluation.studentId) ?
+        this.evaluation.studentId : this.$route.query.studentId
+      this.$store.getters.getStudentById()
     }
   }
 }

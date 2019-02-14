@@ -15,9 +15,9 @@
 
 <script>
 import types from "@/store/evaluation/types"
-import MockJLCApi from "@/fixtures/MockApi"
+import api from "@/api"
 export default {
-  name: "NewEvaluation",
+  name: "CreateEvaluation",
   data: () => ({
     studentQuery: "",
     students: [],
@@ -26,7 +26,7 @@ export default {
   watch: {
     studentQuery (newQuery, oldQuery) {
       this.searching = true
-      MockJLCApi.searchStudentByNames(this.studentQuery)
+      api.searchStudentByNames(this.studentQuery)
         .then(results => this.students = results)
         .catch(e => this.students = [])
     }

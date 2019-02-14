@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import MockApi from "@/fixtures/MockApi"
+// import api from "@/api"
 export default {
   data: () => ({
     email: "",
@@ -54,12 +54,6 @@ export default {
         email: this.email,
         password:this.password
       })
-        .then(() => {
-          this.$router.push('/');
-        })
-        .catch(err => {
-          alert(JSON.stringify(err));
-        })
     }
   }
 }

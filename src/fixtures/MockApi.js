@@ -9,7 +9,7 @@ const user = {
 
 let EVAL_ID = 100;
 
-const MockJLCApi = {
+const mockApi = {
   login (email, password) {
     if (user[email]) {
       if (user[email].password === password) {
@@ -31,10 +31,12 @@ const MockJLCApi = {
   },
   createEvaluation (studentId) {
     return Promise.resolve({
-      id: EVAL_ID++,
-      studentId,
-      lastEdited: new Date(),
-      evaluator: "Some User"
+      data: {
+        id: EVAL_ID++,
+        studentId,
+        lastEdited: new Date(),
+        evaluator: "Some User"
+      }
     })
   },
   searchStudentByNames (name) {
@@ -74,4 +76,4 @@ const MockJLCApi = {
   }
 }
 
-export default MockJLCApi
+export default mockApi
