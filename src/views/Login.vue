@@ -2,7 +2,7 @@
   <main>
     <div class='card'>
       <h1 class='card__header'>Login</h1>
-      <form class="login-form card__body" action="index.html" method="post">
+      <form class="login-form card__body" @submit.stop.prevent="login">
         <div class="aligned-input">
           <label class="aligned-input__label"
             for="email-input">Email</label>
@@ -17,7 +17,9 @@
         </div>
         <div class="card__footer">
           <div class="--right-align">
-            <button @click.stop.prevent="login" type="button" name="submit">Log in</button>
+            <button type="submit" name="submit">
+              Log in
+            </button>
           </div>
         </div>
       </form>
@@ -32,15 +34,28 @@ export default {
     email: "",
     password: ""
   }),
+  computed: {
+    emailIsValid () {
+      const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(String(this.email).toLowerCase());
+    },
+    passwordIsValid () {
+      return this.password.length > 0
+    }
+  },
   methods: {
     login () {
       // try to Login
+      if (!this.emailIsValid || !this.passwordIsValid) {
+        alert('Valid email and password required')
+        return
+      }
       MockApi.login(this.email, this.password)
-        .then(token => {
+        .then(() => {
           this.$router.push('/');
         })
         .catch(err => {
-          alert(err.message);
+          alert(JSON.stringify(err));
         })
     }
   }
