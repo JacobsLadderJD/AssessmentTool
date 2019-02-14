@@ -2,8 +2,10 @@ import types from './types'
 import Vue from 'vue'
 
 const mutations = {
-  [types.ADD] (state, evaluation) {
+  [types.ADD_EVALUATION] (state, evaluation) {
     Vue.set(state.evaluations, evaluation.id, evaluation)
     state.evaluationIds.push(evaluation.id)
   }
 }
+
+export default mutations

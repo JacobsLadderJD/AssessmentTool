@@ -14,6 +14,7 @@
 </template>
 
 <script>
+import types from "@/store/evaluation/types"
 import MockJLCApi from "@/fixtures/MockApi"
 export default {
   name: "NewEvaluation",
@@ -31,8 +32,14 @@ export default {
     }
   },
   methods: {
-    selectStudent (id) {
-      alert('Selected student' + id)
+    selectStudent (studentId) {
+      const vm = this
+      this.$store.dispatch(types.CREATE_EVALUATION, {studentId})
+        .then(evaluation => vm.$router.push({
+          name:'evaluation',
+          params: {id: evaluation.id},
+          query: {studentId}
+        }))
     }
   }
 

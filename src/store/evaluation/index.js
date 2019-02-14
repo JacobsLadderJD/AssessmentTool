@@ -22,12 +22,6 @@ const state = () => ({
       studentId: 2,
       lastEdited: new Date("11/25/2018"),
       evaluator: "Some User"
-    },
-    3: {
-      id: 3,
-      studentId: 2,
-      lastEdited: new Date(),
-      evaluator: "Some User"
     }
   },
 })

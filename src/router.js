@@ -4,7 +4,7 @@ import Home from './views/Home.vue'
 import Login from './views/Login.vue'
 import EvaluationList from './views/EvaluationList.vue'
 import EvaluationViewer from './views/EvaluationViewer.vue'
-import NewEvaluation from './views/NewEvaluation.vue'
+import CreateEvaluation from './views/CreateEvaluation.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -28,8 +28,8 @@ export default new Router({
     },
     {
       path: '/evaluations/new',
-      name: 'newevaluation',
-      component: NewEvaluation
+      name: 'create-evaluation',
+      component: CreateEvaluation
     },
     {
       path: '/evaluations/:id',

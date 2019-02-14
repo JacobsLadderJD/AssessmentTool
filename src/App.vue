@@ -2,7 +2,11 @@
   <div id="app">
     <header id="top-bar" style="display: flex; align-items: baseline;">
       <h2 id="header-title"  style="flex: 1">
-        <router-link class="unstyled-link" to="/">Jacob's Ladder Center</router-link></h2>
+        <router-link class="unstyled-link" to="/">
+          Jacob's Ladder Center
+        </router-link>
+      </h2>
+      <!-- TODO: make this auth-based -->
       <div id="nav" v-if="$route.path !== '/login'">
         <router-link to="/">Home</router-link> |
         <router-link to="/login">logout</router-link>
