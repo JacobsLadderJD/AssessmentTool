@@ -64,23 +64,29 @@
 
         <div class="form-page" v-if="page===2">
 
-
+          <h1 class="title" style="text-align:left">Channel Totals</h1>
           <table>
-            <h1 class="title">Channel Totals</h1>
             <tbody>
               <tr>
                 <th></th>
                 <th>RAW SCORE</th>
                 <th>TOTAL POINTS</th>
                 <th>PERCENTAGE</th>
+                <th>WORKING LEVEL</th>
+                <th>AGE EQUIVALENCE</th>
               </tr>
               <tr>
-                <th>INPUT</th>
+                <td><strong>INPUT</strong></td>
               </tr>
               <tr>
                 <td style="text-align:right">Tactility</td>
                 <input id="tactility-raw-score" type="text" name="tactilityRawScore" :value="evaluation.tactilityRawScore"/>
                 <td>/ 132</td>
+                <td>
+                  {{ tactilityRawScore }}
+                </td>
+                <td>N/A</td>
+                <td>N/A</td>
               </tr>
               <tr>
                 <td style="text-align:right">Auditory</td>
@@ -93,7 +99,7 @@
                 <td>/ 54</td>
               </tr>
               <tr>
-                <th>OUTPUT</th>
+                <td><strong>OUTPUT</strong></td>
               </tr>
               <tr>
                 <td style="text-align:right">Manual</td>
@@ -113,7 +119,6 @@
             </tbody>
           </table>
         </div>
-
       </form>
     </div>
   </main>
@@ -150,6 +155,7 @@ export default {
     }
   }
 }
+
 </script>
 
 <style lang="css" scoped>
@@ -164,15 +170,14 @@ nav {
 
 table {
   display: table;
-  margin-left: 15px;
   vertical-align: middle;
 }
 th {
   display: table-cell;
   vertical-align: inherit;
   text-align: left;
-  padding-right:15px;
-  padding-left: 15px;
+  padding-right:30px;
+  padding-left: 0px;
   padding-bottom: 5px;
   padding-top: 5px;
 }
@@ -181,7 +186,6 @@ tr {
 }
 td {
   padding-right:15px;
-  padding-left:15px;
   text-align: center;
 }
 
