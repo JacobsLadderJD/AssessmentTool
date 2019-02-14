@@ -75,10 +75,7 @@ export default {
       return this.$store.getters.getEvaluationById(this.$route.params.id)
     },
     student () {
-      console.log(this.route.query.studentId);
-      let sId = (this.evaluation.studentId) ?
-        this.evaluation.studentId : this.$route.query.studentId
-      this.$store.getters.getStudentById()
+      return this.$store.getters.getStudentById(this.evaluation.studentId)
     }
   }
 }
