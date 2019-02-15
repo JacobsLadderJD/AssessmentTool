@@ -55,8 +55,15 @@
               :value="evaluation.evaluator"/>
             </div>
           </div>
-          <div class="form-section form-page-nav">
-            <button class="btn btn-info" style="font-size: 1.3em;" @click.prevent="nextPage()">Next</button>
+          <div class="w3-cell-row">
+            <div class="w3-container w3-cell">
+
+            </div>
+            <div class="w3-container w3-cell">
+              <div class="form-section form-page-nav">
+                <button class="btn btn-info" style="font-size: 1.3em;" @click.prevent="nextPage()">Next</button>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -262,7 +269,47 @@
             <h1 class="title" style="text-align:left">Channel Analysis</h1>
             <p>Not sure how to do these sliders yet :/</p>
           </div>
+          <div class="w3-cell-row">
+            <div class="w3-container w3-cell">
+              <div class="form-section form-page-nav">
+                <button class="btn btn-info" style="font-size: 1.3em; float:left;" @click.prevent="prevPage()">Previous</button>
+              </div>
+            </div>
+            <div class="w3-container w3-cell">
+              <div class="form-section form-page-nav">
+                <button class="btn btn-info" style="font-size: 1.3em;" @click.prevent="nextPage()">Next</button>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- page 3 -->
+        <div class="form-page" v-if="page===3">
+          <!-- page 3 section 1 -->
+          <div class="form-section">
+            <div class="form-section">
+              <h1 class="title" style="text-align:left">Dynamics</h1>
+              <table>
+                <tbody>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="w3-cell-row">
+            <div class="w3-container w3-cell">
+              <div class="form-section form-page-nav">
+                <button class="btn btn-info" style="font-size: 1.3em; float:left;" @click.prevent="prevPage()">Previous</button>
+              </div>
+            </div>
+            <div class="w3-container w3-cell">
+              <div class="form-section form-page-nav">
+                <button class="btn btn-info" style="font-size: 1.3em;" @click.prevent="nextPage()">Next</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </form>
     </div>
   </main>
