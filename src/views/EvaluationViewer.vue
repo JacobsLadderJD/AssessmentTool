@@ -78,43 +78,94 @@
               <tr>
                 <td><strong>INPUT</strong></td>
               </tr>
+              <!-- tactility row -->
               <tr>
                 <td style="text-align:right">Tactility</td>
-                <input id="tactility-raw-score" type="text" name="tactilityRawScore" :value="evaluation.tactilityRawScore"/>
-                <td>/ 132</td>
                 <td>
-                  {{ tactilityRawScore }}
+                  <input id="tactility-raw-score" type="text" name="tactilityRawScore" :value="evaluation.tactilityRawScore"/>
                 </td>
+                <td>/ 132</td>
+                <td></td>
                 <td>N/A</td>
                 <td>N/A</td>
               </tr>
+              <!-- auditory row -->
               <tr>
                 <td style="text-align:right">Auditory</td>
-                <input id="auditory-raw-score" type="text" name="auditoryRawScore" :value="evaluation.auditoryRawScore"/>
+                <td>
+                  <input id="auditory-raw-score" type="text" name="auditoryRawScore" :value="evaluation.auditoryRawScore"/>
+                </td>
                 <td>/ 42</td>
+                <td></td>
+                <td>
+                  <input id="auditory-working-level" type="text" name="auditoryWorkingLevel" :value="evaluation.auditoryWorkingLevel"/>
+                </td>
+                <td>
+                  <input id="auditory-age-equivalence" type="text" name="auditoryAgeEquivalence" :value="evaluation.auditoryAgeEquivalence"/>
+                </td>
               </tr>
+              <!-- visual row -->
               <tr>
                 <td style="text-align:right">Visual</td>
-                <input id="visual-raw-score" type="text" name="visualRawScore" :value="evaluation.visualRawScore"/>
+                <td>
+                  <input id="visual-raw-score" type="text" name="visualRawScore" :value="evaluation.visualRawScore"/>
+                </td>
                 <td>/ 54</td>
+                <td></td>
+                <td>
+                  <input id="visual-working-level" type="text" name="visualWorkingLevel" :value="evaluation.visualWorkingLevel"/>
+                </td>
+                <td>
+                  <input id="visual-age-equivalence" type="text" name="visualAgeEquivalence" :value="evaluation.visualAgeEquivalence"/>
+                </td>
               </tr>
               <tr>
                 <td><strong>OUTPUT</strong></td>
               </tr>
+              <!-- manual row -->
               <tr>
                 <td style="text-align:right">Manual</td>
-                <input id="manual-raw-score" type="text" name="manualRawScore" :value="evaluation.manualRawScore"/>
+                <td>
+                  <input id="manual-raw-score" type="text" name="manualRawScore" :value="evaluation.manualRawScore"/>
+                </td>
                 <td>/ 90</td>
+                <td></td>
+                <td>
+                  <input id="manual-working-level" type="text" name="manualWorkingLevel" :value="evaluation.manualWorkingLevel"/>
+                </td>
+                <td>
+                  <input id="manual-age-equivalence" type="text" name="manualAgeEquivalence" :value="evaluation.manualAgeEquivalence"/>
+                </td>
               </tr>
+              <!-- language row -->
               <tr>
                 <td style="text-align:right">Language</td>
-                <input id="language-raw-score" type="text" name="languageRawScore" :value="evaluation.languageRawScore"/>
+                <td>
+                  <input id="language-raw-score" type="text" name="languageRawScore" :value="evaluation.languageRawScore"/>
+                </td>
                 <td>/ 69</td>
+                <td></td>
+                <td>
+                  <input id="language-working-level" type="text" name="languageWorkingLevel" :value="evaluation.languageWorkingLevel"/>
+                </td>
+                <td>
+                  <input id="language-age-equivalence" type="text" name="languageAgeEquivalence" :value="evaluation.languageAgeEquivalence"/>
+                </td>
               </tr>
+              <!-- mobility row -->
               <tr>
                 <td style="text-align:right">Mobility</td>
-                <input id="mobility-raw-score" type="text" name="mobilityRawScore" :value="evaluation.mobilityRawScore"/>
+                <td>
+                  <input id="mobility-raw-score" type="text" name="mobilityRawScore" :value="evaluation.mobilityRawScore"/>
+                </td>
                 <td>/ 108</td>
+                <td></td>
+                <td>
+                  <input id="mobility-working-level" type="text" name="mobilityWorkingLevel" :value="evaluation.mobilityWorkingLevel"/>
+                </td>
+                <td>
+                  <input id="mobility-age-equivalence" type="text" name="mobilityAgeEquivalence" :value="evaluation.mobilityAgeEquivalence"/>
+                </td>
               </tr>
             </tbody>
           </table>
@@ -177,7 +228,6 @@ th {
   vertical-align: inherit;
   text-align: left;
   padding-right:30px;
-  padding-left: 0px;
   padding-bottom: 5px;
   padding-top: 5px;
 }
