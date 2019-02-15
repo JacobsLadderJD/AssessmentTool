@@ -17,7 +17,7 @@
         </div>
         <div class="card__footer">
           <div class="--right-align">
-            <button type="submit" name="submit">
+            <button type="submit" name="submit" class="btn btn-info">
               Log in
             </button>
           </div>
@@ -28,7 +28,7 @@
 </template>
 
 <script>
-// import api from "@/api"
+import alerts from "@/alerts"
 export default {
   data: () => ({
     email: "",
@@ -47,13 +47,13 @@ export default {
     login () {
       // try to Login
       if (!this.emailIsValid || !this.passwordIsValid) {
-        alert('Valid email and password required')
+        alerts.authError("Invalid email or password")
         return
       }
       this.$store.dispatch('login', {
         email: this.email,
         password:this.password
-      })
+      }).then(() => this.password = "")
     }
   }
 }
@@ -65,6 +65,10 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+main :not(main .card){
+  font-size: 200px;
 }
 
 .card {

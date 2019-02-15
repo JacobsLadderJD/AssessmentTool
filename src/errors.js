@@ -1,3 +1,5 @@
+import Vue from 'vue'
+
 const ApiError = function (code, message) {
   const _code = code
   let _message = message
