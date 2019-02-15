@@ -65,110 +65,203 @@
         <div class="form-page" v-if="page===2">
 
           <h1 class="title" style="text-align:left">Channel Totals</h1>
-          <table>
-            <tbody>
-              <tr>
-                <th></th>
-                <th>RAW SCORE</th>
-                <th>TOTAL POINTS</th>
-                <th>PERCENTAGE</th>
-                <th>WORKING LEVEL</th>
-                <th>AGE EQUIVALENCE</th>
-              </tr>
-              <tr>
-                <td><strong>INPUT</strong></td>
-              </tr>
-              <!-- tactility row -->
-              <tr>
-                <td style="text-align:right">Tactility</td>
-                <td>
-                  <input id="tactility-raw-score" type="text" name="tactilityRawScore" :value="evaluation.tactilityRawScore"/>
-                </td>
-                <td>/ 132</td>
-                <td></td>
-                <td>N/A</td>
-                <td>N/A</td>
-              </tr>
-              <!-- auditory row -->
-              <tr>
-                <td style="text-align:right">Auditory</td>
-                <td>
-                  <input id="auditory-raw-score" type="text" name="auditoryRawScore" :value="evaluation.auditoryRawScore"/>
-                </td>
-                <td>/ 42</td>
-                <td></td>
-                <td>
-                  <input id="auditory-working-level" type="text" name="auditoryWorkingLevel" :value="evaluation.auditoryWorkingLevel"/>
-                </td>
-                <td>
-                  <input id="auditory-age-equivalence" type="text" name="auditoryAgeEquivalence" :value="evaluation.auditoryAgeEquivalence"/>
-                </td>
-              </tr>
-              <!-- visual row -->
-              <tr>
-                <td style="text-align:right">Visual</td>
-                <td>
-                  <input id="visual-raw-score" type="text" name="visualRawScore" :value="evaluation.visualRawScore"/>
-                </td>
-                <td>/ 54</td>
-                <td></td>
-                <td>
-                  <input id="visual-working-level" type="text" name="visualWorkingLevel" :value="evaluation.visualWorkingLevel"/>
-                </td>
-                <td>
-                  <input id="visual-age-equivalence" type="text" name="visualAgeEquivalence" :value="evaluation.visualAgeEquivalence"/>
-                </td>
-              </tr>
-              <tr>
-                <td><strong>OUTPUT</strong></td>
-              </tr>
-              <!-- manual row -->
-              <tr>
-                <td style="text-align:right">Manual</td>
-                <td>
-                  <input id="manual-raw-score" type="text" name="manualRawScore" :value="evaluation.manualRawScore"/>
-                </td>
-                <td>/ 90</td>
-                <td></td>
-                <td>
-                  <input id="manual-working-level" type="text" name="manualWorkingLevel" :value="evaluation.manualWorkingLevel"/>
-                </td>
-                <td>
-                  <input id="manual-age-equivalence" type="text" name="manualAgeEquivalence" :value="evaluation.manualAgeEquivalence"/>
-                </td>
-              </tr>
-              <!-- language row -->
-              <tr>
-                <td style="text-align:right">Language</td>
-                <td>
-                  <input id="language-raw-score" type="text" name="languageRawScore" :value="evaluation.languageRawScore"/>
-                </td>
-                <td>/ 69</td>
-                <td></td>
-                <td>
-                  <input id="language-working-level" type="text" name="languageWorkingLevel" :value="evaluation.languageWorkingLevel"/>
-                </td>
-                <td>
-                  <input id="language-age-equivalence" type="text" name="languageAgeEquivalence" :value="evaluation.languageAgeEquivalence"/>
-                </td>
-              </tr>
-              <!-- mobility row -->
-              <tr>
-                <td style="text-align:right">Mobility</td>
-                <td>
-                  <input id="mobility-raw-score" type="text" name="mobilityRawScore" :value="evaluation.mobilityRawScore"/>
-                </td>
-                <td>/ 108</td>
-                <td></td>
-                <td>
-                  <input id="mobility-working-level" type="text" name="mobilityWorkingLevel" :value="evaluation.mobilityWorkingLevel"/>
-                </td>
-                <td>
-                  <input id="mobility-age-equivalence" type="text" name="mobilityAgeEquivalence" :value="evaluation.mobilityAgeEquivalence"/>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <!-- page 2 section 1 -->
+          <div class="form-section">
+            <table>
+              <tbody>
+                <tr>
+                  <th></th>
+                  <th>RAW SCORE</th>
+                  <th>TOTAL POINTS</th>
+                  <th>PERCENTAGE</th>
+                  <th>WORKING LEVEL</th>
+                  <th>AGE EQUIVALENCE</th>
+                </tr>
+                <tr>
+                  <td><strong>INPUT</strong></td>
+                </tr>
+                <!-- tactility row -->
+                <tr>
+                  <td style="text-align:right">Tactility</td>
+                  <td>
+                    <input id="tactility-raw-score" type="text" name="tactilityRawScore" :value="evaluation.tactilityRawScore"/>
+                  </td>
+                  <td>/ 132</td>
+                  <td></td>
+                  <td>N/A</td>
+                  <td>N/A</td>
+                </tr>
+                <!-- auditory row -->
+                <tr>
+                  <td style="text-align:right">Auditory</td>
+                  <td>
+                    <input id="auditory-raw-score" type="text" name="auditoryRawScore" :value="evaluation.auditoryRawScore"/>
+                  </td>
+                  <td>/ 42</td>
+                  <td></td>
+                  <td>
+                    <input id="auditory-working-level" type="text" name="auditoryWorkingLevel" :value="evaluation.auditoryWorkingLevel"/>
+                  </td>
+                  <td>
+                    <input id="auditory-age-equivalence" type="text" name="auditoryAgeEquivalence" :value="evaluation.auditoryAgeEquivalence"/>
+                  </td>
+                </tr>
+                <!-- visual row -->
+                <tr>
+                  <td style="text-align:right">Visual</td>
+                  <td>
+                    <input id="visual-raw-score" type="text" name="visualRawScore" :value="evaluation.visualRawScore"/>
+                  </td>
+                  <td>/ 54</td>
+                  <td></td>
+                  <td>
+                    <input id="visual-working-level" type="text" name="visualWorkingLevel" :value="evaluation.visualWorkingLevel"/>
+                  </td>
+                  <td>
+                    <input id="visual-age-equivalence" type="text" name="visualAgeEquivalence" :value="evaluation.visualAgeEquivalence"/>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>OUTPUT</strong></td>
+                </tr>
+                <!-- manual row -->
+                <tr>
+                  <td style="text-align:right">Manual</td>
+                  <td>
+                    <input id="manual-raw-score" type="text" name="manualRawScore" :value="evaluation.manualRawScore"/>
+                  </td>
+                  <td>/ 90</td>
+                  <td></td>
+                  <td>
+                    <input id="manual-working-level" type="text" name="manualWorkingLevel" :value="evaluation.manualWorkingLevel"/>
+                  </td>
+                  <td>
+                    <input id="manual-age-equivalence" type="text" name="manualAgeEquivalence" :value="evaluation.manualAgeEquivalence"/>
+                  </td>
+                </tr>
+                <!-- language row -->
+                <tr>
+                  <td style="text-align:right">Language</td>
+                  <td>
+                    <input id="language-raw-score" type="text" name="languageRawScore" :value="evaluation.languageRawScore"/>
+                  </td>
+                  <td>/ 69</td>
+                  <td></td>
+                  <td>
+                    <input id="language-working-level" type="text" name="languageWorkingLevel" :value="evaluation.languageWorkingLevel"/>
+                  </td>
+                  <td>
+                    <input id="language-age-equivalence" type="text" name="languageAgeEquivalence" :value="evaluation.languageAgeEquivalence"/>
+                  </td>
+                </tr>
+                <!-- mobility row -->
+                <tr>
+                  <td style="text-align:right">Mobility</td>
+                  <td>
+                    <input id="mobility-raw-score" type="text" name="mobilityRawScore" :value="evaluation.mobilityRawScore"/>
+                  </td>
+                  <td>/ 108</td>
+                  <td></td>
+                  <td>
+                    <input id="mobility-working-level" type="text" name="mobilityWorkingLevel" :value="evaluation.mobilityWorkingLevel"/>
+                  </td>
+                  <td>
+                    <input id="mobility-age-equivalence" type="text" name="mobilityAgeEquivalence" :value="evaluation.mobilityAgeEquivalence"/>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- page 2 section 2 -->
+          <div class="form-section">
+            <h1 class="title" style="text-align:left">Dominance</h1>
+            <table>
+              <tbody>
+                <tr>
+                  <th>DOMINANCE PROFILE</th>
+                </tr>
+                <tr>
+                  <td style="text-align:right">Hand</td>
+                  <td>
+                    <input id="hand-dominance" type="text" name="handDominance" :value="evaluation.handDominance"/>
+                  </td>
+                  <td>Foot</td>
+                  <td>
+                    <input id="foot-dominance" type="text" name="footDominance" :value="evaluation.footDominance"/>
+                  </td>
+                  <td>Eye</td>
+                  <td>
+                    <input id="eye-dominance" type="text" name="eyeDominance" :value="evaluation.eyeDominance"/>
+                  </td>
+                  <td>Ear</td>
+                  <td>
+                    <input id="ear-dominance" type="text" name="earDominance" :value="evaluation.earDominance"/>
+                  </td>
+                </tr>
+                <tr>
+                  <th>HEMISPHERIC PROFILE</th>
+                </tr>
+                <tr>
+                  <td style="text-align:right">Logic</td>
+                  <td>
+                    <input id="logic-hemispheric" type="text" name="logicHemispheric" :value="evaluation.logicHemispheric"/>
+                  </td>
+                  <td>Gestalt</td>
+                  <td>
+                    <input id="gestalt-hemispheric" type="text" name="gestaltHemispheric" :value="evaluation.gestaltHemispheric"/>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- page 2 section 3 -->
+          <div class="form-section">
+            <h1 class="title" style="text-align:left">Processing</h1>
+            <table>
+              <tbody>
+                <tr>
+                  <th>WORKING AMOUNT</th>
+                </tr>
+                <tr>
+                  <td>Auditory</td>
+                  <td>
+                    <input id="auditory-working-amount" type="text" name="auditoryWorkingAmount" :value="evaluation.auditoryWorkingAmount"/>
+                  </td>
+                  <td>Visual</td>
+                  <td>
+                    <input id="visual-working-amount" type="text" name="visualWorkingAmount" :value="evaluation.visualWorkingAmount"/>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- page 2 section 4 -->
+          <div class="form-section">
+            <h1 class="title" style="text-align:left">Reflexes</h1>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Not Able to Access</td>
+                  <td>
+                    <input id="reflexes-not-accessible" type="text" name="reflexesNotAccessible" :value="evaluation.reflexesNotAccessible"/>
+                  </td>
+                  <td>Not Integrated</td>
+                  <td>
+                    <input id="reflexes-not-integrated" type="text" name="reflexesNotIntegrated" :value="evaluation.reflexesNotIntegrated"/>
+                  </td>
+                  <td>Integrated</td>
+                  <td>
+                    <input id="reflexes-integrated" type="text" name="reflexesIntegrated" :value="evaluation.reflexesIntegrated"/>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- page2 section 5 -->
+          <div class="form-section">
+            <h1 class="title" style="text-align:left">Channel Analysis</h1>
+            <p>Not sure how to do these sliders yet :/</p>
+          </div>
         </div>
       </form>
     </div>
