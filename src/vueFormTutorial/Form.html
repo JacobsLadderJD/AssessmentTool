@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue Form Tutorial</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/bulma/0.4.4/css/bulma.min.css">
+</head>
+
+<body>
+	<div class="columns" id="app">
+	    <div class="column is-two-thirds">
+	      <section class="section">
+	        <h1 class="title">Fun with Forms in Vue 2.0</h1>
+	        <p class="subtitle">
+	          Learn how to work with forms, including <strong>validation</strong>!
+	        </p>
+	        <hr>      
+	        
+	        <!-- form starts here -->
+	        <section class="form">
+	          <div class="field">
+	            <label class="label">Name</label>
+	            <div class="control">
+	              <input v-model="form.name" class="input" type="text" placeholder="Text input">
+	            </div>
+	          </div>
+	        </section>
+	      </section>
+	    </div>
+	    
+	    <div class="column">
+	      <section class="section" id="results">
+	        <div class="box">
+	          <ul>          
+	            <!-- loop through all the `form` properties and show their values -->
+	            <li v-for="(item, k) in form">
+	              <strong>{{ k }}:</strong> {{ item }}
+	            </li>
+	          </ul>
+	        </div>
+	      </section>
+	    </div>
+
+
+	    <div class="field">
+	    	<label class="label">Message</label>
+	    	<div class="control">
+	    		<textarea class="textarea" placeholder="Message" v-model="form.message"></textarea>
+	    	</div>
+	    </div>
+
+
+	    <div class="field">
+	    	<label class="label">Inquiry Type</label>
+	    	<div class="select">
+	    		<select v-model="form.inquiry_type">
+	    			<option disabled value="">Nothing selected</option>
+	    			<option v-for-="option in options.inquiry" v-bind:value="option.value">
+	    				{{ option.text }}
+	    			</option>
+	    		</select>
+	    	</div>
+	    </div>
+
+
+	  </div>
+  </body>
+
+</html>
