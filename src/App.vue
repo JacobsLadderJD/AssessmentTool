@@ -13,7 +13,7 @@
       </div>
     </header>
     <router-view/>
-    <notifications group="auth" position="bottom right"/>
+    <notifications group="main" position="bottom right"/>
   </div>
 </template>
 

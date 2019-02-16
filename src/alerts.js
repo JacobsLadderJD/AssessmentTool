@@ -18,10 +18,10 @@ const success = (group, title, message="") => {
   })
 }
 const authError = (title, message="") => {
-  error("auth", title, message)
+  error("main", title, message)
 }
 const authSuccess = (title, message="") => {
-  success("auth", title, message)
+  success("main", title, message)
 }
 
 export default {

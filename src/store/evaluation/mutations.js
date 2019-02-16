@@ -5,6 +5,9 @@ const mutations = {
   [types.ADD_EVALUATION] (state, evaluation) {
     Vue.set(state.evaluations, evaluation.id, evaluation)
     state.evaluationIds.push(evaluation.id)
+  },
+  [types.UPDATE_EVALUATION] (state, evaluation) {
+    Vue.set(state.evaluations, evaluation.id, evaluation)
   }
 }
 

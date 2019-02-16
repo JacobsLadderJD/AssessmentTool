@@ -1,3 +1,4 @@
+import alerts from '@/alerts'
 import types from './types'
 import api from '@/fixtures/MockApi'
 import router from '@/router'
@@ -12,6 +13,13 @@ const actions = {
           params: {id: response.data.id}
         })
       })
+  },
+  [types.UPDATE_EVALUATION] ({commit, state}, payload) {
+    commit(types.UPDATE_EVALUATION, payload)
+    alerts.success("main", "Updated evaluation successfully.")
+    router.push({
+      name:'evaluations'
+    })
   }
 }
 

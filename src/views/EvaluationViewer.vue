@@ -10,18 +10,18 @@
               <div class="labelled-input">
                 <label for="date-input">Date</label>
                 <input id="last-edited-input" name="last-edited" type="date"
-                v-model="lastEdited"/>
+                v-model="temp.lastEdited"/>
               </div>
               <div class="labelled-input">
                 <label for="status-input">Status</label>
-                <input id="status-input" type="text" name="status" v-model="status"/>
+                <input id="status-input" type="text" name="status" v-model="temp.status"/>
               </div>
             </div>
             <div class="row">
               <div class="labelled-input">
 
                 <label for="code-input">Code</label>
-                <input id="code-input" type="text" name="code" v-model="code"/>
+                <input id="code-input" type="text" name="code" v-model="temp.code"/>
               </div>
             </div>
           </div>
@@ -31,8 +31,9 @@
               <div class="labelled-input">
                 <label for="name-input">Name</label>
                 <input id="first-name-input" type="text" name="firstName"
-                  v-model="firstNameInput"/>
-                <input id="last-name-input" type="text" name="lastName" v-model="lastNameInput"/>
+                  :value="student.firstName" disabled/>
+                <input id="last-name-input" type="text" name="lastName"
+                :value="student.lastName" disabled/>
               </div>
             </div>
             <div class="row">
@@ -44,16 +45,17 @@
                 </select>
               </div>
               <div class="labelled-input">
-                <label for="age-input">Age</label>
-                <input id="age-input" type="text" name="age" v-model="age"/>
+                <label for="age-input">Birthdate</label>
+                <input id="age-input" type="text" name="birthdate"
+                  :value="student.birthday | niceDate" disabled/>
               </div>
             </div>
           </div>
           <div class="form-section">
             <div class="labelled-input">
               <label for="evaluators-input">Evaluator(s)</label>
-              <input id="evaluators-input" type="text" name="age"
-              v-model="evaluator"/>
+              <input id="evaluators-input" type="text" name="evaluators"
+              v-model="temp.evaluator"/>
             </div>
           </div>
           <div class="w3-cell-row">
@@ -92,7 +94,9 @@
                 <tr>
                   <td style="text-align:right">Tactility</td>
                   <td>
-                    <input id="tactility-raw-score" type="text" name="tactilityRawScore" v-model="tactilityRawScore"/>
+                    <input id="tactility-raw-score" type="text"
+                      name="tactilityRawScore"
+                      v-model="temp.tactilityRawScore"/>
                   </td>
                   <td>/ 132</td>
                   <td></td>
@@ -103,30 +107,34 @@
                 <tr>
                   <td style="text-align:right">Auditory</td>
                   <td>
-                    <input id="auditory-raw-score" type="text" name="auditoryRawScore" v-model="auditoryRawScore"/>
+                    <input id="auditory-raw-score" type="text" name="auditoryRawScore"
+                      v-model="temp.auditoryRawScore"/>
                   </td>
                   <td>/ 42</td>
                   <td></td>
                   <td>
-                    <input id="auditory-working-level" type="text" name="auditoryWorkingLevel" v-model="auditoryWorkingLevel"/>
+                    <input id="auditory-working-level" type="text" name="auditoryWorkingLevel"
+                      v-model="temp.auditoryWorkingLevel"/>
                   </td>
                   <td>
-                    <input id="auditory-age-equivalence" type="text" name="auditoryAgeEquivalence" v-model="auditoryAgeEquivalence"/>
+                    <input id="auditory-age-equivalence" type="text"
+                      name="auditoryAgeEquivalence"
+                      v-model="temp.auditoryAgeEquivalence"/>
                   </td>
                 </tr>
                 <!-- visual row -->
                 <tr>
                   <td style="text-align:right">Visual</td>
                   <td>
-                    <input id="visual-raw-score" type="text" name="visualRawScore" v-model="visualRawScore"/>
+                    <input id="visual-raw-score" type="text" name="visualRawScore" v-model="temp.visualRawScore"/>
                   </td>
                   <td>/ 54</td>
                   <td></td>
                   <td>
-                    <input id="visual-working-level" type="text" name="visualWorkingLevel" v-model="visualWorkingLevel"/>
+                    <input id="visual-working-level" type="text" name="visualWorkingLevel" v-model="temp.visualWorkingLevel"/>
                   </td>
                   <td>
-                    <input id="visual-age-equivalence" type="text" name="visualAgeEquivalence" v-model="visualAgeEquivalence"/>
+                    <input id="visual-age-equivalence" type="text" name="visualAgeEquivalence" v-model="temp.visualAgeEquivalence"/>
                   </td>
                 </tr>
                 <tr>
@@ -136,45 +144,45 @@
                 <tr>
                   <td style="text-align:right">Manual</td>
                   <td>
-                    <input id="manual-raw-score" type="text" name="manualRawScore" v-model="manualRawScore"/>
+                    <input id="manual-raw-score" type="text" name="manualRawScore" v-model="temp.manualRawScore"/>
                   </td>
                   <td>/ 90</td>
                   <td></td>
                   <td>
-                    <input id="manual-working-level" type="text" name="manualWorkingLevel" v-model="manualWorkingLevel"/>
+                    <input id="manual-working-level" type="text" name="manualWorkingLevel" v-model="temp.manualWorkingLevel"/>
                   </td>
                   <td>
-                    <input id="manual-age-equivalence" type="text" name="manualAgeEquivalence" v-model="manualAgeEquivalence"/>
+                    <input id="manual-age-equivalence" type="text" name="manualAgeEquivalence" v-model="temp.manualAgeEquivalence"/>
                   </td>
                 </tr>
                 <!-- language row -->
                 <tr>
                   <td style="text-align:right">Language</td>
                   <td>
-                    <input id="language-raw-score" type="text" name="languageRawScore" v-model="languageRawScore"/>
+                    <input id="language-raw-score" type="text" name="languageRawScore" v-model="temp.languageRawScore"/>
                   </td>
                   <td>/ 69</td>
                   <td></td>
                   <td>
-                    <input id="language-working-level" type="text" name="languageWorkingLevel" v-model="languageWorkingLevel"/>
+                    <input id="language-working-level" type="text" name="languageWorkingLevel" v-model="temp.languageWorkingLevel"/>
                   </td>
                   <td>
-                    <input id="language-age-equivalence" type="text" name="languageAgeEquivalence" v-model="languageAgeEquivalence"/>
+                    <input id="language-age-equivalence" type="text" name="languageAgeEquivalence" v-model="temp.languageAgeEquivalence"/>
                   </td>
                 </tr>
                 <!-- mobility row -->
                 <tr>
                   <td style="text-align:right">Mobility</td>
                   <td>
-                    <input id="mobility-raw-score" type="text" name="mobilityRawScore" v-model="mobilityRawScore"/>
+                    <input id="mobility-raw-score" type="text" name="mobilityRawScore" v-model="temp.mobilityRawScore"/>
                   </td>
                   <td>/ 108</td>
                   <td></td>
                   <td>
-                    <input id="mobility-working-level" type="text" name="mobilityWorkingLevel" v-model="mobilityWorkingLevel"/>
+                    <input id="mobility-working-level" type="text" name="mobilityWorkingLevel" v-model="temp.mobilityWorkingLevel"/>
                   </td>
                   <td>
-                    <input id="mobility-age-equivalence" type="text" name="mobilityAgeEquivalence" v-model="mobilityAgeEquivalence"/>
+                    <input id="mobility-age-equivalence" type="text" name="mobilityAgeEquivalence" v-model="temp.mobilityAgeEquivalence"/>
                   </td>
                 </tr>
               </tbody>
@@ -191,19 +199,19 @@
                 <tr>
                   <td style="text-align:right">Hand</td>
                   <td>
-                    <input id="hand-dominance" type="text" name="handDominance" v-model="handDominance"/>
+                    <input id="hand-dominance" type="text" name="handDominance" v-model="temp.handDominance"/>
                   </td>
                   <td>Foot</td>
                   <td>
-                    <input id="foot-dominance" type="text" name="footDominance" v-model="footDominance"/>
+                    <input id="foot-dominance" type="text" name="footDominance" v-model="temp.footDominance"/>
                   </td>
                   <td>Eye</td>
                   <td>
-                    <input id="eye-dominance" type="text" name="eyeDominance" v-model="eyeDominance"/>
+                    <input id="eye-dominance" type="text" name="eyeDominance" v-model="temp.eyeDominance"/>
                   </td>
                   <td>Ear</td>
                   <td>
-                    <input id="ear-dominance" type="text" name="earDominance" v-model="earDominance"/>
+                    <input id="ear-dominance" type="text" name="earDominance" v-model="temp.earDominance"/>
                   </td>
                 </tr>
                 <tr>
@@ -212,11 +220,11 @@
                 <tr>
                   <td style="text-align:right">Logic</td>
                   <td>
-                    <input id="logic-hemispheric" type="text" name="logicHemispheric" v-model="logicHemispheric"/>
+                    <input id="logic-hemispheric" type="text" name="logicHemispheric" v-model="temp.logicHemispheric"/>
                   </td>
                   <td>Gestalt</td>
                   <td>
-                    <input id="gestalt-hemispheric" type="text" name="gestaltHemispheric" v-model="gestaltHemispheric"/>
+                    <input id="gestalt-hemispheric" type="text" name="gestaltHemispheric" v-model="temp.gestaltHemispheric"/>
                   </td>
                 </tr>
               </tbody>
@@ -233,11 +241,11 @@
                 <tr>
                   <td>Auditory</td>
                   <td>
-                    <input id="auditory-working-amount" type="text" name="auditoryWorkingAmount" v-model="auditoryWorkingAmount"/>
+                    <input id="auditory-working-amount" type="text" name="auditoryWorkingAmount" v-model="temp.auditoryWorkingAmount"/>
                   </td>
                   <td>Visual</td>
                   <td>
-                    <input id="visual-working-amount" type="text" name="visualWorkingAmount" v-model="visualWorkingAmount"/>
+                    <input id="visual-working-amount" type="text" name="visualWorkingAmount" v-model="temp.visualWorkingAmount"/>
                   </td>
                 </tr>
               </tbody>
@@ -251,25 +259,32 @@
                 <tr>
                   <td>Not Able to Access</td>
                   <td>
-                    <input id="reflexes-not-accessible" type="text" name="reflexesNotAccessible" v-model="reflexesNotAccessible"/>
+                    <input id="reflexes-not-accessible" type="text"
+                      name="reflexesNotAccessible"
+                      v-model="temp.reflexesNotAccessible"/>
                   </td>
                   <td>Not Integrated</td>
                   <td>
-                    <input id="reflexes-not-integrated" type="text" name="reflexesNotIntegrated" v-model="reflexesNotIntegrated"/>
+                    <input id="reflexes-not-integrated" type="text"
+                      name="reflexesNotIntegrated"
+                      v-model="temp.reflexesNotIntegrated"/>
                   </td>
                   <td>Integrated</td>
                   <td>
-                    <input id="reflexes-integrated" type="text" name="reflexesIntegrated" v-model="reflexesIntegrated"/>
+                    <input id="reflexes-integrated" type="text"
+                      name="reflexesIntegrated"
+                      v-model="temp.reflexesIntegrated"/>
                   </td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <!-- page2 section 5 -->
+          <!-- page2 section 5
           <div class="form-section">
             <h1 class="title" style="text-align:left">Channel Analysis</h1>
             <p>Not sure how to do these sliders yet :/</p>
           </div>
+          -->
           <div class="w3-cell-row">
             <div class="w3-container w3-cell">
               <div class="form-section form-page-nav">
@@ -305,7 +320,7 @@
             </div>
             <div class="w3-container w3-cell">
               <div class="form-section form-page-nav">
-                <button class="btn btn-info" style="font-size: 1.3em;" @click.prevent="nextPage()">Next</button>
+                <button class="btn btn-info" style="font-size: 1.3em;" @click.prevent="submit()">submit</button>
               </div>
             </div>
           </div>
@@ -318,56 +333,58 @@
 
 <script>
 import FormNav from '@/components/FormNav'
-
+import types from '@/store/evaluation/types'
 export default {
-  data:() => ({
-    page: 1,
-    lastEdited: "",
-    status: "",
-    code: "",
-    firstName: "",
-    lastName: "",
-    age: "",
-    evaluator: "",
-    tactilityRawScore: "",
-    auditoryRawScore: "",
-    auditoryWorkingLevel: "",
-    auditoryAgeEquivalence: "",
-    visualRawScore: "",
-    visualWorkingLevel: "",
-    visualAgeEquivalence: "",
-    manualRawScore: "",
-    manualWorkingLevel: "",
-    manualAgeEquivalence: "",
-    languageRawScore: "",
-    languageWorkingLevel: "",
-    languageAgeEquivalence: "",
-    mobilityRawScore: "",
-    mobilityWorkingLevel: "",
-    mobilityAgeEquivalence: "",
-    handDominance: "",
-    footDominance: "",
-    eyeDominance: "",
-    earDominance: "",
-    logicHemispheric: "",
-    gestaltHemispheric: "",
-    auditoryWorkingAmount: "",
-    visualWorkingAmount: "",
-    reflexesNotAccessible:"",
-    reflexesNotIntegrated: "",
-    reflexesIntegrated: "",
-  }),
-  methods: {
-      nextPage() {
-        this.page++;
-      },
-      prevPage() {
-        this.page--;
-      },
-  },
   name:"EvaluationViewer",
   components: {
     FormNav
+  },
+  data:() => ({
+    page: 1,
+    temp: {
+      lastEdited: "",
+      status: "",
+      code: "",
+      evaluator: "",
+      tactilityRawScore: "",
+      auditoryRawScore: "",
+      auditoryWorkingLevel: "",
+      auditoryAgeEquivalence: "",
+      visualRawScore: "",
+      visualWorkingLevel: "",
+      visualAgeEquivalence: "",
+      manualRawScore: "",
+      manualWorkingLevel: "",
+      manualAgeEquivalence: "",
+      languageRawScore: "",
+      languageWorkingLevel: "",
+      languageAgeEquivalence: "",
+      mobilityRawScore: "",
+      mobilityWorkingLevel: "",
+      mobilityAgeEquivalence: "",
+      handDominance: "",
+      footDominance: "",
+      eyeDominance: "",
+      earDominance: "",
+      logicHemispheric: "",
+      gestaltHemispheric: "",
+      auditoryWorkingAmount: "",
+      visualWorkingAmount: "",
+      reflexesNotAccessible:"",
+      reflexesNotIntegrated: "",
+      reflexesIntegrated: ""
+    }
+  }),
+  methods: {
+    nextPage() {
+      this.page++;
+    },
+    prevPage() {
+      this.page--;
+    },
+    submit () {
+      this.$store.dispatch(types.UPDATE_EVALUATION, this.temp)
+    }
   },
   computed: {
     isNew () {
@@ -379,6 +396,9 @@ export default {
     student () {
       return this.$store.getters.getStudentById(this.evaluation.studentId)
     }
+  },
+  created () {
+    this.temp = this.$store.getters.getEvaluationById(this.$route.params.id)
   }
 }
 
