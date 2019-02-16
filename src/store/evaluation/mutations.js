@@ -7,6 +7,7 @@ const mutations = {
     state.evaluationIds.push(evaluation.id)
   },
   [types.UPDATE_EVALUATION] (state, evaluation) {
+    console.log(evaluation.lastEdited);
     Vue.set(state.evaluations, evaluation.id, evaluation)
   }
 }

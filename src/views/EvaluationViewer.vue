@@ -342,7 +342,7 @@ export default {
   data:() => ({
     page: 1,
     temp: {
-      lastEdited: "",
+      lastEdited: new Date(),
       status: "",
       code: "",
       evaluator: "",
@@ -383,7 +383,8 @@ export default {
       this.page--;
     },
     submit () {
-      this.$store.dispatch(types.UPDATE_EVALUATION, this.temp)
+      this.$store.dispatch(types.UPDATE_EVALUATION, {
+        ...this.temp, lastEdited: new Date(this.temp.lastEdited)})
     }
   },
   computed: {
