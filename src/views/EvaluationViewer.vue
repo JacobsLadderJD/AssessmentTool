@@ -302,16 +302,188 @@
         <!-- page 3 -->
         <div class="form-page" v-if="page===3">
           <!-- page 3 section 1 -->
-          <div class="form-section">
-            <div class="form-section">
-              <h1 class="title" style="text-align:left">Dynamics</h1>
-              <table>
-                <tbody>
 
-                </tbody>
-              </table>
-            </div>
+          <div class="form-section">
+            <h1 class="title" style="text-align:left">Dynamics</h1>
+            <table>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td>Low<br>Priority</td>
+                  <td></td>
+                  <td></td>
+                  <td>High<br>Priority</td>
+                </tr>
+                <tr>
+                  <td><strong>Neurodevelopmental</strong></td>
+                  <td>
+                    <input v-model="temp.neurodevelopmentalDynamic" type="radio" value="Low Priority">
+                  </td>
+                  <td style="padding-right:30px">
+                    <input v-model="temp.neurodevelopmentalDynamic" type="radio" value="Mid-low Priority">
+                  </td>
+                  <td>
+                    <input v-model="temp.neurodevelopmentalDynamic" type="radio" value="Mid-high Priority">
+                  </td>
+                  <td>
+                    <input v-model="temp.neurodevelopmentalDynamic" type="radio" value="High Priority">
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Physiology</strong></td>
+                  <td>
+                    <input v-model="temp.physiologicalDynamic" type="radio" value="Low Priority">
+                  </td>
+                  <td style="padding-right:30px">
+                    <input v-model="temp.physiologicalDynamic" type="radio" value="Mid-low Priority">
+                  </td>
+                  <td>
+                    <input v-model="temp.physiologicalDynamic" type="radio" value="Mid-high Priority">
+                  </td>
+                  <td>
+                    <input v-model="temp.physiologicalDynamic" type="radio" value="High Priority">
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Learning Style</strong></td>
+                  <td>
+                    <input v-model="temp.learningStyleDynamic" type="radio" value="Low Priority">
+                  </td>
+                  <td style="padding-right:30px">
+                    <input v-model="temp.learningStyleDynamic" type="radio" value="Mid-low Priority">
+                  </td>
+                  <td>
+                    <input v-model="temp.learningStyleDynamic" type="radio" value="Mid-high Priority">
+                  </td>
+                  <td>
+                    <input v-model="temp.learningStyleDynamic" type="radio" value="High Priority">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
+          <div class="form-section">
+            <h1 class="title" style="text-align:left">Additional Testing</h1>
+            <table>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td>Standard Score</td>
+                  <td>Grade Equivalent</td>
+                  <td>Full Potential</td>
+                </tr>
+                <tr>
+                  <td><strong>Spelling</strong></td>
+                  <td>
+                    <input id="spelling-standard-score" type="text"
+                      name="spelling-standard-score"
+                      v-model="temp.spellingStandardScore"/>
+                  </td>
+                  <td>
+                    <input id="spelling-grade-equivalent" type="text"
+                      name="spelling-grade-equivalent"
+                      v-model="temp.spellingGradeEquivalent"/>
+                  </td>
+                  <td>
+                    <input id="spelling-full-potential" type="text"
+                      name="spelling-full-potential"
+                      v-model="temp.spellingFullPotential"/>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Word Reading</strong></td>
+                  <td>
+                    <input id="word-reading-standard-score" type="text"
+                      name="word-reading-standard-score"
+                      v-model="temp.wordReadingStandardScore"/>
+                  </td>
+                  <td>
+                    <input id="word-reading-grade-equivalent" type="text"
+                      name="word-reading-grade-equivalent"
+                      v-model="temp.wordReadingGradeEquivalent"/>
+                  </td>
+                  <td>
+                    <input id="word-reading-full-potential" type="text"
+                      name="word-reading-full-potential"
+                      v-model="temp.wordReadingFullPotential"/>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Listening Sentence<br>Comprehension</strong></td>
+                  <td>
+                    <input id="listening-sentence-comprehension-standard-score" type="text"
+                      name="listening-sentence-comprehension-standard-score"
+                      v-model="temp.listeningSentenceComprehensionStandardScore"/>
+                  </td>
+                  <td>
+                    <input id="listening-sentence-comprehension-grade-equivalent" type="text"
+                      name="listening-sentence-comprehension-grade-equivalent"
+                      v-model="temp.listeningSentenceComprehensionGradeEquivalent"/>
+                  </td>
+                  <td>
+                    <input id="listening-sentence-comprehension-full-potential" type="text"
+                      name="listening-sentence-comprehension-full-potential"
+                      v-model="temp.listeningSentenceComprehensionFullPotential"/>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Reading Sentence<br>Comprehension</strong></td>
+                  <td>
+                    <input id="reading-sentence-comprehension-standard-score" type="text"
+                      name="reading-sentence-comprehension-standard-score"
+                      v-model="temp.readingSentenceComprehensionStandardScore"/>
+                  </td>
+                  <td>
+                    <input id="reading-sentence-comprehension-grade-equivalent" type="text"
+                      name="reading-sentence-comprehension-grade-equivalent"
+                      v-model="temp.readingSentenceComprehensionGradeEquivalent"/>
+                  </td>
+                  <td>
+                    <input id="reading-sentence-comprehension-full-potential" type="text"
+                      name="reading-sentence-comprehension-full-potential"
+                      v-model="temp.readingSentenceComprehensionFullPotential"/>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Math Computation</strong></td>
+                  <td>
+                    <input id="math-computation-standard-score" type="text"
+                      name="math-computation-standard-score"
+                      v-model="temp.mathComputationStandardScore"/>
+                  </td>
+                  <td>
+                    <input id="math-computation-grade-equivalent" type="text"
+                      name="math-computation-grade-equivalent"
+                      v-model="temp.mathComputationGradeEquivalent"/>
+                  </td>
+                  <td>
+                    <input id="reading-sentence-comprehension-full-potential" type="text"
+                      name="reading-sentence-comprehension-full-potential"
+                      v-model="temp.mathComputationFullPotential"/>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Reading Comprehension<br>with Visual Cue</strong></td>
+                  <td>
+                    <input id="reading-comprehension-visual-cue-standard-score" type="text"
+                      name="reading-comprehension-visual-cue-standard-score"
+                      v-model="temp.readingComprehensionVisualCueStandardScore"/>
+                  </td>
+                  <td>
+                    <input id="math-computation-grade-equivalent" type="text"
+                      name="math-computation-grade-equivalent"
+                      v-model="temp.readingComprehensionVisualCueGradeEquivalent"/>
+                  </td>
+                  <td>
+                    <input id="reading-sentence-comprehension-full-potential" type="text"
+                      name="reading-sentence-comprehension-full-potential"
+                      v-model="temp.readingComprehensionVisualCueFullPotential"/>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
           <div class="w3-cell-row">
             <div class="w3-container w3-cell">
               <div class="form-section form-page-nav">
@@ -372,7 +544,28 @@ export default {
       visualWorkingAmount: "",
       reflexesNotAccessible:"",
       reflexesNotIntegrated: "",
-      reflexesIntegrated: ""
+      reflexesIntegrated: "",
+      neurodevelopmentalDynamic: "",
+      physiologicalDynamic: "",
+      learningStyleDynamic: "",
+      spellingStandardScore: "",
+      spellingGradeEquivalent: "",
+      spellingFullPotential: "",
+      wordReadingStandardScore: "",
+      wordReadingGradeEquivalent: "",
+      wordReadingFullPotential: "",
+      listeningSentenceComprehensionStandardScore: "",
+      listeningSentenceComprehensionGradeEquivalent: "",
+      listeningSentenceComprehensionFullPotential: "",
+      readingSentenceComprehensionStandardScore: "",
+      readingSentenceComprehensionGradeEquivalent: "",
+      readingSentenceComprehensionFullPotential: "",
+      mathComputationStandardScore: "",
+      mathComputationFullPotential: "",
+      mathComputationGradeEquivalent: "",
+      readingComprehensionVisualCueStandardScore: "",
+      readingComprehensionVisualCueGradeEquivalent: "",
+      readingComprehensionVisualCueFullPotential: "",
     }
   }),
   methods: {
