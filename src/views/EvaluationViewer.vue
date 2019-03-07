@@ -692,33 +692,45 @@
             <h1 class="title" style="text-align:left">Testing Observations</h1>
             <div class="grid4">
               <!-- Row 1 -->
-              <div class="cell" style="grid-column-start: 1; grid-column-end: span 2; grid-row-start: 1; grid-row-end: span 1; text-align: left;">
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 3; grid-row-start: 1; grid-row-end: span 1; text-align: left; justify-self: center;">
                 General Observations
               </div>
-              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: left;">
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: left;">
                 Behavior Observations
               </div>
               <!-- Row 2 -->
               <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1;">
                 Eye Contact
               </div>
-              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 4;">
-                <textarea v-model="temp.generalTestingObservations"></textarea>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1;">
+                <input type="checkbox" id="eye-contact-bool" v-model="temp.eyeContactBool">
               </div>
               <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 4;">
+                <textarea v-model="temp.generalTestingObservations"></textarea>
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 4;">
                 <textarea v-model="temp.behaviorTestingObservations"></textarea>
               </div>
               <!-- Row 3 -->
               <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1;">
                 Attention
               </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1;">
+                <input type="checkbox" id="attention-bool" v-model="temp.attentionBool">
+              </div>
               <!-- Row 4 -->
               <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1;">
                 Transitions
               </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1;">
+                <input type="checkbox" id="transitions-bool" v-model="temp.tansitionsBool">
+              </div>
               <!-- Row 5 -->
               <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1;">
                 Breaks Required
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1;">
+                <input type="checkbox" id="breaks-required-bool" v-model="temp.breaksRequiredBool">
               </div>
             </div>
           </div>
@@ -817,6 +829,10 @@ export default {
       footDominanceDetail: "",
       auditoryProcessingDetail: "",
       visualProcessingDetail: "",
+      eyeContactBool: "",
+      attentionBool: "",
+      transitionsBool: "",
+      breaksRequiredBool: "",
 
     }
   }),
@@ -966,12 +982,12 @@ h2 {
 
 .grid4 {
   display: grid;
-  grid-template-columns: [first] auto [second] 1fr [third] 1fr;
+  grid-template-columns: [first] auto [second] auto [third] 1fr [fourth] 1fr;
   grid-template-rows: [first] auto [second] 1fr [third] 1fr [fourth] 1fr [fifth] 1fr;
   word-wrap: normal;
-  justify-items: center;
-  width: 75%;
-  align-items: center;
+  justify-items: start;
+  width: 100%;
+  align-items: start;
   grid-column-gap: 1em;
   grid-row-gap: 1em;
 }
