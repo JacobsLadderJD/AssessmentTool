@@ -6,20 +6,19 @@
         <div class="form-page" v-if="page===1">
           <h1 class="title">Neurodevelopmental Profile</h1>
           <div class="form-section">
-            <div class="row" style="display:flex">
-              <div class="labelled-input">
+            <div class="row">
+              <div class="item" style="margin-bottom: 4vw;">
                 <label for="date-input">Date</label>
                 <input id="last-edited-input" name="last-edited" type="date"
                 v-model="temp.lastEdited"/>
               </div>
-              <div class="labelled-input">
+              <div class="item" style="margin-bottom: 4vw;">
                 <label for="status-input">Status</label>
                 <input id="status-input" type="text" name="status" v-model="temp.status"/>
               </div>
             </div>
             <div class="row">
-              <div class="labelled-input">
-
+              <div class="item" style="margin-bottom: 4vw;">
                 <label for="code-input">Code</label>
                 <input id="code-input" type="text" name="code" v-model="temp.code"/>
               </div>
@@ -28,7 +27,7 @@
           <div class="form-section">
             <h2>Student</h2>
             <div class="row">
-              <div class="labelled-input">
+              <div class="item" style="margin-bottom: 4vw;">
                 <label for="name-input">Name</label>
                 <input id="first-name-input" type="text" name="firstName"
                   :value="student.firstName" disabled/>
@@ -37,14 +36,14 @@
               </div>
             </div>
             <div class="row">
-              <div class="labelled-input">
+              <div class="item" style="margin-bottom: 4vw;">
                 <label for="sex-input">Sex</label>
                 <select id="sex-input" name="sex">
                   <option value="m">Male</option>
                   <option value="f">Female</option>
                 </select>
               </div>
-              <div class="labelled-input">
+              <div class="item" style="margin-bottom: 4vw;">
                 <label for="age-input">Birthdate</label>
                 <input id="age-input" type="text" name="birthdate"
                   :value="student.birthday | niceDate" disabled/>
@@ -52,7 +51,7 @@
             </div>
           </div>
           <div class="form-section">
-            <div class="labelled-input">
+            <div class="item" style="margin-bottom: 4vw;">
               <label for="evaluators-input">Evaluator(s)</label>
               <input id="evaluators-input" type="text" name="evaluators"
               v-model="temp.evaluator"/>
@@ -64,7 +63,7 @@
             </div>
             <div class="w3-container w3-cell">
               <div class="form-section form-page-nav">
-                <button class="btn btn-info" style="font-size: 1.3em;" @click.prevent="nextPage()">Next</button>
+                <button class="btn btn-info" style="font-size: 2vw; padding: 0.5vw;" @click.prevent="nextPage()">Next</button>
               </div>
             </div>
           </div>
@@ -305,183 +304,207 @@
 
           <div class="form-section">
             <h1 class="title" style="text-align:left">Dynamics</h1>
-            <table>
-              <tbody>
-                <tr>
-                  <td></td>
-                  <td>Low<br>Priority</td>
-                  <td></td>
-                  <td></td>
-                  <td>High<br>Priority</td>
-                </tr>
-                <tr>
-                  <td><strong>Neurodevelopmental</strong></td>
-                  <td>
-                    <input v-model="temp.neurodevelopmentalDynamic" type="radio" value="Low Priority">
-                  </td>
-                  <td style="padding-right:30px">
-                    <input v-model="temp.neurodevelopmentalDynamic" type="radio" value="Mid-low Priority">
-                  </td>
-                  <td>
-                    <input v-model="temp.neurodevelopmentalDynamic" type="radio" value="Mid-high Priority">
-                  </td>
-                  <td>
-                    <input v-model="temp.neurodevelopmentalDynamic" type="radio" value="High Priority">
-                  </td>
-                </tr>
-                <tr>
-                  <td><strong>Physiology</strong></td>
-                  <td>
-                    <input v-model="temp.physiologicalDynamic" type="radio" value="Low Priority">
-                  </td>
-                  <td style="padding-right:30px">
-                    <input v-model="temp.physiologicalDynamic" type="radio" value="Mid-low Priority">
-                  </td>
-                  <td>
-                    <input v-model="temp.physiologicalDynamic" type="radio" value="Mid-high Priority">
-                  </td>
-                  <td>
-                    <input v-model="temp.physiologicalDynamic" type="radio" value="High Priority">
-                  </td>
-                </tr>
-                <tr>
-                  <td><strong>Learning Style</strong></td>
-                  <td>
-                    <input v-model="temp.learningStyleDynamic" type="radio" value="Low Priority">
-                  </td>
-                  <td style="padding-right:30px">
-                    <input v-model="temp.learningStyleDynamic" type="radio" value="Mid-low Priority">
-                  </td>
-                  <td>
-                    <input v-model="temp.learningStyleDynamic" type="radio" value="Mid-high Priority">
-                  </td>
-                  <td>
-                    <input v-model="temp.learningStyleDynamic" type="radio" value="High Priority">
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+
+            <div class="grid1">
+              <!-- Row 1 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center;">
+                Low<br>Priority
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center;">
+                High<br>Priority
+              </div>
+              <!-- Row 2 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; font-size:1.2em; padding-right: 2em;">
+                <strong>Neurodevelopmental</strong>
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1;">
+                <input v-model="temp.neurodevelopmentalDynamic" type="radio" value="Low Priority">
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; padding-right:1.3em;">
+                <input v-model="temp.neurodevelopmentalDynamic" type="radio" value="Mid-low Priority">
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1;">
+                <input v-model="temp.neurodevelopmentalDynamic" type="radio" value="Mid-high Priority">
+              </div>
+              <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1;">
+                <input v-model="temp.neurodevelopmentalDynamic" type="radio" value="High Priority">
+              </div>
+              <!-- Row 3 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; font-size:1.2em; padding-right: 2em;">
+                <strong>Physiology</strong>
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1;">
+                <input v-model="temp.physiologicalDynamic" type="radio" value="Low Priority">
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; padding-right:1.3em;">
+                <input v-model="temp.physiologicalDynamic" type="radio" value="Mid-low Priority">
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1;">
+                <input v-model="temp.physiologicalDynamic" type="radio" value="Mid-high Priority">
+              </div>
+              <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1;">
+                <input v-model="temp.physiologicalDynamic" type="radio" value="High Priority">
+              </div>
+              <!-- row 4 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; font-size:1.2em; padding-right: 2em;">
+                <strong>Learning Style</strong>
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1;">
+                <input v-model="temp.learningStyleDynamic" type="radio" value="Low Priority">
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; padding-right:1.3em;">
+                <input v-model="temp.learningStyleDynamic" type="radio" value="Mid-low Priority">
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1;">
+                <input v-model="temp.learningStyleDynamic" type="radio" value="Mid-high Priority">
+              </div>
+              <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1;">
+                <input v-model="temp.learningStyleDynamic" type="radio" value="High Priority">
+              </div>
+            </div>
           </div>
+
           <div class="form-section">
             <h1 class="title" style="text-align:left">Additional Testing</h1>
-            <table>
-              <tbody>
-                <tr>
-                  <td></td>
-                  <td>Standard Score</td>
-                  <td>Grade Equivalent</td>
-                  <td>Full Potential</td>
-                </tr>
-                <tr>
-                  <td><strong>Spelling</strong></td>
-                  <td>
-                    <input id="spelling-standard-score" type="text"
-                      name="spelling-standard-score"
-                      v-model="temp.spellingStandardScore"/>
-                  </td>
-                  <td>
-                    <input id="spelling-grade-equivalent" type="text"
-                      name="spelling-grade-equivalent"
-                      v-model="temp.spellingGradeEquivalent"/>
-                  </td>
-                  <td>
-                    <input id="spelling-full-potential" type="text"
-                      name="spelling-full-potential"
-                      v-model="temp.spellingFullPotential"/>
-                  </td>
-                </tr>
-                <tr>
-                  <td><strong>Word Reading</strong></td>
-                  <td>
-                    <input id="word-reading-standard-score" type="text"
-                      name="word-reading-standard-score"
-                      v-model="temp.wordReadingStandardScore"/>
-                  </td>
-                  <td>
-                    <input id="word-reading-grade-equivalent" type="text"
-                      name="word-reading-grade-equivalent"
-                      v-model="temp.wordReadingGradeEquivalent"/>
-                  </td>
-                  <td>
-                    <input id="word-reading-full-potential" type="text"
-                      name="word-reading-full-potential"
-                      v-model="temp.wordReadingFullPotential"/>
-                  </td>
-                </tr>
-                <tr>
-                  <td><strong>Listening Sentence<br>Comprehension</strong></td>
-                  <td>
-                    <input id="listening-sentence-comprehension-standard-score" type="text"
-                      name="listening-sentence-comprehension-standard-score"
-                      v-model="temp.listeningSentenceComprehensionStandardScore"/>
-                  </td>
-                  <td>
-                    <input id="listening-sentence-comprehension-grade-equivalent" type="text"
-                      name="listening-sentence-comprehension-grade-equivalent"
-                      v-model="temp.listeningSentenceComprehensionGradeEquivalent"/>
-                  </td>
-                  <td>
-                    <input id="listening-sentence-comprehension-full-potential" type="text"
-                      name="listening-sentence-comprehension-full-potential"
-                      v-model="temp.listeningSentenceComprehensionFullPotential"/>
-                  </td>
-                </tr>
-                <tr>
-                  <td><strong>Reading Sentence<br>Comprehension</strong></td>
-                  <td>
-                    <input id="reading-sentence-comprehension-standard-score" type="text"
-                      name="reading-sentence-comprehension-standard-score"
-                      v-model="temp.readingSentenceComprehensionStandardScore"/>
-                  </td>
-                  <td>
-                    <input id="reading-sentence-comprehension-grade-equivalent" type="text"
-                      name="reading-sentence-comprehension-grade-equivalent"
-                      v-model="temp.readingSentenceComprehensionGradeEquivalent"/>
-                  </td>
-                  <td>
-                    <input id="reading-sentence-comprehension-full-potential" type="text"
-                      name="reading-sentence-comprehension-full-potential"
-                      v-model="temp.readingSentenceComprehensionFullPotential"/>
-                  </td>
-                </tr>
-                <tr>
-                  <td><strong>Math Computation</strong></td>
-                  <td>
-                    <input id="math-computation-standard-score" type="text"
-                      name="math-computation-standard-score"
-                      v-model="temp.mathComputationStandardScore"/>
-                  </td>
-                  <td>
-                    <input id="math-computation-grade-equivalent" type="text"
-                      name="math-computation-grade-equivalent"
-                      v-model="temp.mathComputationGradeEquivalent"/>
-                  </td>
-                  <td>
-                    <input id="reading-sentence-comprehension-full-potential" type="text"
-                      name="reading-sentence-comprehension-full-potential"
-                      v-model="temp.mathComputationFullPotential"/>
-                  </td>
-                </tr>
-                <tr>
-                  <td><strong>Reading Comprehension<br>with Visual Cue</strong></td>
-                  <td>
-                    <input id="reading-comprehension-visual-cue-standard-score" type="text"
-                      name="reading-comprehension-visual-cue-standard-score"
-                      v-model="temp.readingComprehensionVisualCueStandardScore"/>
-                  </td>
-                  <td>
-                    <input id="math-computation-grade-equivalent" type="text"
-                      name="math-computation-grade-equivalent"
-                      v-model="temp.readingComprehensionVisualCueGradeEquivalent"/>
-                  </td>
-                  <td>
-                    <input id="reading-sentence-comprehension-full-potential" type="text"
-                      name="reading-sentence-comprehension-full-potential"
-                      v-model="temp.readingComprehensionVisualCueFullPotential"/>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+
+            <div class="grid2">
+              <!-- Row 1 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1;">
+                Standard Score
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1;">
+                Grade Equivalent
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1;">
+                Full Potential
+              </div>
+              <!-- Row 2 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1;">
+                <strong>Spelling</strong>
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1;">
+                <input id="spelling-standard-score" type="text"
+                  name="spelling-standard-score"
+                  v-model="temp.spellingStandardScore"/>
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1;">
+                <input id="spelling-grade-equivalent" type="text"
+                  name="spelling-grade-equivalent"
+                  v-model="temp.spellingGradeEquivalent"/>
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1;">
+                <input id="spelling-full-potential" type="text"
+                  name="spelling-full-potential"
+                  v-model="temp.spellingFullPotential"/>
+              </div>
+              <!-- Row 3 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1;">
+                <strong>Word Reading</strong>
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1;">
+                <input id="word-reading-standard-score" type="text"
+                  name="word-reading-standard-score"
+                  v-model="temp.wordReadingStandardScore"/>
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1;">
+                <input id="word-reading-grade-equivalent" type="text"
+                  name="word-reading-grade-equivalent"
+                  v-model="temp.wordReadingGradeEquivalent"/>
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1;">
+                <input id="word-reading-full-potential" type="text"
+                  name="word-reading-full-potential"
+                  v-model="temp.wordReadingFullPotential"/>
+              </div>
+              <!-- Row 4 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center;">
+                <strong>Listening Sentence Comprehension</strong>
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1;">
+                <input id="listening-sentence-comprehension-standard-score" type="text"
+                  name="listening-sentence-comprehension-standard-score"
+                  v-model="temp.listeningSentenceComprehensionStandardScore"/>
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1;">
+                <input id="listening-sentence-comprehension-grade-equivalent" type="text"
+                  name="listening-sentence-comprehension-grade-equivalent"
+                  v-model="temp.listeningSentenceComprehensionGradeEquivalent"/>
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1;">
+                <input id="listening-sentence-comprehension-full-potential" type="text"
+                  name="listening-sentence-comprehension-full-potential"
+                  v-model="temp.listeningSentenceComprehensionFullPotential"/>
+              </div>
+              <!-- Row 5 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center;">
+                <strong>Reading Sentence Comprehension</strong>
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1;">
+                <input id="reading-sentence-comprehension-standard-score" type="text"
+                  name="reading-sentence-comprehension-standard-score"
+                  v-model="temp.readingSentenceComprehensionStandardScore"/>
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1;">
+                <input id="reading-sentence-comprehension-grade-equivalent" type="text"
+                  name="reading-sentence-comprehension-grade-equivalent"
+                  v-model="temp.readingSentenceComprehensionGradeEquivalent"/>
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1;">
+                <input id="reading-sentence-comprehension-full-potential" type="text"
+                  name="reading-sentence-comprehension-full-potential"
+                  v-model="temp.readingSentenceComprehensionFullPotential"/>
+              </div>
+              <!-- Row 6 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center;">
+                <strong>Math Computation</strong>
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1;">
+                <input id="math-computation-standard-score" type="text"
+                  name="math-computation-standard-score"
+                  v-model="temp.mathComputationStandardScore"/>
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1;">
+                <input id="math-computation-grade-equivalent" type="text"
+                  name="math-computation-grade-equivalent"
+                  v-model="temp.mathComputationGradeEquivalent"/>
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1;">
+                <input id="reading-sentence-comprehension-full-potential" type="text"
+                  name="reading-sentence-comprehension-full-potential"
+                  v-model="temp.mathComputationFullPotential"/>
+              </div>
+              <!-- Row 7 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center;">
+                <strong>Reading Comprehension with Visual Cue</strong>
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1;">
+                <input id="reading-comprehension-visual-cue-standard-score" type="text"
+                  name="reading-comprehension-visual-cue-standard-score"
+                  v-model="temp.readingComprehensionVisualCueStandardScore"/>
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1;">
+                <input id="math-computation-grade-equivalent" type="text"
+                  name="math-computation-grade-equivalent"
+                  v-model="temp.readingComprehensionVisualCueGradeEquivalent"/>
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1;">
+                <input id="reading-sentence-comprehension-full-potential" type="text"
+                  name="reading-sentence-comprehension-full-potential"
+                  v-model="temp.readingComprehensionVisualCueFullPotential"/>
+              </div>
+            </div>
           </div>
 
           <div class="w3-cell-row">
@@ -492,7 +515,7 @@
             </div>
             <div class="w3-container w3-cell">
               <div class="form-section form-page-nav">
-                <button class="btn btn-info" style="font-size: 1.3em;" @click.prevent="submit()">submit</button>
+                <button class="btn btn-info" style="font-size: 1.3em;" @click.prevent="submit()">Submit</button>
               </div>
             </div>
           </div>
@@ -599,10 +622,6 @@ export default {
 </script>
 
 <style lang="css" scoped>
-.title {
-  margin-top: 0;
-  text-align: center;
-}
 
 nav {
   border-right: 1px solid grey;
@@ -647,29 +666,65 @@ td {
 
 }
 .row {
+  max-width: 100%;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.column {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  white-space: normal;
+}
+
+.item {
+  flex: 1 1 auto;
+  white-space: normal;
+  width: 100%;
+  word-wrap: normal;
+  font-size: 2vw;
+}
+
+.title {
+  font-size: 4vw;
+  margin-bottom: 5vw;
+  text-align: center;
+}
+
+label {
+  margin-right:2vw;
+}
+
+h2 {
+  margin-bottom: 4vw;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: [first] auto [second] 1fr [third] 1fr [fourth] 1fr [fifth] 1fr;
+  grid-template-rows: [first] auto [second] 1fr [third] 1fr [fourth] 1fr;
+  word-wrap: normal;
+  width: 50%;
+  justify-items: center;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: [first] auto [second] 1fr [third] 1fr [fourth] 1fr;
+  grid-template-rows: [first] auto [second] 1fr [third] 1fr [fourth] 1fr [fifth] 1fr [sixth] 1fr [seventh] 1fr;
+  word-wrap: normal;
+  justify-items: center;
+  width: 75%;
   align-items: center;
-  margin-bottom: 32px;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
 }
 
-.labelled-input {
-  display: flex;
-  flex: 1;
-  margin-right: 32px;
-  font-size: 1.3em;
-  /* min-height: 40px; */
-}
-
-.labelled-input label {
-  flex: 0 0 50px;
-  margin-right: 16px;
-  text-align: right;
-  padding: .5em .5em;
-
-}
-
-.labelled-input input {
-  flex: 1 0 250px;
-  padding: .5em .5em;
+.cell {
+  white-space: normal;
+  word-wrap: normal;
 }
 </style>
