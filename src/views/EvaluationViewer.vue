@@ -507,6 +507,222 @@
             </div>
           </div>
 
+          <div class="form-section">
+            <h1 class="title" style="text-align:left">Sensory Processing Totals</h1>
+            <div class="grid3">
+              <!-- Row 1 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1;">
+                Raw Score
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1;">
+                Total Points
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1;">
+                Percentage
+              </div>
+              <!-- Row 2 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1;">
+                SENSORY SEEKING
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1;">
+
+              </div>
+              <!-- Row 3 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1;">
+                Tactility
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1;">
+                <input id="tactility-sense-processing-raw-score" type="text"
+                  name="tactility-sense-processing-raw-score"
+                  v-model="temp.tactilitySenseProcessingRawScore"/>
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1;">
+                / 27
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1;">
+
+              </div>
+              <!-- Row 4 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1;">
+                Auditory
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1;">
+                <input id="auditory-sense-processing-raw-score" type="text"
+                  name="auditory-sense-processing-raw-score"
+                  v-model="temp.auditorySenseProcessingRawScore"/>
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1;">
+                / 27
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1;">
+
+              </div>
+              <!-- Row 5 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1;">
+                Visual
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1;">
+                <input id="visual-sense-processing-raw-score" type="text"
+                  name="visual-sense-processing-raw-score"
+                  v-model="temp.visualSenseProcessingRawScore"/>
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1;">
+                / 21
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1;">
+
+              </div>
+              <!-- Row 6 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1;">
+                SENSORY PROCESSING
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1;">
+
+              </div>
+              <!-- Row 7 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1;">
+                Sensitivities
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1;">
+                <input id="sensitivities-raw-score" type="text"
+                  name="sensitivities-raw-score"
+                  v-model="temp.sensitivitiesRawScore"/>
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1;">
+                / 36
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1;">
+
+              </div>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h1 class="title" style="text-align:left">Sensory Processing Analysis</h1>
+            Need sliders for this
+          </div>
+
+          <div class="w3-cell-row">
+            <div class="w3-container w3-cell">
+              <div class="form-section form-page-nav">
+                <button class="btn btn-info" style="font-size: 1.3em; float:left;" @click.prevent="prevPage()">Previous</button>
+              </div>
+            </div>
+            <div class="w3-container w3-cell">
+              <div class="form-section form-page-nav">
+                <button class="btn btn-info" style="font-size: 1.3em;" @click.prevent="nextPage()">Next</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-page" v-if="page===4">
+          <div class="form-section">
+            <h1 class="title" style="text-align:left">Dominance</h1>
+            <div class="row">
+              <div class="item" style="text-align: left;">
+                Ear
+              </div>
+              <div class="item" style="text-align: left;">
+                Hand
+              </div>
+            </div>
+            <div class="row">
+              <div class="item" style="text-align: left;">
+                <textarea v-model="temp.earDominanceDetail"></textarea>
+              </div>
+              <div class="item" style="text-align: left;">
+                <textarea v-model="temp.handDominanceDetail"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="item" style="text-align: left;">
+                Eye
+              </div>
+              <div class="item" style="text-align: left;">
+                Foot
+              </div>
+            </div>
+            <div class="row">
+              <div class="item" style="text-align: left;">
+                <textarea v-model="temp.eyeDominanceDetail"></textarea>
+              </div>
+              <div class="item" style="text-align: left;">
+                <textarea v-model="temp.footDominanceDetail"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h1 class="title" style="text-align:left">Processing</h1>
+            <div class="row">
+              <div class="item">
+                Auditory
+              </div>
+              <div class="item">
+                Visual
+              </div>
+            </div>
+            <div class="row">
+              <div class="item">
+                <textarea v-model="temp.auditoryProcessingDetail"></textarea>
+              </div>
+              <div class="item">
+                <textarea v-model="temp.visualProcessingDetail"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h1 class="title" style="text-align:left">Testing Observations</h1>
+            <div class="grid4">
+              <!-- Row 1 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 2; grid-row-start: 1; grid-row-end: span 1; text-align: left;">
+                General Observations
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: left;">
+                Behavior Observations
+              </div>
+              <!-- Row 2 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1;">
+                Eye Contact
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 4;">
+                <textarea v-model="temp.generalTestingObservations"></textarea>
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 4;">
+                <textarea v-model="temp.behaviorTestingObservations"></textarea>
+              </div>
+              <!-- Row 3 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1;">
+                Attention
+              </div>
+              <!-- Row 4 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1;">
+                Transitions
+              </div>
+              <!-- Row 5 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1;">
+                Breaks Required
+              </div>
+            </div>
+          </div>
+
           <div class="w3-cell-row">
             <div class="w3-container w3-cell">
               <div class="form-section form-page-nav">
@@ -589,6 +805,19 @@ export default {
       readingComprehensionVisualCueStandardScore: "",
       readingComprehensionVisualCueGradeEquivalent: "",
       readingComprehensionVisualCueFullPotential: "",
+      tactilitySenseProcessingRawScore: "",
+      tactilitySenseProcessingPercentage: "",
+      auditorySenseProcessingRawScore: "",
+      auditorySenseProcessingPercentage: "",
+      visualSenseProcessingRawScore: "",
+      sensitivitiesRawScore: "",
+      earDominanceDetail: "",
+      handDominanceDetail: "",
+      eyeDominanceDetail: "",
+      footDominanceDetail: "",
+      auditoryProcessingDetail: "",
+      visualProcessingDetail: "",
+
     }
   }),
   methods: {
@@ -715,6 +944,30 @@ h2 {
   display: grid;
   grid-template-columns: [first] auto [second] 1fr [third] 1fr [fourth] 1fr;
   grid-template-rows: [first] auto [second] 1fr [third] 1fr [fourth] 1fr [fifth] 1fr [sixth] 1fr [seventh] 1fr;
+  word-wrap: normal;
+  justify-items: center;
+  width: 75%;
+  align-items: center;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: [first] auto [second] 1fr [third] 1fr [fourth] 1fr;
+  grid-template-rows: [first] auto [second] 1fr [third] 1fr [fourth] 1fr [fifth] 1fr [sixth] 1fr [seventh] 1fr;
+  word-wrap: normal;
+  justify-items: center;
+  width: 75%;
+  align-items: center;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+}
+
+.grid4 {
+  display: grid;
+  grid-template-columns: [first] auto [second] 1fr [third] 1fr;
+  grid-template-rows: [first] auto [second] 1fr [third] 1fr [fourth] 1fr [fifth] 1fr;
   word-wrap: normal;
   justify-items: center;
   width: 75%;
