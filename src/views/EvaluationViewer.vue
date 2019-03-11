@@ -1673,6 +1673,858 @@
 
               </div>
             </div>
+            <div class="w3-cell-row">
+              <div class="w3-container w3-cell">
+                <div class="form-section form-page-nav">
+                  <button class="btn btn-info" style="font-size: 1.3em; float:left;" @click.prevent="prevPage()">Previous</button>
+                </div>
+              </div>
+              <div class="w3-container w3-cell">
+                <div class="form-section form-page-nav">
+                  <button class="btn btn-info" style="font-size: 1.3em;" @click.prevent="nextPage()">Next</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-page" v-if="page===6">
+          <div class="form-section">
+            <div class="grid6">
+              <!-- row 1 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 3; grid-row-start: 1; grid-row-end: span 1; text-align: left; justify-self: left;">
+                TACTILITY CHANNEL
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
+                -3
+              </div>
+              <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
+                -2
+              </div>
+              <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
+                -1
+              </div>
+              <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
+                0
+              </div>
+              <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
+                +1
+              </div>
+              <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
+                +2
+              </div>
+              <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
+                +3
+              </div>
+              <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
+                NA
+              </div>
+              <div class="cell" style="grid-column-start: 12; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
+                #
+              </div>
+              <!-- row 2 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
+                LEVEL II
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 2; grid-row-start: 2; grid-row-end: span 1; text-align: left; justify-self: left;">
+                Deep Pressure
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.deepPressureTactility" type="radio" value="-3">
+              </div>
+              <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.deepPressureTactility" type="radio" value="-2">
+              </div>
+              <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.deepPressureTactility" type="radio" value="-1">
+              </div>
+              <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.deepPressureTactility" type="radio" value="0">
+              </div>
+              <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.deepPressureTactility" type="radio" value="+1">
+              </div>
+              <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.deepPressureTactility" type="radio" value="+2">
+              </div>
+              <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.deepPressureTactility" type="radio" value="+3">
+              </div>
+              <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.deepPressureTactility" type="radio" value="NA">
+              </div>
+              <div class="cell" style="grid-column-start: 12; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
+                10
+              </div>
+              <!-- Row 3 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 14; text-align: left; justify-self: left; align-items: start;">
+                <textarea v-model="temp.deepPressureTactilityNotes"></textarea>
+              </div>
+              <!-- Row 4 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 3; grid-row-start: 4; grid-row-end: span 1; text-align: left; justify-self: left;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
+                -3
+              </div>
+              <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
+                -2
+              </div>
+              <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
+                -1
+              </div>
+              <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
+                0
+              </div>
+              <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
+                +1
+              </div>
+              <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
+                +2
+              </div>
+              <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
+                +3
+              </div>
+              <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
+                NA
+              </div>
+              <div class="cell" style="grid-column-start: 12; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
+                #
+              </div>
+              <!-- Row 5 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: left; justify-self: left;">
+                Tonicity
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: left; justify-self: left;">
+                Face
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityFaceTactility" type="radio" value="-3">
+              </div>
+              <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityFaceTactility" type="radio" value="-2">
+              </div>
+              <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityFaceTactility" type="radio" value="-1">
+              </div>
+              <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityFaceTactility" type="radio" value="0">
+              </div>
+              <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityFaceTactility" type="radio" value="+1">
+              </div>
+              <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityFaceTactility" type="radio" value="+2">
+              </div>
+              <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityFaceTactility" type="radio" value="+3">
+              </div>
+              <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityFaceTactility" type="radio" value="NA">
+              </div>
+              <div class="cell" style="grid-column-start: 12; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
+                11
+              </div>
+              <!-- Row 6 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 14; text-align: left; justify-self: start; align-items: start;">
+                <textarea v-model="temp.tonicityTactilityNotes"></textarea>
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: left; justify-self: left;">
+                Neck
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityNeckTactility" type="radio" value="-3">
+              </div>
+              <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityNeckTactility" type="radio" value="-2">
+              </div>
+              <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityNeckTactility" type="radio" value="-1">
+              </div>
+              <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityNeckTactility" type="radio" value="0">
+              </div>
+              <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityNeckTactility" type="radio" value="+1">
+              </div>
+              <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityNeckTactility" type="radio" value="+2">
+              </div>
+              <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityNeckTactility" type="radio" value="+3">
+              </div>
+              <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityNeckTactility" type="radio" value="NA">
+              </div>
+              <div class="cell" style="grid-column-start: 12; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
+                12
+              </div>
+              <!-- Row 7 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: left; justify-self: left;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: left; justify-self: left;">
+                Trunk
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityTrunkTactility" type="radio" value="-3">
+              </div>
+              <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityTrunkTactility" type="radio" value="-2">
+              </div>
+              <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityTrunkTactility" type="radio" value="-1">
+              </div>
+              <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityTrunkTactility" type="radio" value="0">
+              </div>
+              <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityTrunkTactility" type="radio" value="+1">
+              </div>
+              <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityTrunkTactility" type="radio" value="+2">
+              </div>
+              <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityTrunkTactility" type="radio" value="+3">
+              </div>
+              <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityTrunkTactility" type="radio" value="NA">
+              </div>
+              <div class="cell" style="grid-column-start: 12; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
+                13
+              </div>
+              <!-- Row 8 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: left; justify-self: left;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: left; justify-self: left;">
+                Right Shoulder
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightShoulderTactility" type="radio" value="-3">
+              </div>
+              <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightShoulderTactility" type="radio" value="-2">
+              </div>
+              <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightShoulderTactility" type="radio" value="-1">
+              </div>
+              <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightShoulderTactility" type="radio" value="0">
+              </div>
+              <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightShoulderTactility" type="radio" value="+1">
+              </div>
+              <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightShoulderTactility" type="radio" value="+2">
+              </div>
+              <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightShoulderTactility" type="radio" value="+3">
+              </div>
+              <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightShoulderTactility" type="radio" value="NA">
+              </div>
+              <div class="cell" style="grid-column-start: 12; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
+                14
+              </div>
+              <!-- Row 9 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: left; justify-self: left;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: left; justify-self: left;">
+                Right Arm
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightArmTactility" type="radio" value="-3">
+              </div>
+              <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightArmTactility" type="radio" value="-2">
+              </div>
+              <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightArmTactility" type="radio" value="-1">
+              </div>
+              <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightArmTactility" type="radio" value="0">
+              </div>
+              <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightArmTactility" type="radio" value="+1">
+              </div>
+              <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightArmTactility" type="radio" value="+2">
+              </div>
+              <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightArmTactility" type="radio" value="+3">
+              </div>
+              <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightArmTactility" type="radio" value="NA">
+              </div>
+              <div class="cell" style="grid-column-start: 12; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
+                15
+              </div>
+              <!-- Row 10 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: left; justify-self: left;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: left; justify-self: left;">
+                Right Hand
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightHandTactility" type="radio" value="-3">
+              </div>
+              <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightHandTactility" type="radio" value="-2">
+              </div>
+              <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightHandTactility" type="radio" value="-1">
+              </div>
+              <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightHandTactility" type="radio" value="0">
+              </div>
+              <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightHandTactility" type="radio" value="+1">
+              </div>
+              <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightHandTactility" type="radio" value="+2">
+              </div>
+              <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightHandTactility" type="radio" value="+3">
+              </div>
+              <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightHandTactility" type="radio" value="NA">
+              </div>
+              <div class="cell" style="grid-column-start: 12; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
+                16
+              </div>
+              <!-- Row 11 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 11; grid-row-end: span 1; text-align: center; justify-self: center;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 11; grid-row-end: span 1; text-align: left; justify-self: left;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 11; grid-row-end: span 1; text-align: left; justify-self: left;">
+                Right Hip
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 11; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightHipTactility" type="radio" value="-3">
+              </div>
+              <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 11; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightHipTactility" type="radio" value="-2">
+              </div>
+              <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 11; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightHipTactility" type="radio" value="-1">
+              </div>
+              <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 11; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightHipTactility" type="radio" value="0">
+              </div>
+              <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 11; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightHipTactility" type="radio" value="+1">
+              </div>
+              <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 11; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightHipTactility" type="radio" value="+2">
+              </div>
+              <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 11; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightHipTactility" type="radio" value="+3">
+              </div>
+              <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 11; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightHipTactility" type="radio" value="NA">
+              </div>
+              <div class="cell" style="grid-column-start: 12; grid-column-end: span 1; grid-row-start: 11; grid-row-end: span 1; text-align: center; justify-self: center;">
+                17
+              </div>
+              <!-- Row 12 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: left; justify-self: left;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: left; justify-self: left;">
+                Right Leg
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightLegTactility" type="radio" value="-3">
+              </div>
+              <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightLegTactility" type="radio" value="-2">
+              </div>
+              <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightLegTactility" type="radio" value="-1">
+              </div>
+              <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightLegTactility" type="radio" value="0">
+              </div>
+              <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightLegTactility" type="radio" value="+1">
+              </div>
+              <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightLegTactility" type="radio" value="+2">
+              </div>
+              <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightLegTactility" type="radio" value="+3">
+              </div>
+              <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightLegTactility" type="radio" value="NA">
+              </div>
+              <div class="cell" style="grid-column-start: 12; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
+                18
+              </div>
+              <!-- Row 13 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: left; justify-self: left;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: left; justify-self: left;">
+                Right Foot
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightFootTactility" type="radio" value="-3">
+              </div>
+              <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightFootTactility" type="radio" value="-2">
+              </div>
+              <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightFootTactility" type="radio" value="-1">
+              </div>
+              <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightFootTactility" type="radio" value="0">
+              </div>
+              <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightLegTactility" type="radio" value="+1">
+              </div>
+              <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightFootTactility" type="radio" value="+2">
+              </div>
+              <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightFootTactility" type="radio" value="+3">
+              </div>
+              <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityRightFootTactility" type="radio" value="NA">
+              </div>
+              <div class="cell" style="grid-column-start: 12; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
+                19
+              </div>
+              <!-- Row 14 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: left; justify-self: left;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: left; justify-self: left;">
+                Left Shoulder
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftShoulderTactility" type="radio" value="-3">
+              </div>
+              <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftShoulderTactility" type="radio" value="-2">
+              </div>
+              <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftShoulderTactility" type="radio" value="-1">
+              </div>
+              <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftShoulderTactility" type="radio" value="0">
+              </div>
+              <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftShoulderTactility" type="radio" value="+1">
+              </div>
+              <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftShoulderTactility" type="radio" value="+2">
+              </div>
+              <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftShoulderTactility" type="radio" value="+3">
+              </div>
+              <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftShoulderTactility" type="radio" value="NA">
+              </div>
+              <div class="cell" style="grid-column-start: 12; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
+                20
+              </div>
+              <!-- Row 15 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: center; justify-self: center;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: left; justify-self: left;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: left; justify-self: left;">
+                Left Arm
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftArmTactility" type="radio" value="-3">
+              </div>
+              <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftArmTactility" type="radio" value="-2">
+              </div>
+              <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftArmTactility" type="radio" value="-1">
+              </div>
+              <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftArmTactility" type="radio" value="0">
+              </div>
+              <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftArmTactility" type="radio" value="+1">
+              </div>
+              <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftArmTactility" type="radio" value="+2">
+              </div>
+              <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftArmTactility" type="radio" value="+3">
+              </div>
+              <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftArmTactility" type="radio" value="NA">
+              </div>
+              <div class="cell" style="grid-column-start: 12; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: center; justify-self: center;">
+                21
+              </div>
+              <!-- Row 16 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: left; justify-self: left;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: left; justify-self: left;">
+                Left Hand
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftHandTactility" type="radio" value="-3">
+              </div>
+              <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftHandTactility" type="radio" value="-2">
+              </div>
+              <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftHandTactility" type="radio" value="-1">
+              </div>
+              <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftHandTactility" type="radio" value="0">
+              </div>
+              <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftHandTactility" type="radio" value="+1">
+              </div>
+              <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftHandTactility" type="radio" value="+2">
+              </div>
+              <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftHandTactility" type="radio" value="+3">
+              </div>
+              <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftHandTactility" type="radio" value="NA">
+              </div>
+              <div class="cell" style="grid-column-start: 12; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
+                22
+              </div>
+              <!-- Row 17 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: center; justify-self: center;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: left; justify-self: left;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: left; justify-self: left;">
+                Left Hip
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftHipTactility" type="radio" value="-3">
+              </div>
+              <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftHipTactility" type="radio" value="-2">
+              </div>
+              <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftHipTactility" type="radio" value="-1">
+              </div>
+              <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftHipTactility" type="radio" value="0">
+              </div>
+              <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftHipTactility" type="radio" value="+1">
+              </div>
+              <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftHipTactility" type="radio" value="+2">
+              </div>
+              <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftHipTactility" type="radio" value="+3">
+              </div>
+              <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftHipTactility" type="radio" value="NA">
+              </div>
+              <div class="cell" style="grid-column-start: 12; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: center; justify-self: center;">
+                23
+              </div>
+              <!-- Row 18 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: left; justify-self: left;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: left; justify-self: left;">
+                Left Leg
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftLegTactility" type="radio" value="-3">
+              </div>
+              <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftLegTactility" type="radio" value="-2">
+              </div>
+              <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftLegTactility" type="radio" value="-1">
+              </div>
+              <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftLegTactility" type="radio" value="0">
+              </div>
+              <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftLegTactility" type="radio" value="+1">
+              </div>
+              <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftLegTactility" type="radio" value="+2">
+              </div>
+              <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftLegTactility" type="radio" value="+3">
+              </div>
+              <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftLegTactility" type="radio" value="NA">
+              </div>
+              <div class="cell" style="grid-column-start: 12; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
+                24
+              </div>
+              <!-- Row 19 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: center;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: left; justify-self: left;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: left; justify-self: left;">
+                Left Foot
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftFootTactility" type="radio" value="-3">
+              </div>
+              <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftFootTactility" type="radio" value="-2">
+              </div>
+              <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftFootTactility" type="radio" value="-1">
+              </div>
+              <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftFootTactility" type="radio" value="0">
+              </div>
+              <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftFootTactility" type="radio" value="+1">
+              </div>
+              <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftFootTactility" type="radio" value="+2">
+              </div>
+              <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftFootTactility" type="radio" value="+3">
+              </div>
+              <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.tonicityLeftFootTactility" type="radio" value="NA">
+              </div>
+              <div class="cell" style="grid-column-start: 12; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: center;">
+                25
+              </div>
+              <!-- Row 20 -->
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 9; grid-row-start: 20; grid-row-end: span 1; text-align: Left; justify-self: start;">
+                Reaction to Deep Pain
+              </div>
+              <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.reactiontoDeepPainNA" type="radio" value="NA">
+              </div>
+              <div class="cell" style="grid-column-start: 12; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
+                26
+              </div>
+              <!-- Row 21 -->
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 21; grid-row-end: span 1; text-align: Left; justify-self: start; align-items: start;">
+                <textarea v-model="temp.reactionToDeepPainNotes"></textarea>
+              </div>
+              <!-- Row 22 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
+                LEVEL III
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: left; justify-self: start;">
+                Surface Touch
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: left; justify-self: start;">
+                Right Hand
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.surfaceTouchRightHandTactility" type="radio" value="-3">
+              </div>
+              <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.surfaceTouchRightHandTactility" type="radio" value="-2">
+              </div>
+              <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.surfaceTouchRightHandTactility" type="radio" value="-1">
+              </div>
+              <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.surfaceTouchRightHandTactility" type="radio" value="0">
+              </div>
+              <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.surfaceTouchRightHandTactility" type="radio" value="+1">
+              </div>
+              <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.surfaceTouchRightHandTactility" type="radio" value="+2">
+              </div>
+              <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.surfaceTouchRightHandTactility" type="radio" value="+3">
+              </div>
+              <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.surfaceTouchRightHandTactility" type="radio" value="NA">
+              </div>
+              <div class="cell" style="grid-column-start: 12; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
+                27
+              </div>
+              <!-- Row 23 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: left; justify-self: start;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: left; justify-self: start;">
+                Right Foot
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.surfaceTouchRightFootTactility" type="radio" value="-3">
+              </div>
+              <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.surfaceTouchRightFootTactility" type="radio" value="-2">
+              </div>
+              <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.surfaceTouchRightFootTactility" type="radio" value="-1">
+              </div>
+              <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.surfaceTouchRightFootTactility" type="radio" value="0">
+              </div>
+              <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.surfaceTouchRightFootTactility" type="radio" value="+1">
+              </div>
+              <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.surfaceTouchRightFootTactility" type="radio" value="+2">
+              </div>
+              <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.surfaceTouchRightFootTactility" type="radio" value="+3">
+              </div>
+              <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.surfaceTouchRightFootTactility" type="radio" value="NA">
+              </div>
+              <div class="cell" style="grid-column-start: 12; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
+                28
+              </div>
+              <!-- Row 24 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: left; justify-self: start;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: left; justify-self: start;">
+                Left Hand
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.surfaceTouchLeftHandTactility" type="radio" value="-3">
+              </div>
+              <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.surfaceTouchLeftHandTactility" type="radio" value="-2">
+              </div>
+              <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.surfaceTouchLeftHandTactility" type="radio" value="-1">
+              </div>
+              <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.surfaceTouchLeftHandTactility" type="radio" value="0">
+              </div>
+              <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.surfaceTouchLeftHandTactility" type="radio" value="+1">
+              </div>
+              <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.surfaceTouchLeftHandTactility" type="radio" value="+2">
+              </div>
+              <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.surfaceTouchLeftHandTactility" type="radio" value="+3">
+              </div>
+              <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.surfaceTouchLeftHandTactility" type="radio" value="NA">
+              </div>
+              <div class="cell" style="grid-column-start: 12; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
+                29
+              </div>
+              <!-- Row 25 -->
+              <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: left; justify-self: start;">
+
+              </div>
+              <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: left; justify-self: start;">
+                Left Foot
+              </div>
+              <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.surfaceTouchLeftFootTactility" type="radio" value="-3">
+              </div>
+              <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.surfaceTouchLeftFootTactility" type="radio" value="-2">
+              </div>
+              <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.surfaceTouchLeftFootTactility" type="radio" value="-1">
+              </div>
+              <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.surfaceTouchLeftFootTactility" type="radio" value="0">
+              </div>
+              <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.surfaceTouchLeftFootTactility" type="radio" value="+1">
+              </div>
+              <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.surfaceTouchLeftFootTactility" type="radio" value="+2">
+              </div>
+              <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.surfaceTouchLeftFootTactility" type="radio" value="+3">
+              </div>
+              <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
+                <input v-model="temp.surfaceTouchLeftFootTactility" type="radio" value="NA">
+              </div>
+              <div class="cell" style="grid-column-start: 12; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
+                30
+              </div>
+            </div>
+          </div>
+
+          <div class="w3-cell-row">
+            <div class="w3-container w3-cell">
+              <div class="form-section form-page-nav">
+                <button class="btn btn-info" style="font-size: 1.3em; float:left;" @click.prevent="prevPage()">Previous</button>
+              </div>
+            </div>
+            <div class="w3-container w3-cell">
+              <div class="form-section form-page-nav">
+                <button class="btn btn-info" style="font-size: 1.3em;" @click.prevent="nextPage()">Next</button>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -1806,6 +2658,29 @@ export default {
       handRightingReflexNA: "",
       handRightingReflexSideToSideIntegration: "",
       handRightingReflexFrontToBackIntegration: "",
+      deepPressureTactility: "",
+      deepPressureTactilityNotes: "",
+      tonicityFaceTactility: "",
+      tonicityNeckTactility: "",
+      tonicityTrunkTactility: "",
+      tonicityRightLegTactility: "",
+      tonicityRightArmTactility: "",
+      tonicityRightHipTactility: "",
+      tonicityRightHandTactility: "",
+      tonicityRightFootTactility: "",
+      tonicityRightShoulderTactility: "",
+      tonicityLeftArmTactility: "",
+      tonicityLeftFootTactility: "",
+      tonicityLeftHipTactility: "",
+      tonicityLeftLegTactility: "",
+      tonicityLeftShoulderTactility: "",
+      tonicityTactilityNotes: "",
+      reactiontoDeepPainNA: "",
+      reactionToDeepPainNotes: "",
+      surfaceTouchRightHandTactility: "",
+      surfaceTouchRightFootTactility: "",
+      surfaceTouchLeftHandTactility: "",
+      surfaceTouchLeftFootTactility: "",
 
     }
   }),
@@ -1969,6 +2844,18 @@ h2 {
   display: grid;
   grid-template-columns: [first] 3fr [second] 2fr [third] 2fr [fourth] 1fr [fifth] 1fr;
   grid-template-rows: [first] auto [second] 1fr [third] 1fr [fourth] 1fr [fifth] 1fr [sixth] 1fr [seventh] 1fr [eighth] 1fr [ninth] 1fr [tenth] 1fr [eleventh] 1fr [twelfth] 1fr [thirteenth] 1fr [fourteenth] 1fr [fifteenth] 1fr [sixteenth] 1fr [seventeenth] 1fr [eighteenth] 1fr [nineteenth] 1fr [twentieth] 1fr [twentyfirst] 1fr [twentysecond] 1fr [twentythird] 1fr [twentyfourth] 1fr [twentyfifth] 1fr [twentysixth] 1fr [twentyseventh] 1fr [twentyeigth] 1fr [twentyninth] 1fr [thirtieth] 1fr [thirtyfirst] 1fr [thirtysecond] 1fr [thirtythird] 1fr [thirtyfourth] 1fr [thirtyfifth] 1fr [thirty sixth] 1fr [thirtyseventh] 1fr [thirtyeigth] 1fr [thirtyninth] 1fr [fortieth] 1fr [fortyfirst] 1fr [fortysecond] 1fr [fortythird] 1fr [fortyfourth] 1fr [fortyfifth] 1fr [fortysixth] 1fr [fortyseventh] 1fr [fortyeigth] 1fr [fortyninth] 1fr [fiftieth] 1fr [fiftyfirst] 1fr [fiftysecond] 1fr [fiftythird] 1fr [fiftyfourth] 1fr [fiftyfifth] 1fr;
+  word-wrap: normal;
+  justify-items: start;
+  width: 100%;
+  align-items: start;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+}
+
+.grid6 {
+  display: grid;
+  grid-template-columns: [first] auto [second] 9fr [third] auto [fourth] 1fr [fifth] 1fr [sixth] 1fr [seventh] 1fr [eighth] 1fr [ninth] 1fr [tenth] 1fr [eleventh] 1fr [twelfth] 1fr;
+  grid-template-rows: [first] auto [second] 1fr [third] auto [fourth] 1fr [fifth] 1fr [sixth] 1fr [seventh] 1fr [eighth] 1fr [ninth] 1fr [tenth] 1fr;
   word-wrap: normal;
   justify-items: start;
   width: 100%;
