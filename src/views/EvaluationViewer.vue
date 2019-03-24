@@ -68,19 +68,22 @@
 
       <TactilityChannel v-else-if="page===5"/>
 
-      <div class="w3-cell-row">
-        <div class="w3-container w3-cell">
-          <div class="form-section form-page-nav">
-            <button class="btn btn-info" style="font-size: 1.3em; float:left;" @click.prevent="prevPage()">Previous</button>
+      <AuditoryChannel v-else-if="page===6"/>
+
+      <div class="form-section">
+        <div class="w3-cell-row">
+          <div class="w3-container w3-cell">
+            <div class="form-section form-page-nav">
+              <button class="btn btn-info" style="font-size: 1.3em; float:left;" @click.prevent="prevPage()">Previous</button>
+            </div>
           </div>
-        </div>
-        <div class="w3-container w3-cell">
-          <div class="form-section form-page-nav">
-            <button class="btn btn-info" style="font-size: 1.3em;" @click.prevent="nextPage()">Next</button>
+          <div class="w3-container w3-cell">
+            <div class="form-section form-page-nav">
+              <button class="btn btn-info" style="font-size: 1.3em;" @click.prevent="nextPage()">Next</button>
+            </div>
           </div>
         </div>
       </div>
-
     </div>
   </main>
 </template>
@@ -92,6 +95,7 @@ import OverviewPage from '@/components/assessmentPages/OverviewPage'
 import DetailsPage from '@/components/assessmentPages/DetailsPage'
 import ReflexesPage from '@/components/assessmentPages/ReflexesPage'
 import TactilityChannel from '@/components/assessmentPages/TactilityChannel'
+import AuditoryChannel from '@/components/assessmentPages/AuditoryChannel'
 
 
 export default {
@@ -102,6 +106,7 @@ export default {
     DetailsPage,
     ReflexesPage,
     TactilityChannel,
+    AuditoryChannel,
   },
   data:() => ({
     page: 1,
