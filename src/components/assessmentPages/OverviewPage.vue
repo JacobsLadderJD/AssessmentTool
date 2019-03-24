@@ -1,5 +1,5 @@
 <template>
-  <div class="form-page" v-if="page===2">
+  <div class="form-page">
 
     <h1 class="title" style="text-align:left">Channel Totals</h1>
     <!-- page 2 section 1 -->
@@ -529,100 +529,73 @@
     </div>
   </div>
 </template>
-
 <script>
-  export default {
-    name:"EvaluationViewer",
-    data:() => ({
-      tactilityRawScore: "",
-      auditoryRawScore: "",
-      auditoryWorkingLevel: "",
-      auditoryAgeEquivalence: "",
-      visualRawScore: "",
-      visualWorkingLevel: "",
-      visualAgeEquivalence: "",
-      manualRawScore: "",
-      manualWorkingLevel: "",
-      manualAgeEquivalence: "",
-      languageRawScore: "",
-      languageWorkingLevel: "",
-      languageAgeEquivalence: "",
-      mobilityRawScore: "",
-      mobilityWorkingLevel: "",
-      mobilityAgeEquivalence: "",
-      handDominance: "",
-      footDominance: "",
-      eyeDominance: "",
-      earDominance: "",
-      logicHemispheric: "",
-      gestaltHemispheric: "",
-      auditoryWorkingAmount: "",
-      visualWorkingAmount: "",
-      reflexesNotAccessible:"",
-      reflexesNotIntegrated: "",
-      reflexesIntegrated: "",
-      neurodevelopmentalDynamic: "",
-      physiologicalDynamic: "",
-      learningStyleDynamic: "",
-      spellingStandardScore: "",
-      spellingGradeEquivalent: "",
-      spellingFullPotential: "",
-      wordReadingStandardScore: "",
-      wordReadingGradeEquivalent: "",
-      wordReadingFullPotential: "",
-      listeningSentenceComprehensionStandardScore: "",
-      listeningSentenceComprehensionGradeEquivalent: "",
-      listeningSentenceComprehensionFullPotential: "",
-      readingSentenceComprehensionStandardScore: "",
-      readingSentenceComprehensionGradeEquivalent: "",
-      readingSentenceComprehensionFullPotential: "",
-      mathComputationStandardScore: "",
-      mathComputationFullPotential: "",
-      mathComputationGradeEquivalent: "",
-      readingComprehensionVisualCueStandardScore: "",
-      readingComprehensionVisualCueGradeEquivalent: "",
-      readingComprehensionVisualCueFullPotential: "",
-      tactilitySenseProcessingRawScore: "",
-      tactilitySenseProcessingPercentage: "",
-      auditorySenseProcessingRawScore: "",
-      auditorySenseProcessingPercentage: "",
-      visualSenseProcessingRawScore: "",
-      sensitivitiesRawScore: "",
-    }),
-
-    methods: {
-      nextPage() {
-        this.page++;
-      },
-      prevPage() {
-        this.page--;
-      },
-      submit () {
-        this.$store.dispatch(types.UPDATE_EVALUATION, {
-          ...this.temp, lastEdited: new Date(this.temp.lastEdited)})
-      }
-    },
-    computed: {
-      isNew () {
-        return this.$route.params.id === 'new'
-      },
-      evaluation () {
-        return this.$store.getters.getEvaluationById(this.$route.params.id)
-      },
-      student () {
-        return this.$store.getters.getStudentById(this.evaluation.studentId)
-      }
-    },
-    created () {
-      this.temp = this.$store.getters.getEvaluationById(this.$route.params.id)
-    }
-  }
+import FormNav from '@/components/FormNav'
+import types from '@/store/evaluation/types'
+import OverviewPage from '@/components/assessmentPages/OverviewPage'
+export default {
+  name:"EvaluationViewer",
+  components: {
+    FormNav,
+    OverviewPage,
+  },
+  data:() => ({
+    tactilityRawScore: "",
+    auditoryRawScore: "",
+    auditoryWorkingLevel: "",
+    auditoryAgeEquivalence: "",
+    visualRawScore: "",
+    visualWorkingLevel: "",
+    visualAgeEquivalence: "",
+    manualRawScore: "",
+    manualWorkingLevel: "",
+    manualAgeEquivalence: "",
+    languageRawScore: "",
+    languageWorkingLevel: "",
+    languageAgeEquivalence: "",
+    mobilityRawScore: "",
+    mobilityWorkingLevel: "",
+    mobilityAgeEquivalence: "",
+    handDominance: "",
+    footDominance: "",
+    eyeDominance: "",
+    earDominance: "",
+    logicHemispheric: "",
+    gestaltHemispheric: "",
+    auditoryWorkingAmount: "",
+    visualWorkingAmount: "",
+    reflexesNotAccessible:"",
+    reflexesNotIntegrated: "",
+    reflexesIntegrated: "",
+    neurodevelopmentalDynamic: "",
+    physiologicalDynamic: "",
+    learningStyleDynamic: "",
+    spellingStandardScore: "",
+    spellingGradeEquivalent: "",
+    spellingFullPotential: "",
+    wordReadingStandardScore: "",
+    wordReadingGradeEquivalent: "",
+    wordReadingFullPotential: "",
+    listeningSentenceComprehensionStandardScore: "",
+    listeningSentenceComprehensionGradeEquivalent: "",
+    listeningSentenceComprehensionFullPotential: "",
+    readingSentenceComprehensionStandardScore: "",
+    readingSentenceComprehensionGradeEquivalent: "",
+    readingSentenceComprehensionFullPotential: "",
+    mathComputationStandardScore: "",
+    mathComputationFullPotential: "",
+    mathComputationGradeEquivalent: "",
+    readingComprehensionVisualCueStandardScore: "",
+    readingComprehensionVisualCueGradeEquivalent: "",
+    readingComprehensionVisualCueFullPotential: "",
+    tactilitySenseProcessingRawScore: "",
+    auditorySenseProcessingRawScore: "",
+    visualSenseProcessingRawScore: "",
+    sensitivitiesRawScore: "",
+  }),
+}
 
 </script>
-<!-- page 3 -->
-  <!-- page 3 section 1 -->
-
-
 
 <style lang="css" scoped>
 
@@ -753,7 +726,7 @@ h2 {
 .grid5 {
   display: grid;
   grid-template-columns: [first] 3fr [second] 2fr [third] 2fr [fourth] 1fr [fifth] 1fr;
-  grid-template-rows: [first] auto [second] 1fr [third] 1fr [fourth] 1fr [fifth] 1fr [sixth] 1fr [seventh] 1fr [eighth] 1fr [ninth] 1fr [tenth] 1fr [eleventh] 1fr [twelfth] 1fr [thirteenth] 1fr [fourteenth] 1fr [fifteenth] 1fr [sixteenth] 1fr [seventeenth] 1fr [eighteenth] 1fr [nineteenth] 1fr [twentieth] 1fr [twentyfirst] 1fr [twentysecond] 1fr [twentythird] 1fr [twentyfourth] 1fr [twentyfifth] 1fr [twentysixth] 1fr [twentyseventh] 1fr [twentyeigth] 1fr [twentyninth] 1fr [thirtieth] 1fr [thirtyfirst] 1fr [thirtysecond] 1fr [thirtythird] 1fr [thirtyfourth] 1fr [thirtyfifth] 1fr [thirty sixth] 1fr [thirtyseventh] 1fr [thirtyeigth] 1fr [thirtyninth] 1fr [fortieth] 1fr [fortyfirst] 1fr [fortysecond] 1fr [fortythird] 1fr [fortyfourth] 1fr [fortyfifth] 1fr [fortysixth] 1fr [fortyseventh] 1fr [fortyeigth] 1fr [fortyninth] 1fr [fiftieth] 1fr [fiftyfirst] 1fr [fiftysecond] 1fr [fiftythird] 1fr [fiftyfourth] 1fr [fiftyfifth] 1fr;
+  grid-template-rows: [first] auto [second] 1fr [third] 1fr [fourth] 1fr [fifth] 1fr [sixth] 1fr [seventh] 1fr [eighth] 1fr [ninth] 1fr [tenth] 1fr [eleventh] 1fr [twelfth] 1fr [thirteenth] 1fr [fourteenth] 1fr [fifteenth] 1fr [sixteenth] 1fr [seventeenth] 1fr [eighteenth] 1fr [nineteenth] 1fr [twentieth] 1fr [twentyfirst] 1fr [twentysecond] 1fr [twentythird] 1fr [twentyfourth] 1fr [twentyfifth] 1fr [twentysixth] 1fr [twentyseventh] auto [twentyeigth] 1fr [twentyninth] 1fr [thirtieth] 1fr [thirtyfirst] 1fr [thirtysecond] 1fr [thirtythird] 1fr [thirtyfourth] 1fr [thirtyfifth] 1fr [thirty sixth] 1fr [thirtyseventh] 1fr [thirtyeigth] 1fr [thirtyninth] 1fr [fortieth] 1fr [fortyfirst] 1fr [fortysecond] 1fr [fortythird] 1fr [fortyfourth] 1fr [fortyfifth] 1fr [fortysixth] 1fr [fortyseventh] 1fr [fortyeigth] 1fr [fortyninth] 1fr [fiftieth] 1fr [fiftyfirst] 1fr [fiftysecond] 1fr [fiftythird] 1fr [fiftyfourth] 1fr [fiftyfifth] 1fr;
   word-wrap: normal;
   justify-items: start;
   width: 100%;
@@ -765,6 +738,18 @@ h2 {
 .grid6 {
   display: grid;
   grid-template-columns: [first] auto [second] 9fr [third] auto [fourth] 1fr [fifth] 1fr [sixth] 1fr [seventh] 1fr [eighth] 1fr [ninth] 1fr [tenth] 1fr [eleventh] 1fr [twelfth] 1fr;
+  grid-template-rows: [first] auto [second] 1fr [third] auto [fourth] 1fr [fifth] 1fr [sixth] 1fr [seventh] 1fr [eighth] 1fr [ninth] 1fr [tenth] 1fr;
+  word-wrap: normal;
+  justify-items: start;
+  width: 100%;
+  align-items: start;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+}
+
+.grid7 {
+  display: grid;
+  grid-template-columns: [first] auto [second] 9fr [third] 1fr [fourth] 1fr [fifth] 1fr [sixth] 1fr [seventh] 1fr [eighth] 1fr [ninth] 1fr [tenth] 1fr [eleventh] 1fr [twelfth] 1fr;
   grid-template-rows: [first] auto [second] 1fr [third] auto [fourth] 1fr [fifth] 1fr [sixth] 1fr [seventh] 1fr [eighth] 1fr [ninth] 1fr [tenth] 1fr;
   word-wrap: normal;
   justify-items: start;

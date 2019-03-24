@@ -1,143 +1,132 @@
-<template lang="html">
-  <main style="display: flex">
-    <FormNav :items="[]" style="flex: 0 0 200px; margin-right:24px;"/>
-    <div class="form-viewer">
-      <div class="form-page" v-if="page===1">
-        <h1 class="title">Neurodevelopmental Profile</h1>
-        <div class="form-section">
-          <div class="row">
-            <div class="item" style="margin-bottom: 4vw;">
-              <label for="date-input">Date</label>
-              <input id="last-edited-input" name="last-edited" type="date"
-              v-model="temp.lastEdited"/>
-            </div>
-            <div class="item" style="margin-bottom: 4vw;">
-              <label for="status-input">Status</label>
-              <input id="status-input" type="text" name="status" v-model="temp.status"/>
-            </div>
-          </div>
-          <div class="row">
-            <div class="item" style="margin-bottom: 4vw;">
-              <label for="code-input">Code</label>
-              <input id="code-input" type="text" name="code" v-model="temp.code"/>
-            </div>
-          </div>
+<template>
+  <div class="form-page">
+    <div class="form-section">
+      <h1 class="title" style="text-align:left">Dominance</h1>
+      <div class="row">
+        <div class="item" style="text-align: left;">
+          Ear
         </div>
-        <div class="form-section">
-          <h2>Student</h2>
-          <div class="row">
-            <div class="item" style="margin-bottom: 4vw;">
-              <label for="name-input">Name</label>
-              <input id="first-name-input" type="text" name="firstName"
-                :value="student.firstName" disabled/>
-              <input id="last-name-input" type="text" name="lastName"
-              :value="student.lastName" disabled/>
-            </div>
-          </div>
-          <div class="row">
-            <div class="item" style="margin-bottom: 4vw;">
-              <label for="sex-input">Sex</label>
-              <select id="sex-input" name="sex">
-                <option value="m">Male</option>
-                <option value="f">Female</option>
-              </select>
-            </div>
-            <div class="item" style="margin-bottom: 4vw;">
-              <label for="age-input">Birthdate</label>
-              <input id="age-input" type="text" name="birthdate"
-                :value="student.birthday | niceDate" disabled/>
-            </div>
-          </div>
-        </div>
-        <div class="form-section">
-          <div class="item" style="margin-bottom: 4vw;">
-            <label for="evaluators-input">Evaluator(s)</label>
-            <input id="evaluators-input" type="text" name="evaluators"
-            v-model="temp.evaluator"/>
-          </div>
+        <div class="item" style="text-align: left;">
+          Hand
         </div>
       </div>
-
-      <!-- form page 2 -->
-
-      <OverviewPage v-else-if="page===2"/>
-
-      <DetailsPage v-else-if="page===3"/>
-
-      <ReflexesPage v-else-if="page===4"/>
-
-      <TactilityChannel v-else-if="page===5"/>
-
-      <div class="w3-cell-row">
-        <div class="w3-container w3-cell">
-          <div class="form-section form-page-nav">
-            <button class="btn btn-info" style="font-size: 1.3em; float:left;" @click.prevent="prevPage()">Previous</button>
-          </div>
+      <div class="row">
+        <div class="item" style="text-align: left;">
+          <textarea v-model="earDominanceDetail"></textarea>
         </div>
-        <div class="w3-container w3-cell">
-          <div class="form-section form-page-nav">
-            <button class="btn btn-info" style="font-size: 1.3em;" @click.prevent="nextPage()">Next</button>
-          </div>
+        <div class="item" style="text-align: left;">
+          <textarea v-model="handDominanceDetail"></textarea>
         </div>
       </div>
-
+      <div class="row">
+        <div class="item" style="text-align: left;">
+          Eye
+        </div>
+        <div class="item" style="text-align: left;">
+          Foot
+        </div>
+      </div>
+      <div class="row">
+        <div class="item" style="text-align: left;">
+          <textarea v-model="eyeDominanceDetail"></textarea>
+        </div>
+        <div class="item" style="text-align: left;">
+          <textarea v-model="footDominanceDetail"></textarea>
+        </div>
+      </div>
     </div>
-  </main>
-</template>
 
+    <div class="form-section">
+      <h1 class="title" style="text-align:left">Processing</h1>
+      <div class="row">
+        <div class="item">
+          Auditory
+        </div>
+        <div class="item">
+          Visual
+        </div>
+      </div>
+      <div class="row">
+        <div class="item">
+          <textarea v-model="auditoryProcessingDetail"></textarea>
+        </div>
+        <div class="item">
+          <textarea v-model="visualProcessingDetail"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <h1 class="title" style="text-align:left">Testing Observations</h1>
+      <div class="grid4">
+        <!-- Row 1 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 3; grid-row-start: 1; grid-row-end: span 1; text-align: left; justify-self: center;">
+          General Observations
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: left;">
+          Behavior Observations
+        </div>
+        <!-- Row 2 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1;">
+          Eye Contact
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1;">
+          <input type="checkbox" id="eye-contact-bool" v-model="eyeContactBool">
+        </div>
+        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 4;">
+          <textarea v-model="generalTestingObservations"></textarea>
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 4;">
+          <textarea v-model="behaviorTestingObservations"></textarea>
+        </div>
+        <!-- Row 3 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1;">
+          Attention
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1;">
+          <input type="checkbox" id="attention-bool" v-model="attentionBool">
+        </div>
+        <!-- Row 4 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1;">
+          Transitions
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1;">
+          <input type="checkbox" id="transitions-bool" v-model="tansitionsBool">
+        </div>
+        <!-- Row 5 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1;">
+          Breaks Required
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1;">
+          <input type="checkbox" id="breaks-required-bool" v-model="breaksRequiredBool">
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
 <script>
 import FormNav from '@/components/FormNav'
 import types from '@/store/evaluation/types'
-import OverviewPage from '@/components/assessmentPages/OverviewPage'
 import DetailsPage from '@/components/assessmentPages/DetailsPage'
-import ReflexesPage from '@/components/assessmentPages/ReflexesPage'
-import TactilityChannel from '@/components/assessmentPages/TactilityChannel'
-
-
 export default {
   name:"EvaluationViewer",
   components: {
     FormNav,
-    OverviewPage,
     DetailsPage,
-    ReflexesPage,
-    TactilityChannel,
   },
   data:() => ({
-    page: 1,
-    temp: {
-      lastEdited: new Date(),
-      status: "",
-      code: "",
-      evaluator: "",
-    }
+
+    earDominanceDetail: "",
+    handDominanceDetail: "",
+    eyeDominanceDetail: "",
+    footDominanceDetail: "",
+    auditoryProcessingDetail: "",
+    visualProcessingDetail: "",
+    eyeContactBool: "",
+    attentionBool: "",
+    transitionsBool: "",
+    breaksRequiredBool: "",
   }),
-  methods: {
-    nextPage() {
-      this.page++;
-    },
-    prevPage() {
-      this.page--;
-    },
-    submit () {
-      this.$store.dispatch(types.UPDATE_EVALUATION, {
-        ...this.temp, lastEdited: new Date(this.temp.lastEdited)})
-    }
-  },
-  computed: {
-    isNew () {
-      return this.$route.params.id === 'new'
-    },
-    evaluation () {
-      return this.$store.getters.getEvaluationById(this.$route.params.id)
-    },
-    student () {
-      return this.$store.getters.getStudentById(this.evaluation.studentId)
-    }
-  },
-  created () {
-    this.temp = this.$store.getters.getEvaluationById(this.$route.params.id)
-  }
 }
 
 </script>
