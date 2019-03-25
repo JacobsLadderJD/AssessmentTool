@@ -362,6 +362,302 @@
             </div>
           </div>
         </div>
+        <!-- Row 17 -->
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 8; grid-row-start: 17; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <div class="column">
+            <div class="cell">
+              <div class="row">
+                <div class="cell">
+                  2<input v-model="followsOneStepDirectionsTotal" type="text">(A)
+                </div>
+                <div class="cell">
+                  4<input v-model="followsOneStepDirectionsTotal" type="text">(B)
+                </div>
+                <div class="cell">
+                  6<input v-model="followsOneStepDirectionsTotal" type="text">(A)
+                </div>
+                <div class="cell">
+                  8<input v-model="followsOneStepDirectionsTotal" type="text">(A)
+                </div>
+                <div class="cell">
+                  10<input v-model="followsOneStepDirectionsTotal" type="text">(C)
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Row 18 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
+          LEVEL VII
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 2; grid-row-start: 18; grid-row-end: span 1; text-align: left; justify-self: left;">
+          Follows Two-Step Directions
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="followsTwoStepDirections" type="radio" value="-3">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="followsTwoStepDirections" type="radio" value="-2">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="followsTwoStepDirections" type="radio" value="-1">
+        </div>
+        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="followsTwoStepDirections" type="radio" value="0">
+        </div>
+        <!-- Row 19 -->
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 8; grid-row-start: 19; grid-row-end: span 1; justify-self: start;">
+          <div class="row">
+            <div class="cell">
+              <div class="column" style="margin-right:20px;">
+                <div class="cell" style="align-items: start; justify-items: start;">
+                  <div style="justify-self: start; align-self: start;">
+                    Blow a kiss - give me five
+                  </div>
+                  <textarea v-model="blowAKissGiveMeFive" style="align-self:start; justify-self:start;"></textarea>
+                </div>
+                <div class="cell">
+                  <div style="justify-self: start; align-self:start;">
+                    Open your mouth - touch your ears
+                  </div>
+                  <textarea v-model="openMouthTouchEars" style="align-self:start; justify-self:start;"></textarea>
+                </div>
+                <div class="cell">
+                  <div style="justify-self: start; align-self:start;">
+                    Kick your feet - nod your head
+                  </div>
+                  <textarea v-model="kickFeetNodHead" style="align-self:start; justify-self:start;"></textarea>
+                </div>
+                <div class="cell">
+                  <div style="justify-self: start; align-self:start;">
+                    Touch your hair - cover your eyes
+                  </div>
+                  <textarea v-model="touchHairCoverEyes" style="align-self:start; justify-self:start;"></textarea>
+                </div>
+                <div class="cell">
+                  <div style="justify-self: start; align-self:start;">
+                    Look up - shake my hand
+                  </div>
+                  <textarea v-model="lookUpShakeHand" style="align-self:start; justify-self:start;"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="column">
+                <div class="cell">
+                  <div style="justify-self: start; align-self:start;">
+                    Swing your arms - wiggle your fingers
+                  </div>
+                  <textarea v-model="swingArmsWiggleFingers" style="align-self:start; justify-self:start;"></textarea>
+                </div>
+                <div class="cell">
+                  <div style="justify-self: start; align-self:start;">
+                    Clap your hands - look down
+                  </div>
+                  <textarea v-model="clapHandsLookDown" style="align-self:start; justify-self:start;"></textarea>
+                </div>
+                <div class="cell">
+                  <div style="justify-self: start; align-self:start;">
+                    Tap the table - pat your head
+                  </div>
+                  <textarea v-model="tapTablePatHead" style="align-self:start; justify-self:start;"></textarea>
+                </div>
+                <div class="cell">
+                  <div style="justify-self: start; align-self:start;">
+                    Tap your legs - cover your eyes
+                  </div>
+                  <textarea v-model="tapLegsCoverEyes" style="align-self:start; justify-self:start;"></textarea>
+                </div>
+                <div class="cell">
+                  <div style="justify-self: start; align-self:start;">
+                    Wave hello - blow a kiss
+                  </div>
+                  <textarea v-model="waveHellowBlowKiss" style="align-self:start; justify-self:start;"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="cell" style="align-items:center; justify-items:end; align-self:center; justify-self; end; margin-left:6vw;">
+              <input v-model="followsTwoStepDirectionsTotal" type="text">/10
+            </div>
+          </div>
+        </div>
+        <!-- Row 20 -->
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 2; grid-row-start: 20; grid-row-end: span 1; text-align: left; justify-self: left;">
+          Understands 5-8 Word Sentences
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="understands58WordSentences" type="radio" value="-3">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="understands58WordSentences" type="radio" value="-2">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="understands58WordSentences" type="radio" value="-1">
+        </div>
+        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="understands58WordSentences" type="radio" value="0">
+        </div>
+        <!-- Row 21 -->
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 8; grid-row-start: 21; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <div class="column">
+            <div class="cell">
+              <div class="row">
+                <div class="cell">
+                  1<input v-model="followsOneStepDirectionsTotal" type="text">(B)
+                </div>
+                <div class="cell">
+                  3<input v-model="followsOneStepDirectionsTotal" type="text">(B)
+                </div>
+                <div class="cell">
+                  5<input v-model="followsOneStepDirectionsTotal" type="text">(A)
+                </div>
+                <div class="cell">
+                  7<input v-model="followsOneStepDirectionsTotal" type="text">(C)
+                </div>
+                <div class="cell">
+                  9<input v-model="followsOneStepDirectionsTotal" type="text">(B)
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Row 22 -->
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 8; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <div class="column">
+            <div class="cell">
+              <div class="row">
+                <div class="cell">
+                  2<input v-model="followsOneStepDirectionsTotal" type="text">(A)
+                </div>
+                <div class="cell">
+                  4<input v-model="followsOneStepDirectionsTotal" type="text">(C)
+                </div>
+                <div class="cell">
+                  6<input v-model="followsOneStepDirectionsTotal" type="text">(A)
+                </div>
+                <div class="cell">
+                  8<input v-model="followsOneStepDirectionsTotal" type="text">(C)
+                </div>
+                <div class="cell">
+                  10<input v-model="followsOneStepDirectionsTotal" type="text">(A)
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Row 23 -->
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: left; justify-self: left;">
+          Auditory Sequential Processing Speed
+        </div>
+        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: left; justify-self: left;">
+          Line 1
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="followsTwoStepDirections" type="radio" value="-3">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="followsTwoStepDirections" type="radio" value="-2">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="followsTwoStepDirections" type="radio" value="-1">
+        </div>
+        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="followsTwoStepDirections" type="radio" value="0">
+        </div>
+        <!-- Row 24 -->
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: left; justify-self: left;">
+          <div class="row">
+            <div class="cell">
+              1 Color the kite red
+            </div>
+            <div class="cell" style="text-align:right; justify-self:end; justify-items:end; align-self:end; align-items:end; margin-left: 50px;">
+              Time:
+              <input v-model="followsOneStepDirectionsTotal" type="text">
+            </div>
+          </div>
+        </div>
+        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: left; justify-self: start;">
+          Line 2
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="followsTwoStepDirections" type="radio" value="-3">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="followsTwoStepDirections" type="radio" value="-2">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="followsTwoStepDirections" type="radio" value="-1">
+        </div>
+        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="followsTwoStepDirections" type="radio" value="0">
+        </div>
+        <!-- Row 25 -->
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: left; justify-self: left;">
+          <div class="row">
+            <div class="cell">
+              2 Circle the rabbit eating the ice cream
+            </div>
+            <div class="cell" style="text-align:right; justify-self:end; justify-items:end; align-self:end; align-items:end; margin-left: 50px;">
+              Time:
+              <input v-model="followsOneStepDirectionsTotal" type="text">
+            </div>
+          </div>
+        </div>
+        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: left; justify-self: start;">
+          Line 3
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="followsTwoStepDirections" type="radio" value="-3">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="followsTwoStepDirections" type="radio" value="-2">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="followsTwoStepDirections" type="radio" value="-1">
+        </div>
+        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="followsTwoStepDirections" type="radio" value="0">
+        </div>
+        <!-- row 26 -->
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: left; justify-self: left;">
+          <div class="row">
+            <div class="cell">
+              3 Find the turtle holding the hotdog. Color its spots blue.
+            </div>
+            <div class="cell" style="text-align:right; justify-self:end; justify-items:end; align-self:end; align-items:end; margin-left: 50px;">
+              Time:
+              <input v-model="followsOneStepDirectionsTotal" type="text">
+            </div>
+          </div>
+        </div>
+        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: left; justify-self: start;">
+          Line 4
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="followsTwoStepDirections" type="radio" value="-3">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="followsTwoStepDirections" type="radio" value="-2">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="followsTwoStepDirections" type="radio" value="-1">
+        </div>
+        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="followsTwoStepDirections" type="radio" value="0">
+        </div>
+        <!-- Row 27 -->
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 27; grid-row-end: span 1; text-align: left; justify-self: left;">
+          <div class="row">
+            <div class="cell">
+              4 Find the frog holding three balloons. Color one balloon yellow and two balloons green
+            </div>
+            <div class="cell" style="text-align:right; justify-self:end; justify-items:end; align-self:end; align-items:end; margin-left: 50px;">
+              Time:
+              <input v-model="followsOneStepDirectionsTotal" type="text">
+            </div>
+          </div>
+        </div>
+        <!-- Row 28 -->
       </div>
     </div>
   </div>
