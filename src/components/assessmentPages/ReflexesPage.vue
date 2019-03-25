@@ -29,7 +29,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="moro-reflex-na" v-model="moroReflexNA">
+          <input type="checkbox" id="moro-reflex-na" v-model="moro.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
           212
@@ -39,11 +39,11 @@
           Upper
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; justify-self: center;">
-          <input v-model="moroReflexUpperIntegration" type="radio" value="Not Integrated">
+          <input v-model="moro.upper" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="moroReflexUpperIntegration" type="radio" value="Integrated">
+          <input v-model="moro.upper" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -57,11 +57,11 @@
           Lower
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; justify-self: center;">
-          <input v-model="moroReflexLowerIntegration" type="radio" value="Not Integrated">
+          <input v-model="moro.lower" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="moroReflexLowerIntegration" type="radio" value="Integrated">
+          <input v-model="moro.lower" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -81,7 +81,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="spinal-galant-reflex-na" v-model="spinalGalantReflexNA">
+          <input type="checkbox" id="spinal-galant-reflex-na" v-model="spinalGalant.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
           213
@@ -91,11 +91,11 @@
           Left
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; justify-self: center;">
-          <input v-model="spinalGalantReflexLeftIntegration" type="radio" value="Not Integrated">
+          <input v-model="spinalGalant.left" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="spinalGalantReflexLeftIntegration" type="radio" value="Integrated">
+          <input v-model="spinalGalant.left" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -109,11 +109,11 @@
           Right
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; justify-self: center;">
-          <input v-model="spinalGalantReflexRightIntegration" type="radio" value="Not Integrated">
+          <input v-model="spinalGalant.right" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="spinalGalantReflexRightIntegration" type="radio" value="Integrated">
+          <input v-model="spinalGalant.right" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -133,7 +133,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="crossed-extensor-reflex-na" v-model="crossedExtensorReflexNA">
+          <input type="checkbox" id="crossed-extensor-reflex-na" v-model="crossedExtensor.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
           214
@@ -143,11 +143,11 @@
           Left
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; justify-self: center;">
-          <input v-model="crossedExtensorReflexLeftIntegration" type="radio" value="Not Integrated">
+          <input v-model="crossedExtensor.left" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="crossedExtensorReflexLeftIntegration" type="radio" value="Integrated">
+          <input v-model="crossedExtensor.left" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -161,11 +161,11 @@
           Right
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; justify-self: center;">
-          <input v-model="crossedExtensorReflexRightIntegration" type="radio" value="Not Integrated">
+          <input v-model="crossedExtensor.right" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="crossedExtensorReflexRightIntegration" type="radio" value="Integrated">
+          <input v-model="crossedExtensor.right" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -185,7 +185,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 11; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="spinal-perez-reflex-na" v-model="spinalPerezReflexNA">
+          <input type="checkbox" id="spinal-perez-reflex-na" v-model="spinalPerez.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 11; grid-row-end: span 1; text-align: center; justify-self: center;">
           215
@@ -195,11 +195,11 @@
           Left
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; justify-self: center;">
-          <input v-model="spinalPerezReflexLeftIntegration" type="radio" value="Not Integrated">
+          <input v-model="spinalPerez.left" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="spinalPerezReflexLeftIntegration" type="radio" value="Integrated">
+          <input v-model="spinalPerez.left" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -213,11 +213,11 @@
           Right
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; justify-self: center;">
-          <input v-model="spinalPerezReflexRightIntegration" type="radio" value="Not Integrated">
+          <input v-model="spinalPerez.right" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="spinalPerezReflexRightIntegration" type="radio" value="Integrated">
+          <input v-model="spinalPerez.right" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -237,7 +237,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="babinski-reflex-na" v-model="babinskiReflexNA">
+          <input type="checkbox" id="babinski-reflex-na" v-model="babinski.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
           216
@@ -247,11 +247,11 @@
           Left
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; justify-self: center;">
-          <input v-model="babinskiReflexLeftIntegration" type="radio" value="Not Integrated">
+          <input v-model="babinski.left" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="babinskiReflexLeftIntegration" type="radio" value="Integrated">
+          <input v-model="babinski.left" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -265,11 +265,11 @@
           Right
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; justify-self: center;">
-          <input v-model="babinskiReflexRightIntegration" type="radio" value="Not Integrated">
+          <input v-model="babinski.right" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="babinskiReflexRightIntegration" type="radio" value="Integrated">
+          <input v-model="babinski.right" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -289,7 +289,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="asymmetrical-tonic-neck-reflex-na" v-model="asymmetricalTonicNeckReflexNA">
+          <input type="checkbox" id="asymmetrical-tonic-neck-reflex-na" v-model="asymmetricalTonic.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: center; justify-self: center;">
           217
@@ -299,11 +299,11 @@
           Left
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; justify-self: center;">
-          <input v-model="asymmetricalTonicNeckReflexLeftIntegration" type="radio" value="Not Integrated">
+          <input v-model="asymmetricalTonic.left" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="asymmetricalTonicNeckReflexLeftIntegration" type="radio" value="Integrated">
+          <input v-model="asymmetricalTonic.left" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -317,11 +317,11 @@
           Right
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; justify-self: center;">
-          <input v-model="asymmetricalTonicNeckReflexRightIntegration" type="radio" value="Not Integrated">
+          <input v-model="asymmetricalTonic.right" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="asymmetricalTonicNeckReflexRightIntegration" type="radio" value="Integrated">
+          <input v-model="asymmetricalTonic.right" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -341,7 +341,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="bauer-crawling-reflex-na" v-model="bauerCrawlingReflexNA">
+          <input type="checkbox" id="bauer-crawling-reflex-na" v-model="bauerCrawling.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
           218
@@ -351,11 +351,11 @@
           Left
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 21; grid-row-end: span 1; justify-self: center;">
-          <input v-model="bauerCrawlingReflexLeftIntegration" type="radio" value="Not Integrated">
+          <input v-model="bauerCrawling.left" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 21; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="bauerCrawlingReflexLeftIntegration" type="radio" value="Integrated">
+          <input v-model="bauerCrawling.left" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 21; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -369,11 +369,11 @@
           Right
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; justify-self: center;">
-          <input v-model="bauerCrawlingReflexRightIntegration" type="radio" value="Not Integrated">
+          <input v-model="bauerCrawling.right" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="bauerCrawlingReflexRightIntegration" type="radio" value="Integrated">
+          <input v-model="bauerCrawling.right" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -393,7 +393,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="babkin-palmomental-reflex-na" v-model="babkinPalmomentalReflexNA">
+          <input type="checkbox" id="babkin-palmomental-reflex-na" v-model="babkinPalmomental.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
           219
@@ -403,11 +403,11 @@
           Left
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; justify-self: center;">
-          <input v-model="babkinPalmomentalReflexLeftIntegration" type="radio" value="Not Integrated">
+          <input v-model="babkinPalmomental.left" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="babkinPalmomentalReflexLeftIntegration" type="radio" value="Integrated">
+          <input v-model="babkinPalmomental.left" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -421,11 +421,11 @@
           Right
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; justify-self: center;">
-          <input v-model="babkinPalmomentalReflexRightIntegration" type="radio" value="Not Integrated">
+          <input v-model="babkinPalmomental.right" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="babkinPalmomentalReflexRightIntegration" type="radio" value="Integrated">
+          <input v-model="babkinPalmomental.right" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -445,7 +445,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="hand-grasping-reflex-na" v-model="handGraspingReflexNA">
+          <input type="checkbox" id="hand-grasping-reflex-na" v-model="handGrasping.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: center; justify-self: center;">
           220
@@ -455,11 +455,11 @@
           Left
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 27; grid-row-end: span 1; justify-self: center;">
-          <input v-model="handGraspingReflexLeftIntegration" type="radio" value="Not Integrated">
+          <input v-model="handGrasping.left" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 27; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="handGraspinglReflexLeftIntegration" type="radio" value="Integrated">
+          <input v-model="handGrasping.left" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 27; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -473,11 +473,11 @@
           Right
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; justify-self: center;">
-          <input v-model="handGraspingReflexRightIntegration" type="radio" value="Not Integrated">
+          <input v-model="handGrasping.right" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="handGraspinglReflexRightIntegration" type="radio" value="Integrated">
+          <input v-model="handGrasping.right" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -497,7 +497,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 29; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="frontal-release-signs-na" v-model="frontalReleaseSignsNA">
+          <input type="checkbox" id="frontal-release-signs-na" v-model="frontalRelease.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 29; grid-row-end: span 1; text-align: center; justify-self: center;">
           221
@@ -507,11 +507,11 @@
           Snout
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; justify-self: center;">
-          <input v-model="frontalReleaseSignsSnoutIntegration" type="radio" value="Not Integrated">
+          <input v-model="frontalRelease.snout" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="frontalReleaseSignsSnoutIntegration" type="radio" value="Integrated">
+          <input v-model="frontalRelease.snout" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -525,11 +525,11 @@
           Sucking
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 31; grid-row-end: span 1; justify-self: center;">
-          <input v-model="frontalReleaseSignsSuckingIntegration" type="radio" value="Not Integrated">
+          <input v-model="frontalRelease.sucking" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 31; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="frontalReleaseSignsSuckingIntegration" type="radio" value="Integrated">
+          <input v-model="frontalRelease.sucking" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 31; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -543,11 +543,11 @@
           Rooting
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; justify-self: center;">
-          <input v-model="frontalReleaseSignsRootingIntegration" type="radio" value="Not Integrated">
+          <input v-model="frontalRelease.rooting" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="frontalReleaseSignsRootingIntegration" type="radio" value="Integrated">
+          <input v-model="frontalRelease.rooting" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -561,11 +561,11 @@
           Glabellar
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 33; grid-row-end: span 1; justify-self: center;">
-          <input v-model="frontalReleaseSignsGlabellarIntegration" type="radio" value="Not Integrated">
+          <input v-model="frontalRelease.glabellar" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 33; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="frontalReleaseSignsGlabellarIntegration" type="radio" value="Integrated">
+          <input v-model="frontalRelease.glabellar" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 33; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -585,7 +585,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="stepping-reflex-na" v-model="steppingReflexNA">
+          <input type="checkbox" id="stepping-reflex-na" v-model="stepping.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: center; justify-self: center;">
           222
@@ -633,7 +633,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 37; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="hands-pulling-reflex-na" v-model="handsPullingReflexNA">
+          <input type="checkbox" id="hands-pulling-reflex-na" v-model="handsPulling.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 37; grid-row-end: span 1; text-align: center; justify-self: center;">
           223
@@ -681,7 +681,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 40; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="hands-supporting-reflex-na" v-model="handsSupportingReflexNA">
+          <input type="checkbox" id="hands-supporting-reflex-na" v-model="handsSupporting.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 40; grid-row-end: span 1; text-align: center; justify-self: center;">
           224
@@ -691,11 +691,11 @@
           Left
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 41; grid-row-end: span 1; justify-self: center;">
-          <input v-model="handsSupportingReflexLeftIntegration" type="radio" value="Not Integrated">
+          <input v-model="handsSupporting.left" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 41; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="handsSupportingReflexLeftIntegration" type="radio" value="Integrated">
+          <input v-model="handsSupporting.left" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 41; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -709,11 +709,11 @@
           Right
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 42; grid-row-end: span 1; justify-self: center;">
-          <input v-model="handsSupportingReflexRightIntegration" type="radio" value="Not Integrated">
+          <input v-model="handsSupporting.right" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 42; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="handsSupportingReflexRightIntegration" type="radio" value="Integrated">
+          <input v-model="handsSupporting.right" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 42; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -733,7 +733,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 43; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="landau-reflex-na" v-model="landauReflexNA">
+          <input type="checkbox" id="landau-reflex-na" v-model="landau.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 43; grid-row-end: span 1; text-align: center; justify-self: center;">
           225
@@ -781,7 +781,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 46; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="symmetrical-tonic-neck-reflex-na" v-model="symmetricalTonicNeckReflexNA">
+          <input type="checkbox" id="symmetrical-tonic-neck-reflex-na" v-model="symmetricalTonic.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 46; grid-row-end: span 1; text-align: center; justify-self: center;">
           226
@@ -829,7 +829,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 49; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="tonic-labyrinthine-reflex-na" v-model="tonicLabyrinthineReflexNA">
+          <input type="checkbox" id="tonic-labyrinthine-reflex-na" v-model="tonicLabyrinthine.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 49; grid-row-end: span 1; text-align: center; justify-self: center;">
           227
@@ -839,11 +839,11 @@
           Forward
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 50; grid-row-end: span 1; justify-self: center;">
-          <input v-model="tonicLabyrinthineReflexForwardIntegration" type="radio" value="Not Integrated">
+          <input v-model="tonicLabyrinthine.forward" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 50; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="tonicLabyrinthineReflexForwardIntegration" type="radio" value="Integrated">
+          <input v-model="tonicLabyrinthine.forward" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 50; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -857,11 +857,11 @@
           Backward
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 51; grid-row-end: span 1; justify-self: center;">
-          <input v-model="tonicLabyrinthineReflexBackwardIntegration" type="radio" value="Not Integrated">
+          <input v-model="tonicLabyrinthine.backward" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 51; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="tonicLabyrinthineReflexBackwardIntegration" type="radio" value="Integrated">
+          <input v-model="tonicLabyrinthine.backward" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 51; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -881,7 +881,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 52; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="hand-righting-reflex-na" v-model="handRightingReflexNA">
+          <input type="checkbox" id="hand-righting-reflex-na" v-model="headRighting.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 52; grid-row-end: span 1; text-align: center; justify-self: center;">
           228
@@ -891,11 +891,11 @@
           Side-to-Side
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 53; grid-row-end: span 1; justify-self: center;">
-          <input v-model="handRightingReflexSideToSideIntegration" type="radio" value="Not Integrated">
+          <input v-model="headRighting.sideToSide" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 53; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="handRightingReflexSideToSideIntegration" type="radio" value="Integrated">
+          <input v-model="headRighting.sideToSide" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 53; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -909,11 +909,11 @@
           Front-to-Back
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 54; grid-row-end: span 1; justify-self: center;">
-          <input v-model="handRightingReflexFrontToBackIntegration" type="radio" value="Not Integrated">
+          <input v-model="headRighting.frontToBack" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 54; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="handRightingReflexFrontToBackIntegration" type="radio" value="Integrated">
+          <input v-model="headRighting.frontToBack" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 54; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -937,52 +937,106 @@ export default {
     ReflexesPage,
   },
   data:() => ({
-    moroReflexNA: "",
-    moroReflexUpperIntegration: "",
-    moroReflexLowerIntegration: "",
-    spinalGalantReflexNA: "",
-    spinalGalantReflexUpperIntegration: "",
-    spinalGalantReflexLowerIntegration: "",
-    crossedExtensorReflexNA: "",
-    crossedExtensorReflexLeftIntegration: "",
-    crossedExtensorReflexRightIntegration: "",
-    spinalPerezReflexNA: "",
-    spinalPerezReflexLeftIntegration: "",
-    spinalPerezReflexRightIntegration: "",
-    babinskiReflexNA: "",
-    babinskiReflexLeftIntegration: "",
-    babinskiReflexRightIntegration: "",
-    asymmetricalTonicNeckReflexNA: "",
-    asymmetricalTonicNeckReflexLeftIntegration: "",
-    asymmetricalTonicNeckReflexRightIntegration: "",
-    bauerCrawlingReflexNA: "",
-    bauerCrawlingReflexLeftIntegration: "",
-    bauerCrawlingReflexRightIntegration: "",
-    babkinPalmomentalReflexNA: "",
-    babkinPalmomentalReflexLeftIntegration: "",
-    babkinPalmomentalReflexLeftIntegration: "",
-    babkinPalmomentalReflexRightIntegration: "",
-    handGraspingReflexNA: "",
-    handGraspingReflexLeftIntegration: "",
-    handGraspingReflexRightIntegration: "",
-    frontalReleaseSignsNA: "",
-    frontalReleaseSignsSnoutIntegration: "",
-    frontalReleaseSignsSuckingIntegration: "",
-    frontalReleaseSignsRootingIntegration: "",
-    frontalReleaseSignsGlabellarIntegration: "",
-    steppingReflexNA: "",
-    handsPullingReflexNA: "",
-    handsSupportingReflexNA: "",
-    handsSupportingReflexLeftIntegration: "",
-    handsSupportingReflexRightIntegration: "",
-    landauReflexNA: "",
-    symmetricalTonicNeckReflexNA: "",
-    tonicLabyrinthineReflexNA: "",
-    tonicLabyrinthineReflexForwardIntegration: "",
-    tonicLabyrinthineReflexBackwardIntegration: "",
-    handRightingReflexNA: "",
-    handRightingReflexSideToSideIntegration: "",
-    handRightingReflexFrontToBackIntegration: "",
+    moro: {
+        comment: "",
+        type: "Integration",
+        upper: true,
+        lower: null
+    },
+    spinalGalant: {
+        comment: "",
+        type: "Integration",
+        left: false,
+        right: true
+    },
+    crossedExtensor: {
+        comment: "",
+        type: "Integration",
+        left: false,
+        right: true
+    },
+    spinalPerez: {
+        comment: "",
+        type: "Integration",
+        left: false,
+        right: true
+    },
+    babinski: {
+        comment: "",
+        type: "Integration",
+        left: false,
+        right: true
+    },
+    asymmetricalTonic: {
+        comment: "",
+        type: "Integration",
+        left: false,
+        right: true
+    },
+    bauerCrawling: {
+        comment: "",
+        type: "Integration",
+        left: null,
+        right: null
+    },
+    babkinPalmomental: {
+        comment: "",
+        type: "Integration",
+        left: null,
+        right: null
+    },
+    handGrasping: {
+        comment: "",
+        type: "Integration",
+        left: null,
+        right: null
+    },
+    frontalRelease: {
+        comment: "",
+        type: "Integration",
+        snout: null,
+        sucking: null,
+        rooting: null,
+        glabellar: null
+    },
+    stepping: {
+        comment: "",
+        type: "Integration",
+        value: null
+    },
+    handsPulling: {
+        comment: "",
+        type: "Integration",
+        value: null
+    },
+    handsSupporting: {
+        comment: "",
+        type: "Integration",
+        left: null,
+        right: null
+    },
+    landau: {
+        comment: "",
+        type: "Integration",
+        value: null
+    },
+    symmetricalTonic: {
+        comment: "",
+        comment: "Integration",
+        value: null
+    },
+    tonicLabyrinthine: {
+        comment: "",
+        type: "Integration",
+        forward: null,
+        backward: null
+    },
+    headRighting: {
+        comment: "",
+        type: "Integration",
+        sideToSide: null,
+        frontToBack: null
+    }
   }),
 }
 
