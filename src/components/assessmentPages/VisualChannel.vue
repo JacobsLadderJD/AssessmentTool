@@ -229,6 +229,88 @@
           <textarea v-model="convergenceDivergenceNotes"></textarea>
         </div>
         <!-- Row 14 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          LEVEL V
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Do this
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-3">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-2">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-1">
+        </div>
+        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="0">
+        </div>
+        <!-- Row 15 -->
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 15; grid-row-end: span 1; text-align: left; justify-self: start;">
+          <textarea v-model="reactionToThreateningSounds"></textarea>
+        </div>
+        <!-- Row 16 -->
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Initial Matching - Colors
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-3">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-2">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-1">
+        </div>
+        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="0">
+        </div>
+        <!-- Row 17 -->
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 17; grid-row-end: span 1; text-align: left; justify-self: start;">
+          <textarea v-model="initialMatchingColors"></textarea>
+        </div>
+        <!-- Row 18 -->
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Initial Matching - Shapes
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-3">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-2">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-1">
+        </div>
+        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="0">
+        </div>
+        <!-- Row 19 -->
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 19; grid-row-end: span 1; text-align: left; justify-self: start;">
+          <textarea v-model="initialMatchingShapes"></textarea>
+        </div>
+        <!-- Row 20 -->
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Initial Matching - Pictures
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-3">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-2">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-1">
+        </div>
+        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="0">
+        </div>
+        <!-- Row 21 -->
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 21; grid-row-end: span 1; text-align: left; justify-self: start;">
+          <textarea v-model="initialMatchingPictures"></textarea>
+        </div>
       </div>
     </div>
   </div>
