@@ -72,6 +72,8 @@
 
       <VisualChannel v-else-if="page===7"/>
 
+      <ManualChannel v-else-if="page===8"/>
+
 
       <div class="form-section">
         <div class="w3-cell-row">
@@ -100,6 +102,7 @@ import ReflexesPage from '@/components/assessmentPages/ReflexesPage'
 import TactilityChannel from '@/components/assessmentPages/TactilityChannel'
 import AuditoryChannel from '@/components/assessmentPages/AuditoryChannel'
 import VisualChannel from '@/components/assessmentPages/VisualChannel'
+import ManualChannel from '@/components/assessmentPages/ManualChannel'
 
 
 export default {
@@ -112,6 +115,7 @@ export default {
     TactilityChannel,
     AuditoryChannel,
     VisualChannel,
+    ManualChannel,
   },
   data:() => ({
     page: 1,
