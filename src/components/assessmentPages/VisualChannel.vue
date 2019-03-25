@@ -311,6 +311,42 @@
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 21; grid-row-end: span 1; text-align: left; justify-self: start;">
           <textarea v-model="initialMatchingPictures"></textarea>
         </div>
+        <!-- Row 22 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          LEVEL VI
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Colors
+        </div>
+        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          <div class="row">
+            <div class="cell" style="margin-right:10px;">
+              FO2
+            </div>
+            <div class="cell" style="margin-right:10px;">
+              FO3
+            </div>
+            <div class="cell">
+              Verbal
+            </div>
+          </div>
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-3">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-2">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-1">
+        </div>
+        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="0">
+        </div>
+        <!-- Row 23 -->
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 23; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          <textarea v-model="colorsVisualChannelNotes"></textarea>
+        </div>
       </div>
     </div>
   </div>
