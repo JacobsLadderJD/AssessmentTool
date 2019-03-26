@@ -74,6 +74,14 @@
 
       <ManualChannel v-else-if="page===8"/>
 
+      <LanguageChannel v-else-if="page===9"/>
+
+      <MobilityChannel v-else-if="page===10"/>
+
+      <SensorySeekingPage v-else-if="page===11"/>
+
+      <SensitivitiesPage v-else-if="page===12"/>
+
 
       <div class="form-section">
         <div class="w3-cell-row">
@@ -103,6 +111,10 @@ import TactilityChannel from '@/components/assessmentPages/TactilityChannel'
 import AuditoryChannel from '@/components/assessmentPages/AuditoryChannel'
 import VisualChannel from '@/components/assessmentPages/VisualChannel'
 import ManualChannel from '@/components/assessmentPages/ManualChannel'
+import LanguageChannel from '@/components/assessmentPages/LanguageChannel'
+import MobilityChannel from '@/components/assessmentPages/MobilityChannel'
+import SensorySeekingPage from '@/components/assessmentPages/SensorySeekingPage'
+import SensitivitiesPage from '@/components/assessmentPages/SensitivitiesPage'
 
 
 export default {
@@ -116,6 +128,10 @@ export default {
     AuditoryChannel,
     VisualChannel,
     ManualChannel,
+    LanguageChannel,
+    MobilityChannel,
+    SensorySeekingPage,
+    SensitivitiesPage,
   },
   data:() => ({
     page: 1,
