@@ -454,6 +454,90 @@
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 27; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           Horizontal Line
         </div>
+        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Vertical Line
+        </div>
+        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 29; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Circle
+        </div>
+        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Cross
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 3; text-align: left; justify-self: start; align-items: start;">
+          <textarea v-model="sensitivityToSoundNotes"></textarea>
+        </div>
+
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Pencil Grasp
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 33; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          <textarea v-model="sensitivityToSoundNotes"></textarea>
+        </div>
+
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Connect the Dots
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 35; grid-row-end: span 2; text-align: left; justify-self: start; align-items: start;">
+          <textarea v-model="sensitivityToSoundNotes"></textarea>
+        </div>
+        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          10" apart
+        </div>
+        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 35; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          6" apart
+        </div>
+        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 36; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          3" apart
+        </div>
+        <!-- 10" buttons -->
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-3">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-2">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-1">
+        </div>
+        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="0">
+        </div>
+        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="NA">
+        </div>
+        <!-- 6" buttons -->
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 35; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-3">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 35; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-2">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 35; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-1">
+        </div>
+        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 35; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="0">
+        </div>
+        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 35; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="NA">
+        </div>
+        <!-- 6" buttons -->
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 36; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-3">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 36; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-2">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 36; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-1">
+        </div>
+        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 36; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="0">
+        </div>
+        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 36; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="NA">
+        </div>
+
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 27; grid-row-end: span 1; text-align: center; justify-self: center;">
           <input v-model="reactionToThreateningSounds" type="radio" value="-3">
         </div>
@@ -469,6 +553,154 @@
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 27; grid-row-end: span 1; text-align: center; justify-self: center;">
           <input v-model="reactionToThreateningSounds" type="radio" value="NA">
         </div>
+
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 38; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Name
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 39; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          <textarea v-model="sensitivityToSoundNotes"></textarea>
+        </div>
+        <!-- Name buttons -->
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 38; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-3">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 38; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-2">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 38; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-1">
+        </div>
+        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 38; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="0">
+        </div>
+        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 38; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="NA">
+        </div>
+
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 41; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Letters
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 43; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          <textarea v-model="sensitivityToSoundNotes"></textarea>
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 42; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          A  C  F  O  W
+        </div>
+        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 42; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          /5
+        </div>
+        <!-- Letters buttons -->
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 41; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-3">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 41; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-2">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 41; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-1">
+        </div>
+        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 41; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="0">
+        </div>
+        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 41; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="NA">
+        </div>
+
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 45; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Dictated Sentence
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 46; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          "The cat ran up the tree."
+        </div>
+        <!-- Dictated buttons -->
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 45; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-3">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 45; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-2">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 45; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-1">
+        </div>
+        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 45; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="0">
+        </div>
+        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 45; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="NA">
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 47; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          <textarea v-model="sensitivityToSoundNotes"></textarea>
+        </div>
+
+
+        <!-- vertical line buttons -->
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-3">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-2">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-1">
+        </div>
+        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="0">
+        </div>
+        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="NA">
+        </div>
+
+        <!-- circle buttons -->
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 29; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-3">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 29; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-2">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 29; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-1">
+        </div>
+        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 29; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="0">
+        </div>
+        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 29; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="NA">
+        </div>
+
+        <!-- cross buttons -->
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-3">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-2">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-1">
+        </div>
+        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="0">
+        </div>
+        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="NA">
+        </div>
+
+        <!-- pencil grasp buttons -->
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-3">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-2">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="-1">
+        </div>
+        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="0">
+        </div>
+        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="reactionToThreateningSounds" type="radio" value="NA">
+        </div>
+
         <!-- Row 28 -->
       </div>
     </div>
