@@ -4,7 +4,7 @@
       <div class="grid9">
         <!-- Row 1 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          AUDITORY CHANNEL
+          VISUAL CHANNEL
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
           -3
