@@ -1143,19 +1143,19 @@
           <input v-model="withoutExposureTactileDiscriminationSmall" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="withoutExposureTactileDiscriminationMedium" type="radio" value="-1">
+          <input v-model="withoutExposureTactileDiscriminationSmall" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="withoutExposureTactileDiscriminationMedium" type="radio" value="0">
+          <input v-model="withoutExposureTactileDiscriminationSmall" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="withoutExposureTactileDiscriminationMedium" type="radio" value="+1">
+          <input v-model="withoutExposureTactileDiscriminationSmall" type="radio" value="+1">
         </div>
         <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="withoutExposureTactileDiscriminationMedium" type="radio" value="+2">
+          <input v-model="withoutExposureTactileDiscriminationSmall" type="radio" value="+2">
         </div>
         <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="withoutExposureTactileDiscriminationMedium" type="radio" value="+3">
+          <input v-model="withoutExposureTactileDiscriminationSmall" type="radio" value="+3">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
         </div>
@@ -1557,7 +1557,37 @@ export default {
     surfaceTouchRightHandTactility: "",
     surfaceTouchRightFootTactility: "",
     surfaceTouchLeftHandTactility: "",
-    surfaceTouchLeftFootTactility: ""
+    surfaceTouchLeftFootTactility: "",
+    surfacePainTactility: "",
+    olfactoryStimulationDetails: "",
+    mushyTouchLeftFootTactility: "",
+    mushyOralTexturalAwareness: "",
+    crunchyOralTexturalAwareness: "",
+    cardboardBookDiscrimination: "",
+    paperBookDiscrimination: "",
+    visualExposureTactileDiscriminationMedium: "",
+    visualExposureMediumScore: "",
+    withoutExposureTactileDiscriminationMedium: "",
+    withoutVisualExposureMediumScore: "",
+    visualExposureTactileDiscriminationSmall: "",
+    visualExposureMediumScore: "",
+    rhombergEyesOpenTactility: "",
+    rhombergEyesOpenScore: "",
+    rhombergEyesClosedTactility: "",
+    rhombergEyesClosedScore: "",
+    mannsRightEyesOpenTactility: "",
+    mannRightEyesOpenScore: "",
+    mannsRightEyesClosedTactility: "",
+    mannsRightEyesClosedScore: "",
+    mannsLeftEyesOpenTactility: "",
+    armMatchingFrontTactility: "",
+    armMatchingAboveHead: "",
+    armMatchingOutToSide: "",
+    graphesthesiaRightTactility: "",
+    graphesthesiaRightScore: "",
+    graphesthesiaLeftScore: "",
+    graphesthesiaLeftTactility: "",
+
   }),
 }
 
