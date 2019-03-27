@@ -37,32 +37,32 @@
           Horizontal Tracking
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-3">
+          <input v-model="horizontalTracking" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-2">
+          <input v-model="horizontalTracking" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-1">
+          <input v-model="horizontalTracking" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="0">
+          <input v-model="horizontalTracking" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="+1">
+          <input v-model="horizontalTracking" type="radio" value="+1">
         </div>
         <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="+2">
+          <input v-model="horizontalTracking" type="radio" value="+2">
         </div>
         <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="+3">
+          <input v-model="horizontalTracking" type="radio" value="+3">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="NA">
+          <input v-model="horizontalTracking" type="radio" value="NA">
         </div>
         <!-- Row 3 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: left; justify-self: start;">
-          <input v-model="followsOneStepDirectionsTotal" type="text">
+          <input v-model="horizontalTrackingSeconds" type="text">
           seconds of tracking
         </div>
         <!-- Row 4 -->
@@ -73,28 +73,28 @@
           Convergence
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-3">
+          <input v-model="visualConvergence" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-2">
+          <input v-model="visualConvergence" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-1">
+          <input v-model="visualConvergence" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="0">
+          <input v-model="visualConvergence" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="+1">
+          <input v-model="visualConvergence" type="radio" value="+1">
         </div>
         <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="+2">
+          <input v-model="visualConvergence" type="radio" value="+2">
         </div>
         <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="+3">
+          <input v-model="visualConvergence" type="radio" value="+3">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="NA">
+          <input v-model="visualConvergence" type="radio" value="NA">
         </div>
         <!-- Row 5 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: start; justify-items: start; align-items: start;">
@@ -105,28 +105,28 @@
           Divergence
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-3">
+          <input v-model="visualDivergence" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-2">
+          <input v-model="visualDivergence" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-1">
+          <input v-model="visualDivergence" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="0">
+          <input v-model="visualDivergence" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="+1">
+          <input v-model="visualDivergence" type="radio" value="+1">
         </div>
         <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="+2">
+          <input v-model="visualDivergence" type="radio" value="+2">
         </div>
         <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="+3">
+          <input v-model="visualDivergence" type="radio" value="+3">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="NA">
+          <input v-model="visualDivergence" type="radio" value="NA">
         </div>
         <!-- row 7 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: start; justify-items: start; align-items: start;">
@@ -137,96 +137,96 @@
           Tracking Figure 8's - Horizontal
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-3">
+          <input v-model="trackingFigure8Horizontal" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-2">
+          <input v-model="trackingFigure8Horizontal" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-1">
+          <input v-model="trackingFigure8Horizontal" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="0">
+          <input v-model="trackingFigure8Horizontal" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="+1">
+          <input v-model="trackingFigure8Horizontal" type="radio" value="+1">
         </div>
         <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="+2">
+          <input v-model="trackingFigure8Horizontal" type="radio" value="+2">
         </div>
         <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="+3">
+          <input v-model="trackingFigure8Horizontal" type="radio" value="+3">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="NA">
+          <input v-model="trackingFigure8Horizontal" type="radio" value="NA">
         </div>
         <!-- Row 9 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: left; justify-self: start;">
-          <input v-model="reactionToThreateningSounds" type="text">seconds of tracking
+          <input v-model="trackingFigure8HorizontalSeconds" type="text">seconds of tracking
         </div>
         <!-- Row 10 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           Tracking Figure 8's - Vertical
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-3">
+          <input v-model="trackingFigure8Vertical" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-2">
+          <input v-model="trackingFigure8Vertical" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-1">
+          <input v-model="trackingFigure8Vertical" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="0">
+          <input v-model="trackingFigure8Vertical" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="+1">
+          <input v-model="trackingFigure8Vertical" type="radio" value="+1">
         </div>
         <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="+2">
+          <input v-model="trackingFigure8Vertical" type="radio" value="+2">
         </div>
         <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="+3">
+          <input v-model="trackingFigure8Vertical" type="radio" value="+3">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="NA">
+          <input v-model="trackingFigure8Vertical" type="radio" value="NA">
         </div>
         <!-- Row 11 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 11; grid-row-end: span 1; text-align: left; justify-self: start;">
-          <input v-model="reactionToThreateningSounds" type="text">seconds of tracking
+          <input v-model="trackingFigure8VerticalSeconds" type="text">seconds of tracking
         </div>
         <!-- Row 12 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           Tracking Figure 8's - Convergence/Divergence
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-3">
+          <input v-model="trackingFigure8ConvergenceDivergence" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-2">
+          <input v-model="trackingFigure8ConvergenceDivergence" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-1">
+          <input v-model="trackingFigure8ConvergenceDivergence" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="0">
+          <input v-model="trackingFigure8ConvergenceDivergence" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="+1">
+          <input v-model="trackingFigure8ConvergenceDivergence" type="radio" value="+1">
         </div>
         <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="+2">
+          <input v-model="trackingFigure8ConvergenceDivergence" type="radio" value="+2">
         </div>
         <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="+3">
+          <input v-model="trackingFigure8ConvergenceDivergence" type="radio" value="+3">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="NA">
+          <input v-model="trackingFigure8ConvergenceDivergence" type="radio" value="NA">
         </div>
         <!-- Row 13 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: left; justify-self: start;">
-          <textarea v-model="convergenceDivergenceNotes"></textarea>
+          <textarea v-model="trackingFigure8ConvergenceDivergenceNotes"></textarea>
         </div>
         <!-- Row 14 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
@@ -236,80 +236,80 @@
           Do this
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-3">
+          <input v-model="doThis" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-2">
+          <input v-model="doThis" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-1">
+          <input v-model="doThis" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="0">
+          <input v-model="doThis" type="radio" value="0">
         </div>
         <!-- Row 15 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 15; grid-row-end: span 1; text-align: left; justify-self: start;">
-          <textarea v-model="reactionToThreateningSounds"></textarea>
+          <textarea v-model="doThisNotes"></textarea>
         </div>
         <!-- Row 16 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           Initial Matching - Colors
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-3">
+          <input v-model="initialMatchingColors" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-2">
+          <input v-model="initialMatchingColors" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-1">
+          <input v-model="initialMatchingColors" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="0">
+          <input v-model="initialMatchingColors" type="radio" value="0">
         </div>
         <!-- Row 17 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 17; grid-row-end: span 1; text-align: left; justify-self: start;">
-          <textarea v-model="initialMatchingColors"></textarea>
+          <textarea v-model="initialMatchingColorsNotes"></textarea>
         </div>
         <!-- Row 18 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           Initial Matching - Shapes
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-3">
+          <input v-model="initialMatchingShapes" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-2">
+          <input v-model="initialMatchingShapes" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-1">
+          <input v-model="initialMatchingShapes" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="0">
+          <input v-model="initialMatchingShapes" type="radio" value="0">
         </div>
         <!-- Row 19 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 19; grid-row-end: span 1; text-align: left; justify-self: start;">
-          <textarea v-model="initialMatchingShapes"></textarea>
+          <textarea v-model="initialMatchingShapesNotes"></textarea>
         </div>
         <!-- Row 20 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           Initial Matching - Pictures
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-3">
+          <input v-model="initialMatchingPictures" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-2">
+          <input v-model="initialMatchingPictures" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-1">
+          <input v-model="initialMatchingPictures" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="0">
+          <input v-model="initialMatchingPictures" type="radio" value="0">
         </div>
         <!-- Row 21 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 21; grid-row-end: span 1; text-align: left; justify-self: start;">
-          <textarea v-model="initialMatchingPictures"></textarea>
+          <textarea v-model="initialMatchingPicturesNotes"></textarea>
         </div>
         <!-- Row 22 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
@@ -332,20 +332,20 @@
           </div>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-3">
+          <input v-model="colors" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-2">
+          <input v-model="colors" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-1">
+          <input v-model="colors" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="0">
+          <input v-model="colors" type="radio" value="0">
         </div>
         <!-- Row 23 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 23; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          <textarea v-model="colorsVisualChannelNotes"></textarea>
+          <textarea v-model="colorsNotes"></textarea>
         </div>
         <!-- Row 24 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
@@ -365,20 +365,20 @@
           </div>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-3">
+          <input v-model="shapes" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-2">
+          <input v-model="shapes" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-1">
+          <input v-model="shapes" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="0">
+          <input v-model="shapes" type="radio" value="0">
         </div>
         <!-- Row 25 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 25; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          <textarea v-model="colorsVisualChannelNotes"></textarea>
+          <textarea v-model="shapesNotes"></textarea>
         </div>
         <!-- Row 26 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
@@ -398,20 +398,20 @@
           </div>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-3">
+          <input v-model="numbers" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-2">
+          <input v-model="numbers" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-1">
+          <input v-model="numbers" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="0">
+          <input v-model="numbers" type="radio" value="0">
         </div>
         <!-- Row 27 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 27; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          <textarea v-model="colorsVisualChannelNotes"></textarea>
+          <textarea v-model="numbersNotes"></textarea>
         </div>
         <!-- Row 28 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
@@ -434,20 +434,20 @@
           </div>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-3">
+          <input v-model="uppercaseLetters" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-2">
+          <input v-model="uppercaseLetters" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-1">
+          <input v-model="uppercaseLetters" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="0">
+          <input v-model="uppercaseLetters" type="radio" value="0">
         </div>
         <!-- Row 29 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 29; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          <textarea v-model="colorsVisualChannelNotes"></textarea>
+          <textarea v-model="uppercaseLettersNotes"></textarea>
         </div>
         <!-- Row 30 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
@@ -467,20 +467,20 @@
           </div>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-3">
+          <input v-model="lowercaseLetters" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-2">
+          <input v-model="lowercaseLetters" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-1">
+          <input v-model="lowercaseLetters" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="0">
+          <input v-model="lowercaseLetters" type="radio" value="0">
         </div>
         <!-- Row 31 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 31; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          <textarea v-model="colorsVisualChannelNotes"></textarea>
+          <textarea v-model="lowercaseLettersNotes"></textarea>
         </div>
         <!-- Row 32 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
@@ -500,40 +500,40 @@
           </div>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-3">
+          <input v-model="verbal" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-2">
+          <input v-model="verbal" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-1">
+          <input v-model="verbal" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="0">
+          <input v-model="verbal" type="radio" value="0">
         </div>
         <!-- Row 33 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 33; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          <textarea v-model="colorsVisualChannelNotes"></textarea>
+          <textarea v-model="verbalNotes"></textarea>
         </div>
         <!-- Row 34 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           Visual Sequential Processing Speed
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-3">
+          <input v-model="visualSequentialProcessingSpeed" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-2">
+          <input v-model="visualSequentialProcessingSpeed" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="-1">
+          <input v-model="visualSequentialProcessingSpeed" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="reactionToThreateningSounds" type="radio" value="0">
+          <input v-model="visualSequentialProcessingSpeed" type="radio" value="0">
         </div>
         <!-- Row 35 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 35; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          <textarea v-model="colorsVisualChannelNotes"></textarea>
+          <textarea v-model="visualSequentialProcessingSpeedNotes"></textarea>
         </div>
       </div>
     </div>
@@ -550,7 +550,40 @@ export default {
     VisualChannel,
   },
   data:() => ({
-    something: "",
+    horizontalTracking: "",
+    horizontalTrackingSeconds: "",
+    visualConvergence: "",
+    visualConvergenceNotes: "",
+    visualDivergence: "",
+    visualDivergenceNotes: "",
+    trackingFigure8Horizontal: "",
+    trackingFigure8HorizontalSeconds: "",
+    trackingFigure8Vertical: "",
+    trackingFigure8VerticalSeconds: "",
+    trackingFigure8ConvergenceDivergence: "",
+    trackingFigure8ConvergenceDivergenceNotes: "",
+    doThis: "",
+    doThisNotes: "",
+    initialMatchingColors: "",
+    initialMatchingColorsNotes: "",
+    initialMatchingShapes: "",
+    initialMatchingShapesNotes: "",
+    initialMatchingPictures: "",
+    initialMatchingPicturesNotes: "",
+    colors: "",
+    colorsNotes: "",
+    shapes: "",
+    shapesNotes: "",
+    numbers: "",
+    numbersNotes: "",
+    uppercaseLetters: "",
+    uppercaseLettersNotes: "",
+    lowercaseLetters: "",
+    lowercaseLettersNotes: "",
+    verbal: "",
+    verbalNotes: "",
+    visualSequentialProcessingSpeed: "",
+    visualSequentialProcessingSpeedNotes: "",
   }),
 }
 
