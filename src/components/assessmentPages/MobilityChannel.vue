@@ -29,7 +29,105 @@
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
         </div>
-
+        <!-- Row 2 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          LEVEL II
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Verbal Response to Sounds
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="verbalResponseToSounds" type="radio" value="-3">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="verbalResponseToSounds" type="radio" value="-2">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="verbalResponseToSounds" type="radio" value="-1">
+        </div>
+        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="verbalResponseToSounds" type="radio" value="0">
+        </div>
+        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="verbalResponseToSounds" type="radio" value="NA">
+        </div>
+        <!-- Row 3 -->
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 3; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
+          <textarea v-model="verbalResponseToSoundsNotes"></textarea>
+        </div>
+        <!-- Row 4 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          LEVEL III
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Lip Utilization
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="lipUtilization" type="radio" value="-3">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="lipUtilization" type="radio" value="-2">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="lipUtilization" type="radio" value="-1">
+        </div>
+        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="lipUtilization" type="radio" value="0">
+        </div>
+        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="lipUtilization" type="radio" value="NA">
+        </div>
+        <!-- Row 5 -->
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 5; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
+          <textarea v-model="verbalResponseToSoundsNotes"></textarea>
+        </div>
+        <!-- Row 6 -->
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Oral Motor Movement
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="oralMoterMovement" type="radio" value="-3">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="oralMoterMovement" type="radio" value="-2">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="oralMoterMovement" type="radio" value="-1">
+        </div>
+        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="oralMoterMovement" type="radio" value="0">
+        </div>
+        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="oralMoterMovement" type="radio" value="NA">
+        </div>
+        <!-- Row 7 -->
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 7; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
+          <textarea v-model="oralMoterMovementNotes"></textarea>
+        </div>
+        <!-- Row 8 -->
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Breath Support
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="breathSupport" type="radio" value="-3">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="breathSupport" type="radio" value="-2">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="breathSupport" type="radio" value="-1">
+        </div>
+        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="breathSupport" type="radio" value="0">
+        </div>
+        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="breathSupport" type="radio" value="NA">
+        </div>
+        <!-- Row 9 -->
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 9; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
+          <textarea v-model="breathSupportNotes"></textarea>
+        </div>
+        <!-- Row 10 -->
       </div>
     </div>
   </div>
@@ -45,7 +143,9 @@ export default {
     MobilityChannel,
   },
   data:() => ({
-    something: "",
+    verbalResponseToSounds: "",
+    verbalResponseToSoundsNotes: "",
+
   }),
 }
 
