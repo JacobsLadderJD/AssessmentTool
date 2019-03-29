@@ -1,11 +1,9 @@
 <template>
   <div class="form-page">
     <div class="form-section">
+      <h1 class="title" style="text-align:left">Sensory Seeking</h1>
       <div class="grid9">
         <!-- Row 1 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          SENSORY SEEKING
-        </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1;K grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
           0
         </div>
@@ -24,7 +22,7 @@
 
         <!-- Row 2 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          TACTILITY
+          <strong>TACTILITY</strong>
         </div>
         <!-- Row 3 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
@@ -46,7 +44,7 @@
           <input v-model="handsSensorySeeking" type="radio" value="NA">
         </div>
         <!-- ROW 4 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 4; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 4; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
           <textarea v-model="handsSensorySeekingNotes"></textarea>
         </div>
         <!-- Row 5 -->
@@ -69,7 +67,7 @@
           <input v-model="feetSensorySeeking" type="radio" value="NA">
         </div>
         <!-- Row 6 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 6; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 6; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
           <textarea v-model="feetSensorySeekingNotes"></textarea>
         </div>
         <!-- Row 7 -->
@@ -92,7 +90,7 @@
           <input v-model="trunkSensorySeeking" type="radio" value="NA">
         </div>
         <!-- Row 8 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 8; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 8; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
           <textarea v-model="trunkSensorySeekingNotes"></textarea>
         </div>
         <!-- Row 9 -->
@@ -115,7 +113,7 @@
           <input v-model="jawSensorySeeking" type="radio" value="NA">
         </div>
         <!-- row 10 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 10; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 10; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
           <textarea v-model="jawSensorySeekingNotes"></textarea>
         </div>
         <!-- Row 11 -->
@@ -138,7 +136,7 @@
           <input v-model="intraoralSensorySeeking" type="radio" value="NA">
         </div>
         <!-- Row 12 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 12; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 12; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
           <textarea v-model="intraoralSensorySeekingNotes"></textarea>
         </div>
         <!-- Row 13 -->
@@ -161,7 +159,7 @@
           <input v-model="extraoralSensorySeeking" type="radio" value="NA">
         </div>
         <!-- Row 14 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 14; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 14; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
           <textarea v-model="extraoralSensorySeekingNotes"></textarea>
         </div>
         <!-- Row 15 -->
@@ -184,7 +182,7 @@
           <input v-model="chinSensorySeeking" type="radio" value="NA">
         </div>
         <!-- ROW 16 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 16; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 16; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
           <textarea v-model="chinSensorySeekingNotes"></textarea>
         </div>
         <!-- ROW 17 -->
@@ -207,7 +205,7 @@
           <input v-model="genitalsSensorySeeking" type="radio" value="NA">
         </div>
         <!-- Row 18 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 18; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 18; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
           <textarea v-model="genitalsSensorySeekingNotes"></textarea>
         </div>
         <!-- Row 19 -->
@@ -230,12 +228,12 @@
           <input v-model="olfactorySensorySeeking" type="radio" value="NA">
         </div>
         <!-- Row 20 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 20; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 20; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
           <textarea v-model="olfactorySensorySeekingNotes"></textarea>
         </div>
         <!-- Row 21 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 21; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          AUDITORY
+          <strong>AUDITORY</strong>
         </div>
         <!-- ROW 22 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
@@ -257,7 +255,7 @@
           <input v-model="jumpingSensorySeeking" type="radio" value="NA">
         </div>
         <!-- Row 23 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 23; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 23; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
           <textarea v-model="jumpingSensorySeekingNotes"></textarea>
         </div>
         <!-- Row 24 -->
@@ -280,7 +278,7 @@
           <input v-model="vocalThroatVibration" type="radio" value="NA">
         </div>
         <!-- Row 25 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 25; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 25; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
           <textarea v-model="vocalThroatVibrationNotes"></textarea>
         </div>
         <!-- Row 26 -->
@@ -303,7 +301,7 @@
           <input v-model="hummingSensorySeeking" type="radio" value="NA">
         </div>
         <!-- Row 27 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 27; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 27; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
           <textarea v-model="hummingSensorySeekingNotes"></textarea>
         </div>
         <!-- Row 28 -->
@@ -330,7 +328,7 @@
         </div>
         <!-- Row 29 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 29; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
-          <textarea v-model="hummingSensorySeekingNotes"></textarea>
+          <textarea v-model="closingPluggingEarNotes"></textarea>
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 29; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           Left
@@ -414,7 +412,7 @@
           <input v-model="scriptingSinging" type="radio" value="NA">
         </div>
         <!-- Row 33 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 33; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 33; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
           <textarea v-model="scriptingSingingNotes"></textarea>
         </div>
         <!-- row 34 -->
@@ -437,7 +435,7 @@
           <input v-model="rockingHeadMovement" type="radio" value="NA">
         </div>
         <!-- Row 35 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 35; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 35; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
           <textarea v-model="rockingHeadMovementNotes"></textarea>
         </div>
         <!-- Row 36 -->
@@ -464,7 +462,7 @@
           <input v-model="pressureSensorySeeking" type="radio" value="NA">
         </div>
         <!-- Row 38 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 38; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 38; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
           <textarea v-model="pressureSensorySeekingNotes"></textarea>
         </div>
         <!-- Row 39 -->
@@ -486,6 +484,125 @@
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 39; grid-row-end: span 1; text-align: center; justify-self: center;">
           <input v-model="fingerPlay" type="radio" value="NA">
         </div>
+        <!-- Row 40 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 40; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+          <textarea v-model="fingerPlayNotes"></textarea>
+        </div>
+        <!-- Row 41 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 41; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Corner Vision
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 41; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="cornerVision" type="radio" value="0">
+        </div>
+        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 41; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="cornerVision" type="radio" value="1">
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 41; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="cornerVision" type="radio" value="2">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 41; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="cornerVision" type="radio" value="3">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 41; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="cornerVision" type="radio" value="NA">
+        </div>
+        <!-- Row 42 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 42; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+          <textarea v-model="cornerVisionNotes"></textarea>
+        </div>
+        <!-- Row 43 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 43; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Lines/Straight Edges on Objects
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 43; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="edgesOnObjects" type="radio" value="0">
+        </div>
+        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 43; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="edgesOnObjects" type="radio" value="1">
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 43; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="edgesOnObjects" type="radio" value="2">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 43; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="edgesOnObjects" type="radio" value="3">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 43; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="edgesOnObjects" type="radio" value="NA">
+        </div>
+        <!-- Row 44 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 44; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+          <textarea v-model="edgesOnObjectsNotes"></textarea>
+        </div>
+        <!-- Row 45 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 45; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Spinning Objects
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 45; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="spinningObjects" type="radio" value="0">
+        </div>
+        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 45; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="spinningObjects" type="radio" value="1">
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 45; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="spinningObjects" type="radio" value="2">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 45; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="spinningObjects" type="radio" value="3">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 45; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="spinningObjects" type="radio" value="NA">
+        </div>
+        <!-- Row 46 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 46; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+          <textarea v-model="spinningObjectsNotes"></textarea>
+        </div>
+        <!-- Row 47 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 47; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Holding Straight Objects
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 47; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="holdingStraightObjects" type="radio" value="0">
+        </div>
+        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 47; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="holdingStraightObjects" type="radio" value="1">
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 47; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="holdingStraightObjects" type="radio" value="2">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 47; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="holdingStraightObjects" type="radio" value="3">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 47; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="holdingStraightObjects" type="radio" value="NA">
+        </div>
+        <!-- Row 48 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 48; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+          <textarea v-model="holdingStraightObjectsNotes"></textarea>
+        </div>
+        <!-- Row 49 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 49; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Shadows
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 49; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="shadowsSensorySeeking" type="radio" value="0">
+        </div>
+        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 49; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="shadowsSensorySeeking" type="radio" value="1">
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 49; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="shadowsSensorySeeking" type="radio" value="2">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 49; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="shadowsSensorySeeking" type="radio" value="3">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 49; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="shadowsSensorySeeking" type="radio" value="NA">
+        </div>
+        <!-- Row 50 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 50; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+          <textarea v-model="shadowsSensorySeekingNotes"></textarea>
+        </div>
       </div>
     </div>
   </div>
@@ -501,7 +618,55 @@ export default {
     SensorySeekingPage,
   },
   data:() => ({
-    something: "",
+    handsSensorySeeking: "",
+    handsSensorySeekingNotes: "",
+    feetSensorySeeking: "",
+    feetSensorySeekingNotes: "",
+    trunkSensorySeeking: "",
+    trunkSensorySeekingNotes: "",
+    jawSensorySeeking: "",
+    jawSensorySeekingNotes: "",
+    intraoralSensorySeeking: "",
+    intraoralSensorySeekingNotes: "",
+    extraoralSensorySeeking: "",
+    extraoralSensorySeekingNotes: "",
+    chinSensorySeeking: "",
+    chinSensorySeekingNotes: "",
+    genitalsSensorySeeking: "",
+    genitalsSensorySeekingNotes: "",
+    olfactorySensorySeeking: "",
+    olfactorySensorySeekingNotes: "",
+    jumpingSensorySeeking: "",
+    jumpingSensorySeekingNotes: "",
+    vocalThroatVibration: "",
+    vocalThroatVibrationNotes: "",
+    hummingSensorySeeking: "",
+    hummingSensorySeekingNotes: "",
+    closingPluggingEarRight: "",
+    closingPluggingEarNotes: "",
+    closingPluggingEarLeft: "",
+    spinningRight: "",
+    spinningNotes: "",
+    spinningLeft: "",
+    scriptingSinging: "",
+    scriptingSingingNotes: "",
+    rockingHeadMovement: "",
+    rockingHeadMovementNotes: "",
+    pressureSensorySeeking: "",
+    pressureSensorySeekingNotes: "",
+    fingerPlay: "",
+    fingerPlayNotes: "",
+    cornerVision: "",
+    cornerVisionNotes: "",
+    edgesOnObjects: "",
+    edgesOnObjectsNotes: "",
+    spinningObjects: "",
+    spinningObjectsNotes: "",
+    holdingStraightObjects: "",
+    holdingStraightObjectsNotes: "",
+    shadowsSensorySeeking: "",
+    shadowsSensorySeekingNotes: "",
+
   }),
 }
 

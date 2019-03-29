@@ -12,8 +12,8 @@ const state = () => {
         lastName: "Marshall",
         birthday: new Date("08/21/2002"),
         gender: "M",
-        diagnosis: "Autism",
-        status: "Unclear"
+        diagnosis: "AS",
+        status: "Initial"
       },
       1: {
         id: 1,
@@ -21,8 +21,8 @@ const state = () => {
         lastName: "Mantle",
         birthday: new Date("03/02/2007"),
         gender: "F",
-        diagnosis: "Cerebral Palsy",
-        status: "Unclear"
+        diagnosis: "BI1",
+        status: "Initial"
       },
       2: {
         id: 2,
@@ -30,8 +30,8 @@ const state = () => {
         lastName: "Jacobs",
         birthday: new Date("03/02/1999"),
         gender: "M",
-        diagnosis: "Down Syndrome",
-        status: "Unclear"
+        diagnosis: "DS",
+        status: "Initial"
       }
     }
   }

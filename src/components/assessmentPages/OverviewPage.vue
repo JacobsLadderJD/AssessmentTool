@@ -530,15 +530,13 @@
   </div>
 </template>
 <script>
-import FormNav from '@/components/FormNav'
-import types from '@/store/evaluation/types'
-import OverviewPage from '@/components/assessmentPages/OverviewPage'
 export default {
-  name:"EvaluationViewer",
-  components: {
-    FormNav,
-    OverviewPage,
-  },
+  name:"OverviewPage",
+  props: {
+      evaluationId: {
+        required: true
+      }
+    },
   data:() => ({
     tactilityRawScore: "",
     auditoryRawScore: "",
