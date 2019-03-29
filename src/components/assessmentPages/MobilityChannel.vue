@@ -35,23 +35,23 @@
           Holds Forearm Prop
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="holdsForearmProp" type="radio" value="-3">
+          <input v-model="d.forearmProp.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="holdsForearmProp" type="radio" value="-2">
+          <input v-model="d.forearmProp.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="holdsForearmProp" type="radio" value="-1">
+          <input v-model="d.forearmProp.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="holdsForearmProp" type="radio" value="0">
+          <input v-model="d.forearmProp.value" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="holdsForearmProp" type="radio" value="NA">
+          <input v-model="d.forearmProp.value" type="radio" value="NA">
         </div>
         <!-- Row 3 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 3; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="holdsForearmPropNotes"></textarea>
+          <textarea v-model="d.forearmProp.comment"></textarea>
         </div>
         <!-- Row 4 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
@@ -61,42 +61,42 @@
           Right
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="bellyRotationsRight" type="radio" value="-3">
+          <input v-model="d.bellyRotations.right" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="bellyRotationsRight" type="radio" value="-2">
+          <input v-model="d.bellyRotations.right" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="bellyRotationsRight" type="radio" value="-1">
+          <input v-model="d.bellyRotations.right" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="bellyRotationsRight" type="radio" value="0">
+          <input v-model="d.bellyRotations.right" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="bellyRotationsRight" type="radio" value="NA">
+          <input v-model="d.bellyRotations.right" type="radio" value="NA">
         </div>
         <!-- Row 5 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 5; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="bellyRotationsNotes"></textarea>
+          <textarea v-model="d.bellyRotations.comment"></textarea>
         </div>
         <!-- Row 5 -->
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           Left
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="bellyRotationsLeft" type="radio" value="-3">
+          <input v-model="d.bellyRotations.left" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="bellyRotationsLeft" type="radio" value="-2">
+          <input v-model="d.bellyRotations.left" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="bellyRotationsLeft" type="radio" value="-1">
+          <input v-model="d.bellyRotations.left" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="bellyRotationsLeft" type="radio" value="0">
+          <input v-model="d.bellyRotations.left" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="bellyRotationsLeft" type="radio" value="NA">
+          <input v-model="d.bellyRotations.left" type="radio" value="NA">
         </div>
         <!-- Row 7 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
@@ -106,138 +106,138 @@
           Belly Crawl
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="bellyCrawl" type="radio" value="-3">
+          <input v-model="d.bellyCrawl.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="bellyCrawl" type="radio" value="-2">
+          <input v-model="d.bellyCrawl.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="bellyCrawl" type="radio" value="-1">
+          <input v-model="d.bellyCrawl.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="bellyCrawl" type="radio" value="0">
+          <input v-model="d.bellyCrawl.value" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="bellyCrawl" type="radio" value="NA">
+          <input v-model="d.bellyCrawl.value" type="radio" value="NA">
         </div>
         <!-- Row 8 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 7; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="bellyCrawlNotes"></textarea>
+          <textarea v-model="d.bellyCrawl.comment"></textarea>
         </div>
         <!-- Row 9 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           From Prone to Cat
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="fromProneToCat" type="radio" value="-3">
+          <input v-model="d.proneToCat.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="fromProneToCat" type="radio" value="-2">
+          <input v-model="d.proneToCat.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="fromProneToCat" type="radio" value="-1">
+          <input v-model="d.proneToCat.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="fromProneToCat" type="radio" value="0">
+          <input v-model="d.proneToCat.value" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="fromProneToCat" type="radio" value="NA">
+          <input v-model="d.proneToCat.value" type="radio" value="NA">
         </div>
         <!-- Row 10 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 9; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="fromProneToCatNotes"></textarea>
+          <textarea v-model="d.proneToCat.comment"></textarea>
         </div>
         <!-- Row 11 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           Momentary Sitting
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="momentarySitting" type="radio" value="-3">
+          <input v-model="d.momentarySit.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="momentarySitting" type="radio" value="-2">
+          <input v-model="d.momentarySit.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="momentarySitting" type="radio" value="-1">
+          <input v-model="d.momentarySit.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="momentarySitting" type="radio" value="0">
+          <input v-model="d.momentarySit.value" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="momentarySitting" type="radio" value="NA">
+          <input v-model="d.momentarySit.value" type="radio" value="NA">
         </div>
         <!-- Row 12 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 11; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="momentarySittingNotes"></textarea>
+          <textarea v-model="d.momentarySit.comment"></textarea>
         </div>
         <!-- Row 13 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           Move to Upright Sitting
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="moveToUprightSitting" type="radio" value="-3">
+          <input v-model="d.moveUprightSit.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="moveToUprightSitting" type="radio" value="-2">
+          <input v-model="d.moveUprightSit.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="moveToUprightSitting" type="radio" value="-1">
+          <input v-model="d.moveUprightSit.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="moveToUprightSitting" type="radio" value="0">
+          <input v-model="d.moveUprightSit.value" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="moveToUprightSitting" type="radio" value="NA">
+          <input v-model="d.moveUprightSit.value" type="radio" value="NA">
         </div>
         <!-- Row 14 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 13; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="moveToUprightSittingNotes"></textarea>
+          <textarea v-model="d.moveUprightSit.comment"></textarea>
         </div>
         <!-- Row 15 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           Pulls to Feet
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="pullsToFeet" type="radio" value="-3">
+          <input v-model="d.pullToFeet.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="pullsToFeet" type="radio" value="-2">
+          <input v-model="d.pullToFeet.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="pullsToFeet" type="radio" value="-1">
+          <input v-model="d.pullToFeet.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="pullsToFeet" type="radio" value="0">
+          <input v-model="d.pullToFeet.value" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="pullsToFeet" type="radio" value="NA">
+          <input v-model="d.pullToFeet.value" type="radio" value="NA">
         </div>
         <!-- Row 16 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 15; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="pullsToFeetNotes"></textarea>
+          <textarea v-model="d.pullToFeet.comment"></textarea>
         </div>
         <!-- Row 17 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           Hold Creep Position
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="holdCreepPosition" type="radio" value="-3">
+          <input v-model="d.holdCreep.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="holdCreepPosition" type="radio" value="-2">
+          <input v-model="d.holdCreep.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="holdCreepPosition" type="radio" value="-1">
+          <input v-model="d.holdCreep.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="holdCreepPosition" type="radio" value="0">
+          <input v-model="d.holdCreep.value" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="holdCreepPosition" type="radio" value="NA">
+          <input v-model="d.holdCreep.value" type="radio" value="NA">
         </div>
         <!-- Row 18 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 17; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="holdCreepPositionNotes"></textarea>
+          <textarea v-model="d.holdCreep.comment"></textarea>
         </div>
 
         <!-- Row 21 -->
@@ -248,92 +248,92 @@
           Creep
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="creep" type="radio" value="-3">
+          <input v-model="d.creep.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="creep" type="radio" value="-2">
+          <input v-model="d.creep.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="creep" type="radio" value="-1">
+          <input v-model="d.creep.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="creep" type="radio" value="0">
+          <input v-model="d.creep.value" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="creep" type="radio" value="NA">
+          <input v-model="d.creep.value" type="radio" value="NA">
         </div>
         <!-- Row 22 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 21; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="creepNotes"></textarea>
+          <textarea v-model="d.creep.comment"></textarea>
         </div>
         <!-- Row 23 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           From Seated to Standing
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="fromSeatedToStanding" type="radio" value="-3">
+          <input v-model="d.sitToStand.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="fromSeatedToStanding" type="radio" value="-2">
+          <input v-model="d.sitToStand.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="fromSeatedToStanding" type="radio" value="-1">
+          <input v-model="d.sitToStand.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="fromSeatedToStanding" type="radio" value="0">
+          <input v-model="d.sitToStand.value" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="fromSeatedToStanding" type="radio" value="NA">
+          <input v-model="d.sitToStand.value" type="radio" value="NA">
         </div>
         <!-- Row 24 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 23; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="fromSeatedToStandingNotes"></textarea>
+          <textarea v-model="d.sitToStand.comment"></textarea>
         </div>
         <!-- Row 25 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           Standing
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="standing" type="radio" value="-3">
+          <input v-model="d.standing.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="standing" type="radio" value="-2">
+          <input v-model="d.standing.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="standing" type="radio" value="-1">
+          <input v-model="d.standing.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="standing" type="radio" value="0">
+          <input v-model="d.standing.value" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="standing" type="radio" value="NA">
+          <input v-model="d.standing.value" type="radio" value="NA">
         </div>
         <!-- Row 26 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 25; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="standingNotes"></textarea>
+          <textarea v-model="d.standing.comment"></textarea>
         </div>
         <!-- Row 27 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           Protective Response
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="protectiveResponse" type="radio" value="-3">
+          <input v-model="d.protectiveResponse.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="protectiveResponse" type="radio" value="-2">
+          <input v-model="d.protectiveResponse.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="protectiveResponse" type="radio" value="-1">
+          <input v-model="d.protectiveResponse.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="protectiveResponse" type="radio" value="0">
+          <input v-model="d.protectiveResponse.value" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="protectiveResponse" type="radio" value="NA">
+          <input v-model="d.protectiveResponse.value" type="radio" value="NA">
         </div>
         <!-- Row 28 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 27; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="protectiveResponseNotes"></textarea>
+          <textarea v-model="d.protectiveResponse.comment"></textarea>
         </div>
         <!-- Row 29 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
@@ -343,115 +343,91 @@
           Walks
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="walks" type="radio" value="-3">
+          <input v-model="d.walks.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="walks" type="radio" value="-2">
+          <input v-model="d.walks.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="walks" type="radio" value="-1">
+          <input v-model="d.walks.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="walks" type="radio" value="0">
+          <input v-model="d.walks.value" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="walks" type="radio" value="NA">
+          <input v-model="d.walks.value" type="radio" value="NA">
         </div>
         <!-- Row 30 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 29; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="walksNotes"></textarea>
+          <textarea v-model="d.walks.comment"></textarea>
         </div>
         <!-- Row 31 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           Gait
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="gait" type="radio" value="-3">
+          <input v-model="d.gait.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="gait" type="radio" value="-2">
+          <input v-model="d.gait.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="gait" type="radio" value="-1">
+          <input v-model="d.gait.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="gait" type="radio" value="0">
+          <input v-model="d.gait.value" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="gait" type="radio" value="NA">
+          <input v-model="d.gait.value" type="radio" value="NA">
         </div>
         <!-- Row 32 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 31; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="gaitNotes"></textarea>
+          <textarea v-model="d.gait.comment"></textarea>
         </div>
         <!-- Row 33 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           Initial March
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="initialMarch" type="radio" value="-3">
+          <input v-model="d.marchInitial.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="initialMarch" type="radio" value="-2">
+          <input v-model="d.marchInitial.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="initialMarch" type="radio" value="-1">
+          <input v-model="d.marchInitial.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="initialMarch" type="radio" value="0">
+          <input v-model="d.marchInitial.value" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="initialMarch" type="radio" value="NA">
+          <input v-model="d.marchInitial.value" type="radio" value="NA">
         </div>
         <!-- Row 34 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 33; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="initialMarchNotes"></textarea>
+          <textarea v-model="d.marchInitial.comment"></textarea>
         </div>
         <!-- Row 35 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           Kicks Stationary Ball
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="kicksStationaryBall" type="radio" value="-3">
+          <input v-model="d.kickStationaryBall.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="kicksStationaryBall" type="radio" value="-2">
+          <input v-model="d.kickStationaryBall.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="kicksStationaryBall" type="radio" value="-1">
+          <input v-model="d.kickStationaryBall.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="kicksStationaryBall" type="radio" value="0">
+          <input v-model="d.kickStationaryBall.value" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="kicksStationaryBall" type="radio" value="NA">
+          <input v-model="d.kickStationaryBall.value" type="radio" value="NA">
         </div>
-        <!-- Row 36 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 35; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="initialMarchNotes"></textarea>
-        </div>
-        <!-- Row 37 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 36; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Kicks Stationary Ball
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 36; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="kicksStationaryBall" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 36; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="kicksStationaryBall" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 36; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="kicksStationaryBall" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 36; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="kicksStationaryBall" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 36; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="kicksStationaryBall" type="radio" value="NA">
-        </div>
-        <!-- Row 38 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 37; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="kicksStationaryBallNotes"></textarea>
+          <textarea v-model="d.kickStationaryBall.comment"></textarea>
         </div>
         <!-- Row 39 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 38; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
@@ -461,138 +437,138 @@
           Cross March
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 38; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="crossMarch" type="radio" value="-3">
+          <input v-model="d.crossMarch.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 38; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="crossMarch" type="radio" value="-2">
+          <input v-model="d.crossMarch.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 38; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="crossMarch" type="radio" value="-1">
+          <input v-model="d.crossMarch.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 38; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="crossMarch" type="radio" value="0">
+          <input v-model="d.crossMarch.value" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 38; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="crossMarch" type="radio" value="NA">
+          <input v-model="d.crossMarch.value" type="radio" value="NA">
         </div>
         <!-- Row 40 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 39; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="crossMarchNotes"></textarea>
+          <textarea v-model="d.crossMarch.comment"></textarea>
         </div>
         <!-- Row 41 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 40; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
             Run
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 40; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="run" type="radio" value="-3">
+          <input v-model="d.run.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 40; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="run" type="radio" value="-2">
+          <input v-model="d.run.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 40; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="run" type="radio" value="-1">
+          <input v-model="d.run.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 40; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="run" type="radio" value="0">
+          <input v-model="d.run.value" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 40; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="run" type="radio" value="NA">
+          <input v-model="d.run.value" type="radio" value="NA">
         </div>
         <!-- Row 42 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 41; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="runNotes"></textarea>
+          <textarea v-model="d.run.comment"></textarea>
         </div>
         <!-- Row 43 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 42; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
             Throw a Medium-Sized Ball
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 42; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="throwMediumSizedBall" type="radio" value="-3">
+          <input v-model="d.throwBallMedium.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 42; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="throwMediumSizedBall" type="radio" value="-2">
+          <input v-model="d.throwBallMedium.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 42; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="throwMediumSizedBall" type="radio" value="-1">
+          <input v-model="d.throwBallMedium.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 42; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="throwMediumSizedBall" type="radio" value="0">
+          <input v-model="d.throwBallMedium.value" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 42; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="throwMediumSizedBall" type="radio" value="NA">
+          <input v-model="d.throwBallMedium.value" type="radio" value="NA">
         </div>
         <!-- Row 44 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 43; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="throwMediumSizedBallNotes"></textarea>
+          <textarea v-model="d.throwBallMedium.comment"></textarea>
         </div>
         <!-- Row 45 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 44; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
             Throw a Small-Sized Ball
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 44; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="throwSmallSizedBall" type="radio" value="-3">
+          <input v-model="d.throwBallSmall.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 44; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="throwSmallSizedBall" type="radio" value="-2">
+          <input v-model="d.throwBallSmall.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 44; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="throwSmallSizedBall" type="radio" value="-1">
+          <input v-model="d.throwBallSmall.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 44; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="throwSmallSizedBall" type="radio" value="0">
+          <input v-model="d.throwBallSmall.value" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 44; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="throwSmallSizedBall" type="radio" value="NA">
+          <input v-model="d.throwBallSmall.value" type="radio" value="NA">
         </div>
         <!-- Row 46 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 45; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="throwSmallSizedBallNotes"></textarea>
+          <textarea v-model="d.throwBallSmall.comment"></textarea>
         </div>
         <!-- Row 47 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 46; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
             Catch a Medium-Sized Ball
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 46; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="catchAMediumSizedBall" type="radio" value="-3">
+          <input v-model="d.catchBallMedium.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 46; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="catchAMediumSizedBall" type="radio" value="-2">
+          <input v-model="d.catchBallMedium.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 46; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="catchAMediumSizedBall" type="radio" value="-1">
+          <input v-model="d.catchBallMedium.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 46; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="catchAMediumSizedBall" type="radio" value="0">
+          <input v-model="d.catchBallMedium.value" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 46; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="catchAMediumSizedBall" type="radio" value="NA">
+          <input v-model="d.catchBallMedium.value" type="radio" value="NA">
         </div>
         <!-- Row 48 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 47; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="catchAMediumSizedBallNotes"></textarea>
+          <textarea v-model="d.catchBallMedium.comment"></textarea>
         </div>
         <!-- Row 49 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 48; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
             Jump Over Object
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 48; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="jumpOverObject" type="radio" value="-3">
+          <input v-model="d.jumpObject.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 48; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="jumpOverObject" type="radio" value="-2">
+          <input v-model="d.jumpObject.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 48; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="jumpOverObject" type="radio" value="-1">
+          <input v-model="d.jumpObject.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 48; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="jumpOverObject" type="radio" value="0">
+          <input v-model="d.jumpObject.value" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 48; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="jumpOverObject" type="radio" value="NA">
+          <input v-model="d.jumpObject.value" type="radio" value="NA">
         </div>
         <!-- Row 50 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 49; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="jumpOverObjectNotes"></textarea>
+          <textarea v-model="d.jumpObject.comment"></textarea>
         </div>
         <!-- Row 51 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 50; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
@@ -605,41 +581,41 @@
             Right
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 50; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="balanceOnOneFootWithEyesOpenRight" type="radio" value="-3">
+          <input v-model="d.balanceEyesOpen.right" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 50; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="balanceOnOneFootWithEyesOpenRight" type="radio" value="-2">
+          <input v-model="d.balanceEyesOpen.right" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 50; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="balanceOnOneFootWithEyesOpenRight" type="radio" value="-1">
+          <input v-model="d.balanceEyesOpen.right" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 50; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="balanceOnOneFootWithEyesOpenRight" type="radio" value="0">
+          <input v-model="d.balanceEyesOpen.right" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 50; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="balanceOnOneFootWithEyesOpenRight" type="radio" value="NA">
+          <input v-model="d.balanceEyesOpen.right" type="radio" value="NA">
         </div>
         <!-- Row 52 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 51; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="balanceOnOneFootWithEyesOpenNotes"></textarea>
+          <textarea v-model="d.balanceEyesOpen.comment"></textarea>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 51; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
             Left
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 51; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="balanceOnOneFootWithEyesOpenLeft" type="radio" value="-3">
+          <input v-model="d.balanceEyesOpen.left" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 51; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="balanceOnOneFootWithEyesOpenLeft" type="radio" value="-2">
+          <input v-model="d.balanceEyesOpen.left" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 51; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="balanceOnOneFootWithEyesOpenLeft" type="radio" value="-1">
+          <input v-model="d.balanceEyesOpen.left" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 51; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="balanceOnOneFootWithEyesOpenLeft" type="radio" value="0">
+          <input v-model="d.balanceEyesOpen.left" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 51; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="balanceOnOneFootWithEyesOpenLeft" type="radio" value="NA">
+          <input v-model="d.balanceEyesOpen.left" type="radio" value="NA">
         </div>
         <!-- Row 53 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 52; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
@@ -649,41 +625,41 @@
             Right
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 52; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="balanceOnOneFootWithEyesClosedRight" type="radio" value="-3">
+          <input v-model="d.balanceEyesClosed.right" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 52; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="balanceOnOneFootWithEyesClosedRight" type="radio" value="-2">
+          <input v-model="d.balanceEyesClosed.right" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 52; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="balanceOnOneFootWithEyesClosedRight" type="radio" value="-1">
+          <input v-model="d.balanceEyesClosed.right" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 52; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="balanceOnOneFootWithEyesClosedRight" type="radio" value="0">
+          <input v-model="d.balanceEyesClosed.right" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 52; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="balanceOnOneFootWithEyesClosedRight" type="radio" value="NA">
+          <input v-model="d.balanceEyesClosed.right" type="radio" value="NA">
         </div>
         <!-- Row 54 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 53; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="balanceOnOneFootWithEyesClosedNotes"></textarea>
+          <textarea v-model="d.balanceEyesClosed.comment"></textarea>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 53; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
             Left
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 53; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="balanceOnOneFootWithEyesClosedLeft" type="radio" value="-3">
+          <input v-model="d.balanceEyesClosed.left" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 53; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="balanceOnOneFootWithEyesClosedLeft" type="radio" value="-2">
+          <input v-model="d.balanceEyesClosed.left" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 53; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="balanceOnOneFootWithEyesClosedLeft" type="radio" value="-1">
+          <input v-model="d.balanceEyesClosed.left" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 53; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="balanceOnOneFootWithEyesClosedLeft" type="radio" value="0">
+          <input v-model="d.balanceEyesClosed.left" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 53; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="balanceOnOneFootWithEyesClosedLeft" type="radio" value="NA">
+          <input v-model="d.balanceEyesClosed.left" type="radio" value="NA">
         </div>
         <!-- Row 54 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 54; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
@@ -693,41 +669,41 @@
             Right
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 54; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="hopOnOneFootRight" type="radio" value="-3">
+          <input v-model="d.oneFootHop.right" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 54; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="hopOnOneFootRight" type="radio" value="-2">
+          <input v-model="d.oneFootHop.right" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 54; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="hopOnOneFootRight" type="radio" value="-1">
+          <input v-model="d.oneFootHop.right" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 54; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="hopOnOneFootRight" type="radio" value="0">
+          <input v-model="d.oneFootHop.right" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 54; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="hopOnOneFootRight" type="radio" value="NA">
+          <input v-model="d.oneFootHop.right" type="radio" value="NA">
         </div>
         <!-- Row 55 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 55; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="hopOnOneFootNotes"></textarea>
+          <textarea v-model="d.oneFootHop.comment"></textarea>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 55; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
             Left
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 55; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="hopOnOneFootLeft" type="radio" value="-3">
+          <input v-model="d.oneFootHop.left" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 55; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="hopOnOneFootLeft" type="radio" value="-2">
+          <input v-model="d.oneFootHop.left" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 55; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="hopOnOneFootLeft" type="radio" value="-1">
+          <input v-model="d.oneFootHop.left" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 55; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="hopOnOneFootLeft" type="radio" value="0">
+          <input v-model="d.oneFootHop.left" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 55; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="hopOnOneFootLeft" type="radio" value="NA">
+          <input v-model="d.oneFootHop.left" type="radio" value="NA">
         </div>
         <!-- Row 56 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 56; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
@@ -737,156 +713,156 @@
             Up
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 56; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="walkingOnStairsUp" type="radio" value="-3">
+          <input v-model="d.stairs.up" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 56; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="walkingOnStairsUp" type="radio" value="-2">
+          <input v-model="d.stairs.up" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 56; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="walkingOnStairsUp" type="radio" value="-1">
+          <input v-model="d.stairs.up" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 56; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="walkingOnStairsUp" type="radio" value="0">
+          <input v-model="d.stairs.up" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 56; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="walkingOnStairsUp" type="radio" value="NA">
+          <input v-model="d.stairs.up" type="radio" value="NA">
         </div>
         <!-- Row 57 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 57; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="walkingOnStairsNotes"></textarea>
+          <textarea v-model="d.stairs.comment"></textarea>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 57; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
             Down
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 57; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="walkingOnStairsDown" type="radio" value="-3">
+          <input v-model="d.stairs.down" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 57; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="walkingOnStairsDown" type="radio" value="-2">
+          <input v-model="d.stairs.down" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 57; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="walkingOnStairsDown" type="radio" value="-1">
+          <input v-model="d.stairs.down" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 57; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="walkingOnStairsDown" type="radio" value="0">
+          <input v-model="d.stairs.down" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 57; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="walkingOnStairsDown" type="radio" value="NA">
+          <input v-model="d.stairs.down" type="radio" value="NA">
         </div>
         <!-- Row 58 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 58; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
             Walks with Cross-lateral Arms
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 58; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="walksCrossLateralArms" type="radio" value="-3">
+          <input v-model="d.walksArmsCross.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 58; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="walksCrossLateralArms" type="radio" value="-2">
+          <input v-model="d.walksArmsCross.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 58; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="walksCrossLateralArms" type="radio" value="-1">
+          <input v-model="d.walksArmsCross.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 58; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="walksCrossLateralArms" type="radio" value="0">
+          <input v-model="d.walksArmsCross.value" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 58; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="walksCrossLateralArms" type="radio" value="NA">
+          <input v-model="d.walksArmsCross.value" type="radio" value="NA">
         </div>
         <!-- Row 59 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 59; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="walksCrossLateralArmsNotes"></textarea>
+          <textarea v-model="d.walksArmsCross.comment"></textarea>
         </div>
         <!-- Row 60 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 60; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
             Initial Skip
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 60; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="initialSkip" type="radio" value="-3">
+          <input v-model="d.initialSkip.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 60; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="initialSkip" type="radio" value="-2">
+          <input v-model="d.initialSkip.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 60; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="initialSkip" type="radio" value="-1">
+          <input v-model="d.initialSkip.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 60; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="initialSkip" type="radio" value="0">
+          <input v-model="d.initialSkip.value" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 60; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="initialSkip" type="radio" value="NA">
+          <input v-model="d.initialSkip.value" type="radio" value="NA">
         </div>
         <!-- Row 61 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 61; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="initialSkipNotes"></textarea>
+          <textarea v-model="d.initialSkip.comment"></textarea>
         </div>
         <!-- Row 62 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 62; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
             Cross Skip
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 62; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="crossSkip" type="radio" value="-3">
+          <input v-model="d.crossSkip.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 62; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="crossSkip" type="radio" value="-2">
+          <input v-model="d.crossSkip.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 62; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="crossSkip" type="radio" value="-1">
+          <input v-model="d.crossSkip.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 62; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="crossSkip" type="radio" value="0">
+          <input v-model="d.crossSkip.value" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 62; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="crossSkip" type="radio" value="NA">
+          <input v-model="d.crossSkip.value" type="radio" value="NA">
         </div>
         <!-- Row 63 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 63; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="crossSkipNotes"></textarea>
+          <textarea v-model="d.crossSkip.comment"></textarea>
         </div>
         <!-- Row 64 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 64; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
             Jumping Jacks
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 64; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="jumpingJacks" type="radio" value="-3">
+          <input v-model="d.jumpingJacks.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 64; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="jumpingJacks" type="radio" value="-2">
+          <input v-model="d.jumpingJacks.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 64; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="jumpingJacks" type="radio" value="-1">
+          <input v-model="d.jumpingJacks.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 64; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="jumpingJacks" type="radio" value="0">
+          <input v-model="d.jumpingJacks.value" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 64; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="jumpingJacks" type="radio" value="NA">
+          <input v-model="d.jumpingJacks.value" type="radio" value="NA">
         </div>
         <!-- Row 65 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 65; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="jumpingJacksNotes"></textarea>
+          <textarea v-model="d.jumpingJacks.comment"></textarea>
         </div>
         <!-- Row 66 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 66; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
             4 Piece Cross-over
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 66; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="pieceCrossOver" type="radio" value="-3">
+          <input v-model="d.fourPieceCross.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 66; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="pieceCrossOver" type="radio" value="-2">
+          <input v-model="d.fourPieceCross.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 66; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="pieceCrossOver" type="radio" value="-1">
+          <input v-model="d.fourPieceCross.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 66; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="pieceCrossOver" type="radio" value="0">
+          <input v-model="d.fourPieceCross.value" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 66; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="pieceCrossOver" type="radio" value="NA">
+          <input v-model="d.fourPieceCross.value" type="radio" value="NA">
         </div>
         <!-- Row 67 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 67; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="pieceCrossOverNotes"></textarea>
+          <textarea v-model="d.fourPieceCross.comment"></textarea>
         </div>
         <!-- Row 68 -->
       </div>
@@ -904,74 +880,164 @@ export default {
     MobilityChannel,
   },
   data:() => ({
-    holdsForearmProp: "",
-    holdsForearmPropNotes: "",
-    bellyRotationsRight: "",
-    bellyRotationsNotes: "",
-    bellyRotationsLeft: "",
-    bellyCrawl: "",
-    bellyCrawlNotes: "",
-    fromProneToCat: "",
-    fromProneToCatNotes: "",
-    momentarySitting: "",
-    momentarySittingNotes: "",
-    moveToUprightSitting: "",
-    moveToUprightSittingNotes: "",
-    pullsToFeet: "",
-    pullsToFeetNotes: "",
-    holdCreepPosition: "",
-    holdCreepPositionNotes: "",
-    creep: "",
-    creepNotes: "",
-    fromSeatedToStanding: "",
-    fromSeatedToStandingNotes: "",
-    standing: "",
-    standingNotes: "",
-    protectiveResponse: "",
-    protectiveResponseNotes: "",
-    walks: "",
-    walksNotes: "",
-    gait: "",
-    gaitNotes: "",
-    initialMarch: "",
-    initialMarchNotes: "",
-    kicksStationaryBall: "",
-    kicksStationaryBallNotes: "",
-    crossMarch: "",
-    crossMarchNotes: "",
-    run: "",
-    runNotes: "",
-    throwMediumSizedBall: "",
-    throwMediumSizedBallNotes: "",
-    throwSmallSizedBall: "",
-    throwSmallSizedBallNotes: "",
-    catchAMediumSizedBall: "",
-    catchAMediumSizedBallNotes: "",
-    jumpOverObject: "",
-    jumpOverObjectNotes: "",
-    balanceOnOneFootWithEyesOpenRight: "",
-    balanceOnOneFootWithEyesOpenNotes: "",
-    balanceOnOneFootWithEyesOpenLeft: "",
-    balanceOnOneFootWithEyesClosedRight: "",
-    balanceOnOneFootWithEyesClosedNotes: "",
-    balanceOnOneFootWithEyesClosedLeft: "",
-    hopOnOneFootRight: "",
-    hopOnOneFootNotes: "",
-    hopOnOneFootLeft: "",
-    walkingOnStairsUp: "",
-    walkingOnStairsNotes: "",
-    walkingOnStairsDown: "",
-    walksCrossLateralArms: "",
-    walksCrossLateralArmsNotes: "",
-    initialSkip: "",
-    initialSkipNotes: "",
-    crossSkip: "",
-    crossSkipNotes: "",
-    jumpingJacks: "",
-    jumpingJacksNotes: "",
-    pieceCrossOver: "",
-    pieceCrossOverNotes: "",
+    d: {
+      forearmProp: {
+        comment:"",
+        type:"NegativeChannelScore",
+        value: null
+      },
+      bellyRotations: {
+        comment:"",
+        type:"NegativeChannelScore",
+        right: null,
+        left: null
+      },
+      bellyCrawl: {
+        comment:"",
+        type:"NegativeChannelScore",
+        value: null
+      },
+      proneToCat: {
+        comment:"",
+        type:"NegativeChannelScore",
+        value: null
 
+      },
+      momentarySit: {
+        comment:"",
+        type:"NegativeChannelScore",
+        value: null
+      },
+      moveUprightSit: {
+        comment:"",
+        type:"NegativeChannelScore",
+        value: null
+      },
+      pullToFeet: {
+        comment:"",
+        type:"NegativeChannelScore",
+        value: null
+      },
+      holdCreep: {
+        comment:"",
+        type:"NegativeChannelScore",
+        value: null
+      },
+      creep: {
+        comment:"",
+        type:"NegativeChannelScore",
+        value: null
+      },
+      sitToStand: {
+        comment:"",
+        type:"NegativeChannelScore",
+        value: null
+      },
+      standing: {
+        comment:"",
+        type:"NegativeChannelScore",
+        value: null
+      },
+      protectiveResponse: {
+        comment:"",
+        type:"NegativeChannelScore",
+        value: null
+      },
+      walks: {
+        comment:"",
+        type:"NegativeChannelScore",
+        value: null
+      },
+      gait: {
+        comment:"",
+        type:"NegativeChannelScore",
+        value: null
+      },
+      marchInitial: {
+        comment:"",
+        type:"NegativeChannelScore",
+        value: null
+      },
+      kickStationaryBall: {
+        comment:"",
+        type:"NegativeChannelScore",
+        value: null
+      },
+      crossMarch: {
+        comment:"",
+        type:"NegativeChannelScore",
+        value: null
+      },
+      run: {
+        comment:"",
+        type:"NegativeChannelScore",
+        value: null
+      },
+      throwBallMedium: {
+        comment:"",
+        type:"NegativeChannelScore",
+        value: null
+      },
+      throwBallSmall: {
+        comment:"",
+        type:"NegativeChannelScore",
+        value: null
+      },
+      catchBallMedium: {
+        comment:"",
+        type:"NegativeChannelScore",
+        value: null
+      },
+      jumpObject: {
+        comment:"",
+        type:"NegativeChannelScore",
+        value: null
+      },
+      balanceEyesOpen: {
+        comment:"",
+        type:"NegativeChannelScore",
+        right: null,
+        left: null
+      },
+      balanceEyesClosed: {
+        comment:"",
+        type:"NegativeChannelScore",
+        right: null,
+        left: null
+      },
+      oneFootHop: {
+        comment:"",
+        type:"NegativeChannelScore",
+        right: null,
+        left: null
+      },
+      stairs: {
+        comment:"",
+        type:"NegativeChannelScore",
+        up: null,
+        down: null
+      },
+      walksArmsCross: {
+        comment:"",
+        type:"NegativeChannelScore",
+      },
+      initialSkip: {
+        comment:"",
+        type:"NegativeChannelScore",
+      },
+      crossSkip: {
+        comment:"",
+        type:"NegativeChannelScore",
+      },
+      jumpingJacks: {
+        comment:"",
+        type:"NegativeChannelScore",
+      },
+      fourPieceCross: {
+        comment:"",
+        type:"NegativeChannelScore",
+      },
+    }
   }),
 }
 
