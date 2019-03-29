@@ -1,7 +1,6 @@
 import axios from 'axios'
-import mockApi from '@/fixtures/MockApi'
 
-const MOCK_MODE = false;
+const MOCK_MODE = true;
 
 axios.defaults.baseURL = 'http://localhost:8000';
 
@@ -12,8 +11,7 @@ function clearAuthorization (token) {
   delete axios.defaults.headers.common['Authorization']
 }
 
-
-let api = {
+const auth = {
   login (email, password) {
     /* Example output
      *{
@@ -28,6 +26,14 @@ let api = {
     // TODO: Figure out example output
     return mockApi.logout(token)
   },
+}
+const student = {
+  searchStudentByNames (name) {
+    return mockApi.searchStudentByNames(name)
+  }
+}
+
+const evaluation = {
   createEvaluation (studentId) {
     /* Example output
      *{
@@ -41,9 +47,18 @@ let api = {
      */
     return mockApi.createEvaluation(studentId)
   },
-  searchStudentByNames (name) {
-    return mockApi.searchStudentByNames(name)
+  getEvaluationById (id) {
+    return axios.get(`evaluation/${id}`)
+  },
+  getEvaluations (query) {
+    return axios.get('evaluation', query)
   }
+}
+
+let api = {
+  auth,
+  evaluation,
+  student
 }
 
 if (MOCK_MODE) {

@@ -91,7 +91,7 @@
           Transitions
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1;">
-          <input type="checkbox" id="transitions-bool" v-model="tansitionsBool">
+          <input type="checkbox" id="transitions-bool" v-model="transitionsBool">
         </div>
         <!-- Row 5 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1;">
@@ -105,17 +105,17 @@
   </div>
 </template>
 <script>
-import FormNav from '@/components/FormNav'
-import types from '@/store/evaluation/types'
-import DetailsPage from '@/components/assessmentPages/DetailsPage'
+// import types from '@/store/evaluation/types'
 export default {
   name:"EvaluationViewer",
-  components: {
-    FormNav,
-    DetailsPage,
+  props: {
+    evaluationId: {
+      required: true
+    }
   },
   data:() => ({
-
+    generalTestingObservations:"",
+    behaviorTestingObservations:"",
     earDominanceDetail: "",
     handDominanceDetail: "",
     eyeDominanceDetail: "",
