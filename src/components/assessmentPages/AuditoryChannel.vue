@@ -340,7 +340,7 @@
         </div>
         <!-- Row 16 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 8; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <div class="column">
+          <!-- <div class="column">
             <div class="cell">
               <div class="row">
                 <div class="cell">
@@ -360,11 +360,11 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
         <!-- Row 17 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 8; grid-row-start: 17; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <div class="column">
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 8; grid-row-start: 17; grid-row-end: span 1; text-align: center; justify-self: start; align-items: start; justify-items: start;">
+          <!-- <div class="column">
             <div class="cell">
               <div class="row">
                 <div class="cell">
@@ -384,7 +384,9 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
+          <textarea v-model="understands24WordPhrasesNotes" style="align-self:start; justify-self:start; align-self:start;
+          align-items:start; justify-items:start;"></textarea>
         </div>
         <!-- Row 18 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -498,8 +500,8 @@
           <input v-model="sentenceUnderstanding.value" type="radio" value="0">
         </div>
         <!-- Row 21 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 8; grid-row-start: 21; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <div class="column">
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 8; grid-row-start: 21; grid-row-end: span 1; text-align: center; justify-self: start; align-self: start;">
+          <!-- <div class="column">
             <div class="cell">
               <div class="row">
                 <div class="cell">
@@ -519,11 +521,13 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
+          <textarea v-model="understands24WordPhrasesNotes" style="align-self:start; justify-self:start; align-self:start;
+          align-items:start; justify-items:start;"></textarea>
         </div>
         <!-- Row 22 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 8; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <div class="column">
+          <!-- <div class="column">
             <div class="cell">
               <div class="row">
                 <div class="cell">
@@ -543,7 +547,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
         <!-- Row 23 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: left; justify-self: left;">
@@ -566,7 +570,7 @@
         </div>
         <!-- Row 24 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: left; justify-self: left;">
-          <div class="row">
+          <!-- <div class="row">
             <div class="cell">
               1 Color the kite red
             </div>
@@ -574,7 +578,10 @@
               Time:
               <input v-model="badComment" type="text">
             </div>
-          </div>
+          </div> -->
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 3; text-align: left; justify-self: start; justify-items: start; align-items: start;">
+          <textarea v-model="auditorySequentialProcessingSpeedNotes" style="align-self:start; justify-self:start;"></textarea>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: left; justify-self: start;">
           Line 2
@@ -593,7 +600,7 @@
         </div>
         <!-- Row 25 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: left; justify-self: left;">
-          <div class="row">
+          <!-- <div class="row">
             <div class="cell">
               2 Circle the rabbit eating the ice cream
             </div>
@@ -601,7 +608,7 @@
               Time:
               <input v-model="badComment" type="text">
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: left; justify-self: start;">
           Line 3
@@ -620,7 +627,7 @@
         </div>
         <!-- row 26 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: left; justify-self: left;">
-          <div class="row">
+          <!-- <div class="row">
             <div class="cell">
               3 Find the turtle holding the hotdog. Color its spots blue.
             </div>
@@ -628,7 +635,7 @@
               Time:
               <input v-model="badComment" type="text">
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: left; justify-self: start;">
           Line 4
@@ -647,7 +654,7 @@
         </div>
         <!-- Row 27 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 27; grid-row-end: span 1; text-align: left; justify-self: left;">
-          <div class="row">
+          <!-- <div class="row">
             <div class="cell">
               4 Find the frog holding three balloons. Color one balloon yellow and two balloons green
             </div>
@@ -655,9 +662,8 @@
               Time:
               <input v-model="badComment" type="text">
             </div>
-          </div>
+          </div> -->
         </div>
-        <!-- Row 28 -->
       </div>
     </div>
   </div>

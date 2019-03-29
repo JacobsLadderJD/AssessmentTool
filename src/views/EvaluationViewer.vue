@@ -66,6 +66,19 @@
       <TactilityChannel v-else-if="page===5" :evaluationId="evaluation.id"/>
       <AuditoryChannel v-else-if="page===6" :evaluationId="evaluation.id"/>
 
+      <VisualChannel v-else-if="page===7"/>
+
+      <ManualChannel v-else-if="page===8"/>
+
+      <LanguageChannel v-else-if="page===9"/>
+
+      <MobilityChannel v-else-if="page===10"/>
+
+      <SensorySeekingPage v-else-if="page===11"/>
+
+      <SensitivitiesPage v-else-if="page===12"/>
+
+
       <div class="form-section">
         <div class="w3-cell-row">
           <div class="w3-container w3-cell">
@@ -86,6 +99,7 @@
 </template>
 
 <script>
+import api from '@/api'
 import FormNav from '@/components/FormNav'
 import types from '@/store/evaluation/types'
 import OverviewPage from '@/components/assessmentPages/OverviewPage'
@@ -93,7 +107,12 @@ import DetailsPage from '@/components/assessmentPages/DetailsPage'
 import ReflexesPage from '@/components/assessmentPages/ReflexesPage'
 import TactilityChannel from '@/components/assessmentPages/TactilityChannel'
 import AuditoryChannel from '@/components/assessmentPages/AuditoryChannel'
-import api from '@/api'
+import VisualChannel from '@/components/assessmentPages/VisualChannel'
+import ManualChannel from '@/components/assessmentPages/ManualChannel'
+import LanguageChannel from '@/components/assessmentPages/LanguageChannel'
+import MobilityChannel from '@/components/assessmentPages/MobilityChannel'
+import SensorySeekingPage from '@/components/assessmentPages/SensorySeekingPage'
+import SensitivitiesPage from '@/components/assessmentPages/SensitivitiesPage'
 
 export default {
   name:"EvaluationViewer",
@@ -104,6 +123,12 @@ export default {
     ReflexesPage,
     TactilityChannel,
     AuditoryChannel,
+    VisualChannel,
+    ManualChannel,
+    LanguageChannel,
+    MobilityChannel,
+    SensorySeekingPage,
+    SensitivitiesPage,
   },
   data:() => ({
     page: 1,
