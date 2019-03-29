@@ -1,11 +1,6 @@
 import axios from 'axios'
 
 const MOCK_MODE = true;
-<<<<<<< HEAD
-=======
-
-
->>>>>>> e66c6b748919fc1b6301a38638387f9f658721bb
 
 axios.defaults.baseURL = 'http://localhost:8000';
 
