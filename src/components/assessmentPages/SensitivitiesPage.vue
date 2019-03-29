@@ -1,33 +1,145 @@
 <template>
   <div class="form-page">
     <div class="form-section">
+      <h1 class="title" style="text-align:left">Sensitivities</h1>
       <div class="grid9">
         <!-- Row 1 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          SENSITIVITIES
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
-          -3
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
-          -2
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
-          -1
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1;K grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
           0
         </div>
-        <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
+        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
           1
         </div>
-        <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
           2
         </div>
-        <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1;K grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
           3
         </div>
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1;K grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
+          NA
+        </div>
+        <!-- Row 2 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          <strong>HEAD SENSITIVITIES</strong>
+        </div>
+        <!-- row 3 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Haircuts
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="haircuts" type="radio" value="0">
+        </div>
+        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="haircuts" type="radio" value="1">
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="haircuts" type="radio" value="2">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="haircuts" type="radio" value="3">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="haircuts" type="radio" value="NA">
+        </div>
+        <!-- Row 4 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 4; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+          <textarea v-model="haircutsNotes"></textarea>
+        </div>
+        <!-- row 5 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Washing Face
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="washingFace" type="radio" value="0">
+        </div>
+        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="washingFace" type="radio" value="1">
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="washingFace" type="radio" value="2">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="washingFace" type="radio" value="3">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="washingFace" type="radio" value="NA">
+        </div>
+        <!-- Row 6 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 6; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+          <textarea v-model="washingFaceNotes"></textarea>
+        </div>
+        <!-- Row 7 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Washing Hair
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="washingHair" type="radio" value="0">
+        </div>
+        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="washingHair" type="radio" value="1">
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="washingHair" type="radio" value="2">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="washingHair" type="radio" value="3">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="washingHair" type="radio" value="NA">
+        </div>
+        <!-- Row 8 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 8; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+          <textarea v-model="washingHairNotes"></textarea>
+        </div>
+        <!-- Row 9 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Brushing Teeth
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="brushingTeeth" type="radio" value="0">
+        </div>
+        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="brushingTeeth" type="radio" value="1">
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="brushingTeeth" type="radio" value="2">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="brushingTeeth" type="radio" value="3">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="brushingTeeth" type="radio" value="NA">
+        </div>
+        <!-- Row 10 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 10; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+          <textarea v-model="brushingTeethNotes"></textarea>
+        </div>
+        <!-- Row 11 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 11; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          <strong>NAIL SENSITIVITIES</strong>
+        </div>
+        <!-- row 12 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Cutting Nails
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Fingers
+        </div>
+        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="cuttingNailsFingers" type="radio" value="0">
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="cuttingNailsFingers" type="radio" value="1">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="cuttingNailsFingers" type="radio" value="2">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="cuttingNailsFingers" type="radio" value="3">
+        </div>
+        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="cuttingNailsFingers" type="radio" value="NA">
         </div>
 
       </div>
@@ -227,7 +339,7 @@ h2 {
 
 .grid9 {
   display: grid;
-  grid-template-columns: [first] auto [second] 9fr [third] 1fr [fourth] 1fr [fifth] 1fr [sixth] 1fr [seventh] 1fr [eighth] 1fr [ninth] 1fr [tenth] 1fr [eleventh] 1fr [twelfth] 1fr;
+  grid-template-columns: [first] 4fr [second] 1fr [third] 1fr [fourth] 1fr [fifth] 1fr [sixth] 1fr [seventh] 4fr [eighth] 1fr [ninth] 1fr [tenth] 1fr [eleventh] 1fr [twelfth] 1fr;
   grid-template-rows: ;
   word-wrap: normal;
   justify-items: start;

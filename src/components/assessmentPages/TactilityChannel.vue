@@ -1,11 +1,9 @@
 <template>
   <div class="form-page">
     <div class="form-section">
+      <h1 class="title" style="text-align:left">Tactility Channel</h1>
       <div class="grid6">
         <!-- row 1 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 3; grid-row-start: 1; grid-row-end: span 1; text-align: left; justify-self: left;">
-          TACTILITY CHANNEL
-        </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
           -3
         </div>
@@ -872,16 +870,8 @@
           <textarea v-model="olfactoryStimulationDetails"></textarea>
         </div>
       </div>
-    </div>
-
-
-
-    <div class="form-section">
       <div class="grid7">
         <!-- Row 1 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          TACTILITY CHANNEL
-        </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
           -3
         </div>
@@ -1521,6 +1511,12 @@
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
         </div>
       </div>
+    </div>
+
+
+
+    <div class="form-section">
+
     </div>
   </div>
 </template>

@@ -1,11 +1,9 @@
 <template>
   <div class="form-page">
     <div class="form-section">
+      <h1 class="title" style="text-align:left">Manual Channel</h1>
       <div class="grid9">
         <!-- Row 1 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          MANUAL CHANNEL
-        </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
           -3
         </div>
@@ -771,7 +769,7 @@ export default {
     crossNotes: "",
     letters: "",
     lettersNotes: "",
-    
+
 })
 }
 

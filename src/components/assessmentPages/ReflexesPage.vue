@@ -1,11 +1,9 @@
 <template>
   <div class="form-page">
     <div class="form-section">
+      <h1 class="title" style="text-align:left">Reflexes</h1>
       <div class="grid5">
         <!-- row 1 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: left; justify-self: start;">
-          REFLEXES
-        </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
           Not Integrated
         </div>

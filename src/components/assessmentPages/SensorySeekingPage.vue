@@ -1,11 +1,9 @@
 <template>
   <div class="form-page">
     <div class="form-section">
+      <h1 class="title" style="text-align:left">Sensory Seeking</h1>
       <div class="grid9">
         <!-- Row 1 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          SENSORY SEEKING
-        </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1;K grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
           0
         </div>
@@ -24,7 +22,7 @@
 
         <!-- Row 2 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          TACTILITY
+          <strong>TACTILITY</strong>
         </div>
         <!-- Row 3 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
@@ -235,7 +233,7 @@
         </div>
         <!-- Row 21 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 21; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          AUDITORY
+          <strong>AUDITORY</strong>
         </div>
         <!-- ROW 22 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
