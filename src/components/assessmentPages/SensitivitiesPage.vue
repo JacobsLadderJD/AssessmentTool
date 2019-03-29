@@ -44,7 +44,7 @@
         </div>
         <!-- Row 4 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 4; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
-          <textarea v-model="haircutsNotes"></textarea>
+          <textarea v-model="haircutsComment"></textarea>
         </div>
         <!-- row 5 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
@@ -143,7 +143,7 @@
         </div>
         <!-- Row 13 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
-          <textarea v-model="cuttingNailsNotes"></textarea>
+          <textarea v-model="cuttingNailsComment"></textarea>
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           Left
@@ -188,7 +188,7 @@
         </div>
         <!-- Row 16 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 16; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
-          <textarea v-model="tagsClothingSensitivityNotes"></textarea>
+          <textarea v-model="tagsClothingSensitivityComment"></textarea>
         </div>
         <!-- Row 17 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
@@ -211,7 +211,7 @@
         </div>
         <!-- Row 18 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 18; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
-          <textarea v-model="shirtClothingSensitivityNotes"></textarea>
+          <textarea v-model="shirtClothingSensitivityComment"></textarea>
         </div>
         <!-- Row 19 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
@@ -234,7 +234,7 @@
         </div>
         <!-- Row 20 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 20; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
-          <textarea v-model="pantsClothingSensitivityNotes"></textarea>
+          <textarea v-model="pantsClothingSensitivityComment"></textarea>
         </div>
         <!-- Row 21 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 21; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
@@ -322,13 +322,13 @@ export default {
   },
   data:() => ({
     haircuts: "",
-    haircutsNotes: "",
+    haircutsComment: "",
     washingFace: "",
     washingFaceComment: "",
     washingHair: "",
     washingHairComment: "",
     brushingTeeth: "",
-    brushingTeethNotes: "",
+    brushingTeethComment: "",
     cuttingNailsFingers: "",
     cuttingNailsToes: "",
     cuttingNailsComment: "",
