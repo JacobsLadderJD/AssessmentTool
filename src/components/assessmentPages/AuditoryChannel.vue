@@ -663,14 +663,12 @@
   </div>
 </template>
 <script>
-import FormNav from '@/components/FormNav'
-import types from '@/store/evaluation/types'
-import AuditoryChannel from '@/components/assessmentPages/AuditoryChannel'
 export default {
   name:"EvaluationViewer",
-  components: {
-    FormNav,
-    AuditoryChannel,
+  props: {
+    evaluationId: {
+      required: true
+    }
   },
   data:() => ({
     badComment: "",
@@ -730,7 +728,6 @@ export default {
     }
   }),
 }
-
 </script>
 
 <style lang="css" scoped>

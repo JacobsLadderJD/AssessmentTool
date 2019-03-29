@@ -927,14 +927,12 @@
   </div>
 </template>
 <script>
-import FormNav from '@/components/FormNav'
-import types from '@/store/evaluation/types'
-import ReflexesPage from '@/components/assessmentPages/ReflexesPage'
 export default {
-  name:"EvaluationViewer",
-  components: {
-    FormNav,
-    ReflexesPage,
+  name:"ReflexesPage",
+  props: {
+    evaluationId: {
+      required: true
+    }
   },
   data:() => ({
     moro: {
@@ -1022,7 +1020,7 @@ export default {
     },
     symmetricalTonic: {
         comment: "",
-        comment: "Integration",
+        type: "Integration",
         value: null
     },
     tonicLabyrinthine: {

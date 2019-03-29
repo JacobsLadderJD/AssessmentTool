@@ -105,14 +105,13 @@
   </div>
 </template>
 <script>
-import FormNav from '@/components/FormNav'
-import types from '@/store/evaluation/types'
-import DetailsPage from '@/components/assessmentPages/DetailsPage'
+// import types from '@/store/evaluation/types'
 export default {
   name:"EvaluationViewer",
-  components: {
-    FormNav,
-    DetailsPage,
+  props: {
+    evaluationId: {
+      required: true
+    }
   },
   data:() => ({
     generalTestingObservations:"",

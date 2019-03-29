@@ -37,7 +37,7 @@
           <div class="row">
             <div class="item" style="margin-bottom: 4vw;">
               <label for="sex-input">Sex</label>
-              <select id="sex-input" name="sex">
+              <select id="sex-input" name="sex" :selected="student.gender" disabled>
                 <option value="m">Male</option>
                 <option value="f">Female</option>
               </select>
@@ -60,26 +60,23 @@
 
       <!-- form page 2 -->
 
-      <OverviewPage v-else-if="page===2"/>
-
-      <DetailsPage v-else-if="page===3"/>
-
-      <ReflexesPage v-else-if="page===4"/>
-
-      <TactilityChannel v-else-if="page===5"/>
-
-      <AuditoryChannel v-else-if="page===6"/>
+      <OverviewPage v-else-if="page===2" :evaluationId="evaluation.id"/>
+      <DetailsPage v-else-if="page===3" :evaluationId="evaluation.id"/>
+      <ReflexesPage v-else-if="page===4" :evaluationId="evaluation.id"/>
+      <TactilityChannel v-else-if="page===5" :evaluationId="evaluation.id"/>
+      <AuditoryChannel v-else-if="page===6" :evaluationId="evaluation.id"/>
 
       <div class="form-section">
         <div class="w3-cell-row">
           <div class="w3-container w3-cell">
             <div class="form-section form-page-nav">
-              <button class="btn btn-info" style="font-size: 1.3em; float:left;" @click.prevent="prevPage()">Previous</button>
+              <button v-if="page !== 1" class="btn btn-info" style="font-size: 1.3em; float:left;" @click.prevent="prevPage()">Previous</button>
             </div>
           </div>
           <div class="w3-container w3-cell">
             <div class="form-section form-page-nav">
-              <button class="btn btn-info" style="font-size: 1.3em;" @click.prevent="nextPage()">Next</button>
+              <button v-if="page < lastPage" class="btn btn-info" style="font-size: 1.3em;" @click.prevent="nextPage()">Next</button>
+              <button v-if="page === lastPage" class="btn btn-info" style="font-size: 1.3em;" @click.prevent="submit()">Submit</button>
             </div>
           </div>
         </div>
@@ -96,7 +93,7 @@ import DetailsPage from '@/components/assessmentPages/DetailsPage'
 import ReflexesPage from '@/components/assessmentPages/ReflexesPage'
 import TactilityChannel from '@/components/assessmentPages/TactilityChannel'
 import AuditoryChannel from '@/components/assessmentPages/AuditoryChannel'
-
+import api from '@/api'
 
 export default {
   name:"EvaluationViewer",
@@ -110,6 +107,7 @@ export default {
   },
   data:() => ({
     page: 1,
+    lastPage: 6,
     temp: {
       lastEdited: new Date(),
       status: "",
@@ -141,7 +139,9 @@ export default {
     }
   },
   created () {
-    this.temp = this.$store.getters.getEvaluationById(this.$route.params.id)
+    this.temp = api.getEvaluationById(this.$route.params.id)
+
+    // this.$store.getters.getEvaluationById(this.$route.params.id)
   }
 }
 

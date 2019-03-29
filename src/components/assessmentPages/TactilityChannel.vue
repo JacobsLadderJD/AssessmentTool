@@ -869,7 +869,7 @@
         </div>
         <!-- Row 31 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 31; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          <textarea v-model="badComment"></textarea>
+          <textarea v-model="facialSurfaceAwareness.comment"></textarea>
         </div>
       </div>
     </div>
@@ -1533,14 +1533,13 @@
   </div>
 </template>
 <script>
-import FormNav from '@/components/FormNav'
-import types from '@/store/evaluation/types'
-import TactilityChannel from '@/components/assessmentPages/TactilityChannel'
+// import types from '@/store/evaluation/types'
 export default {
-  name:"EvaluationViewer",
-  components: {
-    FormNav,
-    TactilityChannel,
+  name:"TactilityChannel",
+  props: {
+    evaluationId: {
+      required: true
+    }
   },
   data: () => ({
     badComment: "",
@@ -1653,6 +1652,14 @@ export default {
         left: null
     }
   }),
+  methods: {
+    save () {
+      this.$store.saveSection({section:"tactility", data: this.$data})
+    }
+  },
+  created () {
+    // reach out to the db and get the current section stuff
+  }
 }
 
 </script>
