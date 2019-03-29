@@ -6,12 +6,7 @@ const state = () => ({
   evaluationIds: [2, 1, 0],
   evaluations: {
     0: {
-      id: 0,
-      studentId: 0,
-      lastEdited: new Date("11/21/2018"),
       evaluator: "Some User",
-      status: "",
-      code: "",
       tactilityRawScore: "24",
       auditoryRawScore: "25",
       auditoryWorkingLevel: "3",
@@ -38,15 +33,11 @@ const state = () => ({
       visualWorkingAmount: "",
       reflexesNotAccessible:"",
       reflexesNotIntegrated: "",
-      reflexesIntegrated: ""
+      reflexesIntegrated: "",
+      ...Evaluation(0, 0, 1, null, new Date("11/21/2018"))
     },
     1: {
-      id: 1,
-      studentId: 1,
-      lastEdited: new Date("11/23/2018"),
       evaluator: "Some User",
-      status: "",
-      code: "",
       tactilityRawScore: "24",
       auditoryRawScore: "25",
       auditoryWorkingLevel: "3",
@@ -73,15 +64,11 @@ const state = () => ({
       visualWorkingAmount: "",
       reflexesNotAccessible:"",
       reflexesNotIntegrated: "",
-      reflexesIntegrated: ""
+      reflexesIntegrated: "",
+      ...Evaluation(1, 1, 1, null, new Date("11/23/2018"))
     },
     2: {
-      id: 2,
-      studentId: 2,
-      lastEdited: new Date("11/25/2018"),
       evaluator: "Some User",
-      status: "",
-      code: "",
       tactilityRawScore: "24",
       auditoryRawScore: "25",
       auditoryWorkingLevel: "3",
@@ -108,7 +95,8 @@ const state = () => ({
       visualWorkingAmount: "",
       reflexesNotAccessible:"",
       reflexesNotIntegrated: "",
-      reflexesIntegrated: ""
+      reflexesIntegrated: "",
+      ...Evaluation(2, 2, 1, null,new Date("11/25/2018"))
     }
   },
 })
