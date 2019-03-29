@@ -132,7 +132,7 @@ export default {
   },
   data:() => ({
     page: 1,
-    lastPage: 6,
+    lastPage: 12,
     temp: {
       lastEdited: new Date(),
       status: "",
@@ -164,9 +164,8 @@ export default {
     }
   },
   created () {
-    this.temp = api.getEvaluationById(this.$route.params.id)
-
-    // this.$store.getters.getEvaluationById(this.$route.params.id)
+    //this.temp = api.getEvaluationById(this.$route.params.id)
+    this.$store.getters.getEvaluationById(this.$route.params.id)
   }
 }
 
