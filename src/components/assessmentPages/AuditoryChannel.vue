@@ -28,46 +28,44 @@
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
         </div>
         <!-- Row 2 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center; align-self:center;">
           LEVEL II
         </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 2; grid-row-start: 2; grid-row-end: span 1; text-align: left; justify-self: left;">
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 2; grid-row-start: 2; grid-row-end: span 1; text-align: left; justify-self: start; align-self:center;">
           Vestibular Function
         </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: Right; justify-self: end; align-self: end;">
+        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center; align-self: start; align-self:center;">
           Right
         </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center; align-self:center;">
           <input v-model="vestibularFunction.right" type="radio" value="-3">
         </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center; align-self:center;">
           <input v-model="vestibularFunction.right" type="radio" value="-2">
         </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center; align-self:center;">
           <input v-model="vestibularFunction.right" type="radio" value="-1">
         </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
+        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center; align-self:center;">
           <input v-model="vestibularFunction.right" type="radio" value="0">
         </div>
-        <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
+        <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center; align-self:center;">
           <input v-model="vestibularFunction.right" type="radio" value="+1">
         </div>
-        <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
+        <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center; align-self:center;">
           <input v-model="vestibularFunction.right" type="radio" value="+2">
         </div>
-        <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
+        <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center; align-self:center;">
           <input v-model="vestibularFunction.right" type="radio" value="+3">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
           <input v-model="vestibularFunction.right" type="radio" value="NA">
         </div>
         <!-- Row 3 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 2; grid-row-start: 3; grid-row-end: span 1; text-align: left; justify-self: left;">
-          Right:
-          <input type="text" v-model="badComment"/>
-          seconds of nystagmus
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 2; text-align: left; justify-self: start; align-self: start;">
+          <textarea v-model="vestibularFunction.comment"></textarea>
         </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: Right; justify-self: end; align-self: end;">
+        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: Right; justify-self: end; align-self: start;">
           Left
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -95,11 +93,7 @@
           <input v-model="vestibularFunction.left" type="radio" value="NA">
         </div>
         <!-- Row 4 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 2; grid-row-start: 4; grid-row-end: span 1; text-align: left; justify-self: left;">
-          Left:
-          <input type="text" v-model="badComment"/>
-          seconds of nystagmus
-        </div>
+
         <!-- Row 5 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
           LEVEL III
@@ -245,83 +239,11 @@
           <input v-model="oneStepDirections.value" type="radio" value="0">
         </div>
         <!-- Row 14 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 8; grid-row-start: 14; grid-row-end: span 1; justify-self: start;">
-          <div class="row">
-            <div class="cell">
-              <div class="column" style="margin-right:20px;">
-                <div class="cell" style="align-items: start; justify-items: start;">
-                  <div style="justify-self: start; align-self: start;">
-                    Touch your tummy
-                  </div>
-                  <textarea v-model="badComment" style="align-self:start; justify-self:start;"></textarea>
-                </div>
-                <div class="cell">
-                  <div style="justify-self: start; align-self:start;">
-                    Open your mouth
-                  </div>
-                  <textarea v-model="badComment" style="align-self:start; justify-self:start;"></textarea>
-                </div>
-                <div class="cell">
-                  <div style="justify-self: start; align-self:start;">
-                    Touch your nose
-                  </div>
-                  <textarea v-model="badComment" style="align-self:start; justify-self:start;"></textarea>
-                </div>
-                <div class="cell">
-                  <div style="justify-self: start; align-self:start;">
-                    Wave goodbye
-                  </div>
-                  <textarea v-model="badComment" style="align-self:start; justify-self:start;"></textarea>
-                </div>
-                <div class="cell">
-                  <div style="justify-self: start; align-self:start;">
-                    Put arms up
-                  </div>
-                  <textarea v-model="badComment" style="align-self:start; justify-self:start;"></textarea>
-                </div>
-              </div>
-            </div>
-            <div class="cell">
-              <div class="column">
-                <div class="cell">
-                  <div style="justify-self: start; align-self:start;">
-                    Cover your eyes
-                  </div>
-                  <textarea v-model="badComment" style="align-self:start; justify-self:start;"></textarea>
-                </div>
-                <div class="cell">
-                  <div style="justify-self: start; align-self:start;">
-                    Give me five
-                  </div>
-                  <textarea v-model="badComment" style="align-self:start; justify-self:start;"></textarea>
-                </div>
-                <div class="cell">
-                  <div style="justify-self: start; align-self:start;">
-                    Tap the table
-                  </div>
-                  <textarea v-model="badComment" style="align-self:start; justify-self:start;"></textarea>
-                </div>
-                <div class="cell">
-                  <div style="justify-self: start; align-self:start;">
-                    Blow a kiss
-                  </div>
-                  <textarea v-model="badComment" style="align-self:start; justify-self:start;"></textarea>
-                </div>
-                <div class="cell">
-                  <div style="justify-self: start; align-self:start;">
-                    Clap your hands
-                  </div>
-                  <textarea v-model="badComment" style="align-self:start; justify-self:start;"></textarea>
-                </div>
-              </div>
-            </div>
-            <div class="cell" style="align-items:center; justify-items:end; align-self:center; justify-self; end; margin-left:6vw;">
-              <input v-model="badComment" type="text">/10
-            </div>
-          </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: left; justify-self: start; align-self: start;">
+          <textarea v-model="oneStepDirections.comment"></textarea>
         </div>
         <!-- Row 15 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 2; grid-row-start: 15; grid-row-end: span 1; text-align: left; justify-self: left;">
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 2; grid-row-start: 15; grid-row-end: span 1; text-align: left; justify-self: start;">
           Understands 2-4 Word Phrases
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -384,7 +306,7 @@
             </div>
           </div> -->
           <textarea v-model="understands24WordPhrasesNotes" style="align-self:start; justify-self:start; align-self:start;
-          align-items:start; justify-items:start;"></textarea>
+          align-items:start; justify-items:start; align-self:start;"></textarea>
         </div>
         <!-- Row 18 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -406,80 +328,8 @@
           <input v-model="twoStepDirections.value" type="radio" value="0">
         </div>
         <!-- Row 19 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 8; grid-row-start: 19; grid-row-end: span 1; justify-self: start;">
-          <div class="row">
-            <div class="cell">
-              <div class="column" style="margin-right:20px;">
-                <div class="cell" style="align-items: start; justify-items: start;">
-                  <div style="justify-self: start; align-self: start;">
-                    Blow a kiss - give me five
-                  </div>
-                  <textarea v-model="badComment" style="align-self:start; justify-self:start;"></textarea>
-                </div>
-                <div class="cell">
-                  <div style="justify-self: start; align-self:start;">
-                    Open your mouth - touch your ears
-                  </div>
-                  <textarea v-model="badComment" style="align-self:start; justify-self:start;"></textarea>
-                </div>
-                <div class="cell">
-                  <div style="justify-self: start; align-self:start;">
-                    Kick your feet - nod your head
-                  </div>
-                  <textarea v-model="badComment" style="align-self:start; justify-self:start;"></textarea>
-                </div>
-                <div class="cell">
-                  <div style="justify-self: start; align-self:start;">
-                    Touch your hair - cover your eyes
-                  </div>
-                  <textarea v-model="badComment" style="align-self:start; justify-self:start;"></textarea>
-                </div>
-                <div class="cell">
-                  <div style="justify-self: start; align-self:start;">
-                    Look up - shake my hand
-                  </div>
-                  <textarea v-model="badComment" style="align-self:start; justify-self:start;"></textarea>
-                </div>
-              </div>
-            </div>
-            <div class="cell">
-              <div class="column">
-                <div class="cell">
-                  <div style="justify-self: start; align-self:start;">
-                    Swing your arms - wiggle your fingers
-                  </div>
-                  <textarea v-model="badComment" style="align-self:start; justify-self:start;"></textarea>
-                </div>
-                <div class="cell">
-                  <div style="justify-self: start; align-self:start;">
-                    Clap your hands - look down
-                  </div>
-                  <textarea v-model="badComment" style="align-self:start; justify-self:start;"></textarea>
-                </div>
-                <div class="cell">
-                  <div style="justify-self: start; align-self:start;">
-                    Tap the table - pat your head
-                  </div>
-                  <textarea v-model="badComment" style="align-self:start; justify-self:start;"></textarea>
-                </div>
-                <div class="cell">
-                  <div style="justify-self: start; align-self:start;">
-                    Tap your legs - cover your eyes
-                  </div>
-                  <textarea v-model="badComment" style="align-self:start; justify-self:start;"></textarea>
-                </div>
-                <div class="cell">
-                  <div style="justify-self: start; align-self:start;">
-                    Wave hello - blow a kiss
-                  </div>
-                  <textarea v-model="badComment" style="align-self:start; justify-self:start;"></textarea>
-                </div>
-              </div>
-            </div>
-            <div class="cell" style="align-items:center; justify-items:end; align-self:center; justify-self; end; margin-left:6vw;">
-              <input v-model="badComment" type="text">/10
-            </div>
-          </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: left; justify-self: start; align-self: start;">
+          <textarea v-model="twoStepDirections.comment"></textarea>
         </div>
         <!-- Row 20 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 2; grid-row-start: 20; grid-row-end: span 1; text-align: left; justify-self: left;">
@@ -898,8 +748,8 @@ h2 {
 
 .grid8 {
   display: grid;
-  grid-template-columns: [first] auto [second] 9fr [third] 1fr [fourth] 1fr [fifth] 1fr [sixth] 1fr [seventh] 1fr [eighth] 1fr [ninth] 1fr [tenth] 1fr [eleventh] 1fr [twelfth] 1fr;
-  grid-template-rows: [first] auto [second] 1fr [third] auto [fourth] 1fr [fifth] 1fr [sixth] auto [seventh] 1fr [eighth] auto [ninth] 1fr [tenth] 1fr;
+  grid-template-columns: [first] auto [second] 9fr [third] auto [fourth] 1fr [fifth] 1fr [sixth] 1fr [seventh] 1fr [eighth] 1fr [ninth] 1fr [tenth] 1fr [eleventh] 1fr [twelfth] 1fr;
+  grid-template-rows:;
   word-wrap: normal;
   justify-items: start;
   width: 100%;

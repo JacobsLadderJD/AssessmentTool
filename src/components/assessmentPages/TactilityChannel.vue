@@ -988,6 +988,9 @@
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
         </div>
         <!-- Row 5 -->
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: left; justify-self: start; align-self: start;">
+          <textarea v-model="pageDiscrimination.comment"></textarea>
+        </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           Paper Books
         </div>
@@ -1049,10 +1052,8 @@
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
         </div>
         <!-- Row 7 -->
-        <div class="cell" style="grid-column-start:2; grid-column-end: span 1; grid-row-start:7; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Visual Exposure:
-          <input type="text" v-model="badComment"/>
-          / 4
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 2; text-align: left; justify-self: start; align-self: start;">
+          <textarea v-model="tactileDiscriminationMedium.comment"></textarea>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           Without Exposure
@@ -1081,11 +1082,7 @@
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
         </div>
         <!-- Row 8 -->
-        <div class="cell" style="grid-column-start:2; grid-column-end: span 1; grid-row-start:8; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Without Visual Exposure:
-          <input type="text" v-model="badComment"/>
-          / 4
-        </div>
+
         <!-- Row 9 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           LEVEL VI
@@ -1120,10 +1117,8 @@
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
         </div>
         <!-- Row 10 -->
-        <div class="cell" style="grid-column-start:2; grid-column-end: span 1; grid-row-start:10; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Visual Exposure:
-          <input type="text" v-model="badComment"/>
-          / 4
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 2; text-align: left; justify-self: start; align-self: start;">
+          <textarea v-model="tactileDiscriminationSmall.comment"></textarea>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           Without Exposure
@@ -1152,11 +1147,7 @@
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
         </div>
         <!-- Row 11 -->
-        <div class="cell" style="grid-column-start:2; grid-column-end: span 1; grid-row-start:11; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Without Visual Exposure:
-          <input type="text" v-model="badComment"/>
-          / 4
-        </div>
+
         <!-- Row 12 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           LEVEL VII
@@ -1191,10 +1182,8 @@
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
         </div>
         <!-- Row 13 -->
-        <div class="cell" style="grid-column-start:2; grid-column-end: span 1; grid-row-start:13; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Eyes Open:
-          <input type="text" v-model="badComment"/>
-          seconds
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: left; justify-self: start; align-self: start;">
+          <textarea v-model="rhomberg.comment"></textarea>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           Eyes Closed
@@ -1223,11 +1212,7 @@
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
         </div>
         <!-- Row 14 -->
-        <div class="cell" style="grid-column-start:2; grid-column-end: span 1; grid-row-start:14; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Eyes Closed
-          <input type="text" v-model="badComment"/>
-          Seconds
-        </div>
+
         <!-- Row 15 -->
         <div class="cell" style="grid-column-start:2; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           Manns - Right Foot in Front
@@ -1259,10 +1244,8 @@
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: center; justify-self: center;">
         </div>
         <!-- Row 16 -->
-        <div class="cell" style="grid-column-start:2; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Eyes Open:
-          <input type="text" v-model="badComment"/>
-          Seconds
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 2; text-align: left; justify-self: start; align-self: start;">
+          <textarea v-model="mannsRightFoot.comment"></textarea>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           Eyes Closed
@@ -1291,11 +1274,7 @@
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
         </div>
         <!-- Row 17 -->
-        <div class="cell" style="grid-column-start:2; grid-column-end: span 1; grid-row-start:17; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Eyes Closed:
-          <input type="text" v-model="badComment"/>
-          Seconds
-        </div>
+
         <!-- Row 18 -->
         <div class="cell" style="grid-column-start:2; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           Manns - Left Foot in Front
@@ -1328,10 +1307,8 @@
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
         </div>
         <!-- Row 19 -->
-        <div class="cell" style="grid-column-start:2; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Eyes Open:
-          <input type="text" v-model="badComment"/>
-          Seconds
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: left; justify-self: start; align-self: start;">
+          <textarea v-model="mannsLeftFoot.comment"></textarea>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           Eyes Closed
@@ -1360,11 +1337,7 @@
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: center;">
         </div>
         <!-- Row 20 -->
-        <div class="cell" style="grid-column-start:2; grid-column-end: span 1; grid-row-start:20; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Eyes Closed:
-          <input type="text" v-model="badComment"/>
-          Seconds
-        </div>
+
         <!-- Row 21 -->
         <div class="cell" style="grid-column-start:2; grid-column-end: span 1; grid-row-start: 21; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           Arm Matching
@@ -1396,6 +1369,9 @@
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 21; grid-row-end: span 1; text-align: center; justify-self: center;">
         </div>
         <!-- Row 22 -->
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: left; justify-self: start; align-self: start;">
+          <textarea v-model="armMatching.comment"></textarea>
+        </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           Above Head
         </div>
@@ -1480,12 +1456,8 @@
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
         </div>
         <!-- Row 25 -->
-        <div class="cell" style="grid-column-start:2; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Right:
-          <input type="text" v-model="badComment"/>
-          /4<br>Left:
-          <input type="text" v-model="badComment"/>
-          /4
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: left; justify-self: start; align-self: start;">
+          <textarea v-model="tactileDiscriminationMedium.comment"></textarea>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
           Left
@@ -1813,7 +1785,7 @@ h2 {
 .grid7 {
   display: grid;
   grid-template-columns: [first] auto [second] 9fr [third] 1fr [fourth] 1fr [fifth] 1fr [sixth] 1fr [seventh] 1fr [eighth] 1fr [ninth] 1fr [tenth] 1fr [eleventh] 1fr [twelfth] 1fr;
-  grid-template-rows: [first] auto [second] 1fr [third] auto [fourth] 1fr [fifth] 1fr [sixth] 1fr [seventh] 1fr [eighth] 1fr [ninth] 1fr [tenth] 1fr;
+  grid-template-rows:;
   word-wrap: normal;
   justify-items: start;
   width: 100%;

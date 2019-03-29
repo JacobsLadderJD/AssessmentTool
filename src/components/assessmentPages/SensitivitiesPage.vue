@@ -44,7 +44,7 @@
         </div>
         <!-- Row 4 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 4; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
-          <textarea v-model="haircutsNotes"></textarea>
+          <textarea v-model="haircutsComment"></textarea>
         </div>
         <!-- row 5 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
@@ -67,7 +67,7 @@
         </div>
         <!-- Row 6 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 6; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
-          <textarea v-model="washingFaceNotes"></textarea>
+          <textarea v-model="washingFaceComment"></textarea>
         </div>
         <!-- Row 7 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
@@ -90,7 +90,7 @@
         </div>
         <!-- Row 8 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 8; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
-          <textarea v-model="washingHairNotes"></textarea>
+          <textarea v-model="washingHairComment"></textarea>
         </div>
         <!-- Row 9 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
@@ -113,7 +113,7 @@
         </div>
         <!-- Row 10 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 10; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
-          <textarea v-model="brushingTeethNotes"></textarea>
+          <textarea v-model="brushingTeethComment"></textarea>
         </div>
         <!-- Row 11 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 11; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
@@ -141,6 +141,170 @@
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
           <input v-model="cuttingNailsFingers" type="radio" value="NA">
         </div>
+        <!-- Row 13 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+          <textarea v-model="cuttingNailsComment"></textarea>
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Left
+        </div>
+        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="cuttingNailsToes" type="radio" value="0">
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="cuttingNailsToes" type="radio" value="1">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="cuttingNailsToes" type="radio" value="2">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="cuttingNailsToes" type="radio" value="3">
+        </div>
+        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="cuttingNailsToes" type="radio" value="NA">
+        </div>
+        <!-- Row 14 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          <strong>CLOTHING SENSITIVITIES</strong>
+        </div>
+        <!-- Row 15 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Tags
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="tagsClothingSensitivity" type="radio" value="0">
+        </div>
+        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="tagsClothingSensitivity" type="radio" value="1">
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="tagsClothingSensitivity" type="radio" value="2">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="tagsClothingSensitivity" type="radio" value="3">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="tagsClothingSensitivity" type="radio" value="NA">
+        </div>
+        <!-- Row 16 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 16; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+          <textarea v-model="tagsClothingSensitivityComment"></textarea>
+        </div>
+        <!-- Row 17 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Shirt
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="shirtClothingSensitivity" type="radio" value="0">
+        </div>
+        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="shirtClothingSensitivity" type="radio" value="1">
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="shirtClothingSensitivity" type="radio" value="2">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="shirtClothingSensitivity" type="radio" value="3">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="shirtClothingSensitivity" type="radio" value="NA">
+        </div>
+        <!-- Row 18 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 18; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+          <textarea v-model="shirtClothingSensitivityComment"></textarea>
+        </div>
+        <!-- Row 19 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Pants
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="pantsClothingSensitivity" type="radio" value="0">
+        </div>
+        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="pantsClothingSensitivity" type="radio" value="1">
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="pantsClothingSensitivity" type="radio" value="2">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="pantsClothingSensitivity" type="radio" value="3">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="pantsClothingSensitivity" type="radio" value="NA">
+        </div>
+        <!-- Row 20 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 20; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+          <textarea v-model="pantsClothingSensitivityComment"></textarea>
+        </div>
+        <!-- Row 21 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 21; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Socks
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 21; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="socksClothingSensitivity" type="radio" value="0">
+        </div>
+        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 21; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="socksClothingSensitivity" type="radio" value="1">
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 21; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="socksClothingSensitivity" type="radio" value="2">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 21; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="socksClothingSensitivity" type="radio" value="3">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 21; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="socksClothingSensitivity" type="radio" value="NA">
+        </div>
+        <!-- Row 22 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 22; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+          <textarea v-model="socksClothingSensitivityComment"></textarea>
+        </div>
+        <!-- Row 23 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Shoes
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="shoesClothingSensitivity" type="radio" value="0">
+        </div>
+        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="shoesClothingSensitivity" type="radio" value="1">
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="shoesClothingSensitivity" type="radio" value="2">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="shoesClothingSensitivity" type="radio" value="3">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="shoesClothingSensitivity" type="radio" value="NA">
+        </div>
+        <!-- Row 24 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 24; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+          <textarea v-model="shoesClothingSensitivityComment"></textarea>
+        </div>
+        <!-- Row 25 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Coat
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="coatClothingSensitivity" type="radio" value="0">
+        </div>
+        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="coatClothingSensitivity" type="radio" value="1">
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="coatClothingSensitivity" type="radio" value="2">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="coatClothingSensitivity" type="radio" value="3">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="coatClothingSensitivity" type="radio" value="NA">
+        </div>
+        <!-- Row 26 -->
+        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 26; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+          <textarea v-model="coatClothingSensitivityComment"></textarea>
+        </div>
 
       </div>
     </div>
@@ -157,7 +321,29 @@ export default {
     SensitivitiesPage,
   },
   data:() => ({
-    something: "",
+    haircuts: "",
+    haircutsComment: "",
+    washingFace: "",
+    washingFaceComment: "",
+    washingHair: "",
+    washingHairComment: "",
+    brushingTeeth: "",
+    brushingTeethComment: "",
+    cuttingNailsFingers: "",
+    cuttingNailsToes: "",
+    cuttingNailsComment: "",
+    tagsClothingSensitivity: "",
+    tagsClothingSensitivityComment: "",
+    shirtClothingSensitivity: "",
+    shirtClothingSensitivityComment: "",
+    pantsClothingSensitivity: "",
+    pantsClothingSensitivityComment: "",
+    socksClothingSensitivity: "",
+    socksClothingSensitivityComment: "",
+    shoesClothingSensitivity: "",
+    shoesClothingSensitivityComment: "",
+    coatClothingSensitivity: "",
+    coatClothingSensitivityComment: "",
   }),
 }
 
