@@ -107,7 +107,7 @@
 <script>
 // import types from '@/store/evaluation/types'
 export default {
-  name:"EvaluationViewer",
+  name:"DetailsPage",
   props: {
     evaluationId: {
       required: true

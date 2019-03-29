@@ -608,15 +608,9 @@
   </div>
 </template>
 <script>
-import FormNav from '@/components/FormNav'
-import types from '@/store/evaluation/types'
-import SensorySeekingPage from '@/components/assessmentPages/SensorySeekingPage'
+// import types from '@/store/evaluation/types'
 export default {
-  name:"EvaluationViewer",
-  components: {
-    FormNav,
-    SensorySeekingPage,
-  },
+  name:"SensorySeekingPage",
   data:() => ({
     d: {
       hands: {

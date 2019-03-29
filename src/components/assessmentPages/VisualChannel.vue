@@ -539,15 +539,9 @@
   </div>
 </template>
 <script>
-import FormNav from '@/components/FormNav'
-import types from '@/store/evaluation/types'
-import VisualChannel from '@/components/assessmentPages/VisualChannel'
+// import types from '@/store/evaluation/types'
 export default {
-  name:"EvaluationViewer",
-  components: {
-    FormNav,
-    VisualChannel,
-  },
+  name:"VisualChannel",
   data:() => ({
     d: {
       trackingHorizontal: {

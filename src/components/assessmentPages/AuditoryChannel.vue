@@ -38,59 +38,59 @@
           Right
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center; align-self:center;">
-          <input v-model="vestibularFunction.right" type="radio" value="-3">
+          <input v-model="d.vestibularFunction.right" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center; align-self:center;">
-          <input v-model="vestibularFunction.right" type="radio" value="-2">
+          <input v-model="d.vestibularFunction.right" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center; align-self:center;">
-          <input v-model="vestibularFunction.right" type="radio" value="-1">
+          <input v-model="d.vestibularFunction.right" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center; align-self:center;">
-          <input v-model="vestibularFunction.right" type="radio" value="0">
+          <input v-model="d.vestibularFunction.right" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center; align-self:center;">
-          <input v-model="vestibularFunction.right" type="radio" value="+1">
+          <input v-model="d.vestibularFunction.right" type="radio" value="+1">
         </div>
         <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center; align-self:center;">
-          <input v-model="vestibularFunction.right" type="radio" value="+2">
+          <input v-model="d.vestibularFunction.right" type="radio" value="+2">
         </div>
         <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center; align-self:center;">
-          <input v-model="vestibularFunction.right" type="radio" value="+3">
+          <input v-model="d.vestibularFunction.right" type="radio" value="+3">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="vestibularFunction.right" type="radio" value="NA">
+          <input v-model="d.vestibularFunction.right" type="radio" value="NA">
         </div>
         <!-- Row 3 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 2; text-align: left; justify-self: start; align-self: start;">
-          <textarea v-model="vestibularFunction.comment"></textarea>
+          <textarea v-model="d.vestibularFunction.comment"></textarea>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: Right; justify-self: end; align-self: start;">
           Left
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="vestibularFunction.left" type="radio" value="-3">
+          <input v-model="d.vestibularFunction.left" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="vestibularFunction.left" type="radio" value="-2">
+          <input v-model="d.vestibularFunction.left" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="vestibularFunction.left" type="radio" value="-1">
+          <input v-model="d.vestibularFunction.left" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="vestibularFunction.left" type="radio" value="0">
+          <input v-model="d.vestibularFunction.left" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="vestibularFunction.left" type="radio" value="+1">
+          <input v-model="d.vestibularFunction.left" type="radio" value="+1">
         </div>
         <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="vestibularFunction.left" type="radio" value="+2">
+          <input v-model="d.vestibularFunction.left" type="radio" value="+2">
         </div>
         <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="vestibularFunction.left" type="radio" value="+3">
+          <input v-model="d.vestibularFunction.left" type="radio" value="+3">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="vestibularFunction.left" type="radio" value="NA">
+          <input v-model="d.vestibularFunction.left" type="radio" value="NA">
         </div>
         <!-- Row 4 -->
 
@@ -102,64 +102,64 @@
           Reaction to Threatening Sounds
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="threateningSound.value" type="radio" value="-3">
+          <input v-model="d.threateningSound.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="threateningSound.value" type="radio" value="-2">
+          <input v-model="d.threateningSound.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="threateningSound.value" type="radio" value="-1">
+          <input v-model="d.threateningSound.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="threateningSound.value" type="radio" value="0">
+          <input v-model="d.threateningSound.value" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="threateningSound.value" type="radio" value="+1">
+          <input v-model="d.threateningSound.value" type="radio" value="+1">
         </div>
         <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="threateningSound.value" type="radio" value="+2">
+          <input v-model="d.threateningSound.value" type="radio" value="+2">
         </div>
         <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="threateningSound.value" type="radio" value="+3">
+          <input v-model="d.threateningSound.value" type="radio" value="+3">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="threateningSound.value" type="radio" value="NA">
+          <input v-model="d.threateningSound.value" type="radio" value="NA">
         </div>
         <!-- Row 6 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 6; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="threateningSound.comment"></textarea>
+          <textarea v-model="d.threateningSound.comment"></textarea>
         </div>
         <!-- Row 7 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 2; grid-row-start: 7; grid-row-end: span 1; text-align: left; justify-self: left;">
           Sensitivity to Sound
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="soundSensitivity.value" type="radio" value="-3">
+          <input v-model="d.soundSensitivity.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="soundSensitivity.value" type="radio" value="-2">
+          <input v-model="d.soundSensitivity.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="soundSensitivity.value" type="radio" value="-1">
+          <input v-model="d.soundSensitivity.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="soundSensitivity.value" type="radio" value="0">
+          <input v-model="d.soundSensitivity.value" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="soundSensitivity.value" type="radio" value="+1">
+          <input v-model="d.soundSensitivity.value" type="radio" value="+1">
         </div>
         <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="soundSensitivity.value" type="radio" value="+2">
+          <input v-model="d.soundSensitivity.value" type="radio" value="+2">
         </div>
         <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="soundSensitivity.value" type="radio" value="+3">
+          <input v-model="d.soundSensitivity.value" type="radio" value="+3">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="soundSensitivity.value" type="radio" value="NA">
+          <input v-model="d.soundSensitivity.value" type="radio" value="NA">
         </div>
         <!-- Row 8 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 8; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="soundSensitivity.comment"></textarea>
+          <textarea v-model="d.soundSensitivity.comment"></textarea>
         </div>
         <!-- Row 9 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -169,32 +169,32 @@
           Reaction to Change in Tonality
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="tonalityChangeReaction.value" type="radio" value="-3">
+          <input v-model="d.tonalityChangeReaction.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="tonalityChangeReaction.value" type="radio" value="-2">
+          <input v-model="d.tonalityChangeReaction.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="tonalityChangeReaction.value" type="radio" value="-1">
+          <input v-model="d.tonalityChangeReaction.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="tonalityChangeReaction.value" type="radio" value="0">
+          <input v-model="d.tonalityChangeReaction.value" type="radio" value="0">
         </div>
         <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="tonalityChangeReaction.value" type="radio" value="+1">
+          <input v-model="d.tonalityChangeReaction.value" type="radio" value="+1">
         </div>
         <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="tonalityChangeReaction.value" type="radio" value="+2">
+          <input v-model="d.tonalityChangeReaction.value" type="radio" value="+2">
         </div>
         <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="tonalityChangeReaction.value" type="radio" value="+3">
+          <input v-model="d.tonalityChangeReaction.value" type="radio" value="+3">
         </div>
         <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="tonalityChangeReaction.value" type="radio" value="NA">
+          <input v-model="d.tonalityChangeReaction.value" type="radio" value="NA">
         </div>
         <!-- Row 10 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 10; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="tonalityChangeReaction.comment"></textarea>
+          <textarea v-model="d.tonalityChangeReaction.comment"></textarea>
         </div>
         <!-- Row 11 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 11; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -204,20 +204,20 @@
           Initial Receptive Words
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 11; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="initialReceptiveWords.value" type="radio" value="-3">
+          <input v-model="d.initialReceptiveWords.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 11; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="initialReceptiveWords.value" type="radio" value="-2">
+          <input v-model="d.initialReceptiveWords.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 11; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="initialReceptiveWords.value" type="radio" value="-1">
+          <input v-model="d.initialReceptiveWords.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 11; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="initialReceptiveWords.value" type="radio" value="0">
+          <input v-model="d.initialReceptiveWords.value" type="radio" value="0">
         </div>
         <!-- Row 12 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 12; grid-row-end: span 1; justify-self: start; align-self: start; align-items: start;">
-          <textarea v-model="initialReceptiveWords.comment" placeholder="Known Words">Known Words</textarea>
+          <textarea v-model="d.initialReceptiveWords.comment" placeholder="Known Words">Known Words</textarea>
         </div>
         <!-- Row 13 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -227,36 +227,36 @@
           Follows One-Step Directions
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="oneStepDirections.value" type="radio" value="-3">
+          <input v-model="d.oneStepDirections.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="oneStepDirections.value" type="radio" value="-2">
+          <input v-model="d.oneStepDirections.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="oneStepDirections.value" type="radio" value="-1">
+          <input v-model="d.oneStepDirections.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="oneStepDirections.value" type="radio" value="0">
+          <input v-model="d.oneStepDirections.value" type="radio" value="0">
         </div>
         <!-- Row 14 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: left; justify-self: start; align-self: start;">
-          <textarea v-model="oneStepDirections.comment"></textarea>
+          <textarea v-model="d.oneStepDirections.comment"></textarea>
         </div>
         <!-- Row 15 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 2; grid-row-start: 15; grid-row-end: span 1; text-align: left; justify-self: start;">
           Understands 2-4 Word Phrases
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="shortPhrases.value" type="radio" value="-3">
+          <input v-model="d.shortPhrases.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="shortPhrases.value" type="radio" value="-2">
+          <input v-model="d.shortPhrases.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="shortPhrases.value" type="radio" value="-1">
+          <input v-model="d.shortPhrases.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="shortPhrases.value" type="radio" value="0">
+          <input v-model="d.shortPhrases.value" type="radio" value="0">
         </div>
         <!-- Row 16 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 8; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -264,19 +264,19 @@
             <div class="cell">
               <div class="row">
                 <div class="cell">
-                  1<input v-model="badComment" type="text">(C)
+                  1<input v-model="d.badComment" type="text">(C)
                 </div>
                 <div class="cell">
-                  3<input v-model="badComment" type="text">(B)
+                  3<input v-model="d.badComment" type="text">(B)
                 </div>
                 <div class="cell">
-                  5<input v-model="badComment" type="text">(C)
+                  5<input v-model="d.badComment" type="text">(C)
                 </div>
                 <div class="cell">
-                  7<input v-model="badComment" type="text">(B)
+                  7<input v-model="d.badComment" type="text">(B)
                 </div>
                 <div class="cell">
-                  9<input v-model="badComment" type="text">(C)
+                  9<input v-model="d.badComment" type="text">(C)
                 </div>
               </div>
             </div>
@@ -288,24 +288,24 @@
             <div class="cell">
               <div class="row">
                 <div class="cell">
-                  2<input v-model="badComment" type="text">(A)
+                  2<input v-model="d.badComment" type="text">(A)
                 </div>
                 <div class="cell">
-                  4<input v-model="badComment" type="text">(B)
+                  4<input v-model="d.badComment" type="text">(B)
                 </div>
                 <div class="cell">
-                  6<input v-model="badComment" type="text">(A)
+                  6<input v-model="d.badComment" type="text">(A)
                 </div>
                 <div class="cell">
-                  8<input v-model="badComment" type="text">(A)
+                  8<input v-model="d.badComment" type="text">(A)
                 </div>
                 <div class="cell">
-                  10<input v-model="badComment" type="text">(C)
+                  10<input v-model="d.badComment" type="text">(C)
                 </div>
               </div>
             </div>
           </div> -->
-          <textarea v-model="understands24WordPhrasesNotes" style="align-self:start; justify-self:start; align-self:start;
+          <textarea v-model="d.shortPhrases.comment" style="align-self:start; justify-self:start; align-self:start;
           align-items:start; justify-items:start; align-self:start;"></textarea>
         </div>
         <!-- Row 18 -->
@@ -316,36 +316,36 @@
           Follows Two-Step Directions
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="twoStepDirections.value" type="radio" value="-3">
+          <input v-model="d.twoStepDirections.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="twoStepDirections.value" type="radio" value="-2">
+          <input v-model="d.twoStepDirections.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="twoStepDirections.value" type="radio" value="-1">
+          <input v-model="d.twoStepDirections.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="twoStepDirections.value" type="radio" value="0">
+          <input v-model="d.twoStepDirections.value" type="radio" value="0">
         </div>
         <!-- Row 19 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: left; justify-self: start; align-self: start;">
-          <textarea v-model="twoStepDirections.comment"></textarea>
+          <textarea v-model="d.twoStepDirections.comment"></textarea>
         </div>
         <!-- Row 20 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 2; grid-row-start: 20; grid-row-end: span 1; text-align: left; justify-self: left;">
           Understands 5-8 Word Sentences
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="sentenceUnderstanding.value" type="radio" value="-3">
+          <input v-model="d.sentenceUnderstanding.value" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="sentenceUnderstanding.value" type="radio" value="-2">
+          <input v-model="d.sentenceUnderstanding.value" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="sentenceUnderstanding.value" type="radio" value="-1">
+          <input v-model="d.sentenceUnderstanding.value" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="sentenceUnderstanding.value" type="radio" value="0">
+          <input v-model="d.sentenceUnderstanding.value" type="radio" value="0">
         </div>
         <!-- Row 21 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 8; grid-row-start: 21; grid-row-end: span 1; text-align: center; justify-self: start; align-self: start;">
@@ -353,24 +353,24 @@
             <div class="cell">
               <div class="row">
                 <div class="cell">
-                  1<input v-model="badComment" type="text">(B)
+                  1<input v-model="d.badComment" type="text">(B)
                 </div>
                 <div class="cell">
-                  3<input v-model="badComment" type="text">(B)
+                  3<input v-model="d.badComment" type="text">(B)
                 </div>
                 <div class="cell">
-                  5<input v-model="badComment" type="text">(A)
+                  5<input v-model="d.badComment" type="text">(A)
                 </div>
                 <div class="cell">
-                  7<input v-model="badComment" type="text">(C)
+                  7<input v-model="d.badComment" type="text">(C)
                 </div>
                 <div class="cell">
-                  9<input v-model="badComment" type="text">(B)
+                  9<input v-model="d.badComment" type="text">(B)
                 </div>
               </div>
             </div>
           </div> -->
-          <textarea v-model="understands24WordPhrasesNotes" style="align-self:start; justify-self:start; align-self:start;
+          <textarea v-model="d.sentenceUnderstanding.comment" style="align-self:start; justify-self:start; align-self:start;
           align-items:start; justify-items:start;"></textarea>
         </div>
         <!-- Row 22 -->
@@ -379,19 +379,19 @@
             <div class="cell">
               <div class="row">
                 <div class="cell">
-                  2<input v-model="badComment" type="text">(A)
+                  2<input v-model="d.badComment" type="text">(A)
                 </div>
                 <div class="cell">
-                  4<input v-model="badComment" type="text">(C)
+                  4<input v-model="d.badComment" type="text">(C)
                 </div>
                 <div class="cell">
-                  6<input v-model="badComment" type="text">(A)
+                  6<input v-model="d.badComment" type="text">(A)
                 </div>
                 <div class="cell">
-                  8<input v-model="badComment" type="text">(C)
+                  8<input v-model="d.badComment" type="text">(C)
                 </div>
                 <div class="cell">
-                  10<input v-model="badComment" type="text">(A)
+                  10<input v-model="d.badComment" type="text">(A)
                 </div>
               </div>
             </div>
@@ -405,16 +405,16 @@
           Line 1
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="auditoryProcessingSpeed.line1" type="radio" value="-3">
+          <input v-model="d.auditoryProcessingSpeed.line1" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="auditoryProcessingSpeed.line1" type="radio" value="-2">
+          <input v-model="d.auditoryProcessingSpeed.line1" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="auditoryProcessingSpeed.line1" type="radio" value="-1">
+          <input v-model="d.auditoryProcessingSpeed.line1" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="auditoryProcessingSpeed.line1" type="radio" value="0">
+          <input v-model="d.auditoryProcessingSpeed.line1" type="radio" value="0">
         </div>
         <!-- Row 24 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: left; justify-self: left;">
@@ -424,27 +424,27 @@
             </div>
             <div class="cell" style="text-align:right; justify-self:end; justify-items:end; align-self:end; align-items:end; margin-left: 50px;">
               Time:
-              <input v-model="badComment" type="text">
+              <input v-model="d.badComment" type="text">
             </div>
           </div> -->
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 3; text-align: left; justify-self: start; justify-items: start; align-items: start;">
-          <textarea v-model="auditorySequentialProcessingSpeedNotes" style="align-self:start; justify-self:start;"></textarea>
+          <textarea v-model="d.auditoryProcessingSpeed.comment" style="align-self:start; justify-self:start;"></textarea>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: left; justify-self: start;">
           Line 2
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="auditoryProcessingSpeed.line2" type="radio" value="-3">
+          <input v-model="d.auditoryProcessingSpeed.line2" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="auditoryProcessingSpeed.line2" type="radio" value="-2">
+          <input v-model="d.auditoryProcessingSpeed.line2" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="auditoryProcessingSpeed.line2" type="radio" value="-1">
+          <input v-model="d.auditoryProcessingSpeed.line2" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="auditoryProcessingSpeed.line2" type="radio" value="0">
+          <input v-model="d.auditoryProcessingSpeed.line2" type="radio" value="0">
         </div>
         <!-- Row 25 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: left; justify-self: left;">
@@ -454,7 +454,7 @@
             </div>
             <div class="cell" style="text-align:right; justify-self:end; justify-items:end; align-self:end; align-items:end; margin-left: 50px;">
               Time:
-              <input v-model="badComment" type="text">
+              <input v-model="d.badComment" type="text">
             </div>
           </div> -->
         </div>
@@ -462,16 +462,16 @@
           Line 3
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="auditoryProcessingSpeed.line3" type="radio" value="-3">
+          <input v-model="d.auditoryProcessingSpeed.line3" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="auditoryProcessingSpeed.line3" type="radio" value="-2">
+          <input v-model="d.auditoryProcessingSpeed.line3" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="auditoryProcessingSpeed.line3" type="radio" value="-1">
+          <input v-model="d.auditoryProcessingSpeed.line3" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="auditoryProcessingSpeed.line3" type="radio" value="0">
+          <input v-model="d.auditoryProcessingSpeed.line3" type="radio" value="0">
         </div>
         <!-- row 26 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: left; justify-self: left;">
@@ -481,7 +481,7 @@
             </div>
             <div class="cell" style="text-align:right; justify-self:end; justify-items:end; align-self:end; align-items:end; margin-left: 50px;">
               Time:
-              <input v-model="badComment" type="text">
+              <input v-model="d.badComment" type="text">
             </div>
           </div> -->
         </div>
@@ -489,16 +489,16 @@
           Line 4
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="auditoryProcessingSpeed.line4" type="radio" value="-3">
+          <input v-model="d.auditoryProcessingSpeed.line4" type="radio" value="-3">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="auditoryProcessingSpeed.line4" type="radio" value="-2">
+          <input v-model="d.auditoryProcessingSpeed.line4" type="radio" value="-2">
         </div>
         <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="auditoryProcessingSpeed.line4" type="radio" value="-1">
+          <input v-model="d.auditoryProcessingSpeed.line4" type="radio" value="-1">
         </div>
         <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="auditoryProcessingSpeed.line4" type="radio" value="0">
+          <input v-model="d.auditoryProcessingSpeed.line4" type="radio" value="0">
         </div>
         <!-- Row 27 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 27; grid-row-end: span 1; text-align: left; justify-self: left;">
@@ -508,7 +508,7 @@
             </div>
             <div class="cell" style="text-align:right; justify-self:end; justify-items:end; align-self:end; align-items:end; margin-left: 50px;">
               Time:
-              <input v-model="badComment" type="text">
+              <input v-model="d.badComment" type="text">
             </div>
           </div> -->
         </div>
@@ -518,67 +518,69 @@
 </template>
 <script>
 export default {
-  name:"EvaluationViewer",
+  name:"AuditoryChannel",
   props: {
     evaluationId: {
       required: true
     }
   },
   data:() => ({
-    badComment: "",
-    vestibularFunction: {
-      type: "ChannelScore",
-      comment: "",
-      left: null,
-      right: null
-    },
-    threateningSound: {
-        comment: "",
+    d: {
+      badComment: "",
+      vestibularFunction: {
         type: "ChannelScore",
-        value: null
-    },
-    soundSensitivity: {
         comment: "",
-        type: "ChannelScore",
-        value: null
-    },
-    tonalityChangeReaction: {
-        comment: "",
-        type: "ChannelScore",
-        value: null
-    },
-    initialReceptiveWords: {
-        comment: "",
-        type: "NegativeChannelScore",
-        value: null
-    },
-    oneStepDirections: {
-        comment: "",
-        type: "NegativeChannelScore",
-        value: null
-    },
-    shortPhrases: {
-        comment: "",
-        type: "NegativeChannelScore",
-        value: null
-    },
-    twoStepDirections: {
-        comment: "",
-        type: "NegativeChannelScore",
-        value: null
-    },
-    sentenceUnderstanding: {
-        comment: "",
-        type: "NegativeChannelScore",
-        value: null
-    },
-    auditoryProcessingSpeed: {
-        comment: "",
-        type: "NegativeChannelScore",
-        line1: null,
-        line2: null,
-        line3: null,
-        line4: null
+        left: null,
+        right: null
+      },
+      threateningSound: {
+          comment: "",
+          type: "ChannelScore",
+          value: null
+      },
+      soundSensitivity: {
+          comment: "",
+          type: "ChannelScore",
+          value: null
+      },
+      tonalityChangeReaction: {
+          comment: "",
+          type: "ChannelScore",
+          value: null
+      },
+      initialReceptiveWords: {
+          comment: "",
+          type: "NegativeChannelScore",
+          value: null
+      },
+      oneStepDirections: {
+          comment: "",
+          type: "NegativeChannelScore",
+          value: null
+      },
+      shortPhrases: {
+          comment: "",
+          type: "NegativeChannelScore",
+          value: null
+      },
+      twoStepDirections: {
+          comment: "",
+          type: "NegativeChannelScore",
+          value: null
+      },
+      sentenceUnderstanding: {
+          comment: "",
+          type: "NegativeChannelScore",
+          value: null
+      },
+      auditoryProcessingSpeed: {
+          comment: "",
+          type: "NegativeChannelScore",
+          line1: null,
+          line2: null,
+          line3: null,
+          line4: null
+      }
     }
   }),
 }

@@ -870,15 +870,9 @@
   </div>
 </template>
 <script>
-import FormNav from '@/components/FormNav'
-import types from '@/store/evaluation/types'
-import MobilityChannel from '@/components/assessmentPages/MobilityChannel'
+// import types from '@/store/evaluation/types'
 export default {
-  name:"EvaluationViewer",
-  components: {
-    FormNav,
-    MobilityChannel,
-  },
+  name:"MobilityChannel",
   data:() => ({
     d: {
       forearmProp: {

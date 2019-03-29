@@ -27,7 +27,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="moro-reflex-na" v-model="moro.na">
+          <input type="checkbox" id="moro-reflex-na" v-model="d.moro.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
           212
@@ -37,11 +37,11 @@
           Upper
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; justify-self: center;">
-          <input v-model="moro.upper" type="radio" value="false">
+          <input v-model="d.moro.upper" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="moro.upper" type="radio" value="true">
+          <input v-model="d.moro.upper" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -55,11 +55,11 @@
           Lower
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; justify-self: center;">
-          <input v-model="moro.lower" type="radio" value="false">
+          <input v-model="d.moro.lower" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="moro.lower" type="radio" value="true">
+          <input v-model="d.moro.lower" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -79,7 +79,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="spinal-galant-reflex-na" v-model="spinalGalant.na">
+          <input type="checkbox" id="spinal-galant-reflex-na" v-model="d.spinalGalant.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
           213
@@ -89,11 +89,11 @@
           Left
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; justify-self: center;">
-          <input v-model="spinalGalant.left" type="radio" value="false">
+          <input v-model="d.spinalGalant.left" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="spinalGalant.left" type="radio" value="true">
+          <input v-model="d.spinalGalant.left" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -107,11 +107,11 @@
           Right
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; justify-self: center;">
-          <input v-model="spinalGalant.right" type="radio" value="false">
+          <input v-model="d.spinalGalant.right" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="spinalGalant.right" type="radio" value="true">
+          <input v-model="d.spinalGalant.right" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -131,7 +131,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="crossed-extensor-reflex-na" v-model="crossedExtensor.na">
+          <input type="checkbox" id="crossed-extensor-reflex-na" v-model="d.crossedExtensor.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
           214
@@ -141,11 +141,11 @@
           Left
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; justify-self: center;">
-          <input v-model="crossedExtensor.left" type="radio" value="false">
+          <input v-model="d.crossedExtensor.left" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="crossedExtensor.left" type="radio" value="true">
+          <input v-model="d.crossedExtensor.left" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -159,11 +159,11 @@
           Right
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; justify-self: center;">
-          <input v-model="crossedExtensor.right" type="radio" value="false">
+          <input v-model="d.crossedExtensor.right" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="crossedExtensor.right" type="radio" value="true">
+          <input v-model="d.crossedExtensor.right" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -183,7 +183,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 11; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="spinal-perez-reflex-na" v-model="spinalPerez.na">
+          <input type="checkbox" id="spinal-perez-reflex-na" v-model="d.spinalPerez.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 11; grid-row-end: span 1; text-align: center; justify-self: center;">
           215
@@ -193,11 +193,11 @@
           Left
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; justify-self: center;">
-          <input v-model="spinalPerez.left" type="radio" value="false">
+          <input v-model="d.spinalPerez.left" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="spinalPerez.left" type="radio" value="true">
+          <input v-model="d.spinalPerez.left" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -211,11 +211,11 @@
           Right
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; justify-self: center;">
-          <input v-model="spinalPerez.right" type="radio" value="false">
+          <input v-model="d.spinalPerez.right" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="spinalPerez.right" type="radio" value="true">
+          <input v-model="d.spinalPerez.right" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -235,7 +235,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="babinski-reflex-na" v-model="babinski.na">
+          <input type="checkbox" id="babinski-reflex-na" v-model="d.babinski.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
           216
@@ -245,11 +245,11 @@
           Left
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; justify-self: center;">
-          <input v-model="babinski.left" type="radio" value="false">
+          <input v-model="d.babinski.left" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="babinski.left" type="radio" value="true">
+          <input v-model="d.babinski.left" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -263,11 +263,11 @@
           Right
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; justify-self: center;">
-          <input v-model="babinski.right" type="radio" value="false">
+          <input v-model="d.babinski.right" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="babinski.right" type="radio" value="true">
+          <input v-model="d.babinski.right" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -287,7 +287,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="asymmetrical-tonic-neck-reflex-na" v-model="asymmetricalTonic.na">
+          <input type="checkbox" id="asymmetrical-tonic-neck-reflex-na" v-model="d.asymmetricalTonic.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: center; justify-self: center;">
           217
@@ -297,11 +297,11 @@
           Left
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; justify-self: center;">
-          <input v-model="asymmetricalTonic.left" type="radio" value="false">
+          <input v-model="d.asymmetricalTonic.left" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="asymmetricalTonic.left" type="radio" value="true">
+          <input v-model="d.asymmetricalTonic.left" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -315,11 +315,11 @@
           Right
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; justify-self: center;">
-          <input v-model="asymmetricalTonic.right" type="radio" value="false">
+          <input v-model="d.asymmetricalTonic.right" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="asymmetricalTonic.right" type="radio" value="true">
+          <input v-model="d.asymmetricalTonic.right" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -339,7 +339,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="bauer-crawling-reflex-na" v-model="bauerCrawling.na">
+          <input type="checkbox" id="bauer-crawling-reflex-na" v-model="d.bauerCrawling.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
           218
@@ -349,11 +349,11 @@
           Left
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 21; grid-row-end: span 1; justify-self: center;">
-          <input v-model="bauerCrawling.left" type="radio" value="false">
+          <input v-model="d.bauerCrawling.left" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 21; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="bauerCrawling.left" type="radio" value="true">
+          <input v-model="d.bauerCrawling.left" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 21; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -367,11 +367,11 @@
           Right
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; justify-self: center;">
-          <input v-model="bauerCrawling.right" type="radio" value="false">
+          <input v-model="d.bauerCrawling.right" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="bauerCrawling.right" type="radio" value="true">
+          <input v-model="d.bauerCrawling.right" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -391,7 +391,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="babkin-palmomental-reflex-na" v-model="babkinPalmomental.na">
+          <input type="checkbox" id="babkin-palmomental-reflex-na" v-model="d.babkinPalmomental.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
           219
@@ -401,11 +401,11 @@
           Left
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; justify-self: center;">
-          <input v-model="babkinPalmomental.left" type="radio" value="false">
+          <input v-model="d.babkinPalmomental.left" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="babkinPalmomental.left" type="radio" value="true">
+          <input v-model="d.babkinPalmomental.left" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -419,11 +419,11 @@
           Right
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; justify-self: center;">
-          <input v-model="babkinPalmomental.right" type="radio" value="false">
+          <input v-model="d.babkinPalmomental.right" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="babkinPalmomental.right" type="radio" value="true">
+          <input v-model="d.babkinPalmomental.right" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -443,7 +443,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="hand-grasping-reflex-na" v-model="handGrasping.na">
+          <input type="checkbox" id="hand-grasping-reflex-na" v-model="d.handGrasping.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: center; justify-self: center;">
           220
@@ -453,11 +453,11 @@
           Left
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 27; grid-row-end: span 1; justify-self: center;">
-          <input v-model="handGrasping.left" type="radio" value="false">
+          <input v-model="d.handGrasping.left" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 27; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="handGrasping.left" type="radio" value="true">
+          <input v-model="d.handGrasping.left" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 27; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -471,11 +471,11 @@
           Right
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; justify-self: center;">
-          <input v-model="handGrasping.right" type="radio" value="false">
+          <input v-model="d.handGrasping.right" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="handGrasping.right" type="radio" value="true">
+          <input v-model="d.handGrasping.right" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -495,7 +495,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 29; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="frontal-release-signs-na" v-model="frontalRelease.na">
+          <input type="checkbox" id="frontal-release-signs-na" v-model="d.frontalRelease.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 29; grid-row-end: span 1; text-align: center; justify-self: center;">
           221
@@ -505,11 +505,11 @@
           Snout
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; justify-self: center;">
-          <input v-model="frontalRelease.snout" type="radio" value="false">
+          <input v-model="d.frontalRelease.snout" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="frontalRelease.snout" type="radio" value="true">
+          <input v-model="d.frontalRelease.snout" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -523,11 +523,11 @@
           Sucking
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 31; grid-row-end: span 1; justify-self: center;">
-          <input v-model="frontalRelease.sucking" type="radio" value="false">
+          <input v-model="d.frontalRelease.sucking" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 31; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="frontalRelease.sucking" type="radio" value="true">
+          <input v-model="d.frontalRelease.sucking" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 31; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -541,11 +541,11 @@
           Rooting
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; justify-self: center;">
-          <input v-model="frontalRelease.rooting" type="radio" value="false">
+          <input v-model="d.frontalRelease.rooting" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="frontalRelease.rooting" type="radio" value="true">
+          <input v-model="d.frontalRelease.rooting" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -559,11 +559,11 @@
           Glabellar
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 33; grid-row-end: span 1; justify-self: center;">
-          <input v-model="frontalRelease.glabellar" type="radio" value="false">
+          <input v-model="d.frontalRelease.glabellar" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 33; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="frontalRelease.glabellar" type="radio" value="true">
+          <input v-model="d.frontalRelease.glabellar" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 33; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -583,7 +583,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="stepping-reflex-na" v-model="stepping.na">
+          <input type="checkbox" id="stepping-reflex-na" v-model="d.stepping.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: center; justify-self: center;">
           222
@@ -631,7 +631,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 37; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="hands-pulling-reflex-na" v-model="handsPulling.na">
+          <input type="checkbox" id="hands-pulling-reflex-na" v-model="d.handsPulling.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 37; grid-row-end: span 1; text-align: center; justify-self: center;">
           223
@@ -679,7 +679,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 40; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="hands-supporting-reflex-na" v-model="handsSupporting.na">
+          <input type="checkbox" id="hands-supporting-reflex-na" v-model="d.handsSupporting.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 40; grid-row-end: span 1; text-align: center; justify-self: center;">
           224
@@ -689,11 +689,11 @@
           Left
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 41; grid-row-end: span 1; justify-self: center;">
-          <input v-model="handsSupporting.left" type="radio" value="false">
+          <input v-model="d.handsSupporting.left" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 41; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="handsSupporting.left" type="radio" value="true">
+          <input v-model="d.handsSupporting.left" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 41; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -707,11 +707,11 @@
           Right
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 42; grid-row-end: span 1; justify-self: center;">
-          <input v-model="handsSupporting.right" type="radio" value="false">
+          <input v-model="d.handsSupporting.right" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 42; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="handsSupporting.right" type="radio" value="true">
+          <input v-model="d.handsSupporting.right" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 42; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -731,7 +731,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 43; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="landau-reflex-na" v-model="landau.na">
+          <input type="checkbox" id="landau-reflex-na" v-model="d.landau.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 43; grid-row-end: span 1; text-align: center; justify-self: center;">
           225
@@ -779,7 +779,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 46; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="symmetrical-tonic-neck-reflex-na" v-model="symmetricalTonic.na">
+          <input type="checkbox" id="symmetrical-tonic-neck-reflex-na" v-model="d.symmetricalTonic.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 46; grid-row-end: span 1; text-align: center; justify-self: center;">
           226
@@ -827,7 +827,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 49; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="tonic-labyrinthine-reflex-na" v-model="tonicLabyrinthine.na">
+          <input type="checkbox" id="tonic-labyrinthine-reflex-na" v-model="d.tonicLabyrinthine.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 49; grid-row-end: span 1; text-align: center; justify-self: center;">
           227
@@ -837,11 +837,11 @@
           Forward
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 50; grid-row-end: span 1; justify-self: center;">
-          <input v-model="tonicLabyrinthine.forward" type="radio" value="false">
+          <input v-model="d.tonicLabyrinthine.forward" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 50; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="tonicLabyrinthine.forward" type="radio" value="true">
+          <input v-model="d.tonicLabyrinthine.forward" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 50; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -855,11 +855,11 @@
           Backward
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 51; grid-row-end: span 1; justify-self: center;">
-          <input v-model="tonicLabyrinthine.backward" type="radio" value="false">
+          <input v-model="d.tonicLabyrinthine.backward" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 51; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="tonicLabyrinthine.backward" type="radio" value="true">
+          <input v-model="d.tonicLabyrinthine.backward" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 51; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -879,7 +879,7 @@
 
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 52; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="hand-righting-reflex-na" v-model="headRighting.na">
+          <input type="checkbox" id="hand-righting-reflex-na" v-model="d.headRighting.na">
         </div>
         <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 52; grid-row-end: span 1; text-align: center; justify-self: center;">
           228
@@ -889,11 +889,11 @@
           Side-to-Side
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 53; grid-row-end: span 1; justify-self: center;">
-          <input v-model="headRighting.sideToSide" type="radio" value="false">
+          <input v-model="d.headRighting.sideToSide" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 53; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="headRighting.sideToSide" type="radio" value="true">
+          <input v-model="d.headRighting.sideToSide" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 53; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -907,11 +907,11 @@
           Front-to-Back
         </div>
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 54; grid-row-end: span 1; justify-self: center;">
-          <input v-model="headRighting.frontToBack" type="radio" value="false">
+          <input v-model="d.headRighting.frontToBack" type="radio" value="false">
           <label for="radio">  NI</label>
         </div>
         <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 54; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="headRighting.frontToBack" type="radio" value="true">
+          <input v-model="d.headRighting.frontToBack" type="radio" value="true">
           <label for="radio">  I</label>
         </div>
         <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 54; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -933,105 +933,107 @@ export default {
     }
   },
   data:() => ({
-    moro: {
+    d: {
+      moro: {
         comment: "",
         type: "Integration",
         upper: true,
         lower: null
-    },
-    spinalGalant: {
+      },
+      spinalGalant: {
         comment: "",
         type: "Integration",
         left: false,
         right: true
-    },
-    crossedExtensor: {
+      },
+      crossedExtensor: {
         comment: "",
         type: "Integration",
         left: false,
         right: true
-    },
-    spinalPerez: {
+      },
+      spinalPerez: {
         comment: "",
         type: "Integration",
         left: false,
         right: true
-    },
-    babinski: {
+      },
+      babinski: {
         comment: "",
         type: "Integration",
         left: false,
         right: true
-    },
-    asymmetricalTonic: {
+      },
+      asymmetricalTonic: {
         comment: "",
         type: "Integration",
         left: false,
         right: true
-    },
-    bauerCrawling: {
+      },
+      bauerCrawling: {
         comment: "",
         type: "Integration",
         left: null,
         right: null
-    },
-    babkinPalmomental: {
+      },
+      babkinPalmomental: {
         comment: "",
         type: "Integration",
         left: null,
         right: null
-    },
-    handGrasping: {
+      },
+      handGrasping: {
         comment: "",
         type: "Integration",
         left: null,
         right: null
-    },
-    frontalRelease: {
+      },
+      frontalRelease: {
         comment: "",
         type: "Integration",
         snout: null,
         sucking: null,
         rooting: null,
         glabellar: null
-    },
-    stepping: {
+      },
+      stepping: {
         comment: "",
         type: "Integration",
         value: null
-    },
-    handsPulling: {
+      },
+      handsPulling: {
         comment: "",
         type: "Integration",
         value: null
-    },
-    handsSupporting: {
+      },
+      handsSupporting: {
         comment: "",
         type: "Integration",
         left: null,
         right: null
-    },
-    landau: {
+      },
+      landau: {
         comment: "",
         type: "Integration",
         value: null
-    },
-    symmetricalTonic: {
+      },
+      symmetricalTonic: {
         comment: "",
         type: "Integration",
         value: null
-    },
-    tonicLabyrinthine: {
+      },
+      tonicLabyrinthine: {
         comment: "",
         type: "Integration",
         forward: null,
         backward: null
-    },
-    headRighting: {
+      },
+      headRighting: {
         comment: "",
         type: "Integration",
         sideToSide: null,
         frontToBack: null
+      }
     }
   }),
 }

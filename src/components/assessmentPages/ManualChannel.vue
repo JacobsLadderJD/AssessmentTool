@@ -709,15 +709,9 @@
   </div>
 </template>
 <script>
-import FormNav from '@/components/FormNav'
-import types from '@/store/evaluation/types'
-import ManualChannel from '@/components/assessmentPages/ManualChannel'
+// import types from '@/store/evaluation/types'
 export default {
-  name:"EvaluationViewer",
-  components: {
-    FormNav,
-    ManualChannel,
-  },
+  name:"ManualChannel",
   data:() => ({
     d: {
       objectRelease: {
