@@ -58,8 +58,8 @@ const auth = {
   },
 }
 const students = {
-  searchStudentByNames (name) {
-    return mockApi.searchStudentByNames(name)
+  getAll (name) {
+    return axios.get("students").then(resp=>resp.data)
   }
 }
 
