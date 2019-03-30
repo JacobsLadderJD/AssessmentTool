@@ -26,15 +26,17 @@ export default {
   watch: {
     studentQuery (newQuery, oldQuery) {
       this.searching = true
-      api.searchStudentByNames(this.studentQuery)
-        .then(results => this.students = results)
+      api.students.getAll()
+        .then(data => {
+          this.students = data.results
+        })
         .catch(e => this.students = [])
     }
   },
   methods: {
     selectStudent (studentId) {
-      const vm = this
-      this.$store.dispatch(types.CREATE_EVALUATION, {studentId})
+      // const vm = this
+      // this.$store.dispatch(types.CREATE_EVALUATION, {studentId})
     }
   }
 
