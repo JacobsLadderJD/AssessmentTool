@@ -27,19 +27,25 @@
 <script>
 // @ is an alias to /src
 import EvalCard from '@/components/EvalCard.vue'
+import api from '@/api'
 
 export default {
   name: 'home',
   components: {
     EvalCard
   },
-  computed: {
-    recentEvaluations () {
-      return this.$store.getters.allEvaluations
-        .sort((d1,d2) => (d1.lastEdited >= d2.lastEdited) ? -1 : 1)
-        .slice(0,3)
-    }
-  },
+  data: () => ({
+    recentEvaluations: []
+  }),
+  mounted () {
+    api.evaluations.getAll()
+      .then(({results}) => {
+        console.log(results);
+        this.recentEvaluations = results
+          .sort((d1,d2) => (d1.lastEdited >= d2.lastEdited) ? -1 : 1)
+          .slice(0,3)
+      })
+  }
 }
 </script>
 

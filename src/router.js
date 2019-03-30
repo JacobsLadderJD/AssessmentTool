@@ -1,10 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
-import Login from './views/Login.vue'
-import EvaluationList from './views/EvaluationList.vue'
-import EvaluationViewer from './views/EvaluationViewer.vue'
-import CreateEvaluation from './views/CreateEvaluation.vue'
+import Home from './views/Home'
+import Login from './views/Login'
+import EvaluationList from './views/EvaluationList'
+import EvaluationViewer from './views/EvaluationViewer'
+import CreateEvaluation from './views/CreateEvaluation'
+import Sandbox from './views/Sandbox'
 
 import store from '@/store/store'
 import authTypes from '@/store/auth/types'
@@ -20,6 +21,11 @@ const router = new Router({
       path: '/login',
       name: 'login',
       component: Login
+    },
+    {
+      path: '/sandbox',
+      name: 'sandbox',
+      component: Sandbox
     },
     {
       path: '/',
@@ -65,17 +71,23 @@ const router = new Router({
   ]
 })
 
+import api from '@/api'
+
 router.beforeEach((to, from, next) => {
-  store.dispatch(authTypes.FETCH_ACCESS_TOKEN)
-  if ((!store.state.auth.accessToken) && (to.fullPath !== '/login')) {
-    // there's no access token and not going to login
-    return next('/login')
-  }
-  if (store.state.auth.accessToken && to.fullPath === '/login') {
-    // there's a token, and we are going to login
-    return next('/')
-  }
-  next()
+  store.dispatch(authTypes.LOAD_TOKEN)
+  store.dispatch(authTypes.VALIDATE)
+  api.auth.validate(store.state.auth.accessToken)
+    .then(isValid=> {
+      if ((!isValid) && (to.fullPath !== '/login')) {
+        // there's no access token and not going to login
+        return next('/login')
+      }
+      if (isValid && to.fullPath === '/login') {
+        // there's a token, and we are going to login
+        return next('/')
+      }
+      next()
+    })
 });
 
 export default router

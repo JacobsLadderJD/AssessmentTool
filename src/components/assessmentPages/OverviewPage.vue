@@ -532,11 +532,6 @@
 <script>
 export default {
   name:"OverviewPage",
-  props: {
-      evaluationId: {
-        required: true
-      }
-    },
   data:() => ({
     tactilityRawScore: "",
     auditoryRawScore: "",

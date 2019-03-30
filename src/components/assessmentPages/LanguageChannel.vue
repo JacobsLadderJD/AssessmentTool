@@ -616,114 +616,13 @@
   </div>
 </template>
 <script>
+import SectionMixin from '@/mixins/section'
+
 export default {
   name:"LanguageChannel",
-  data:() => ({
-    d: {
-      "soundVerbalResponse": {
-        "comment": "",
-        "type": "NegativeChannelScore",
-        "value": null
-      },
-      "lipUtilization": {
-        "comment": "",
-        "type": "NegativeChannelScore",
-        "value": null
-      },
-      "oralMotorMovement": {
-        "comment": "",
-        "type": "NegativeChannelScore",
-        "value": null
-      },
-      "breathSupport": {
-        "comment": "",
-        "type": "NegativeChannelScore",
-        "value": null
-      },
-      "phonation": {
-        "comment": "",
-        "type": "NegativeChannelScore",
-        "value": null
-      },
-      "vowelProductionShort": {
-        "comment": "",
-        "type": "NegativeChannelScore",
-        "value": null
-      },
-      "vowelProductionLong": {
-        "comment": "",
-        "type": "NegativeChannelScore",
-        "value": null
-      },
-      "vowelConsonantProduction": {
-        "comment": "",
-        "type": "NegativeChannelScore",
-        "value": null
-      },
-      "meaningfulToneUse": {
-        "comment": "",
-        "type": "NegativeChannelScore",
-        "value": null
-      },
-      "identifyPicReceptively": {
-        "comment": "",
-        "type": "NegativeChannelScore",
-        "fo2": null,
-        "fo3": null
-      },
-      "identifyPicExpressively": {
-        "comment": "",
-        "type": "NegativeChannelScore",
-        "verbal1": null,
-        "verbal2": null,
-        "verbal3": null
-      },
-      "articulationInitial": {
-        "comment": "",
-        "type": "NegativeChannelScore",
-        "value": null
-      },
-      "articulationMedial": {
-        "comment": "",
-        "type": "NegativeChannelScore",
-        "value": null
-      },
-      "articulationFinal": {
-        "comment": "",
-        "type": "NegativeChannelScore",
-        "value": null
-      },
-      "spontaneousVerbalizations": {
-        "comment": "",
-        "type": "NegativeChannelScore",
-        "value": null
-      },
-      "yesNoResponse": {
-        "comment": "",
-        "type": "NegativeChannelScore",
-        "value": null
-      },
-      "phrases": {
-        "comment": "",
-        "type": "NegativeChannelScore",
-        "value": null
-      },
-      "sentencesResponse": {
-        "comment": "",
-        "type": "NegativeChannelScore",
-        "value": null
-      },
-      "conversationExchange": {
-        "comment": "",
-        "type": "NegativeChannelScore",
-        "value": null
-      },
-      "opposites": {
-        "comment": "",
-        "type": "NegativeChannelScore",
-        "value": null
-      }
-    },
+  mixins: [SectionMixin],
+  data: () => ({
+    name: "languageSection"
   }),
 }
 

@@ -1,12 +1,12 @@
 <template lang="html">
   <li class="eval-list-item" @click="openEvaluation()">
     <div class="info-wrap">
-      <h2 class="title">{{fullName}}</h2>
+      <h2 class="title">{{student | fullName}}</h2>
       <div style="display:flex; width:100%;">
         <p style="margin-right: 20px">Last edited:
-          <span class="--underlined">{{evaluation.lastEdited | niceDate}}</span>
+          <span class="--underlined">{{evaluation.editedAt}}</span>
         </p>
-        <p>By: <span class="--underlined">{{evaluation.evaluator}}</span></p>
+        <p>By: <span class="--underlined">{{evaluator | fullName}}</span></p>
       </div>
     </div>
     <div class="percent-wrap">
@@ -25,8 +25,10 @@ export default {
   },
   computed: {
     student () {
-      return this.$store.getters
-        .getStudentById(this.evaluation.studentId)
+      return this.evaluation.studentId
+    },
+    evaluator () {
+      return this.evaluation.evaluatorId
     },
     fullName () {
       return this.student.firstName + " " + this.student.lastName

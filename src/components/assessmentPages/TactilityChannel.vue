@@ -1502,134 +1502,14 @@
 </template>
 <script>
 // import types from '@/store/evaluation/types'
+import SectionMixin from '@/mixins/section'
+
 export default {
   name:"TactilityChannel",
-  props: {
-    evaluationId: {
-      required: true
-    }
-  },
+  mixins: [SectionMixin],
   data: () => ({
-    badComment: "",
-    d: {
-      deepPressure: {
-        comment: "",
-        type: "ChannelScore",
-        value: null
-      },
-      tonicity: {
-        comment: "",
-        type: "ChannelScore",
-        face: null,
-        neck: null,
-        trunk: null,
-        shoulderRight: null,
-        shoulderLeft: null,
-        armRight: null,
-        armLeft: null,
-        handRight: null,
-        handLeft: null,
-        hipRight: null,
-        hipLeft: null,
-        legRight: null,
-        legLeft: null,
-        footRight: null,
-        footLeft: null
-      },
-      deepPainReaction: {
-        comment: "",
-        type: "ChannelScore",
-        value: null
-      },
-      surfaceTouch: {
-        comment: "",
-        type: "ChannelScore",
-        handRight: null,
-        handLeft: null,
-        footRight: null,
-        footLeft: null
-      },
-      surfacePainReaction: {
-        comment: "",
-        type: "ChannelScore",
-        value: null
-      },
-      olfactoryStimulation: {
-        comment: "",
-        type: "ChannelScore",
-        strong: null,
-        sweet: null
-      },
-      facialSurfaceAwareness: {
-        comment: "",
-        type: "ChannelScore",
-        value: null
-      },
-      oralTexturalAwareness: {
-        comment: "",
-        type: "ChannelScore",
-        mushy: null,
-        crunchy: null
-      },
-      pageDiscrimination: {
-        comment: "",
-        type: "NegativeChannelScore",
-        cardboard: null,
-        paper: null
-      },
-      tactileDiscriminationMedium: {
-        comment: "",
-        type: "NegativeChannelScore",
-        visual: null,
-        nonvisual: null
-      },
-      tactileDiscriminationSmall: {
-        comment: "",
-        type: "NegativeChannelScore",
-        visual: null,
-        nonvisual: null
-      },
-      rhomberg: {
-        comment: "",
-        type: "NegativeChannelScore",
-        eyesOpen: null,
-        eyesClosed: null
-      },
-      mannsRightFoot: {
-        comment: "",
-        type: "NegativeChannelScore",
-        eyesOpen: null,
-        eyesClosed: null
-      },
-      mannsLeftFoot: {
-        comment: "",
-        type: "NegativeChannelScore",
-        eyesOpen: null,
-        eyesClosed: null
-      },
-      armMatching: {
-        comment: "",
-        type: "NegativeChannelScore",
-        front: null,
-        above: null,
-        sides: null
-      },
-      graphesthesia: {
-        comment: "",
-        type: "NegativeChannelScore",
-        right: null,
-        left: null
-      }
-    }
-  }),
-  methods: {
-    save () {
-      this.$store.saveSection({section:"tactility", data: this.$data})
-    }
-  },
-  created () {
-    // reach out to the db and get the current section stuff
-  }
+    name: "tactilitySection"
+  })
 }
 
 </script>

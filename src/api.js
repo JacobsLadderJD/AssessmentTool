@@ -1,18 +1,41 @@
 import axios from 'axios'
 import mockApi from '@/fixtures/MockApi'
 
-const MOCK_MODE = true;
+const MOCK_MODE = false;
 
-axios.defaults.baseURL = 'http://localhost:8000';
+axios.defaults.baseURL = 'http://localhost:8000'
+
+if (localStorage.accessToken) {
+  setAuthorization(localStorage.accessToken)
+}
 
 function setAuthorization (token) {
-  axios.defaults.headers.common['Authorization'] = token
+  axios.defaults.headers.common['Authorization'] = "Token " + token
 }
-function clearAuthorization (token) {
+function clearAuthorization () {
   delete axios.defaults.headers.common['Authorization']
 }
 
 const auth = {
+  test () {
+    return axios.defaults.headers.common['Authorization']
+  },
+  setToken (token) {
+    axios.defaults.headers.common['Authorization'] = "Token " + token
+  },
+  deleteToken () {
+
+  },
+  validate () {
+    return axios.get('authenticated/')
+      .then(resp => {
+        return true
+      })
+      .catch(err => {
+        clearAuthorization()
+        return false
+      })
+  },
   login (email, password) {
     /* Example output
      *{
@@ -21,45 +44,52 @@ const auth = {
      *  }
      *}
      */
-    return axios.post('user/login/', { username: email, password })
+    const out =
+      axios.post('user/login/', { username: email, password }).then(resp => {
+        setAuthorization(resp.data.token)
+        return resp
+      })
+    return out
   },
   logout (token) { // eslint-disable-line
     // TODO: Figure out example output
+    clearAuthorization(token)
     return mockApi.logout(token)
   },
 }
-const student = {
+const students = {
   searchStudentByNames (name) {
     return mockApi.searchStudentByNames(name)
   }
 }
 
-const evaluation = {
-  createEvaluation (studentId) {
-    /* Example output
-     *{
-     *  data: {
-     *    id: 0,
-     *    studentId,
-     *    lastEdited: new Date(),
-     *    evaluator: "Some User"
-     *  }
-     *}
-     */
-    return mockApi.createEvaluation(studentId)
+const evaluations = {
+  create (studentId) {
+    return axios.post('evaluations/', {
+      studentId
+    })
   },
-  getEvaluationById (id) {
-    return axios.get(`evaluation/${id}`)
+  get (id) {
+    return axios.get(`evaluations/${id}`).then(resp => resp.data)
   },
-  getEvaluations (query) {
-    return axios.get('evaluation', query)
+  getAll (query={}) {
+    return axios.get('evaluations/', query).then(resp => resp.data)
+  },
+  delete (id) {
+    return axios.delete(`evaluations/${id}`)
+  },
+  // update (id, data) {
+  //   return axios.patch(`evaluation/${id}`, data)
+  // },
+  updateSection (id, section, path, data) {
+    return axios.patch(`evaluations/${id}`, {section, path, data})
   }
 }
 
 let api = {
   auth,
-  evaluation,
-  student
+  evaluations,
+  students
 }
 
 if (MOCK_MODE) {

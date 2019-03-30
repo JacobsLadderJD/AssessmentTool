@@ -925,117 +925,14 @@
   </div>
 </template>
 <script>
+import SectionMixin from '@/mixins/section'
+
 export default {
   name:"ReflexesPage",
-  props: {
-    evaluationId: {
-      required: true
-    }
-  },
+  mixins: [SectionMixin],
   data:() => ({
-    d: {
-      moro: {
-        comment: "",
-        type: "Integration",
-        upper: true,
-        lower: null
-      },
-      spinalGalant: {
-        comment: "",
-        type: "Integration",
-        left: false,
-        right: true
-      },
-      crossedExtensor: {
-        comment: "",
-        type: "Integration",
-        left: false,
-        right: true
-      },
-      spinalPerez: {
-        comment: "",
-        type: "Integration",
-        left: false,
-        right: true
-      },
-      babinski: {
-        comment: "",
-        type: "Integration",
-        left: false,
-        right: true
-      },
-      asymmetricalTonic: {
-        comment: "",
-        type: "Integration",
-        left: false,
-        right: true
-      },
-      bauerCrawling: {
-        comment: "",
-        type: "Integration",
-        left: null,
-        right: null
-      },
-      babkinPalmomental: {
-        comment: "",
-        type: "Integration",
-        left: null,
-        right: null
-      },
-      handGrasping: {
-        comment: "",
-        type: "Integration",
-        left: null,
-        right: null
-      },
-      frontalRelease: {
-        comment: "",
-        type: "Integration",
-        snout: null,
-        sucking: null,
-        rooting: null,
-        glabellar: null
-      },
-      stepping: {
-        comment: "",
-        type: "Integration",
-        value: null
-      },
-      handsPulling: {
-        comment: "",
-        type: "Integration",
-        value: null
-      },
-      handsSupporting: {
-        comment: "",
-        type: "Integration",
-        left: null,
-        right: null
-      },
-      landau: {
-        comment: "",
-        type: "Integration",
-        value: null
-      },
-      symmetricalTonic: {
-        comment: "",
-        type: "Integration",
-        value: null
-      },
-      tonicLabyrinthine: {
-        comment: "",
-        type: "Integration",
-        forward: null,
-        backward: null
-      },
-      headRighting: {
-        comment: "",
-        type: "Integration",
-        sideToSide: null,
-        frontToBack: null
-      }
-    }
-  }),
+    name: "reflexSection"
+  })
 }
 
 </script>

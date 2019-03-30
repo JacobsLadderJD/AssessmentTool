@@ -312,69 +312,15 @@
 </template>
 <script>
 // import types from '@/store/evaluation/types'
+import SectionMixin from '@/mixins/section'
+
 export default {
   name:"SensitivitiesPage",
-  data:() => ({
-    d: {
-      haircuts: {
-        comment: "",
-        type: "PositiveChannelScore",
-        value: null
-      },
-      washingFace: {
-        comment: "",
-        type: "PositiveChannelScore",
-        value: null
-      },
-      washingHair: {
-        comment: "",
-        type: "PositiveChannelScore",
-        value: null
-      },
-      brushingTeeth: {
-        comment: "",
-        type: "PositiveChannelScore",
-        value: null
-      },
-      nailCutting: {
-        comment: "",
-        type: "PositiveChannelScore",
-        fingers: null,
-        toes: null
-      },
-      tags: {
-        comment: "",
-        type: "PositiveChannelScore",
-        value: null
-      },
-      shirt: {
-        comment: "",
-        type: "PositiveChannelScore",
-        value: null
-      },
-      pants: {
-        comment: "",
-        type: "PositiveChannelScore",
-        value: null
-      },
-      socks: {
-        comment: "",
-        type: "PositiveChannelScore",
-        value: null
-      },
-      shoes: {
-        comment: "",
-        type: "PositiveChannelScore",
-        value: null
-      },
-      coat: {
-        comment: "",
-        type: "PositiveChannelScore",
-        value: null
-      }
-    }
-
+  mixins: [SectionMixin],
+  data: () => ({
+    name: "sensitivitiesSection"
   }),
+
 }
 
 </script>

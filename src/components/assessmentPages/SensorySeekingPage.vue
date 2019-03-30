@@ -609,129 +609,14 @@
 </template>
 <script>
 // import types from '@/store/evaluation/types'
+import SectionMixin from '@/mixins/section'
+
 export default {
   name:"SensorySeekingPage",
-  data:() => ({
-    d: {
-      hands: {
-        comment: "",
-        type: "PositiveChannelScore",
-        value: null
-      },
-      feet: {
-        comment: "",
-        type: "PositiveChannelScore",
-        value: null
-      },
-      trunk: {
-        comment: "",
-        type: "PositiveChannelScore",
-        value: null
-      },
-      jaw: {
-        comment: "",
-        type: "PositiveChannelScore",
-        value: null
-      },
-      intraoral: {
-        comment: "",
-        type: "PositiveChannelScore",
-        value: null
-      },
-      extraoral: {
-        comment: "",
-        type: "PositiveChannelScore",
-        value: null
-      },
-      chin: {
-        comment: "",
-        type: "PositiveChannelScore",
-        value: null
-      },
-      genitals: {
-        comment: "",
-        type: "PositiveChannelScore",
-        value: null
-      },
-      olfactory: {
-        comment: "",
-        type: "PositiveChannelScore",
-        value: null
-      },
-      jumping: {
-        comment: "",
-        type: "PositiveChannelScore",
-        value: null
-      },
-      vocalVibration: {
-        comment: "",
-        type: "PositiveChannelScore",
-        value: null
-      },
-      humming: {
-        comment: "",
-        type: "PositiveChannelScore",
-        value: null
-      },
-      plugEar: {
-        comment: "",
-        type: "PositiveChannelScore",
-        right: null,
-        left: null
-      },
-      spinning: {
-        comment: "",
-        type: "PositiveChannelScore",
-        right: null,
-        left: null
-      },
-      singing: {
-        comment: "",
-        type: "PositiveChannelScore",
-        value: null
-      },
-      rocking: {
-        comment: "",
-        type: "PositiveChannelScore",
-        value: null
-      },
-      pressure: {
-        comment: "",
-        type: "PositiveChannelScore",
-        value: null
-      },
-      fingerPlay: {
-        comment: "",
-        type: "PositiveChannelScore",
-        value: null
-      },
-      cornerVision: {
-        comment: "",
-        type: "PositiveChannelScore",
-        value: null
-      },
-      objectEdges: {
-        comment: "",
-        type: "PositiveChannelScore",
-        value: null
-      },
-      spinningObjects: {
-        comment: "",
-        type: "PositiveChannelScore",
-        value: null
-      },
-      holdStraightObject: {
-        comment: "",
-        type: "PositiveChannelScore",
-        value: null
-      },
-      shadows: {
-        comment: "",
-        type: "PositiveChannelScore",
-        value: null
-      }
-    }
-  }),
+  mixins: [SectionMixin],
+    data: () => ({
+      name: "sensorySection"
+    }),
 }
 
 </script>

@@ -710,119 +710,14 @@
 </template>
 <script>
 // import types from '@/store/evaluation/types'
+import SectionMixin from '@/mixins/section'
+
 export default {
   name:"ManualChannel",
-  data:() => ({
-    d: {
-      objectRelease: {
-        comment: "",
-        type: "NegativeChannelScore",
-        value: null
-      },
-      objectGrasp: {
-        comment: "",
-        type: "NegativeChannelScore",
-        value: null
-      },
-      handsToMidline: {
-        comment: "",
-        type: "NegativeChannelScore",
-        value: null
-      },
-      transfersObjects: {
-        comment: "",
-        type: "NegativeChannelScore",
-        value: null
-      },
-      corticalOpposition: {
-        comment: "",
-        type: "NegativeChannelScore",
-        right: null,
-        left: null,
-        both: null
-      },
-      claps: {
-        comment: "",
-        type: "NegativeChannelScore",
-        value: null
-      },
-      blockStacking: {
-        comment: "",
-        type: "NegativeChannelScore",
-        value: null
-      },
-      beanBottle: {
-        comment: "",
-        type: "NegativeChannelScore",
-        value: null
-      },
-      wristPronation: {
-        comment: "",
-        type: "NegativeChannelScore",
-        right: null,
-        left: null
-      },
-      wristSupination: {
-        comment: "",
-        type: "NegativeChannelScore",
-        right: null,
-        left: null
-      },
-      initialColoring: {
-        comment: "",
-        type: "NegativeChannelScore",
-        value: null
-      },
-      twistCap: {
-        comment: "",
-        type: "NegativeChannelScore",
-        on: null,
-        off: null
-      },
-      stringingBeads: {
-        comment: "",
-        type: "NegativeChannelScore",
-        lg: null,
-        sm: null
-      },
-      imitates: {
-        comment: "",
-        type: "NegativeChannelScore",
-        lineHorizontal: null,
-        lineVertical: null,
-        circle: null,
-        cross: null
-      },
-      pencilGrasp: {
-        comment: "",
-        type: "NegativeChannelScore",
-        value: null
-      },
-      connectDots: {
-        comment: "",
-        type: "NegativeChannelScore",
-        ten: null,
-        six: null,
-        three: null
-      },
-      name: {
-        comment: "",
-        type: "NegativeChannelScore",
-        value: null
-      },
-      letters: {
-        comment: "",
-        type: "NegativeChannelScore",
-        value: null
-      },
-      dictatedSentence: {
-        comment: "",
-        type: "NegativeChannelScore",
-        value: null
-      }
-    }
-
-  })
+  mixins: [SectionMixin],
+  data: () => ({
+    name: "manualSection"
+  }),
 }
 
 </script>

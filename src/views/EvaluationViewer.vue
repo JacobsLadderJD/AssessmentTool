@@ -9,17 +9,17 @@
             <div class="item" style="margin-bottom: 4vw;">
               <label for="date-input">Date</label>
               <input id="last-edited-input" name="last-edited" type="date"
-              v-model="temp.lastEdited"/>
+              v-model="evaluation.editedAt"/>
             </div>
             <div class="item" style="margin-bottom: 4vw;">
               <label for="status-input">Status</label>
-              <input id="status-input" type="text" name="status" v-model="temp.status"/>
+              <input id="status-input" type="text" name="status" v-model="student.status"/>
             </div>
           </div>
           <div class="row">
             <div class="item" style="margin-bottom: 4vw;">
               <label for="code-input">Code</label>
-              <input id="code-input" type="text" name="code" v-model="temp.code"/>
+              <input id="code-input" type="text" name="code" v-model="student.code"/>
             </div>
           </div>
         </div>
@@ -45,38 +45,40 @@
             <div class="item" style="margin-bottom: 4vw;">
               <label for="age-input">Birthdate</label>
               <input id="age-input" type="text" name="birthdate"
-                :value="student.birthday | niceDate" disabled/>
+                :value="student.birthdate" disabled/>
             </div>
           </div>
         </div>
         <div class="form-section">
           <div class="item" style="margin-bottom: 4vw;">
             <label for="evaluators-input">Evaluator(s)</label>
-            <input id="evaluators-input" type="text" name="evaluators"
-            v-model="temp.evaluator"/>
+            <h4>{{ evaluator | fullName }}</h4>
+            <!-- <input id="evaluators-input" type="text" name="evaluators"
+            v-model="evaluatorSearch"/> -->
+
           </div>
         </div>
       </div>
 
       <!-- form page 2 -->
 
-      <OverviewPage v-else-if="page===2" :evaluationId="evaluation.id"/>
-      <DetailsPage v-else-if="page===3" :evaluationId="evaluation.id"/>
-      <ReflexesPage v-else-if="page===4" :evaluationId="evaluation.id"/>
-      <TactilityChannel v-else-if="page===5" :evaluationId="evaluation.id"/>
-      <AuditoryChannel v-else-if="page===6" :evaluationId="evaluation.id"/>
+      <OverviewPage v-else-if="page===2" :section="evaluation"/>
+      <DetailsPage v-else-if="page===3" :section="evaluation"/>
+      <ReflexesPage v-else-if="page===4" :section="evaluation.reflexSection"/>
+      <TactilityChannel v-else-if="page===5" :section="evaluation.tactilitySection"/>
+      <AuditoryChannel v-else-if="page===6" :section="evaluation.auditorySection"/>
 
-      <VisualChannel v-else-if="page===7"/>
+      <VisualChannel v-else-if="page===7" :section="evaluation.visualSection"/>
 
-      <ManualChannel v-else-if="page===8"/>
+      <ManualChannel v-else-if="page===8" :section="evaluation.manualSection"/>
 
-      <LanguageChannel v-else-if="page===9"/>
+      <LanguageChannel v-else-if="page===9" :section="evaluation.languageSection"/>
 
-      <MobilityChannel v-else-if="page===10"/>
+      <MobilityChannel v-else-if="page===10" :section="evaluation.mobilitySection"/>
 
-      <SensorySeekingPage v-else-if="page===11"/>
+      <SensorySeekingPage v-else-if="page===11" :section="evaluation.sensorySection"/>
 
-      <SensitivitiesPage v-else-if="page===12"/>
+      <SensitivitiesPage v-else-if="page===12" :section="evaluation.sensitivitiesSection"/>
 
 
       <div class="form-section">
@@ -133,12 +135,7 @@ export default {
   data:() => ({
     page: 1,
     lastPage: 12,
-    temp: {
-      lastEdited: new Date(),
-      status: "",
-      code: "",
-      evaluator: "",
-    }
+    evaluation: {}
   }),
   methods: {
     nextPage() {
@@ -149,23 +146,40 @@ export default {
     },
     submit () {
       this.$store.dispatch(types.UPDATE_EVALUATION, {
-        ...this.temp, lastEdited: new Date(this.temp.lastEdited)})
+        ...this.evaluation, lastEdited: new Date(this.temp.lastEdited)})
     }
   },
   computed: {
     isNew () {
       return this.$route.params.id === 'new'
     },
-    evaluation () {
-      return this.$store.getters.getEvaluationById(this.$route.params.id)
+    // evaluation () {
+    //   return this.$store.getters.getEvaluationById(this.$route.params.id)
+    // },
+    evaluator () {
+      return this.evaluation.evaluatorId || {
+        firstName: "",
+        lastName: "",
+        id: null
+      }
     },
     student () {
-      return this.$store.getters.getStudentById(this.evaluation.studentId)
+      return this.evaluation.studentId || {
+        status: null,
+        code: null,
+        id: null,
+        firstName: "",
+        lastName: ""
+      }
     }
   },
-  created () {
+  mounted () {
     //this.temp = api.getEvaluationById(this.$route.params.id)
-    this.$store.getters.getEvaluationById(this.$route.params.id)
+    // this.$store.getters.getEvaluationById(this.$route.params.id)
+    api.evaluations.get(this.$route.params.id)
+      .then(evaluation => {
+        this.evaluation = evaluation
+      })
   }
 }
 

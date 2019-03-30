@@ -61,7 +61,37 @@
         <!-- Row 3 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: left; justify-self: start;">
           <textarea v-model="d.trackingHorizontal.comment"></textarea>
-          seconds of tracking
+        </div>
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+          Vertical Tracking
+        </div>
+        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="d.trackingVertical.value" type="radio" value="-3">
+        </div>
+        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="d.trackingVertical.value" type="radio" value="-2">
+        </div>
+        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="d.trackingVertical.value" type="radio" value="-1">
+        </div>
+        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="d.trackingVertical.value" type="radio" value="0">
+        </div>
+        <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="d.trackingVertical.value" type="radio" value="+1">
+        </div>
+        <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="d.trackingVertical.value" type="radio" value="+2">
+        </div>
+        <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="d.trackingVertical.value" type="radio" value="+3">
+        </div>
+        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
+          <input v-model="d.trackingVertical.value" type="radio" value="NA">
+        </div>
+        <!-- Row 3 -->
+        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: left; justify-self: start;">
+          <textarea v-model="d.trackingVertical.comment"></textarea>
         </div>
         <!-- Row 4 -->
         <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
@@ -540,121 +570,14 @@
 </template>
 <script>
 // import types from '@/store/evaluation/types'
-export default {
-  name:"VisualChannel",
-  data:() => ({
-    d: {
-      trackingHorizontal: {
-        comment:"",
-        type: "ChannelScore",
-        value: null
-      },
-      trackingVertical: {
-        comment:"",
-        type: "ChannelScore",
-        value: null
-      },
-      convergence: {
-        comment:"",
-        type: "ChannelScore",
-        value: null
-      },
-      divergence: {
-        comment:"",
-        type: "ChannelScore",
-        value: null
-      },
-      eightTrackingHorizontal: {
-        comment:"",
-        type: "ChannelScore",
-        value: null
-      },
-      eightTrackingVertical: {
-        comment:"",
-        type: "ChannelScore",
-        value: null
-      },
-      eightTrackingConDiv: {
-        comment:"",
-        type: "ChannelScore",
-        value: null
-      },
-      doThis: {
-        comment:"",
-        type: "NegativeChannelScore",
-        value: null
-      },
-      initialMatchColors: {
-        comment:"",
-        type: "NegativeChannelScore",
-        value: null
-      },
-      initialMatchShapes: {
-        comment:"",
-        type: "NegativeChannelScore",
-        value: null
-      },
-      initialMatchPic: {
-        comment:"",
-        type: "NegativeChannelScore",
-        value: null
-      },
-      colors: {
-        comment:"",
-        type: "NegativeChannelScore",
-        value: null,
-        f02: false,
-        f03: false,
-        verbal: false
-      },
-      shapes: {
-        comment:"",
-        type: "NegativeChannelScore",
-        value: null,
-        f02: false,
-        f03: false,
-        verbal: false
-      },
-      numbers: {
-        comment:"",
-        type: "NegativeChannelScore",
-        value: null,
-        f02: false,
-        f03: false,
-        verbal: false
-      },
-      uppercaseLetters: {
-        comment:"",
-        type: "NegativeChannelScore",
-        value: null,
-        f02: false,
-        f03: false,
-        verbal: false
-      },
-      lowercaseLetters: {
-        comment:"",
-        type: "NegativeChannelScore",
-        value: null,
-        f02: false,
-        f03: false,
-        verbal: false
-      },
+import SectionMixin from '@/mixins/section'
 
-      initialSightWords: {
-        comment:"",
-        type: "NegativeChannelScore",
-        value: null,
-        f02: false,
-        f03: false,
-        verbal: false
-      },
-      visualProcessingSpeed: {
-        comment:"",
-        type: "NegativeChannelScore",
-        value: null
-      }
-    }
-  }),
+export default {
+  name: "VisualChannel",
+  mixins: [SectionMixin],
+  data: () => ({
+    name: "visualSection"
+  })
 }
 
 </script>

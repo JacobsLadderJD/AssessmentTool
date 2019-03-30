@@ -517,71 +517,13 @@
   </div>
 </template>
 <script>
+import SectionMixin from '@/mixins/section'
+
 export default {
   name:"AuditoryChannel",
-  props: {
-    evaluationId: {
-      required: true
-    }
-  },
-  data:() => ({
-    d: {
-      badComment: "",
-      vestibularFunction: {
-        type: "ChannelScore",
-        comment: "",
-        left: null,
-        right: null
-      },
-      threateningSound: {
-          comment: "",
-          type: "ChannelScore",
-          value: null
-      },
-      soundSensitivity: {
-          comment: "",
-          type: "ChannelScore",
-          value: null
-      },
-      tonalityChangeReaction: {
-          comment: "",
-          type: "ChannelScore",
-          value: null
-      },
-      initialReceptiveWords: {
-          comment: "",
-          type: "NegativeChannelScore",
-          value: null
-      },
-      oneStepDirections: {
-          comment: "",
-          type: "NegativeChannelScore",
-          value: null
-      },
-      shortPhrases: {
-          comment: "",
-          type: "NegativeChannelScore",
-          value: null
-      },
-      twoStepDirections: {
-          comment: "",
-          type: "NegativeChannelScore",
-          value: null
-      },
-      sentenceUnderstanding: {
-          comment: "",
-          type: "NegativeChannelScore",
-          value: null
-      },
-      auditoryProcessingSpeed: {
-          comment: "",
-          type: "NegativeChannelScore",
-          line1: null,
-          line2: null,
-          line3: null,
-          line4: null
-      }
-    }
+  mixins: [SectionMixin],
+  data: () => ({
+    name: "auditorySection"
   }),
 }
 </script>
