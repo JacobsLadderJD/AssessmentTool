@@ -1,5 +1,10 @@
+import api from '@/api'
 const SectionMixin = {
   props: {
+    evalId: {
+      required: true,
+      type: Number
+    },
     section: {
       required: true,
       type: Object
@@ -16,10 +21,7 @@ const SectionMixin = {
   },
   methods: {
     submit() {
-      this.$emit("update", {
-        section: this.name,
-        data: this.d
-      })
+      api.evaluations.updateSection(this.evalId, this.name, this.d)
     }
   },
   mounted () {

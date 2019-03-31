@@ -62,23 +62,38 @@
 
       <!-- form page 2 -->
 
-      <OverviewPage v-else-if="page===2" :section="evaluation"/>
-      <DetailsPage v-else-if="page===3" :section="evaluation"/>
-      <ReflexesPage v-else-if="page===4" :section="evaluation.reflexSection"/>
-      <TactilityChannel v-else-if="page===5" :section="evaluation.tactilitySection"/>
-      <AuditoryChannel v-else-if="page===6" :section="evaluation.auditorySection"/>
+      <OverviewPage v-else-if="page===2"
+        :section="evaluation" :evalId="evaluation.id"/>
 
-      <VisualChannel v-else-if="page===7" :section="evaluation.visualSection"/>
+      <DetailsPage v-else-if="page===3"
+        :section="evaluation" :evalId="evaluation.id"/>
 
-      <ManualChannel v-else-if="page===8" :section="evaluation.manualSection"/>
+      <ReflexesPage ref="reflex" v-else-if="page===4"
+        :section="evaluation.reflexSection" :evalId="evaluation.id"/>
 
-      <LanguageChannel v-else-if="page===9" :section="evaluation.languageSection"/>
+      <TactilityChannel  ref="tactility" v-else-if="page===5"
+        :section="evaluation.tactilitySection"/>
 
-      <MobilityChannel v-else-if="page===10" :section="evaluation.mobilitySection"/>
+      <AuditoryChannel  ref="auditory" v-else-if="page===6"
+        :section="evaluation.auditorySection" :evalId="evaluation.id"/>
 
-      <SensorySeekingPage v-else-if="page===11" :section="evaluation.sensorySection"/>
+      <VisualChannel ref="visual" v-else-if="page===7"
+        :section="evaluation.visualSection" :evalId="evaluation.id"/>
 
-      <SensitivitiesPage v-else-if="page===12" :section="evaluation.sensitivitiesSection"/>
+      <ManualChannel ref="manual" v-else-if="page===8"
+        :section="evaluation.manualSection" :evalId="evaluation.id"/>
+
+      <LanguageChannel ref="language" v-else-if="page===9"
+        :section="evaluation.languageSection" :evalId="evaluation.id"/>
+
+      <MobilityChannel ref="mobility" v-else-if="page===10"
+        :section="evaluation.mobilitySection" :evalId="evaluation.id"/>
+
+      <SensorySeekingPage ref="sensory" v-else-if="page===11"
+        :section="evaluation.sensorySection" :evalId="evaluation.id"/>
+
+      <SensitivitiesPage ref="sensitivities" v-else-if="page===12"
+        :section="evaluation.sensitivitiesSection" :evalId="evaluation.id"/>
 
 
       <div class="form-section">
@@ -139,6 +154,9 @@ export default {
   }),
   methods: {
     nextPage() {
+      if (this.currentPage) {
+        this.currentPage.submit()
+      }
       this.page++;
     },
     prevPage() {
@@ -153,6 +171,21 @@ export default {
     isNew () {
       return this.$route.params.id === 'new'
     },
+
+    currentPage () {
+      return ({
+        4: this.$refs.reflex,
+        5: this.$refs.tactility,
+        6: this.$refs.auditory,
+        7: this.$refs.visual,
+        8: this.$refs.manual,
+        9: this.$refs.language,
+        10: this.$refs.mobility,
+        11: this.$refs.sensory,
+        12: this.$refs.sensitivities
+      })[this.page]
+    },
+
     // evaluation () {
     //   return this.$store.getters.getEvaluationById(this.$route.params.id)
     // },

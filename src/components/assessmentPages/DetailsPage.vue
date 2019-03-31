@@ -108,11 +108,11 @@
 // import types from '@/store/evaluation/types'
 export default {
   name:"DetailsPage",
-  props: {
-    evaluationId: {
-      required: true
-    }
-  },
+  // props: {
+  //   evaluationId: {
+  //     required: true
+  //   }
+  // },
   data:() => ({
     generalTestingObservations:"",
     behaviorTestingObservations:"",
