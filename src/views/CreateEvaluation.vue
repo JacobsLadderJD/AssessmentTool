@@ -2,7 +2,7 @@
   <div>
     <h1>New Evaluation</h1>
     <input v-model="studentQuery" type="text" name="" value="">
-    <ul v-show="searching">
+    <ul>
       <li
         v-for="(student, index) in students"
         :key="index"
@@ -30,7 +30,7 @@ export default {
         .then(data => {
           this.students =
             data.results.filter((student) =>
-              (student.firstName + " " + student.lastName).includes(newQuery))
+              (student.firstName + " " + student.lastName).toLowerCase().includes(newQuery.toLowerCase()))
         })
         .catch(e => this.students = [])
     }
@@ -40,6 +40,13 @@ export default {
       // const vm = this
       // this.$store.dispatch(types.CREATE_EVALUATION, {studentId})
     }
+  }, 
+  mounted() {
+    api.students.getAll()
+        .then(data => {
+          this.students = data.results
+        })
+        .catch(e => this.students = [])
   }
 
 }
