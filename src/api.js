@@ -59,30 +59,37 @@ const auth = {
 }
 const students = {
   getAll (name) {
-    return axios.get("students").then(resp=>resp.data)
+    return axios.get("students/").then(resp=>resp.data)
   }
 }
 
 const evaluations = {
   create (studentId) {
     return axios.post('evaluations/', {
-      studentId
+      student:studentId,
+      evaluator: 4
+    }).then(resp => {
+      console.log(resp.data)
+      return resp.data.id
     })
   },
   get (id) {
-    return axios.get(`evaluations/${id}`).then(resp => resp.data)
+    return axios.get(`evaluations/${id}/`).then(resp => resp.data)
   },
   getAll (query={}) {
     return axios.get('evaluations/', query).then(resp => resp.data)
   },
   delete (id) {
-    return axios.delete(`evaluations/${id}`)
+    return axios.delete(`evaluations/${id}/`)
   },
   // update (id, data) {
   //   return axios.patch(`evaluation/${id}`, data)
   // },
-  updateSection (id, section, path, data) {
-    return axios.patch(`evaluations/${id}`, {section, path, data})
+  updateSection (id, section, data) {
+    const d = {
+      [section]: data
+    }
+    return axios.patch(`evaluations/${id}/`, d)
   }
 }
 

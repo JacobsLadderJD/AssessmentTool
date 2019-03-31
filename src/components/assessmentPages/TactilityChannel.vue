@@ -1492,12 +1492,6 @@
         -->
       </div>
     </div>
-
-
-
-    <div class="form-section">
-
-    </div>
   </div>
 </template>
 <script>

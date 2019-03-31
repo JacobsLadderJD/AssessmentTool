@@ -37,8 +37,14 @@ export default {
   },
   methods: {
     selectStudent (studentId) {
-      // const vm = this
-      // this.$store.dispatch(types.CREATE_EVALUATION, {studentId})
+      const vm = this
+      api.evaluations.create(studentId)
+        .then(id => {
+          vm.$router.push({
+            name:'evaluation',
+            params: {id: id}
+          })
+        })
     }
   }
 
