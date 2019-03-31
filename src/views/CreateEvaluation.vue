@@ -7,7 +7,7 @@
         v-for="(student, index) in students"
         :key="index"
         @click="selectStudent(student.id)">
-        {{student.firstName}} {{student.lastName}}
+        {{student | fullName}}
       </li>
     </ul>
   </div>
@@ -28,7 +28,9 @@ export default {
       this.searching = true
       api.students.getAll()
         .then(data => {
-          this.students = data.results
+          this.students =
+            data.results.filter((student) =>
+              (student.firstName + " " + student.lastName).includes(newQuery))
         })
         .catch(e => this.students = [])
     }

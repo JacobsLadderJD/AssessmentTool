@@ -20,10 +20,10 @@ export default {
   },
   computed: {
     student () {
-      return this.evaluation.studentId
+      return this.evaluation.student
     },
     evaluator () {
-      return this.evaluation.evaluatorId
+      return this.evaluation.evaluator
     }
   },
   methods: {

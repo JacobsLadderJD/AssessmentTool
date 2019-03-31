@@ -157,14 +157,14 @@ export default {
     //   return this.$store.getters.getEvaluationById(this.$route.params.id)
     // },
     evaluator () {
-      return this.evaluation.evaluatorId || {
+      return this.evaluation.evaluator || {
         firstName: "",
         lastName: "",
         id: null
       }
     },
     student () {
-      return this.evaluation.studentId || {
+      return this.evaluation.student || {
         status: null,
         code: null,
         id: null,

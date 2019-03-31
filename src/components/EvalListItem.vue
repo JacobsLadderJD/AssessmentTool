@@ -25,13 +25,10 @@ export default {
   },
   computed: {
     student () {
-      return this.evaluation.studentId
+      return this.evaluation.student
     },
     evaluator () {
-      return this.evaluation.evaluatorId
-    },
-    fullName () {
-      return this.student.firstName + " " + this.student.lastName
+      return this.evaluation.evaluator
     }
   },
   methods: {
