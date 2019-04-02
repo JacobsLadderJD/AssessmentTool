@@ -4,13 +4,15 @@
       LEVEL II
     </h2>
     <div class="question">
-      <h3 class="prompt">Horizontal Tracking</h3>
+      <h3 class="prompt">Twist Cap</h3>
       <div class="comment">
         <textarea v-model="d.twistCap.comment"></textarea>
       </div>
       <div class="subprompts">
-        <ChannelScore class="channel-score" v-model="d.twistCap.off"/>
-        <NegativeChannelScore class="channel-score" v-model="d.twistCap.on"/>
+        <!-- <ChannelScore class="channel-score" v-model="d.twistCap.off"/> -->
+        <!-- <NegativeChannelScore class="channel-score" v-model="d.twistCap.on"/> -->
+        <SubChannelScore subName="Twist On" v-model="d.twistCap.on"/>
+        <SubChannelScore subName="Twist Off" v-model="d.twistCap.off"/>
       </div>
     </div>
   </div>
@@ -19,10 +21,12 @@
 <script>
 import ChannelScore from "@/components/ChannelScore"
 import NegativeChannelScore from "@/components/NegativeChannelScore"
+import SubChannelScore from "@/components/SubChannelScore"
 export default {
   components: {
     ChannelScore,
-    NegativeChannelScore
+    NegativeChannelScore,
+    SubChannelScore,
   },
   data () {
     return {
@@ -30,8 +34,8 @@ export default {
         twistCap: {
           comment: "",
           type: "ChannelScore",
-          off: null,
-          on: null,
+          off: "-3",
+          on: "+3",
         }
       }
     }
