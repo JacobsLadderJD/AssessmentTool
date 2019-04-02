@@ -72,7 +72,7 @@
         :section="evaluation.reflexSection" :evalId="evaluation.id"/>
 
       <TactilityChannel  ref="tactility" v-else-if="page===5"
-        :section="evaluation.tactilitySection"/>
+        :section="evaluation.tactilitySection" :evalId="evaluation.id"/>
 
       <AuditoryChannel  ref="auditory" v-else-if="page===6"
         :section="evaluation.auditorySection" :evalId="evaluation.id"/>
@@ -164,7 +164,7 @@ export default {
     },
     submit () {
       this.$store.dispatch(types.UPDATE_EVALUATION, {
-        ...this.evaluation, lastEdited: new Date(this.temp.lastEdited)})
+        ...this.evaluation, lastEdited: new Date(this.evaluation.editedAt)})
     }
   },
   computed: {
