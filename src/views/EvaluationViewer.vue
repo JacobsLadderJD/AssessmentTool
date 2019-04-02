@@ -60,28 +60,6 @@
         </div>
       </div>
 
-<<<<<<< HEAD
-        <!-- page 3 -->
-        <div class="form-page" v-if="page===3">
-          <!-- page 3 section 1 -->
-          <div class="form-section">
-            <div class="form-section">
-              <h1 class="title" style="text-align:left">Dynamics</h1>
-              <table>
-                <tbody>
-
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div class="w3-cell-row">
-            <div class="w3-container w3-cell">
-              <div class="form-section form-page-nav">
-                <button class="btn btn-info" style="font-size: 1.3em; float:left;" @click.prevent="prevPage()">Previous</button>
-              </div>
-=======
-      <!-- form page 2 -->
-
       <OverviewPage v-else-if="page===2"
         :section="evaluation" :evalId="evaluation.id"/>
 
@@ -92,7 +70,7 @@
         :section="evaluation.reflexSection" :evalId="evaluation.id"/>
 
       <TactilityChannel  ref="tactility" v-else-if="page===5"
-        :section="evaluation.tactilitySection"/>
+        :section="evaluation.tactilitySection" :evalId="evaluation.id"/>
 
       <AuditoryChannel  ref="auditory" v-else-if="page===6"
         :section="evaluation.auditorySection" :evalId="evaluation.id"/>
@@ -121,7 +99,6 @@
           <div class="w3-container w3-cell">
             <div class="form-section form-page-nav">
               <button v-if="page !== 1" class="btn btn-info" style="font-size: 1.3em; float:left;" @click.prevent="prevPage()">Previous</button>
->>>>>>> updatedForm
             </div>
           </div>
           <div class="w3-container w3-cell">
@@ -170,44 +147,8 @@ export default {
   },
   data:() => ({
     page: 1,
-<<<<<<< HEAD
-    temp: {
-      lastEdited: new Date(),
-      status: "",
-      code: "",
-      evaluator: "",
-      tactilityRawScore: "",
-      auditoryRawScore: "",
-      auditoryWorkingLevel: "",
-      auditoryAgeEquivalence: "",
-      visualRawScore: "",
-      visualWorkingLevel: "",
-      visualAgeEquivalence: "",
-      manualRawScore: "",
-      manualWorkingLevel: "",
-      manualAgeEquivalence: "",
-      languageRawScore: "",
-      languageWorkingLevel: "",
-      languageAgeEquivalence: "",
-      mobilityRawScore: "",
-      mobilityWorkingLevel: "",
-      mobilityAgeEquivalence: "",
-      handDominance: "",
-      footDominance: "",
-      eyeDominance: "",
-      earDominance: "",
-      logicHemispheric: "",
-      gestaltHemispheric: "",
-      auditoryWorkingAmount: "",
-      visualWorkingAmount: "",
-      reflexesNotAccessible:"",
-      reflexesNotIntegrated: "",
-      reflexesIntegrated: ""
-    }
-=======
     lastPage: 12,
     evaluation: {}
->>>>>>> updatedForm
   }),
   methods: {
     nextPage() {
@@ -221,7 +162,7 @@ export default {
     },
     submit () {
       this.$store.dispatch(types.UPDATE_EVALUATION, {
-        ...this.evaluation, lastEdited: new Date(this.temp.lastEdited)})
+        ...this.evaluation, lastEdited: new Date(this.evaluation.editedAt)})
     }
   },
   computed: {

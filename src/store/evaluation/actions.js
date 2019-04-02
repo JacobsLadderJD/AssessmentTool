@@ -1,6 +1,6 @@
 import alerts from '@/alerts'
 import types from './types'
-import api from '@/api/MockApi' // FIXME: need to add evaluations to api
+import api from '@/fixtures/MockApi' // FIXME: need to add evaluations to api
 import router from '@/router'
 
 const actions = {

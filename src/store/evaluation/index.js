@@ -33,8 +33,7 @@ const state = () => ({
       visualWorkingAmount: "",
       reflexesNotAccessible:"",
       reflexesNotIntegrated: "",
-      reflexesIntegrated: "",
-      ...Evaluation(0, 0, 1, null, new Date("11/21/2018"))
+      reflexesIntegrated: ""
     },
     1: {
       evaluator: "Some User",
@@ -65,7 +64,7 @@ const state = () => ({
       reflexesNotAccessible:"",
       reflexesNotIntegrated: "",
       reflexesIntegrated: "",
-      ...Evaluation(1, 1, 1, null, new Date("11/23/2018"))
+      // ...Evaluation(1, 1, 1, null, new Date("11/23/2018"))
     },
     2: {
       evaluator: "Some User",
@@ -96,7 +95,7 @@ const state = () => ({
       reflexesNotAccessible:"",
       reflexesNotIntegrated: "",
       reflexesIntegrated: "",
-      ...Evaluation(2, 2, 1, null,new Date("11/25/2018"))
+      // ...Evaluation(2, 2, 1, null,new Date("11/25/2018"))
     }
   },
 })

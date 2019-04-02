@@ -1,6 +1,6 @@
 import router from '@/router'
 import alerts from '@/alerts'
-import api from '@/api/api'
+import api from '@/api'
 
 import types from './types'
 
