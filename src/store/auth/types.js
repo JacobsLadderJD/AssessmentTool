@@ -1,10 +1,12 @@
 const types = {
   START_LOGIN: 'loginStart',
-  STOP_LOGIN: 'loginStop',
-  UPDATE_ACCESS_TOKEN: 'updateAccessToken',
+  LOGIN_SUCCESS: 'loginSuccess',
+  LOGIN_ERROR: 'loginError',
+  UPDATE_TOKEN: 'updateAccessToken',
   LOGOUT: 'logout',
   LOGIN: 'login',
-  FETCH_ACCESS_TOKEN: 'fetchAccessToken'
+  LOAD_TOKEN: 'fetchAccessToken',
+  VALIDATE: 'validate'
 }
 
 export default types

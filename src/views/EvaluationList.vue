@@ -16,15 +16,26 @@
 
 <script>
 import EvalListItem from '@/components/EvalListItem'
+import api from '@/api'
 export default {
   components: {
     EvalListItem
   },
-  computed: {
-    evaluations () {
-      return this.$store.getters.allEvaluations;
-    }
-  },
+  data: () => ({
+    evaluations: [],
+    count: 0,
+    prev: null,
+    next: null
+  }),
+  mounted () {
+		api.evaluations.getAll()
+			.then(evalData => {
+				this.evaluations = evalData.results
+				this.count = evalData.count
+				this.prev = evalData.prev
+				this.next = evalData.next
+			});
+  }
 }
 </script>
 

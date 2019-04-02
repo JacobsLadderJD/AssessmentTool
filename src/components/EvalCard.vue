@@ -1,11 +1,11 @@
 <template lang="html">
   <div class="card" @click="openEvaluation()">
-    <h3 class='card__header'>{{student.firstName}} {{student.lastName}}</h3>
+    <h3 class='card__header'>{{student | fullName}}</h3>
     <div class="card__main">
       <h4>Last Edited:</h4>
-      <p>{{evaluation.lastEdited | niceDate}}</p>
+      <p>{{evaluation.editedAt}}</p>
       <h4>By:</h4>
-      <p>{{evaluation.evaluator}}</p>
+      <p>{{evaluator | fullName}}</p>
     </div>
   </div>
 </template>
@@ -20,7 +20,10 @@ export default {
   },
   computed: {
     student () {
-      return this.$store.getters.getStudentById(this.evaluation.studentId)
+      return this.evaluation.student
+    },
+    evaluator () {
+      return this.evaluation.evaluator
     }
   },
   methods: {

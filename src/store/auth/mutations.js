@@ -2,16 +2,20 @@ import types from './types'
 
 const mutations = {
   [types.START_LOGIN] (state) {
-    state.loggingIn = true
+    state.status = "loggingIn"
   },
-  [types.STOP_LOGIN] (state, errors) {
-    state.loggingIn = false;
+  [types.LOGIN_SUCCESS] (state) {
+    state.status = "loggedIn"
+  },
+  [types.LOGIN_ERROR] (state) {
+    state.status = "loginError";
     state.loginError = "Invalid email or password";
   },
-  [types.UPDATE_ACCESS_TOKEN] (state, accessToken) {
+  [types.UPDATE_TOKEN] (state, accessToken) {
     state.accessToken = accessToken;
   },
   [types.LOGOUT] (state) {
+    state.status = "loggedOut"
     state.accessToken = null;
   }
 }

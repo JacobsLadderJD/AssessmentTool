@@ -3,7 +3,7 @@ import mutations from './mutations'
 // import getters from './getters'
 const state = () => ({
   accessToken: null,
-  loggingIn: false,
+  status: "loggedOut",
   loginError: null
 })
 

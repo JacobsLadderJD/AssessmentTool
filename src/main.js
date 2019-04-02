@@ -18,6 +18,10 @@ Vue.filter('dateValue', function (date) {
   return date.getFullYear() +"-" + (date.getMonth() + 1) + "-" + date.getDate()
 })
 
+Vue.filter('fullName', function (person) {
+  return person.firstName + " " + person.lastName
+})
+
 new Vue({
   router,
   store,

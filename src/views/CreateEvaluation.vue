@@ -2,12 +2,12 @@
   <div>
     <h1>New Evaluation</h1>
     <input v-model="studentQuery" type="text" name="" value="">
-    <ul v-show="searching">
+    <ul>
       <li
         v-for="(student, index) in students"
         :key="index"
         @click="selectStudent(student.id)">
-        {{student.firstName}} {{student.lastName}}
+        {{student | fullName}}
       </li>
     </ul>
   </div>
@@ -26,16 +26,33 @@ export default {
   watch: {
     studentQuery (newQuery, oldQuery) {
       this.searching = true
-      api.searchStudentByNames(this.studentQuery)
-        .then(results => this.students = results)
+      api.students.getAll()
+        .then(data => {
+          this.students =
+            data.results.filter((student) =>
+              (student.firstName + " " + student.lastName).toLowerCase().includes(newQuery.toLowerCase()))
+        })
         .catch(e => this.students = [])
     }
   },
   methods: {
     selectStudent (studentId) {
       const vm = this
-      this.$store.dispatch(types.CREATE_EVALUATION, {studentId})
+      api.evaluations.create(studentId)
+        .then(id => {
+          vm.$router.push({
+            name:'evaluation',
+            params: {id: id}
+          })
+        })
     }
+  }, 
+  mounted() {
+    api.students.getAll()
+        .then(data => {
+          this.students = data.results
+        })
+        .catch(e => this.students = [])
   }
 
 }
