@@ -2,566 +2,178 @@
   <div class="form-page">
     <div class="form-section">
       <h1 class="title" style="text-align:left">Visual Channel</h1>
-      <div class="grid9">
-        <!-- Row 1 -->
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
-          -3
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
-          -2
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
-          -1
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1;K grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
-          0
-        </div>
-        <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
-          1
-        </div>
-        <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
-          2
-        </div>
-        <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
-          3
-        </div>
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
-        </div>
-        <!-- Row 2 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+
+
+      <div class="level">
+        <h2 class="level-head">
           LEVEL II
+        </h2>
+        <h1 class="prompt">Horizontal Tracking</h1>
+        <div class="subprompts">
+          <SubChannelScore v-model="d.trackingHorizontal"/>
         </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Horizontal Tracking
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.trackingHorizontal.value" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.trackingHorizontal.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.trackingHorizontal.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.trackingHorizontal.value" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.trackingHorizontal.value" type="radio" value="+1">
-        </div>
-        <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.trackingHorizontal.value" type="radio" value="+2">
-        </div>
-        <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.trackingHorizontal.value" type="radio" value="+3">
-        </div>
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.trackingHorizontal.value" type="radio" value="NA">
-        </div>
-        <!-- Row 3 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: left; justify-self: start;">
+        <div class="comment">
           <textarea v-model="d.trackingHorizontal.comment"></textarea>
         </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Vertical Tracking
+      </div>
+
+      <div class="level">
+        <h2 class="level-head">
+          LEVEL III
+        </h2>
+        <h1 class="prompt">Vertical Tracking</h1>
+        <div class="subprompts">
+          <SubChannelScore v-model="d.trackingVertical"/>
         </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.trackingVertical.value" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.trackingVertical.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.trackingVertical.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.trackingVertical.value" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.trackingVertical.value" type="radio" value="+1">
-        </div>
-        <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.trackingVertical.value" type="radio" value="+2">
-        </div>
-        <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.trackingVertical.value" type="radio" value="+3">
-        </div>
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.trackingVertical.value" type="radio" value="NA">
-        </div>
-        <!-- Row 3 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: left; justify-self: start;">
+        <div class="comment">
           <textarea v-model="d.trackingVertical.comment"></textarea>
         </div>
-        <!-- Row 4 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+      </div>
+
+      <div class="level">
+        <h2 class="level-head">
           LEVEL IV
+        </h2>
+        <h1 class="prompt">Convergence</h1>
+        <div class="subprompts">
+          <SubChannelScore v-model="d.convergence"/>
         </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Convergence
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.convergence.value" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.convergence.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.convergence.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.convergence.value" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.convergence.value" type="radio" value="+1">
-        </div>
-        <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.convergence.value" type="radio" value="+2">
-        </div>
-        <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.convergence.value" type="radio" value="+3">
-        </div>
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.convergence.value" type="radio" value="NA">
-        </div>
-        <!-- Row 5 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: start; justify-items: start; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.convergence.comment"></textarea>
         </div>
-        <!-- Row 6 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Divergence
+
+        <h1 class="prompt">Divergence</h1>
+        <div class="subprompts">
+          <SubChannelScore v-model="d.divergence"/>
         </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.divergence.value" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.divergence.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.divergence.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.divergence.value" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.divergence.value" type="radio" value="+1">
-        </div>
-        <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.divergence.value" type="radio" value="+2">
-        </div>
-        <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.divergence.value" type="radio" value="+3">
-        </div>
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.divergence.value" type="radio" value="NA">
-        </div>
-        <!-- row 7 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: start; justify-items: start; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.divergence.comment"></textarea>
         </div>
-        <!-- Row 8 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Tracking Figure 8's - Horizontal
+
+        <h1 class="prompt">Tracking Figure 8's - Horizontal</h1>
+        <div class="subprompts">
+          <SubChannelScore v-model="d.eightTrackingHorizontal"/>
         </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.eightTrackingHorizontal.value" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.eightTrackingHorizontal.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.eightTrackingHorizontal.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.eightTrackingHorizontal.value" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.eightTrackingHorizontal.value" type="radio" value="+1">
-        </div>
-        <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.eightTrackingHorizontal.value" type="radio" value="+2">
-        </div>
-        <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.eightTrackingHorizontal.value" type="radio" value="+3">
-        </div>
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.eightTrackingHorizontal.value" type="radio" value="NA">
-        </div>
-        <!-- Row 9 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: left; justify-self: start;">
+        <div class="comment">
           <textarea v-model="d.eightTrackingHorizontal.comment"></textarea>
         </div>
-        <!-- Row 10 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Tracking Figure 8's - Vertical
+
+        <h1 class="prompt">Tracking Figure 8's - Vertical</h1>
+        <div class="subprompts">
+          <SubChannelScore v-model="d.eightTrackingVertical"/>
         </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.eightTrackingVertical.value" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.eightTrackingVertical.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.eightTrackingVertical.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.eightTrackingVertical.value" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.eightTrackingVertical.value" type="radio" value="+1">
-        </div>
-        <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.eightTrackingVertical.value" type="radio" value="+2">
-        </div>
-        <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.eightTrackingVertical.value" type="radio" value="+3">
-        </div>
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.eightTrackingVertical.value" type="radio" value="NA">
-        </div>
-        <!-- Row 11 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 11; grid-row-end: span 1; text-align: left; justify-self: start;">
+        <div class="comment">
           <textarea v-model="d.eightTrackingVertical.comment"></textarea>
         </div>
-        <!-- Row 12 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Tracking Figure 8's - Convergence/Divergence
+
+        <h1 class="prompt">Tracking Figure 8's - Convergence/Divergence</h1>
+        <div class="subprompts">
+          <SubChannelScore v-model="d.eightTrackingConDiv"/>
         </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.eightTrackingConDiv.value" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.eightTrackingConDiv.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.eightTrackingConDiv.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.eightTrackingConDiv.value" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.eightTrackingConDiv.value" type="radio" value="+1">
-        </div>
-        <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.eightTrackingConDiv.value" type="radio" value="+2">
-        </div>
-        <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.eightTrackingConDiv.value" type="radio" value="+3">
-        </div>
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.eightTrackingConDiv.value" type="radio" value="NA">
-        </div>
-        <!-- Row 13 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: left; justify-self: start;">
+        <div class="comment">
           <textarea v-model="d.eightTrackingConDiv.comment"></textarea>
         </div>
-        <!-- Row 14 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+      </div>
+
+      <div class="level">
+        <h2 class="level-head">
           LEVEL V
+        </h2>
+        <h1 class="prompt">Do This</h1>
+        <div class="subprompts">
+          <NegativeChannelScore v-model="d.doThis"/>
         </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Do this
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.doThis.value" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.doThis.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.doThis.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.doThis.value" type="radio" value="0">
-        </div>
-        <!-- Row 15 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 15; grid-row-end: span 1; text-align: left; justify-self: start;">
+        <div class="comment">
           <textarea v-model="d.doThis.comment"></textarea>
         </div>
-        <!-- Row 16 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Initial Matching - Colors
+
+        <h1 class="prompt">Initial Matching - Color</h1>
+        <div class="subprompts">
+          <NegativeChannelScore v-model="d.initialMatchColors"/>
         </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.initialMatchColors.value" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.initialMatchColors.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.initialMatchColors.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.initialMatchColors.value" type="radio" value="0">
-        </div>
-        <!-- Row 17 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 17; grid-row-end: span 1; text-align: left; justify-self: start;">
+        <div class="comment">
           <textarea v-model="d.initialMatchColors.comment"></textarea>
         </div>
-        <!-- Row 18 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Initial Matching - Shapes
+
+        <h1 class="prompt">Initial Matching - Shapes</h1>
+        <div class="subprompts">
+          <NegativeChannelScore v-model="d.initialMatchShapes"/>
         </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.initialMatchShapes.value" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.initialMatchShapes.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.initialMatchShapes.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.initialMatchShapes.value" type="radio" value="0">
-        </div>
-        <!-- Row 19 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 19; grid-row-end: span 1; text-align: left; justify-self: start;">
+        <div class="comment">
           <textarea v-model="d.initialMatchShapes.comment"></textarea>
         </div>
-        <!-- Row 20 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Initial Matching - Pictures
+
+        <h1 class="prompt">Initial Matching - Pictures</h1>
+        <div class="subprompts">
+          <NegativeChannelScore v-model="d.initialMatchPic"/>
         </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.initialMatchPic.value" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.initialMatchPic.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.initialMatchPic.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.initialMatchPic.value" type="radio" value="0">
-        </div>
-        <!-- Row 21 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 21; grid-row-end: span 1; text-align: left; justify-self: start;">
+        <div class="comment">
           <textarea v-model="d.initialMatchPic.comment"></textarea>
         </div>
-        <!-- Row 22 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+      </div>
+
+      <div class="level">
+        <h2 class="level-head">
           LEVEL VI
+        </h2>
+        <h1 class="prompt">Colors</h1>
+        <div class="subprompts">
+          <NegativeChannelScore v-model="d.colors"/>
         </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Colors
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          <div class="row">
-            <div class="cell" style="margin-right:10px;">
-              FO2
-            </div>
-            <div class="cell" style="margin-right:10px;">
-              FO3
-            </div>
-            <div class="cell">
-              Verbal
-            </div>
-          </div>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.colors.value" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.colors.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.colors.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.colors.value" type="radio" value="0">
-        </div>
-        <!-- Row 23 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 23; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.colors.comment"></textarea>
         </div>
-        <!-- Row 24 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Shapes
+
+        <h1 class="prompt">Shapes</h1>
+        <div class="subprompts">
+          <NegativeChannelScore v-model="d.shapes"/>
         </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          <div class="row">
-            <!-- TODO: make these selectable checkboxes or something-->
-            <div class="cell" style="margin-right:10px;">
-              FO2
-            </div>
-            <div class="cell" style="margin-right:10px;">
-              FO3
-            </div>
-            <div class="cell">
-              Verbal
-            </div>
-          </div>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.shapes.value" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.shapes.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.shapes.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.shapes.value" type="radio" value="0">
-        </div>
-        <!-- Row 25 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 25; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.shapes.comment"></textarea>
         </div>
-        <!-- Row 26 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Numbers
+
+        <h1 class="prompt">Numbers</h1>
+        <div class="subprompts">
+          <NegativeChannelScore v-model="d.numbers"/>
         </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          <div class="row">
-            <div class="cell" style="margin-right:10px;">
-              FO2
-            </div>
-            <div class="cell" style="margin-right:10px;">
-              FO3
-            </div>
-            <div class="cell">
-              Verbal
-            </div>
-          </div>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.numbers.value" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.numbers.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.numbers.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.numbers.value" type="radio" value="0">
-        </div>
-        <!-- Row 27 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 27; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.numbers.comment"></textarea>
         </div>
-        <!-- Row 28 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+      </div>
+
+      <div class="level">
+        <h2 class="level-head">
           LEVEL VII
+        </h2>
+        <h1 class="prompt">Uppercase Letters</h1>
+        <div class="subprompts">
+          <NegativeChannelScore v-model="d.uppercaseLetters"/>
         </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Uppercase Letters
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          <div class="row">
-            <div class="cell" style="margin-right:10px;">
-              FO2
-            </div>
-            <div class="cell" style="margin-right:10px;">
-              FO3
-            </div>
-            <div class="cell">
-              Verbal
-            </div>
-          </div>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.uppercaseLetters.value" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.uppercaseLetters.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.uppercaseLetters.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.uppercaseLetters.value" type="radio" value="0">
-        </div>
-        <!-- Row 29 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 29; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.uppercaseLetters.comment"></textarea>
         </div>
-        <!-- Row 30 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Lowercase Letters
+
+        <h1 class="prompt">Lowercase Letters</h1>
+        <div class="subprompts">
+          <NegativeChannelScore v-model="d.lowercaseLetters"/>
         </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          <div class="row">
-            <div class="cell" style="margin-right:10px;">
-              FO2
-            </div>
-            <div class="cell" style="margin-right:10px;">
-              FO3
-            </div>
-            <div class="cell">
-              Verbal
-            </div>
-          </div>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.lowercaseLetters.value" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.lowercaseLetters.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.lowercaseLetters.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.lowercaseLetters.value" type="radio" value="0">
-        </div>
-        <!-- Row 31 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 31; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.lowercaseLetters.comment"></textarea>
         </div>
-        <!-- Row 32 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Initial Sight Words
+
+        <h1 class="prompt">Initial Sight Words</h1>
+        <div class="subprompts">
+          <NegativeChannelScore v-model="d.initialSightWords"/>
         </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          <div class="row">
-            <div class="cell" style="margin-right:10px;">
-              FO2
-            </div>
-            <div class="cell" style="margin-right:10px;">
-              FO3
-            </div>
-            <div class="cell">
-              Verbal
-            </div>
-          </div>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.initialSightWords.value" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.initialSightWords.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.initialSightWords.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.initialSightWords.value" type="radio" value="0">
-        </div>
-        <!-- Row 33 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 33; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.initialSightWords.comment"></textarea>
         </div>
-        <!-- Row 34 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Visual Sequential Processing Speed
+
+        <h1 class="prompt">Visual Sequential Processing Speed</h1>
+        <div class="subprompts">
+          <NegativeChannelScore v-model="d.visualProcessingSpeed"/>
         </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.visualProcessingSpeed.value" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.visualProcessingSpeed.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.visualProcessingSpeed.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.visualProcessingSpeed.value" type="radio" value="0">
-        </div>
-        <!-- Row 35 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 11; grid-row-start: 35; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.visualProcessingSpeed.comment"></textarea>
         </div>
       </div>
@@ -571,8 +183,16 @@
 <script>
 // import types from '@/store/evaluation/types'
 import SectionMixin from '@/mixins/section'
+import ChannelScore from "@/components/ChannelScore"
+import NegativeChannelScore from "@/components/NegativeChannelScore"
+import SubChannelScore from "@/components/SubChannelScore"
 
 export default {
+  components: {
+    ChannelScore,
+    NegativeChannelScore,
+    SubChannelScore,
+  },
   name: "VisualChannel",
   mixins: [SectionMixin],
   data: () => ({
@@ -771,5 +391,43 @@ h2 {
 .cell {
   white-space: normal;
   word-wrap: normal;
+}
+
+.question {
+  display: grid;
+  grid-template-areas:
+              "scores   prompt"
+              "comment  scores";
+}
+
+.prompt {
+  grid-area: prompt;
+}
+
+.comment {
+  height: 100%;
+}
+
+.comment textarea {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  resize: none;
+  overflow: auto;
+  width: 75%;
+  height: 100%;
+}
+
+.subprompts {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 0px;
+  width: 75%;
+}
+
+.level-head {
+  margin: 0;
+  padding: 0;
 }
 </style>

@@ -17,7 +17,7 @@
           <textarea v-model="d.deepPressure.comment"></textarea>
         </div>
 
-        <h1 class="prompt">Deep Pressure</h1>
+        <h1 class="prompt">Tonicity</h1>
         <div class="subprompts">
           <SubChannelScore subName="Face" v-model="d.tonicity.face"/>
           <SubChannelScore subName="Neck" v-model="d.tonicity.neck"/>
@@ -89,8 +89,8 @@
 
         <h1 class="prompt">Oral Textural Awareness</h1>
         <div class="subprompts">
-          <SubChannelScore v-model="d.oralTexturalAwareness.mushy"/>
-          <SubChannelScore v-model="d.oralTexturalAwareness.crunchy"/>
+          <SubChannelScore subName="Mushy" v-model="d.oralTexturalAwareness.mushy"/>
+          <SubChannelScore subName="Cruncthy" v-model="d.oralTexturalAwareness.crunchy"/>
 
         </div>
         <div class="comment">
