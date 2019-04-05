@@ -2,6 +2,10 @@
   <div class="form-page">
     <div class="form-section">
       <h1 class="title" style="text-align:left">Reflexes</h1>
+      
+
+
+
       <div class="grid5">
         <!-- row 1 -->
         <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
@@ -926,8 +930,16 @@
 </template>
 <script>
 import SectionMixin from '@/mixins/section'
+import ChannelScore from "@/components/ChannelScore"
+import NegativeChannelScore from "@/components/NegativeChannelScore"
+import SubChannelScore from "@/components/SubChannelScore"
 
 export default {
+  components: {
+    ChannelScore,
+    NegativeChannelScore,
+    SubChannelScore,
+  },
   name:"ReflexesPage",
   mixins: [SectionMixin],
   data:() => ({

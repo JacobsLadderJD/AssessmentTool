@@ -1,5 +1,9 @@
 <template lang="html">
+
   <div class="channel-score">
+    <div>
+      <h4> {{ subName }} </h4>
+    </div>
     <div class="score">
       <label for="">-3</label>
       <input v-model="val"
@@ -38,10 +42,17 @@
 
 <script>
 export default {
-  name: "ChannelScore",
-  props: ['value'],
+  name: "NegativeChannelScore",
+  props: {
+    value: {
+      required: true,
+    },
+    subName: {
+      type: String
+    },
+  },
   data: () => ({
-    val: "N/A"
+    val: "N/A",
   }),
   methods: {
     update (value) {
@@ -53,6 +64,12 @@ export default {
       this.val = newVal
     }
   },
+  methods: {
+    // if score changes, notify the parent with $emit
+    update() {
+      this.$emit("input", this.score);
+    }
+  },
   mounted() {
     this.val = this.value
   }
@@ -62,6 +79,7 @@ export default {
 <style lang="css" scoped>
 .channel-score {
   display: flex;
+  flex-flow: row;
 }
 .channel-score .score {
   flex:1;
