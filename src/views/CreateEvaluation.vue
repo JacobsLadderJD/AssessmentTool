@@ -4,6 +4,7 @@
     <input v-model="studentQuery" type="text" name="" value="">
     <ul>
       <li
+        class = "eval-list-item"
         v-for="(student, index) in students"
         :key="index"
         @click="selectStudent(student.id)">
@@ -59,4 +60,16 @@ export default {
 </script>
 
 <style lang="css" scoped>
+.eval-list-item {
+  display: flex;
+  min-height: 60px;
+  width: 80%;
+  box-sizing: border-box;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.75);
+  padding: 0 24px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
 </style>
