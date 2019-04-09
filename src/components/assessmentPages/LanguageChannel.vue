@@ -2,623 +2,204 @@
   <div class="form-page">
     <div class="form-section">
       <h1 class="title" style="text-align:left">Language Channel</h1>
-      <div class="grid9">
-        <!-- Row 1 -->
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
-          -3
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
-          -2
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
-          -1
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1;K grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
-          0
-        </div>
-        <div class="cell" style="grid-column-start: 8; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
-          1
-        </div>
-        <div class="cell" style="grid-column-start: 9; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
-          2
-        </div>
-        <div class="cell" style="grid-column-start: 10; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
-          3
-        </div>
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
-        </div>
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: left;">
+      <div class="level">
+        <h2 class="level-head">
           LEVEL II
+        </h2>
+        <h1 class="prompt">Verbal Responses to Sounds</h1>
+        <div class="subprompts">
+          <NegativeChannelScore v-model="d.soundVerbalResponse"/>
         </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: left;">
-          Verbal Responses to Sounds
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.soundVerbalResponse.comment"></textarea>
         </div>
 
-        <!-- Verb response buttons -->
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.soundVerbalResponse.value" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.soundVerbalResponse.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.soundVerbalResponse.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.soundVerbalResponse.value" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.soundVerbalResponse.value" type="radio" value="NA">
-        </div>
-
-        <!-- row 4 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: left;">
+        <h2 class="level-head">
           LEVEL III
+        </h2>
+        <h1 class="prompt">Lip Utilization</h1>
+        <div class="subprompts">
+          <NegativeChannelScore v-model="d.lipUtilization"/>
         </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: left;">
-          Lip Utilization
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.lipUtilization.comment"></textarea>
         </div>
 
-        <!-- Lip Use buttons -->
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.lipUtilization.value" type="radio" value="-3">
+        <h1 class="prompt">Oral Motor Movement</h1>
+        <div class="subprompts">
+          <NegativeChannelScore v-model="d.oralMotorMovement"/>
         </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.lipUtilization.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.lipUtilization.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.lipUtilization.value" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.lipUtilization.value" type="radio" value="NA">
-        </div>
-
-
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: left;">
-          Oral Motor Movement
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.oralMotorMovement.comment"></textarea>
         </div>
 
-        <!-- oral motor buttons -->
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.oralMotorMovement.value" type="radio" value="-3">
+        <h1 class="prompt">Breath Support</h1>
+        <div class="subprompts">
+          <NegativeChannelScore v-model="d.breathSupport"/>
         </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.oralMotorMovement.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.oralMotorMovement.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.oralMotorMovement.value" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.oralMotorMovement.value" type="radio" value="NA">
-        </div>
-
-
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: left;">
-          Breath Support
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 11; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.breathSupport.comment"></textarea>
         </div>
 
-
-        <!-- breath support buttons -->
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.breathSupport.value" type="radio" value="-3">
+        <h1 class="prompt">Phonation</h1>
+        <div class="subprompts">
+          <NegativeChannelScore v-model="d.phonation"/>
         </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.breathSupport.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.breathSupport.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.breathSupport.value" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.breathSupport.value" type="radio" value="NA">
-        </div>
-
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: left;">
-          Phonation
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.phonation.comment"></textarea>
         </div>
 
-
-        <!-- phonation buttons -->
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.phonation.value" type="radio" value="-3">
+        <h1 class="prompt">Sound Production - Short Vowels</h1>
+        <div class="subprompts">
+          <NegativeChannelScore v-model="d.vowelProductionShort"/>
         </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.phonation.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.phonation.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.phonation.value" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.phonation.value" type="radio" value="NA">
-        </div>
-
-
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: left;">
-          Sound Production - Short Vowels
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.vowelProductionShort.comment"></textarea>
         </div>
 
-
-        <!-- sound short buttons -->
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.vowelProductionShort.value" type="radio" value="-3">
+        <h1 class="prompt">Sound Production - Long Vowels</h1>
+        <div class="subprompts">
+          <NegativeChannelScore v-model="d.vowelProductionLong"/>
         </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.vowelProductionShort.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.vowelProductionShort.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.vowelProductionShort.value" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.vowelProductionShort.value" type="radio" value="NA">
-        </div>
-
-
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: left;">
-          Sound Production - Long Vowels
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.vowelProductionLong.comment"></textarea>
         </div>
 
-
-        <!-- sound long buttons -->
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.vowelProductionLong.value" type="radio" value="-3">
+        <h1 class="prompt">Vowel/Consonant Production</h1>
+        <div class="subprompts">
+          <NegativeChannelScore v-model="d.vowelConsonantProduction"/>
         </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.vowelProductionLong.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.vowelProductionLong.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.vowelProductionLong.value" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.vowelProductionLong.value" type="radio" value="NA">
-        </div>
-
-
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: left;">
-          Vowel/Consonant Production
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.vowelConsonantProduction.comment"></textarea>
         </div>
 
-
-        <!-- vowel production buttons -->
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.vowelConsonantProduction.value" type="radio" value="-3">
+        <h1 class="prompt">Use of Meaningful Tones</h1>
+        <div class="subprompts">
+          <NegativeChannelScore v-model="d.meaningfulToneUse"/>
         </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.vowelConsonantProduction.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.vowelConsonantProduction.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.vowelConsonantProduction.value" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.vowelConsonantProduction.value" type="radio" value="NA">
-        </div>
-
-
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: left;">
-          Use of Meaningful Tones
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.meaningfulToneUse.comment"></textarea>
         </div>
 
-
-        <!-- meaningful tones buttons -->
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.meaningfulToneUse.value" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.meaningfulToneUse.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.meaningfulToneUse.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.meaningfulToneUse.value" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.meaningfulToneUse.value" type="radio" value="NA">
-        </div>
-
-
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: center; justify-self: left;">
+        <h2 class="level-head">
           LEVEL IV
+        </h2>
+        <h1 class="prompt">Identify Pictures Receptively</h1>
+        <div class="subprompts">
+          <NegativeChannelScore subName="FO2" v-model="d.identifyPicReceptively.f02"/>
+          <NegativeChannelScore subName="FO3" v-model="d.identifyPicReceptively.f03"/>
         </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: center; justify-self: left;">
-          Identify Pictures Receptively
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 29; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.identifyPicReceptively.comment"></textarea>
         </div>
 
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: center; justify-self: left;">
-          FO2
+        <h1 class="prompt">Identify Pictures Expressively</h1>
+        <div class="subprompts">
+          <NegativeChannelScore subName="Verbal 1" v-model="d.identifyPicExpressively.verbal1"/>
+          <NegativeChannelScore subName="Verbal 2" v-model="d.identifyPicExpressively.verbal2"/>
+          <NegativeChannelScore subName="Verbal 3" v-model="d.identifyPicExpressively.verbal3"/>
         </div>
-
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 29; grid-row-end: span 1; text-align: center; justify-self: left;">
-          FO3
-        </div>
-
-        <!-- id pictures FO2 buttons -->
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.identifyPicReceptively.fO2" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.identifyPicReceptively.fO2" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.identifyPicReceptively.fO2" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.identifyPicReceptively.fO2" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.identifyPicReceptively.fO2" type="radio" value="NA">
-        </div>
-
-        <!-- id pictures FO3 buttons -->
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 29; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.identifyPicReceptively.f03" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 29; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.identifyPicReceptively.f03" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 29; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.identifyPicReceptively.f03" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 29; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.identifyPicReceptively.f03" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 29; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.identifyPicReceptively.f03" type="radio" value="NA">
-        </div>
-
-
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 31; grid-row-end: span 1; text-align: center; justify-self: left;">
-          Identify Pictures Expressively
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 2; text-align: left; justify-self: start; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.identifyPicExpressively.comment"></textarea>
         </div>
 
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 31; grid-row-end: span 1; text-align: center; justify-self: left;">
-          Verbal1
+        <h1 class="prompt">Articulation - Initial Sounds</h1>
+        <div class="subprompts">
+          <NegativeChannelScore v-model="d.articulationInitial"/>
         </div>
-
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: center; justify-self: left;">
-          Verbal2
-        </div>
-
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 33; grid-row-end: span 1; text-align: center; justify-self: left;">
-          Verbal3
-        </div>
-
-        <!-- verbal 1 buttons -->
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 31; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.identifyPicExpressively.verbal1" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 31; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.identifyPicExpressively.verbal1" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 31; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.identifyPicExpressively.verbal1" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 31; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.identifyPicExpressively.verbal1" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 31; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.identifyPicExpressively.verbal1" type="radio" value="NA">
-        </div>
-
-        <!-- verbal 2 buttons -->
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.identifyPicExpressively.verbal2" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.identifyPicExpressively.verbal2" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.identifyPicExpressively.verbal2" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.identifyPicExpressively.verbal2" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.identifyPicExpressively.verbal2" type="radio" value="NA">
-        </div>
-
-        <!-- verbal 3 buttons -->
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 33; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.identifyPicExpressively.verbal3" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 33; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.identifyPicExpressively.verbal3" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 33; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.identifyPicExpressively.verbal3" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 33; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.identifyPicExpressively.verbal3" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 33; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.identifyPicExpressively.verbal3" type="radio" value="NA">
-        </div>
-
-        <!-- Row 34 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 2; grid-row-start: 34; grid-row-end: span 1; text-align: left; justify-self: left; margin-top: 3em;">
-          Articulation - Initial Sounds
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.articulationInitial.value" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.articulationInitial.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.articulationInitial.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.articulationInitial.value" type="radio" value="0">
-        </div>
-
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.articulationInitial.value" type="radio" value="NA">
-        </div>
-        <!-- Row 35 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 35; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.articulationInitial.comment"></textarea>
         </div>
-        <!-- Row 36 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 2; grid-row-start: 36; grid-row-end: span 1; text-align: left; justify-self: left; margin-top: 3em;">
-          Articulation - Medial Sounds
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 36; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.articulationMedial.value" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 36; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.articulationMedial.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 36; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.articulationMedial.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 36; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.articulationMedial.value" type="radio" value="0">
-        </div>
 
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 36; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.articulationMedial.value" type="radio" value="NA">
+        <h1 class="prompt">Articulation - Medial Sounds</h1>
+        <div class="subprompts">
+          <NegativeChannelScore v-model="d.articulationMedial"/>
         </div>
-        <!-- Row 37 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 37; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.articulationMedial.comment"></textarea>
         </div>
-        <!-- Row 38 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 2; grid-row-start: 38; grid-row-end: span 1; text-align: left; justify-self: left; margin-top: 3em;">
-          Articulation - Final Sounds
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 38; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.articulationFinal.value" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 38; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.articulationFinal.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 38; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.articulationFinal.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 38; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.articulationFinal.value" type="radio" value="0">
-        </div>
 
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 38; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.articulationFinal.value" type="radio" value="NA">
+        <h1 class="prompt">Articulation - Final Sounds</h1>
+        <div class="subprompts">
+          <NegativeChannelScore v-model="d.articulationFinal"/>
         </div>
-        <!-- Row 39 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 39; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.articulationFinal.comment"></textarea>
         </div>
-        <!-- Row 40 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 2; grid-row-start: 40; grid-row-end: span 1; text-align: left; justify-self: left; margin-top: 3em;">
-          Use of Spontaneous Verbalizations
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 40; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.spontaneousVerbalizations.value" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 40; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.spontaneousVerbalizations.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 40; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.spontaneousVerbalizations.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 40; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.spontaneousVerbalizations.value" type="radio" value="0">
-        </div>
 
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 40; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.spontaneousVerbalizations.value" type="radio" value="NA">
+        <h1 class="prompt">Use of Spontaneous Verbalizations</h1>
+        <div class="subprompts">
+          <NegativeChannelScore v-model="d.spontaneousVerbalizations"/>
         </div>
-        <!-- Row 41 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 41; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.spontaneousVerbalizations.comment"></textarea>
         </div>
-        <!-- Row 42 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 42; grid-row-end: span 1; text-align: left; justify-self: left; margin-top: 3em;">
-          LEVEL V
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 2; grid-row-start: 42; grid-row-end: span 1; text-align: left; justify-self: left; margin-top: 3em;">
-          Responds Yes or No
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 42; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.yesNoResponse.value" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 42; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.yesNoResponse.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 42; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.yesNoResponse.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 42; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.yesNoResponse.value" type="radio" value="0">
-        </div>
 
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 42; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.yesNoResponse.value" type="radio" value="NA">
+        <h2 class="level-head">
+          LEVEL V
+        </h2>
+        <h1 class="prompt">Respond Yes or No</h1>
+        <div class="subprompts">
+          <NegativeChannelScore v-model="d.yesNoResponse"/>
         </div>
-        <!-- Row 43 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 43; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.yesNoResponse.comment"></textarea>
         </div>
-        <!-- Row 44 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 2; grid-row-start: 44; grid-row-end: span 1; text-align: left; justify-self: left; margin-top: 3em;">
-          Use of 2-3 Word Phrases
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 44; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.phrases.value" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 44; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.phrases.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 44; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.phrases.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 44; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.phrases.value" type="radio" value="0">
-        </div>
 
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 44; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.phrases.value" type="radio" value="NA">
+        <h1 class="prompt">Use of 2-3 Word Phrases</h1>
+        <div class="subprompts">
+          <NegativeChannelScore v-model="d.phrases"/>
         </div>
-        <!-- Row 45 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 45; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.phrases.comment"></textarea>
         </div>
-        <!-- Row 46 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 46; grid-row-end: span 1; text-align: left; justify-self: left; margin-top: 3em;">
-          LEVEL VI
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 2; grid-row-start: 46; grid-row-end: span 1; text-align: left; justify-self: left; margin-top: 3em;">
-          Use of 4-6 Word Sentences
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 46; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.sentencesResponse.value" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 46; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.sentencesResponse.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 46; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.sentencesResponse.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 46; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.sentencesResponse.value" type="radio" value="0">
-        </div>
 
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 46; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.sentencesResponse.value" type="radio" value="NA">
+        <h2 class="level-head">
+          LEVEL VI
+        </h2>
+        <h1 class="prompt">Use of 4-6 Word Sentences</h1>
+        <div class="subprompts">
+          <NegativeChannelScore v-model="d.sentencesResponse"/>
         </div>
-        <!-- Row 47 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 47; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.sentencesResponse.comment"></textarea>
         </div>
-        <!-- Row 48 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 48; grid-row-end: span 1; text-align: left; justify-self: left; margin-top: 3em;">
-          LEVEL VII
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 2; grid-row-start: 48; grid-row-end: span 1; text-align: left; justify-self: left; margin-top: 3em;">
-          Conversation with Multiple Exchanges
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 48; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.conversationExchange.value" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 48; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.conversationExchange.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 48; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.conversationExchange.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 48; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.conversationExchange.value" type="radio" value="0">
-        </div>
 
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 48; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.conversationExchange.value" type="radio" value="NA">
+        <h2 class="level-head">
+          LEVEL VII
+        </h2>
+        <h1 class="prompt">Conversation with Multiple Exchanges</h1>
+        <div class="subprompts">
+          <NegativeChannelScore v-model="d.conversationExchange"/>
         </div>
-        <!-- Row 49 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 49; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.conversationExchange.comment"></textarea>
         </div>
-        <!-- Row 50 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 2; grid-row-start: 50; grid-row-end: span 1; text-align: left; justify-self: left; margin-top: 3em;">
-          Opposites
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 50; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.opposites.value" type="radio" value="-3">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 50; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.opposites.value" type="radio" value="-2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 50; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.opposites.value" type="radio" value="-1">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 50; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.opposites.value" type="radio" value="0">
-        </div>
 
-        <div class="cell" style="grid-column-start: 11; grid-column-end: span 1; grid-row-start: 50; grid-row-end: span 1; text-align: center; justify-self: center; margin-top: 3em;">
-          <input v-model="d.opposites.value" type="radio" value="NA">
+        <h1 class="prompt">Opposites</h1>
+        <div class="subprompts">
+          <NegativeChannelScore v-model="d.opposites"/>
         </div>
-        <!-- Row 51 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 10; grid-row-start: 51; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.opposites.comment"></textarea>
         </div>
       </div>
+
     </div>
   </div>
 </template>
 <script>
 import SectionMixin from '@/mixins/section'
+import ChannelScore from "@/components/ChannelScore"
+import NegativeChannelScore from "@/components/NegativeChannelScore"
+import SubChannelScore from "@/components/SubChannelScore"
 
 export default {
+  components: {
+    ChannelScore,
+    NegativeChannelScore,
+    SubChannelScore,
+  },
   name:"LanguageChannel",
   mixins: [SectionMixin],
   data: () => ({
@@ -817,5 +398,43 @@ h2 {
 .cell {
   white-space: normal;
   word-wrap: normal;
+}
+
+.question {
+  display: grid;
+  grid-template-areas:
+              "scores   prompt"
+              "comment  scores";
+}
+
+.prompt {
+  grid-area: prompt;
+}
+
+.comment {
+  height: 100%;
+}
+
+.comment textarea {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  resize: none;
+  overflow: auto;
+  width: 75%;
+  height: 100%;
+}
+
+.subprompts {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 0px;
+  width: 75%;
+}
+
+.level-head {
+  margin: 0;
+  padding: 0;
 }
 </style>
