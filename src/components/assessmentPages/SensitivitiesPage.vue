@@ -2,319 +2,128 @@
   <div class="form-page">
     <div class="form-section">
       <h1 class="title" style="text-align:left">Sensitivities</h1>
-      <div class="grid9">
-        <!-- Row 1 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
-          0
+      <div class="level">
+        <h2 class="level-head">
+          HEAD SENSITIVITIES
+        </h2>
+        <h1 class="prompt">Haircuts</h1>
+        <div class="subprompts">
+          <PositiveChannelScore v-model="d.haircuts"/>
         </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
-          1
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
-          2
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1;K grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
-          3
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1;K grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
-          NA
-        </div>
-        <!-- Row 2 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          <strong>HEAD SENSITIVITIES</strong>
-        </div>
-        <!-- row 3 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Haircuts
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.haircuts.value" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.haircuts.value" type="radio" value="1">
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.haircuts.value" type="radio" value="2">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.haircuts.value" type="radio" value="3">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.haircuts.value" type="radio" value="NA">
-        </div>
-        <!-- Row 4 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 4; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.haircuts.comment"></textarea>
         </div>
-        <!-- row 5 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Washing Face
+
+        <h1 class="prompt">Washing Face</h1>
+        <div class="subprompts">
+          <PositiveChannelScore v-model="d.washingFace"/>
         </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.washingFace.value" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.washingFace.value" type="radio" value="1">
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.washingFace.value" type="radio" value="2">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.washingFace.value" type="radio" value="3">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.washingFace.value" type="radio" value="NA">
-        </div>
-        <!-- Row 6 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 6; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.washingFace.comment"></textarea>
         </div>
-        <!-- Row 7 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Washing Hair
+
+        <h1 class="prompt">Washing Hair</h1>
+        <div class="subprompts">
+          <PositiveChannelScore v-model="d.washingHair"/>
         </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.washingHair.value" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.washingHair.value" type="radio" value="1">
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.washingHair.value" type="radio" value="2">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.washingHair.value" type="radio" value="3">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.washingHair.value" type="radio" value="NA">
-        </div>
-        <!-- Row 8 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 8; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.washingHair.comment"></textarea>
         </div>
-        <!-- Row 9 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Brushing Teeth
+
+        <h1 class="prompt">Brushing Teeth</h1>
+        <div class="subprompts">
+          <PositiveChannelScore v-model="d.brushingTeeth"/>
         </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.brushingTeeth.value" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.brushingTeeth.value" type="radio" value="1">
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.brushingTeeth.value" type="radio" value="2">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.brushingTeeth.value" type="radio" value="3">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.brushingTeeth.value" type="radio" value="NA">
-        </div>
-        <!-- Row 10 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 10; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.brushingTeeth.comment"></textarea>
         </div>
-        <!-- Row 11 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 11; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          <strong>NAIL SENSITIVITIES</strong>
+      </div>
+
+      <div class="level">
+        <h2 class="level-head">
+          NAIL SENSITIVITIES
+        </h2>
+        <h1 class="prompt">Cutting Nails</h1>
+        <div class="subprompts">
+          <PositiveChannelScore subName="Fingers" v-model="d.nailCutting.fingers"/>
+          <PositiveChannelScore subName="Toes" v-model="d.nailCutting.toes"/>
         </div>
-        <!-- row 12 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Cutting Nails
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Fingers
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.nailCutting.fingers" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.nailCutting.fingers" type="radio" value="1">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.nailCutting.fingers" type="radio" value="2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.nailCutting.fingers" type="radio" value="3">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.nailCutting.fingers" type="radio" value="NA">
-        </div>
-        <!-- Row 13 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.nailCutting.comment"></textarea>
         </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Left
+      </div>
+
+      <div class="level">
+        <h2 class="level-head">
+          CLOTHING SENSITIVITIES
+        </h2>
+        <h1 class="prompt">Tags</h1>
+        <div class="subprompts">
+          <PositiveChannelScore v-model="d.tags"/>
         </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.nailCutting.toes" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.nailCutting.toes" type="radio" value="1">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.nailCutting.toes" type="radio" value="2">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.nailCutting.toes" type="radio" value="3">
-        </div>
-        <div class="cell" style="grid-column-start: 7; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.nailCutting.toes" type="radio" value="NA">
-        </div>
-        <!-- Row 14 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          <strong>CLOTHING SENSITIVITIES</strong>
-        </div>
-        <!-- Row 15 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Tags
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.tags.value" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.tags.value" type="radio" value="1">
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.tags.value" type="radio" value="2">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.tags.value" type="radio" value="3">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.tags.value" type="radio" value="NA">
-        </div>
-        <!-- Row 16 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 16; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.tags.comment"></textarea>
         </div>
-        <!-- Row 17 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Shirt
+
+        <h1 class="prompt">Shirt</h1>
+        <div class="subprompts">
+          <PositiveChannelScore v-model="d.shirt"/>
         </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.shirt.value" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.shirt.value" type="radio" value="1">
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.shirt.value" type="radio" value="2">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.shirt.value" type="radio" value="3">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.shirt.value" type="radio" value="NA">
-        </div>
-        <!-- Row 18 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 18; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.shirt.comment"></textarea>
         </div>
-        <!-- Row 19 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Pants
+
+        <h1 class="prompt">Pants</h1>
+        <div class="subprompts">
+          <PositiveChannelScore v-model="d.pants"/>
         </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.pants.value" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.pants.value" type="radio" value="1">
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.pants.value" type="radio" value="2">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.pants.value" type="radio" value="3">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.pants.value" type="radio" value="NA">
-        </div>
-        <!-- Row 20 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 20; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.pants.comment"></textarea>
         </div>
-        <!-- Row 21 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 21; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Socks
+
+        <h1 class="prompt">Socks</h1>
+        <div class="subprompts">
+          <PositiveChannelScore v-model="d.socks"/>
         </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 21; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.socks.value" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 21; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.socks.value" type="radio" value="1">
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 21; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.socks.value" type="radio" value="2">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 21; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.socks.value" type="radio" value="3">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 21; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.socks.value" type="radio" value="NA">
-        </div>
-        <!-- Row 22 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 22; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.socks.comment"></textarea>
         </div>
-        <!-- Row 23 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Shoes
+
+        <h1 class="prompt">Shoes</h1>
+        <div class="subprompts">
+          <PositiveChannelScore v-model="d.shoes"/>
         </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.shoes.value" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.shoes.value" type="radio" value="1">
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.shoes.value" type="radio" value="2">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.shoes.value" type="radio" value="3">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.shoes.value" type="radio" value="NA">
-        </div>
-        <!-- Row 24 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 24; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.shoes.comment"></textarea>
         </div>
-        <!-- Row 25 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: left; justify-self: start; align-items: start;">
-          Coat
+
+        <h1 class="prompt">Coat</h1>
+        <div class="subprompts">
+          <PositiveChannelScore v-model="d.coat"/>
         </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.coat.value" type="radio" value="0">
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.coat.value" type="radio" value="1">
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.coat.value" type="radio" value="2">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.coat.value" type="radio" value="3">
-        </div>
-        <div class="cell" style="grid-column-start: 6; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.coat.value" type="radio" value="NA">
-        </div>
-        <!-- Row 26 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 10; grid-row-start: 26; grid-row-end: span 1; text-align: left; justify-self: left; align-items: start;">
+        <div class="comment">
           <textarea v-model="d.coat.comment"></textarea>
         </div>
-
       </div>
+
     </div>
   </div>
 </template>
 <script>
 // import types from '@/store/evaluation/types'
 import SectionMixin from '@/mixins/section'
+import ChannelScore from "@/components/ChannelScore"
+import NegativeChannelScore from "@/components/NegativeChannelScore"
+import SubChannelScore from "@/components/SubChannelScore"
+import PositiveChannelScore from "@/components/PositiveChannelScore"
 
 export default {
+  components: {
+    ChannelScore,
+    PositiveChannelScore,
+    SubChannelScore,
+    PositiveChannelScore
+  },
   name:"SensitivitiesPage",
   mixins: [SectionMixin],
   data: () => ({
@@ -514,5 +323,43 @@ h2 {
 .cell {
   white-space: normal;
   word-wrap: normal;
+}
+
+.question {
+  display: grid;
+  grid-template-areas:
+              "scores   prompt"
+              "comment  scores";
+}
+
+.prompt {
+  grid-area: prompt;
+}
+
+.comment {
+  height: 100%;
+}
+
+.comment textarea {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  resize: none;
+  overflow: auto;
+  width: 75%;
+  height: 100%;
+}
+
+.subprompts {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 0px;
+  width: 75%;
+}
+
+.level-head {
+  margin: 0;
+  padding: 0;
 }
 </style>
