@@ -2,14 +2,6 @@
   <div class="form-page">
     <div class="form-section">
       <h1 class="title" style="text-align:left">Mobility Channel</h1>
-
-
-
-
-
-
-
-
       <div class="level">
         <h2 class="level-head">
           LEVEL II
@@ -314,26 +306,6 @@ nav {
   border-right: 1px solid grey;
 }
 
-table {
-  display: table;
-  vertical-align: middle;
-}
-th {
-  display: table-cell;
-  vertical-align: inherit;
-  text-align: left;
-  padding-right:30px;
-  padding-bottom: 5px;
-  padding-top: 5px;
-}
-tr {
-
-}
-td {
-  padding-right:15px;
-  text-align: center;
-}
-
 .form-viewer {
   flex: 1;
   box-sizing: border-box;
@@ -387,111 +359,6 @@ label {
 
 h2 {
   margin-bottom: 4vw;
-}
-
-.grid1 {
-  display: grid;
-  grid-template-columns: [first] auto [second] 1fr [third] 1fr [fourth] 1fr [fifth] 1fr;
-  grid-template-rows: [first] auto [second] 1fr [third] 1fr [fourth] 1fr;
-  word-wrap: normal;
-  width: 50%;
-  justify-items: center;
-}
-
-.grid2 {
-  display: grid;
-  grid-template-columns: [first] auto [second] 1fr [third] 1fr [fourth] 1fr;
-  grid-template-rows: [first] auto [second] 1fr [third] 1fr [fourth] 1fr [fifth] 1fr [sixth] 1fr [seventh] 1fr;
-  word-wrap: normal;
-  justify-items: center;
-  width: 75%;
-  align-items: center;
-  grid-column-gap: 1em;
-  grid-row-gap: 1em;
-}
-
-.grid3 {
-  display: grid;
-  grid-template-columns: [first] auto [second] 1fr [third] 1fr [fourth] 1fr;
-  grid-template-rows: [first] auto [second] 1fr [third] 1fr [fourth] 1fr [fifth] 1fr [sixth] 1fr [seventh] 1fr;
-  word-wrap: normal;
-  justify-items: center;
-  width: 75%;
-  align-items: center;
-  grid-column-gap: 1em;
-  grid-row-gap: 1em;
-}
-
-.grid4 {
-  display: grid;
-  grid-template-columns: [first] auto [second] auto [third] 1fr [fourth] 1fr;
-  grid-template-rows: [first] auto [second] 1fr [third] 1fr [fourth] 1fr [fifth] 1fr;
-  word-wrap: normal;
-  justify-items: start;
-  width: 100%;
-  align-items: start;
-  grid-column-gap: 1em;
-  grid-row-gap: 1em;
-}
-
-.grid5 {
-  display: grid;
-  grid-template-columns: [first] 3fr [second] 2fr [third] 2fr [fourth] 1fr [fifth] 1fr;
-  grid-template-rows: [first] auto [second] auto [third] auto [fourth] auto [fifth] auto [sixth] 1fr [seventh] 1fr [eighth] 1fr [ninth] 1fr [tenth] 1fr [eleventh] 1fr [twelfth] 1fr [thirteenth] 1fr [fourteenth] 1fr [fifteenth] 1fr [sixteenth] 1fr [seventeenth] 1fr [eighteenth] 1fr [nineteenth] 1fr [twentieth] 1fr [twentyfirst] 1fr [twentysecond] 1fr [twentythird] 1fr [twentyfourth] 1fr [twentyfifth] 1fr [twentysixth] 1fr [twentyseventh] auto [twentyeigth] 1fr [twentyninth] 1fr [thirtieth] 1fr [thirtyfirst] 1fr [thirtysecond] 1fr [thirtythird] 1fr [thirtyfourth] 1fr [thirtyfifth] 1fr [thirty sixth] 1fr [thirtyseventh] 1fr [thirtyeigth] 1fr [thirtyninth] 1fr [fortieth] 1fr [fortyfirst] 1fr [fortysecond] 1fr [fortythird] 1fr [fortyfourth] 1fr [fortyfifth] 1fr [fortysixth] 1fr [fortyseventh] 1fr [fortyeigth] 1fr [fortyninth] 1fr [fiftieth] 1fr [fiftyfirst] 1fr [fiftysecond] 1fr [fiftythird] 1fr [fiftyfourth] 1fr [fiftyfifth] 1fr;
-  word-wrap: normal;
-  justify-items: start;
-  width: 100%;
-  align-items: start;
-  grid-column-gap: 1em;
-  grid-row-gap: 1em;
-}
-
-.grid6 {
-  display: grid;
-  grid-template-columns: [first] auto [second] 9fr [third] auto [fourth] 1fr [fifth] 1fr [sixth] 1fr [seventh] 1fr [eighth] 1fr [ninth] 1fr [tenth] 1fr [eleventh] 1fr [twelfth] 1fr;
-  grid-template-rows: [first] auto [second] 1fr [third] auto [fourth] 1fr [fifth] 1fr [sixth] 1fr [seventh] 1fr [eighth] 1fr [ninth] 1fr [tenth] 1fr;
-  word-wrap: normal;
-  justify-items: start;
-  width: 100%;
-  align-items: start;
-  grid-column-gap: 1em;
-  grid-row-gap: 1em;
-}
-
-.grid7 {
-  display: grid;
-  grid-template-columns: [first] auto [second] 9fr [third] 1fr [fourth] 1fr [fifth] 1fr [sixth] 1fr [seventh] 1fr [eighth] 1fr [ninth] 1fr [tenth] 1fr [eleventh] 1fr [twelfth] 1fr;
-  grid-template-rows: [first] auto [second] 1fr [third] auto [fourth] 1fr [fifth] 1fr [sixth] 1fr [seventh] 1fr [eighth] 1fr [ninth] 1fr [tenth] 1fr;
-  word-wrap: normal;
-  justify-items: start;
-  width: 100%;
-  align-items: start;
-  grid-column-gap: 1em;
-  grid-row-gap: 1em;
-}
-
-.grid8 {
-  display: grid;
-  grid-template-columns: [first] auto [second] 9fr [third] 1fr [fourth] 1fr [fifth] 1fr [sixth] 1fr [seventh] 1fr [eighth] 1fr [ninth] 1fr [tenth] 1fr [eleventh] 1fr [twelfth] 1fr;
-  grid-template-rows: [first] auto [second] 1fr [third] auto [fourth] 1fr [fifth] 1fr [sixth] auto [seventh] 1fr [eighth] auto [ninth] 1fr [tenth] 1fr;
-  word-wrap: normal;
-  justify-items: start;
-  width: 100%;
-  align-items: start;
-  grid-column-gap: 1em;
-  grid-row-gap: 1em;
-}
-
-.grid9 {
-  display: grid;
-  grid-template-columns: [first] auto [second] 9fr [third] 1fr [fourth] 1fr [fifth] 1fr [sixth] 1fr [seventh] 1fr [eighth] 1fr [ninth] 1fr [tenth] 1fr [eleventh] 1fr [twelfth] 1fr;
-  grid-template-rows: ;
-  word-wrap: normal;
-  justify-items: start;
-  width: 100%;
-  align-items: start;
-  grid-column-gap: 1em;
-  grid-row-gap: 1em;
 }
 
 .cell {
