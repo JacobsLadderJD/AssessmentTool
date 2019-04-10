@@ -2,929 +2,152 @@
   <div class="form-page">
     <div class="form-section">
       <h1 class="title" style="text-align:left">Reflexes</h1>
-      
 
 
 
-      <div class="grid5">
-        <!-- row 1 -->
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
-          Not Integrated
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
-          Integrated
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
-          NA
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: center; justify-self: center;">
-          #
-        </div>
-        <!-- Row 2 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: left; justify-self: start;">
-          Moro Reflex
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="moro-reflex-na" v-model="d.moro.na">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1; text-align: center; justify-self: center;">
-          212
-        </div>
-        <!-- Row 3 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: right; justify-self: end;">
-          Upper
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; justify-self: center;">
-          <input v-model="d.moro.upper" type="radio" value="false">
-          <label for="radio">  NI</label>
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.moro.upper" type="radio" value="true">
-          <label for="radio">  I</label>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <!-- Row 4 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: right; justify-self: end;">
-          Lower
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; justify-self: center;">
-          <input v-model="d.moro.lower" type="radio" value="false">
-          <label for="radio">  NI</label>
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.moro.lower" type="radio" value="true">
-          <label for="radio">  I</label>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <!-- Row 5 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: left; justify-self: start;">
-          Spinal Galant Reflex
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="spinal-galant-reflex-na" v-model="d.spinalGalant.na">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1; text-align: center; justify-self: center;">
-          213
-        </div>
-        <!-- Row 6 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: right; justify-self: end;">
-          Left
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; justify-self: center;">
-          <input v-model="d.spinalGalant.left" type="radio" value="false">
-          <label for="radio">  NI</label>
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.spinalGalant.left" type="radio" value="true">
-          <label for="radio">  I</label>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 6; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <!-- Row 7 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: right; justify-self: end;">
-          Right
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; justify-self: center;">
-          <input v-model="d.spinalGalant.right" type="radio" value="false">
-          <label for="radio">  NI</label>
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.spinalGalant.right" type="radio" value="true">
-          <label for="radio">  I</label>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 7; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <!-- Row 8 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: left; justify-self: start;">
-          Crossed Extensor Reflex
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="crossed-extensor-reflex-na" v-model="d.crossedExtensor.na">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 8; grid-row-end: span 1; text-align: center; justify-self: center;">
-          214
-        </div>
-        <!-- Row 9 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: right; justify-self: end;">
-          Left
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; justify-self: center;">
-          <input v-model="d.crossedExtensor.left" type="radio" value="false">
-          <label for="radio">  NI</label>
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.crossedExtensor.left" type="radio" value="true">
-          <label for="radio">  I</label>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 9; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <!-- Row 10 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: right; justify-self: end;">
-          Right
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; justify-self: center;">
-          <input v-model="d.crossedExtensor.right" type="radio" value="false">
-          <label for="radio">  NI</label>
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.crossedExtensor.right" type="radio" value="true">
-          <label for="radio">  I</label>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 10; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <!-- Row 11 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 11; grid-row-end: span 1; text-align: left; justify-self: start;">
-          Spinal Perez Reflex
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 11; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 11; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 11; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="spinal-perez-reflex-na" v-model="d.spinalPerez.na">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 11; grid-row-end: span 1; text-align: center; justify-self: center;">
-          215
-        </div>
-        <!-- Row 12 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: right; justify-self: end;">
-          Left
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; justify-self: center;">
-          <input v-model="d.spinalPerez.left" type="radio" value="false">
-          <label for="radio">  NI</label>
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.spinalPerez.left" type="radio" value="true">
-          <label for="radio">  I</label>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 12; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <!-- Row 13 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: right; justify-self: end;">
-          Right
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; justify-self: center;">
-          <input v-model="d.spinalPerez.right" type="radio" value="false">
-          <label for="radio">  NI</label>
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.spinalPerez.right" type="radio" value="true">
-          <label for="radio">  I</label>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 13; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <!-- Row 14 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: left; justify-self: start;">
-          Babinski Reflex
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="babinski-reflex-na" v-model="d.babinski.na">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 14; grid-row-end: span 1; text-align: center; justify-self: center;">
-          216
-        </div>
-        <!-- Row 15 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: right; justify-self: end;">
-          Left
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; justify-self: center;">
-          <input v-model="d.babinski.left" type="radio" value="false">
-          <label for="radio">  NI</label>
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.babinski.left" type="radio" value="true">
-          <label for="radio">  I</label>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 15; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <!-- Row 16 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: right; justify-self: end;">
-          Right
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; justify-self: center;">
-          <input v-model="d.babinski.right" type="radio" value="false">
-          <label for="radio">  NI</label>
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.babinski.right" type="radio" value="true">
-          <label for="radio">  I</label>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 16; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <!-- Row 17 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: left; justify-self: start;">
-          Asymmetrical Tonic Neck Reflex
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="asymmetrical-tonic-neck-reflex-na" v-model="d.asymmetricalTonic.na">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 17; grid-row-end: span 1; text-align: center; justify-self: center;">
-          217
-        </div>
-        <!-- Row 18 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: right; justify-self: end;">
-          Left
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; justify-self: center;">
-          <input v-model="d.asymmetricalTonic.left" type="radio" value="false">
-          <label for="radio">  NI</label>
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.asymmetricalTonic.left" type="radio" value="true">
-          <label for="radio">  I</label>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 18; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <!-- Row 19 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: right; justify-self: end;">
-          Right
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; justify-self: center;">
-          <input v-model="d.asymmetricalTonic.right" type="radio" value="false">
-          <label for="radio">  NI</label>
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.asymmetricalTonic.right" type="radio" value="true">
-          <label for="radio">  I</label>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 19; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <!-- Row 20 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: left; justify-self: start;">
-          Bauer Crawling Reflex
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="bauer-crawling-reflex-na" v-model="d.bauerCrawling.na">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 20; grid-row-end: span 1; text-align: center; justify-self: center;">
-          218
-        </div>
-        <!-- Row 21 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 21; grid-row-end: span 1; text-align: right; justify-self: end;">
-          Left
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 21; grid-row-end: span 1; justify-self: center;">
-          <input v-model="d.bauerCrawling.left" type="radio" value="false">
-          <label for="radio">  NI</label>
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 21; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.bauerCrawling.left" type="radio" value="true">
-          <label for="radio">  I</label>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 21; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 21; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <!-- Row 22 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: right; justify-self: end;">
-          Right
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; justify-self: center;">
-          <input v-model="d.bauerCrawling.right" type="radio" value="false">
-          <label for="radio">  NI</label>
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.bauerCrawling.right" type="radio" value="true">
-          <label for="radio">  I</label>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 22; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <!-- Row 23 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: left; justify-self: start;">
-          Babkin Palmomental Reflex
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="babkin-palmomental-reflex-na" v-model="d.babkinPalmomental.na">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 23; grid-row-end: span 1; text-align: center; justify-self: center;">
-          219
-        </div>
-        <!-- Row 24 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: right; justify-self: end;">
-          Left
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; justify-self: center;">
-          <input v-model="d.babkinPalmomental.left" type="radio" value="false">
-          <label for="radio">  NI</label>
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.babkinPalmomental.left" type="radio" value="true">
-          <label for="radio">  I</label>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 24; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <!-- Row 25 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: right; justify-self: end;">
-          Right
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; justify-self: center;">
-          <input v-model="d.babkinPalmomental.right" type="radio" value="false">
-          <label for="radio">  NI</label>
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.babkinPalmomental.right" type="radio" value="true">
-          <label for="radio">  I</label>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 25; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <!-- Row 26 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: left; justify-self: start;">
-          Hand Grasping Reflex
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: center; justify-self: center;">
 
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="hand-grasping-reflex-na" v-model="d.handGrasping.na">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 26; grid-row-end: span 1; text-align: center; justify-self: center;">
-          220
-        </div>
-        <!-- Row 27 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 27; grid-row-end: span 1; text-align: right; justify-self: end;">
-          Left
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 27; grid-row-end: span 1; justify-self: center;">
-          <input v-model="d.handGrasping.left" type="radio" value="false">
-          <label for="radio">  NI</label>
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 27; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.handGrasping.left" type="radio" value="true">
-          <label for="radio">  I</label>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 27; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 27; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <!-- Row 28 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: right; justify-self: end;">
-          Right
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; justify-self: center;">
-          <input v-model="d.handGrasping.right" type="radio" value="false">
-          <label for="radio">  NI</label>
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.handGrasping.right" type="radio" value="true">
-          <label for="radio">  I</label>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 28; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <!-- Row 29 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 29; grid-row-end: span 1; text-align: left; justify-self: start;">
-          Frontal Release Signs
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 29; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 29; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 29; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="frontal-release-signs-na" v-model="d.frontalRelease.na">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 29; grid-row-end: span 1; text-align: center; justify-self: center;">
-          221
-        </div>
-        <!-- Row 30 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; text-align: right; justify-self: end;">
-          Snout
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; justify-self: center;">
-          <input v-model="d.frontalRelease.snout" type="radio" value="false">
-          <label for="radio">  NI</label>
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.frontalRelease.snout" type="radio" value="true">
-          <label for="radio">  I</label>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 30; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <!-- Row 31 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 31; grid-row-end: span 1; text-align: right; justify-self: end;">
-          Sucking
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 31; grid-row-end: span 1; justify-self: center;">
-          <input v-model="d.frontalRelease.sucking" type="radio" value="false">
-          <label for="radio">  NI</label>
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 31; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.frontalRelease.sucking" type="radio" value="true">
-          <label for="radio">  I</label>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 31; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 31; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <!-- Row 32 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: right; justify-self: end;">
-          Rooting
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; justify-self: center;">
-          <input v-model="d.frontalRelease.rooting" type="radio" value="false">
-          <label for="radio">  NI</label>
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.frontalRelease.rooting" type="radio" value="true">
-          <label for="radio">  I</label>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 32; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <!-- Row 33 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 33; grid-row-end: span 1; text-align: right; justify-self: end;">
-          Glabellar
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 33; grid-row-end: span 1; justify-self: center;">
-          <input v-model="d.frontalRelease.glabellar" type="radio" value="false">
-          <label for="radio">  NI</label>
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 33; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.frontalRelease.glabellar" type="radio" value="true">
-          <label for="radio">  I</label>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 33; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 33; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <!-- Row 34 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: left; justify-self: start;">
-          Stepping Reflex
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="stepping-reflex-na" v-model="d.stepping.na">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 34; grid-row-end: span 1; text-align: center; justify-self: center;">
-          222
-        </div>
-        <!-- Row 35 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 35; grid-row-end: span 1; text-align: right; justify-self: end;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 35; grid-row-end: span 1; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 35; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 35; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 35; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <!-- Row 36 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 36; grid-row-end: span 1; text-align: right; justify-self: end;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 36; grid-row-end: span 1; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 36; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 36; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 36; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <!-- Row 37 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 37; grid-row-end: span 1; text-align: left; justify-self: start;">
-          Hands Pulling Reflex
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 37; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 37; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 37; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="hands-pulling-reflex-na" v-model="d.handsPulling.na">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 37; grid-row-end: span 1; text-align: center; justify-self: center;">
-          223
-        </div>
-        <!-- Row 38 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 38; grid-row-end: span 1; text-align: right; justify-self: end;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 38; grid-row-end: span 1; justify-self: center;">
 
+      <div class="level">
+        <h1 class="prompt">Moro Reflex</h1>
+        <div class="subprompts">
+          <ReflexScore subName="Upper" v-model="d.moro.upper"/>
+          <ReflexScore subName="Lower" v-model="d.moro.lower"/>
         </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 38; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 38; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 38; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <!-- row 39 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 39; grid-row-end: span 1; text-align: right; justify-self: end;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 39; grid-row-end: span 1; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 39; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 39; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 39; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <!-- Row 40 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 40; grid-row-end: span 1; text-align: left; justify-self: start;">
-          Hands Supporting Reflex
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 40; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 40; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 40; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="hands-supporting-reflex-na" v-model="d.handsSupporting.na">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 40; grid-row-end: span 1; text-align: center; justify-self: center;">
-          224
-        </div>
-        <!-- Row 41 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 41; grid-row-end: span 1; text-align: right; justify-self: end;">
-          Left
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 41; grid-row-end: span 1; justify-self: center;">
-          <input v-model="d.handsSupporting.left" type="radio" value="false">
-          <label for="radio">  NI</label>
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 41; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.handsSupporting.left" type="radio" value="true">
-          <label for="radio">  I</label>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 41; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 41; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <!-- Row 42 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 42; grid-row-end: span 1; text-align: right; justify-self: end;">
-          Right
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 42; grid-row-end: span 1; justify-self: center;">
-          <input v-model="d.handsSupporting.right" type="radio" value="false">
-          <label for="radio">  NI</label>
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 42; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.handsSupporting.right" type="radio" value="true">
-          <label for="radio">  I</label>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 42; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 42; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <!-- Row 43 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 43; grid-row-end: span 1; text-align: left; justify-self: start;">
-          Landau Reflex
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 43; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 43; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 43; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="landau-reflex-na" v-model="d.landau.na">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 43; grid-row-end: span 1; text-align: center; justify-self: center;">
-          225
-        </div>
-        <!-- Row 44 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 44; grid-row-end: span 1; text-align: right; justify-self: end;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 44; grid-row-end: span 1; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 44; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 44; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 44; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <!-- Row 45 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 45; grid-row-end: span 1; text-align: right; justify-self: end;">
-
+        <div class="comment">
+          <textarea v-model="d.moro.comment"></textarea>
         </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 45; grid-row-end: span 1; justify-self: center;">
 
+        <h1 class="prompt">Spinal Galant Reflex</h1>
+        <div class="subprompts">
+          <ReflexScore subName="Right" v-model="d.spinalGalant.right"/>
+          <ReflexScore subName="Left" v-model="d.spinalGalant.left"/>
         </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 45; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 45; grid-row-end: span 1; text-align: center; justify-self: center;">
-
+        <div class="comment">
+          <textarea v-model="d.spinalGalant.comment"></textarea>
         </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 45; grid-row-end: span 1; text-align: center; justify-self: center;">
 
+        <h1 class="prompt">Crossed Extensor Reflex</h1>
+        <div class="subprompts">
+          <ReflexScore subName="Right" v-model="d.crossedExtensor.right"/>
+          <ReflexScore subName="Left" v-model="d.crossedExtensor.left"/>
         </div>
-        <!-- Row 46 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 46; grid-row-end: span 1; text-align: left; justify-self: start;">
-          Symmetrical Tonic Neck Reflex
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 46; grid-row-end: span 1; text-align: center; justify-self: center;">
-
+        <div class="comment">
+          <textarea v-model="d.spinalGalant.comment"></textarea>
         </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 46; grid-row-end: span 1; text-align: center; justify-self: center;">
 
+        <h1 class="prompt">Spinal Perez Reflex</h1>
+        <div class="subprompts">
+          <ReflexScore subName="Right" v-model="d.spinalPerez.right"/>
+          <ReflexScore subName="Left" v-model="d.spinalPerez.left"/>
         </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 46; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="symmetrical-tonic-neck-reflex-na" v-model="d.symmetricalTonic.na">
+        <div class="comment">
+          <textarea v-model="d.spinalPerez.comment"></textarea>
         </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 46; grid-row-end: span 1; text-align: center; justify-self: center;">
-          226
-        </div>
-        <!-- Row 47 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 47; grid-row-end: span 1; text-align: right; justify-self: end;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 47; grid-row-end: span 1; justify-self: center;">
 
+        <h1 class="prompt">Babinski Reflex</h1>
+        <div class="subprompts">
+          <ReflexScore subName="Right" v-model="d.babinski.right"/>
+          <ReflexScore subName="Left" v-model="d.babinski.left"/>
         </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 47; grid-row-end: span 1; text-align: center; justify-self: center;">
-
+        <div class="comment">
+          <textarea v-model="d.babinski.comment"></textarea>
         </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 47; grid-row-end: span 1; text-align: center; justify-self: center;">
 
+        <h1 class="prompt">Asymmetrical Tonic Neck Reflex</h1>
+        <div class="subprompts">
+          <ReflexScore subName="Right" v-model="d.asymmetricalTonic.right"/>
+          <ReflexScore subName="Left" v-model="d.asymmetricalTonic.left"/>
         </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 47; grid-row-end: span 1; text-align: center; justify-self: center;">
-
+        <div class="comment">
+          <textarea v-model="d.asymmetricalTonic.comment"></textarea>
         </div>
-        <!-- Row 48 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 48; grid-row-end: span 1; text-align: right; justify-self: end;">
 
+        <h1 class="prompt">Bauer Crawling Reflex</h1>
+        <div class="subprompts">
+          <ReflexScore subName="Right" v-model="d.bauerCrawling.right"/>
+          <ReflexScore subName="Left" v-model="d.bauerCrawling.left"/>
         </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 48; grid-row-end: span 1; justify-self: center;">
-
+        <div class="comment">
+          <textarea v-model="d.bauerCrawling.comment"></textarea>
         </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 48; grid-row-end: span 1; text-align: center; justify-self: center;">
 
+        <h1 class="prompt">Babkin Palmomental Reflex</h1>
+        <div class="subprompts">
+          <ReflexScore subName="Right" v-model="d.babkinPalmomental.right"/>
+          <ReflexScore subName="Left" v-model="d.babkinPalmomental.left"/>
         </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 48; grid-row-end: span 1; text-align: center; justify-self: center;">
-
+        <div class="comment">
+          <textarea v-model="d.babkinPalmomental.comment"></textarea>
         </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 48; grid-row-end: span 1; text-align: center; justify-self: center;">
 
-        </div>
-        <!-- Row 49 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 49; grid-row-end: span 1; text-align: left; justify-self: start;">
-          Tonic Labyrinthine Reflex
+        <h1 class="prompt">Hand Grasping Reflex</h1>
+        <div class="subprompts">
+          <ReflexScore subName="Right" v-model="d.handGrasping.right"/>
+          <ReflexScore subName="Left" v-model="d.handGrasping.left"/>
         </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 49; grid-row-end: span 1; text-align: center; justify-self: center;">
-
+        <div class="comment">
+          <textarea v-model="d.handGrasping.comment"></textarea>
         </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 49; grid-row-end: span 1; text-align: center; justify-self: center;">
 
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 49; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="tonic-labyrinthine-reflex-na" v-model="d.tonicLabyrinthine.na">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 49; grid-row-end: span 1; text-align: center; justify-self: center;">
-          227
+        <h1 class="prompt">Frontal Release Signs</h1>
+        <div class="subprompts">
+          <ReflexScore subName="Snout" v-model="d.frontalRelease.snout"/>
+          <ReflexScore subName="Sucking" v-model="d.frontalRelease.sucking"/>
+          <ReflexScore subName="Rooting" v-model="d.frontalRelease.rooting"/>
+          <ReflexScore subName="Glabellar" v-model="d.frontalRelease.glabellar"/>
         </div>
-        <!-- Row 50 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 50; grid-row-end: span 1; text-align: right; justify-self: end;">
-          Forward
+        <div class="comment">
+          <textarea v-model="d.frontalRelease.comment"></textarea>
         </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 50; grid-row-end: span 1; justify-self: center;">
-          <input v-model="d.tonicLabyrinthine.forward" type="radio" value="false">
-          <label for="radio">  NI</label>
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 50; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.tonicLabyrinthine.forward" type="radio" value="true">
-          <label for="radio">  I</label>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 50; grid-row-end: span 1; text-align: center; justify-self: center;">
-
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 50; grid-row-end: span 1; text-align: center; justify-self: center;">
 
-        </div>
-        <!-- Row 51 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 51; grid-row-end: span 1; text-align: right; justify-self: end;">
-          Backward
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 51; grid-row-end: span 1; justify-self: center;">
-          <input v-model="d.tonicLabyrinthine.backward" type="radio" value="false">
-          <label for="radio">  NI</label>
+        <h1 class="prompt">Stepping Reflex</h1>
+        <div class="comment">
+          <textarea v-model="d.stepping.comment"></textarea>
         </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 51; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.tonicLabyrinthine.backward" type="radio" value="true">
-          <label for="radio">  I</label>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 51; grid-row-end: span 1; text-align: center; justify-self: center;">
 
+        <h1 class="prompt">Hands Pulling Reflex</h1>
+        <div class="comment">
+          <textarea v-model="d.handsPulling.comment"></textarea>
         </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 51; grid-row-end: span 1; text-align: center; justify-self: center;">
 
-        </div>
-        <!-- Row 52 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 52; grid-row-end: span 1; text-align: left; justify-self: start;">
-          Hand Righting Reflex
+        <h1 class="prompt">Hands Supporting Reflex</h1>
+        <div class="subprompts">
+          <ReflexScore subName="Right" v-model="d.handsSupporting.right"/>
+          <ReflexScore subName="Left" v-model="d.handsSupporting.left"/>
         </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 52; grid-row-end: span 1; text-align: center; justify-self: center;">
-
+        <div class="comment">
+          <textarea v-model="d.handsSupporting.comment"></textarea>
         </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 52; grid-row-end: span 1; text-align: center; justify-self: center;">
 
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 52; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input type="checkbox" id="hand-righting-reflex-na" v-model="d.headRighting.na">
-        </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 52; grid-row-end: span 1; text-align: center; justify-self: center;">
-          228
+        <h1 class="prompt">Landau Reflex</h1>
+        <div class="comment">
+          <textarea v-model="d.landau.comment"></textarea>
         </div>
-        <!-- Row 53 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 53; grid-row-end: span 1; text-align: right; justify-self: end;">
-          Side-to-Side
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 53; grid-row-end: span 1; justify-self: center;">
-          <input v-model="d.headRighting.sideToSide" type="radio" value="false">
-          <label for="radio">  NI</label>
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 53; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.headRighting.sideToSide" type="radio" value="true">
-          <label for="radio">  I</label>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 53; grid-row-end: span 1; text-align: center; justify-self: center;">
 
+        <h1 class="prompt">Symmetrical Tonic Neck Reflex</h1>
+        <div class="comment">
+          <textarea v-model="d.symmetricalTonic.comment"></textarea>
         </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 53; grid-row-end: span 1; text-align: center; justify-self: center;">
 
+        <h1 class="prompt">Tonic Labyrinthine Reflex</h1>
+        <div class="subprompts">
+          <ReflexScore subName="Forward" v-model="d.tonicLabyrinthine.forward"/>
+          <ReflexScore subName="Backward" v-model="d.tonicLabyrinthine.backward"/>
         </div>
-        <!-- Row 54 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 54; grid-row-end: span 1; text-align: right; justify-self: end;">
-          Front-to-Back
+        <div class="comment">
+          <textarea v-model="d.tonicLabyrinthine.comment"></textarea>
         </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 54; grid-row-end: span 1; justify-self: center;">
-          <input v-model="d.headRighting.frontToBack" type="radio" value="false">
-          <label for="radio">  NI</label>
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 54; grid-row-end: span 1; text-align: center; justify-self: center;">
-          <input v-model="d.headRighting.frontToBack" type="radio" value="true">
-          <label for="radio">  I</label>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 54; grid-row-end: span 1; text-align: center; justify-self: center;">
 
+        <h1 class="prompt">Head Righting Reflex</h1>
+        <div class="subprompts">
+          <ReflexScore subName="Side-to-Side" v-model="d.headRighting.sideToSide"/>
+          <ReflexScore subName="Front-to-Back" v-model="d.headRighting.frontToBack"/>
         </div>
-        <div class="cell" style="grid-column-start: 5; grid-column-end: span 1; grid-row-start: 54; grid-row-end: span 1; text-align: center; justify-self: center;">
-
+        <div class="comment">
+          <textarea v-model="d.headRighting.comment"></textarea>
         </div>
       </div>
+
     </div>
   </div>
 </template>
@@ -933,12 +156,14 @@ import SectionMixin from '@/mixins/section'
 import ChannelScore from "@/components/ChannelScore"
 import NegativeChannelScore from "@/components/NegativeChannelScore"
 import SubChannelScore from "@/components/SubChannelScore"
+import ReflexScore from "@/components/ReflexScore"
 
 export default {
   components: {
     ChannelScore,
     NegativeChannelScore,
     SubChannelScore,
+    ReflexScore,
   },
   name:"ReflexesPage",
   mixins: [SectionMixin],
@@ -1114,5 +339,43 @@ h2 {
 .cell {
   white-space: normal;
   word-wrap: normal;
+}
+
+.question {
+  display: grid;
+  grid-template-areas:
+              "scores   prompt"
+              "comment  scores";
+}
+
+.prompt {
+  grid-area: prompt;
+}
+
+.comment {
+  height: 100%;
+}
+
+.comment textarea {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  resize: none;
+  overflow: auto;
+  width: 75%;
+  height: 100%;
+}
+
+.subprompts {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 0px;
+  width: 75%;
+}
+
+.level-head {
+  margin: 0;
+  padding: 0;
 }
 </style>
