@@ -221,11 +221,11 @@ export default {
     SubChannelScore,
     PositiveChannelScore
   },
-  name:"SensorySeekingPage",
+  name:"SensorySection",
   mixins: [SectionMixin],
-    data: () => ({
-      name: "sensorySection"
-    }),
+  data: () => ({
+    name: "sensorySection"
+  }),
 }
 
 </script>
@@ -294,13 +294,6 @@ h2 {
 .cell {
   white-space: normal;
   word-wrap: normal;
-}
-
-.question {
-  display: grid;
-  grid-template-areas:
-              "scores   prompt"
-              "comment  scores";
 }
 
 .prompt {

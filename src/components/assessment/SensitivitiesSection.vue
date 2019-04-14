@@ -124,7 +124,7 @@ export default {
     SubChannelScore,
     PositiveChannelScore
   },
-  name:"SensitivitiesPage",
+  name:"SensitivitiesSection",
   mixins: [SectionMixin],
   data: () => ({
     name: "sensitivitiesSection"
@@ -198,13 +198,6 @@ h2 {
 .cell {
   white-space: normal;
   word-wrap: normal;
-}
-
-.question {
-  display: grid;
-  grid-template-areas:
-              "scores   prompt"
-              "comment  scores";
 }
 
 .prompt {

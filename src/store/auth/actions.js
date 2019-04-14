@@ -16,7 +16,6 @@ const actions = {
         alerts.authSuccess("Login successful")
       })
       .catch(error => {
-        console.log(error);
         commit(types.LOGIN_ERROR)
         commit(types.LOGOUT)
         if (error.response.data) {

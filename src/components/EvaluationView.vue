@@ -2,65 +2,8 @@
   <main style="display: flex">
     <FormNav :items="[]" style="flex: 0 0 200px; margin-right:24px;"/>
     <div class="form-viewer">
-      <div class="form-page" v-if="page===1">
-        <h1 class="title">Neurodevelopmental Profile</h1>
-        <div class="form-section">
-          <div class="row">
-            <div class="item" style="margin-bottom: 4vw;">
-              <label for="date-input">Date</label>
-              <input id="last-edited-input" name="last-edited" type="date"
-              v-model="evaluation.editedAt"/>
-            </div>
-            <div class="item" style="margin-bottom: 4vw;">
-              <label for="status-input">Status</label>
-              <input id="status-input" type="text" name="status" v-model="student.status"/>
-            </div>
-          </div>
-          <div class="row">
-            <div class="item" style="margin-bottom: 4vw;">
-              <label for="code-input">Code</label>
-              <input id="code-input" type="text" name="code" v-model="student.code"/>
-            </div>
-          </div>
-        </div>
-        <div class="form-section">
-          <h2>Student</h2>
-          <div class="row">
-            <div class="item" style="margin-bottom: 4vw;">
-              <label for="name-input">Name</label>
-              <input id="first-name-input" type="text" name="firstName"
-                :value="student.firstName" disabled/>
-              <input id="last-name-input" type="text" name="lastName"
-              :value="student.lastName" disabled/>
-            </div>
-          </div>
-          <div class="row">
-            <div class="item" style="margin-bottom: 4vw;">
-              <label for="sex-input">Sex</label>
-              <select id="sex-input" name="sex" :selected="student.gender" disabled>
-                <option value="m">Male</option>
-                <option value="f">Female</option>
-              </select>
-            </div>
-            <div class="item" style="margin-bottom: 4vw;">
-              <label for="age-input">Birthdate</label>
-              <input id="age-input" type="text" name="birthdate"
-                :value="student.birthdate" disabled/>
-            </div>
-          </div>
-        </div>
-        <div class="form-section">
-          <div class="item" style="margin-bottom: 4vw;">
-            <label for="evaluators-input">Evaluator(s)</label>
-            <h4>{{ evaluator | fullName }}</h4>
-            <!-- <input id="evaluators-input" type="text" name="evaluators"
-            v-model="evaluatorSearch"/> -->
-
-          </div>
-        </div>
-      </div>
-
-      <!-- form page 2 -->
+      <StudentInfoPage  v-if="page===1"
+        :section="evaluation" :evalId="evaluation.id">
 
       <OverviewPage v-else-if="page===2"
         :section="evaluation" :evalId="evaluation.id"/>
@@ -147,8 +90,13 @@ export default {
     SensorySeekingPage,
     SensitivitiesPage,
   },
+  props: {
+    page: {
+      required: true,
+      type: Number
+    }
+  }
   data:() => ({
-    page: 1,
     lastPage: 12,
     evaluation: {}
   }),
@@ -157,10 +105,13 @@ export default {
       if (this.currentPage) {
         this.currentPage.submit()
       }
-      this.page++;
+      this.$emit('next');
     },
     prevPage() {
-      this.page--;
+      if (this.currentPage) {
+        this.currentPage.submit()
+      }
+      this.$emit('prev');
     },
     submit () {
       this.$store.dispatch(types.UPDATE_EVALUATION, {
@@ -168,10 +119,6 @@ export default {
     }
   },
   computed: {
-    isNew () {
-      return this.$route.params.id === 'new'
-    },
-
     currentPage () {
       return ({
         4: this.$refs.reflex,

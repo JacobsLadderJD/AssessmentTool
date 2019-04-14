@@ -1,134 +1,95 @@
-<template>
+<template lang="html">
   <div class="form-page">
+    <h1 class="title">Neurodevelopmental Profile</h1>
     <div class="form-section">
-      <h1 class="title" style="text-align:left">Dominance</h1>
       <div class="row">
-        <div class="item" style="text-align: left;">
-          Ear
+        <div class="item" style="margin-bottom: 4vw;">
+          <label for="date-input">Date</label>
+          <input id="last-edited-input" name="last-edited" type="date"
+          v-model="evaluation.editedAt"/>
         </div>
-        <div class="item" style="text-align: left;">
-          Hand
+        <div class="item" style="margin-bottom: 4vw;">
+          <label for="status-input">Status</label>
+          <input id="status-input" type="text" name="status" v-model="student.status"/>
         </div>
       </div>
       <div class="row">
-        <div class="item" style="text-align: left;">
-          <textarea v-model="earDominanceDetail"></textarea>
-        </div>
-        <div class="item" style="text-align: left;">
-          <textarea v-model="handDominanceDetail"></textarea>
-        </div>
-      </div>
-      <div class="row">
-        <div class="item" style="text-align: left;">
-          Eye
-        </div>
-        <div class="item" style="text-align: left;">
-          Foot
-        </div>
-      </div>
-      <div class="row">
-        <div class="item" style="text-align: left;">
-          <textarea v-model="eyeDominanceDetail"></textarea>
-        </div>
-        <div class="item" style="text-align: left;">
-          <textarea v-model="footDominanceDetail"></textarea>
+        <div class="item" style="margin-bottom: 4vw;">
+          <label for="code-input">Code</label>
+          <input id="code-input" type="text" name="code" v-model="student.code"/>
         </div>
       </div>
     </div>
-
     <div class="form-section">
-      <h1 class="title" style="text-align:left">Processing</h1>
+      <h2>Student</h2>
       <div class="row">
-        <div class="item">
-          Auditory
-        </div>
-        <div class="item">
-          Visual
+        <div class="item" style="margin-bottom: 4vw;">
+          <label for="name-input">Name</label>
+          <input id="first-name-input" type="text" name="firstName"
+          :value="student.firstName" disabled/>
+          <input id="last-name-input" type="text" name="lastName"
+          :value="student.lastName" disabled/>
         </div>
       </div>
       <div class="row">
-        <div class="item">
-          <textarea v-model="auditoryProcessingDetail"></textarea>
+        <div class="item" style="margin-bottom: 4vw;">
+          <label for="sex-input">Sex</label>
+          <select id="sex-input" name="sex" :selected="student.gender" disabled>
+            <option value="m">Male</option>
+            <option value="f">Female</option>
+          </select>
         </div>
-        <div class="item">
-          <textarea v-model="visualProcessingDetail"></textarea>
+        <div class="item" style="margin-bottom: 4vw;">
+          <label for="age-input">Birthdate</label>
+          <input id="age-input" type="text" name="birthdate"
+          :value="student.birthdate" disabled/>
         </div>
       </div>
     </div>
-
     <div class="form-section">
-      <h1 class="title" style="text-align:left">Testing Observations</h1>
-      <div class="grid4">
-        <!-- Row 1 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 3; grid-row-start: 1; grid-row-end: span 1; text-align: left; justify-self: center;">
-          General Observations
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; text-align: left;">
-          Behavior Observations
-        </div>
-        <!-- Row 2 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1;">
-          Eye Contact
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 1;">
-          <input type="checkbox" id="eye-contact-bool" v-model="eyeContactBool">
-        </div>
-        <div class="cell" style="grid-column-start: 3; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 4;">
-          <textarea v-model="generalTestingObservations"></textarea>
-        </div>
-        <div class="cell" style="grid-column-start: 4; grid-column-end: span 1; grid-row-start: 2; grid-row-end: span 4;">
-          <textarea v-model="behaviorTestingObservations"></textarea>
-        </div>
-        <!-- Row 3 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1;">
-          Attention
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 3; grid-row-end: span 1;">
-          <input type="checkbox" id="attention-bool" v-model="attentionBool">
-        </div>
-        <!-- Row 4 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1;">
-          Transitions
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 4; grid-row-end: span 1;">
-          <input type="checkbox" id="transitions-bool" v-model="transitionsBool">
-        </div>
-        <!-- Row 5 -->
-        <div class="cell" style="grid-column-start: 1; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1;">
-          Breaks Required
-        </div>
-        <div class="cell" style="grid-column-start: 2; grid-column-end: span 1; grid-row-start: 5; grid-row-end: span 1;">
-          <input type="checkbox" id="breaks-required-bool" v-model="breaksRequiredBool">
-        </div>
+      <div class="item" style="margin-bottom: 4vw;">
+        <label for="evaluators-input">Evaluator(s)</label>
+        <h4>{{ evaluator | fullName }}</h4>
+        <!-- <input id="evaluators-input" type="text" name="evaluators"
+        v-model="evaluatorSearch"/> -->
       </div>
     </div>
   </div>
 </template>
-<script>
-// import types from '@/store/evaluation/types'
-export default {
-  name:"DetailsPage",
-  // props: {
-  //   evaluationId: {
-  //     required: true
-  //   }
-  // },
-  data:() => ({
-    generalTestingObservations:"",
-    behaviorTestingObservations:"",
-    earDominanceDetail: "",
-    handDominanceDetail: "",
-    eyeDominanceDetail: "",
-    footDominanceDetail: "",
-    auditoryProcessingDetail: "",
-    visualProcessingDetail: "",
-    eyeContactBool: "",
-    attentionBool: "",
-    transitionsBool: "",
-    breaksRequiredBool: "",
-  }),
-}
 
+<script>
+// import SectionMixin from '@/mixins/section'
+
+export default {
+  name: "StudentInfoSection",
+  // mixins: [SectionMixin],
+  props: {
+    evaluation: {
+      required: true
+    }
+  },
+  data: () => ({
+    name: "studentInfo"
+  }),
+  computed: {
+    evaluator () {
+      return this.evaluation.evaluator || {
+        firstName: "",
+        lastName: "",
+        id: null
+      }
+    },
+    student () {
+      return this.evaluation.student || {
+        status: null,
+        code: null,
+        id: null,
+        firstName: "",
+        lastName: ""
+      }
+    }
+  }
+}
 </script>
 
 <style lang="css" scoped>
