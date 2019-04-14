@@ -85,5 +85,7 @@ export default {
 </script>
 
 <style lang="css" scoped>
-
+  .router-link-exact-active {
+    font-weight: bold;
+  }
 </style>
