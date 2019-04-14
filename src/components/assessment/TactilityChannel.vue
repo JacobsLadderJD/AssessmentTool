@@ -289,18 +289,6 @@ h2 {
   margin-bottom: 4vw;
 }
 
-.cell {
-  white-space: normal;
-  word-wrap: normal;
-}
-
-.question {
-  display: grid;
-  grid-template-areas:
-              "scores   prompt"
-              "comment  scores";
-}
-
 .prompt {
   grid-area: prompt;
 }

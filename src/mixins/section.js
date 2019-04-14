@@ -15,7 +15,7 @@ const SectionMixin = {
     d: {}
   }),
   watch: {
-    section (newData, oldData) {
+    section (newData) {
       this.d = newData
     }
   },

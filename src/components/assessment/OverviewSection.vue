@@ -531,7 +531,7 @@
 </template>
 <script>
 export default {
-  name:"OverviewPage",
+  name:"OverviewSection",
   data:() => ({
     tactilityRawScore: "",
     auditoryRawScore: "",
@@ -614,16 +614,6 @@ tr {
 td {
   padding-right:15px;
   text-align: center;
-}
-
-.form-viewer {
-  flex: 1;
-  box-sizing: border-box;
-  padding-bottom: 64px;
-}
-
-.form-page-nav {
-  text-align: right;
 }
 
 .form-section {

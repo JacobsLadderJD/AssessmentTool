@@ -302,20 +302,6 @@ export default {
 
 <style lang="css" scoped>
 
-nav {
-  border-right: 1px solid grey;
-}
-
-.form-viewer {
-  flex: 1;
-  box-sizing: border-box;
-  padding-bottom: 64px;
-}
-
-.form-page-nav {
-  text-align: right;
-}
-
 .form-section {
   padding: 16px 0;
   border-bottom: 1px solid grey;
@@ -323,28 +309,6 @@ nav {
 .form-section:last-child {
   border-bottom: none;
 
-}
-.row {
-  max-width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
-
-.column {
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  white-space: normal;
-}
-
-.item {
-  flex: 1 1 auto;
-  white-space: normal;
-  width: 100%;
-  word-wrap: normal;
-  font-size: 2vw;
 }
 
 .title {
@@ -359,18 +323,6 @@ label {
 
 h2 {
   margin-bottom: 4vw;
-}
-
-.cell {
-  white-space: normal;
-  word-wrap: normal;
-}
-
-.question {
-  display: grid;
-  grid-template-areas:
-              "scores   prompt"
-              "comment  scores";
 }
 
 .prompt {

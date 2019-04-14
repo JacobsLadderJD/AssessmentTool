@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Test from '@/components/assessmentPages/test'
+import Test from '@/components/assessment/test'
 import api from '@/api'
 export default {
 	name: "Sandbox",
