@@ -113,7 +113,6 @@ export default {
       type: String
     }
   },
-
   data:() => ({
     lastPage: 12,
     evaluation: {},
