@@ -8,11 +8,9 @@
         </h2>
         <h1 class="prompt">Volitional Release of an Object</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.objectRelease"/>
+          <NegativeChannelScore v-model="d.objectRelease.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.objectRelease.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.objectRelease.comment"/>
       </div>
 
       <div class="level">
@@ -21,11 +19,15 @@
         </h2>
         <h1 class="prompt">Volitional Grasp of an Object</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.objectGrasp"/>
+          <NegativeChannelScore v-model="d.objectGrasp.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.objectGrasp.comment"></textarea>
+        <CommentBlock v-model="d.objectGrasp.comment"/>
+
+        <h1 class="prompt">Brings Hands to Midline</h1>
+        <div class="subprompts">
+          <NegativeChannelScore v-model="d.handsToMidline.value"/>
         </div>
+        <CommentBlock v-model="d.objectGrasp.comment"/>
       </div>
 
       <div class="level">
@@ -34,29 +36,25 @@
         </h2>
         <h1 class="prompt">Transfer Objects</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.transfersObjects"/>
+          <NegativeChannelScore v-model="d.transfersObjects.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.transfersObjects.comment"></textarea>
-        </div>
+
+        <CommentBlock v-model="d.transfersObjects.comment"/>
 
         <h1 class="prompt">Cortical Opposition</h1>
         <div class="subprompts">
           <NegativeChannelScore subName="Right" v-model="d.corticalOpposition.right"/>
           <NegativeChannelScore subName="Left" v-model="d.corticalOpposition.left"/>
-          <NegativeChannelScore subName="Simultaneously" v-model="d.corticalOpposition.simultaneously"/>
+          <NegativeChannelScore subName="Simultaneously" v-model="d.corticalOpposition.both"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.corticalOpposition.comment"></textarea>
-        </div>
+
+        <CommentBlock v-model="d.corticalOpposition.comment"/>
 
         <h1 class="prompt">Claps</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.claps"/>
+          <NegativeChannelScore v-model="d.claps.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.claps.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.claps.comment"/>
       </div>
 
       <div class="level">
@@ -65,67 +63,52 @@
         </h2>
         <h1 class="prompt">Stacking Blocks</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.blockStacking"/>
+          <NegativeChannelScore v-model="d.blockStacking.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.blockStacking.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.blockStacking.comment"/>
 
         <h1 class="prompt">Beans in a Bottle</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.beanBottle.right"/>
+          <NegativeChannelScore v-model="d.beanBottle.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.beanBottle.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.beanBottle.comment"/>
 
         <h1 class="prompt">Pronation of Wrists</h1>
         <div class="subprompts">
           <NegativeChannelScore subName="Right" v-model="d.wristPronation.right"/>
           <NegativeChannelScore subName="Left" v-model="d.wristPronation.left"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.wristPronation.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.wristPronation.comment"/>
 
         <h1 class="prompt">Supination of Wrists</h1>
         <div class="subprompts">
           <NegativeChannelScore subName="Right" v-model="d.wristSupination.right"/>
           <NegativeChannelScore subName="Left" v-model="d.wristSupination.left"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.wristSupination.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.wristSupination.comment"/>
 
         <h1 class="prompt">Initial Coloring</h1>
         <div class="subprompts">
-          <NegativeChannelScore subName="Right" v-model="d.initialColoring.right"/>
-          <NegativeChannelScore subName="Left" v-model="d.initialColoring.left"/>
+          <NegativeChannelScore v-model="d.initialColoring.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.initialColoring.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.initialColoring.comment"/>
 
         <h1 class="prompt">Twist Cap</h1>
         <div class="subprompts">
           <NegativeChannelScore subName="Off" v-model="d.twistCap.off"/>
           <NegativeChannelScore subName="On" v-model="d.twistCap.on"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.twistCap.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.twistCap.comment"/>
 
         <h2 class="level-head">
           LEVEL VI
         </h2>
-        <h1 class="prompt">Stinging Beads</h1>
+        <h1 class="prompt">Stringing Beads</h1>
         <div class="subprompts">
-
-          <NegativeChannelScore subName="Small" v-model="d.stringingBeads.small"/>
+          <NegativeChannelScore subName="Small" v-model="d.stringingBeads.sm"/>
+          <NegativeChannelScore subName="Large" v-model="d.stringingBeads.lg"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.stringingBeads.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.stringingBeads.comment"/>
 
         <h2 class="level-head">
           LEVEL VII
@@ -137,17 +120,13 @@
           <NegativeChannelScore subName="Circle" v-model="d.imitates.circle"/>
           <NegativeChannelScore subName="Cross" v-model="d.imitates.cross"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.imitates.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.imitates.comment"/>
 
         <h1 class="prompt">Pencil Grasp</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.pencilGrasp"/>
+          <NegativeChannelScore v-model="d.pencilGrasp.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.pencilGrasp.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.pencilGrasp.comment"/>
 
         <h1 class="prompt">Connect the Dots</h1>
         <div class="subprompts">
@@ -155,35 +134,26 @@
           <NegativeChannelScore subName="6 Inches Apart" v-model="d.connectDots.six"/>
           <NegativeChannelScore subName="3 Inches Apart" v-model="d.connectDots.three"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.connectDots.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.connectDots.comment"/>
 
         <h1 class="prompt">Name</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.name"/>
+          <NegativeChannelScore v-model="d.name.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.name.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.name.comment"/>
 
         <h1 class="prompt">Letters</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.letters"/>
+          <NegativeChannelScore v-model="d.letters.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.letters.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.letters.comment"/>
 
         <h1 class="prompt">Dictated Sentence</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.dictatedSentence"/>
+          <NegativeChannelScore v-model="d.dictatedSentence.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.dictatedSentence.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.dictatedSentence.comment"/>
       </div>
-
     </div>
   </div>
 </template>
@@ -193,12 +163,14 @@ import SectionMixin from '@/mixins/section'
 import ChannelScore from "@/components/ChannelScore"
 import NegativeChannelScore from "@/components/NegativeChannelScore"
 import SubChannelScore from "@/components/SubChannelScore"
+import CommentBlock from "@/components/CommentBlock"
 
 export default {
   components: {
     ChannelScore,
     NegativeChannelScore,
     SubChannelScore,
+    CommentBlock,
   },
   name:"ManualChannel",
   mixins: [SectionMixin],

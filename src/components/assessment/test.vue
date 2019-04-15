@@ -5,9 +5,7 @@
     </h2>
     <div class="question">
       <h3 class="prompt">Twist Cap</h3>
-      <div class="comment">
-        <textarea v-model="d.twistCap.comment"></textarea>
-      </div>
+      <CommentBlock v-model="d.twistCap.comment"/>
       <div class="subprompts">
         <!-- <ChannelScore class="channel-score" v-model="d.twistCap.off"/> -->
         <!-- <NegativeChannelScore class="channel-score" v-model="d.twistCap.on"/> -->
@@ -22,11 +20,14 @@
 import ChannelScore from "@/components/ChannelScore"
 import NegativeChannelScore from "@/components/NegativeChannelScore"
 import SubChannelScore from "@/components/SubChannelScore"
+import CommentBlock from "@/components/CommentBlock"
+
 export default {
   components: {
     ChannelScore,
     NegativeChannelScore,
     SubChannelScore,
+    CommentBlock
   },
   data () {
     return {

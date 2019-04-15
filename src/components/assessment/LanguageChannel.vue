@@ -8,90 +8,71 @@
         </h2>
         <h1 class="prompt">Verbal Responses to Sounds</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.soundVerbalResponse"/>
+          <NegativeChannelScore v-model="d.soundVerbalResponse.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.soundVerbalResponse.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.soundVerbalResponse.comment"/>
+
 
         <h2 class="level-head">
           LEVEL III
         </h2>
         <h1 class="prompt">Lip Utilization</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.lipUtilization"/>
+          <NegativeChannelScore v-model="d.lipUtilization.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.lipUtilization.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.lipUtilization.comment"/>
 
         <h1 class="prompt">Oral Motor Movement</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.oralMotorMovement"/>
+          <NegativeChannelScore v-model="d.oralMotorMovement.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.oralMotorMovement.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.oralMotorMovement.comment"/>
 
         <h1 class="prompt">Breath Support</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.breathSupport"/>
+          <NegativeChannelScore v-model="d.breathSupport.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.breathSupport.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.breathSupport.comment"/>
 
         <h1 class="prompt">Phonation</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.phonation"/>
+          <NegativeChannelScore v-model="d.phonation.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.phonation.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.phonation.comment"/>
 
         <h1 class="prompt">Sound Production - Short Vowels</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.vowelProductionShort"/>
+          <NegativeChannelScore v-model="d.vowelProductionShort.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.vowelProductionShort.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.vowelProductionShort.comment"/>
 
         <h1 class="prompt">Sound Production - Long Vowels</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.vowelProductionLong"/>
+          <NegativeChannelScore v-model="d.vowelProductionLong.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.vowelProductionLong.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.vowelProductionLong.comment"/>
 
         <h1 class="prompt">Vowel/Consonant Production</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.vowelConsonantProduction"/>
+          <NegativeChannelScore v-model="d.vowelConsonantProduction.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.vowelConsonantProduction.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.vowelConsonantProduction.comment"/>
 
         <h1 class="prompt">Use of Meaningful Tones</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.meaningfulToneUse"/>
+          <NegativeChannelScore v-model="d.meaningfulToneUse.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.meaningfulToneUse.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.meaningfulToneUse.comment"/>
 
         <h2 class="level-head">
           LEVEL IV
         </h2>
         <h1 class="prompt">Identify Pictures Receptively</h1>
         <div class="subprompts">
-          <NegativeChannelScore subName="FO2" v-model="d.identifyPicReceptively.f02"/>
-          <NegativeChannelScore subName="FO3" v-model="d.identifyPicReceptively.f03"/>
+          <NegativeChannelScore subName="FO2" v-model="d.identifyPicReceptively.fo2"/>
+          <NegativeChannelScore subName="FO3" v-model="d.identifyPicReceptively.fo3"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.identifyPicReceptively.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.identifyPicReceptively.comment"/>
 
         <h1 class="prompt">Identify Pictures Expressively</h1>
         <div class="subprompts">
@@ -99,92 +80,71 @@
           <NegativeChannelScore subName="Verbal 2" v-model="d.identifyPicExpressively.verbal2"/>
           <NegativeChannelScore subName="Verbal 3" v-model="d.identifyPicExpressively.verbal3"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.identifyPicExpressively.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.identifyPicExpressively.comment"/>
 
         <h1 class="prompt">Articulation - Initial Sounds</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.articulationInitial"/>
+          <NegativeChannelScore v-model="d.articulationInitial.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.articulationInitial.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.articulationInitial.comment"/>
 
         <h1 class="prompt">Articulation - Medial Sounds</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.articulationMedial"/>
+          <NegativeChannelScore v-model="d.articulationMedial.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.articulationMedial.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.articulationMedial.comment"/>
 
         <h1 class="prompt">Articulation - Final Sounds</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.articulationFinal"/>
+          <NegativeChannelScore v-model="d.articulationFinal.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.articulationFinal.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.articulationFinal.comment"/>
 
         <h1 class="prompt">Use of Spontaneous Verbalizations</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.spontaneousVerbalizations"/>
+          <NegativeChannelScore v-model="d.spontaneousVerbalizations.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.spontaneousVerbalizations.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.spontaneousVerbalizations.comment"/>
 
         <h2 class="level-head">
           LEVEL V
         </h2>
         <h1 class="prompt">Respond Yes or No</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.yesNoResponse"/>
+          <NegativeChannelScore v-model="d.yesNoResponse.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.yesNoResponse.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.yesNoResponse.comment"/>
 
         <h1 class="prompt">Use of 2-3 Word Phrases</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.phrases"/>
+          <NegativeChannelScore v-model="d.phrases.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.phrases.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.phrases.comment"/>
 
         <h2 class="level-head">
           LEVEL VI
         </h2>
         <h1 class="prompt">Use of 4-6 Word Sentences</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.sentencesResponse"/>
+          <NegativeChannelScore v-model="d.sentencesResponse.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.sentencesResponse.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.sentencesResponse.comment"/>
 
         <h2 class="level-head">
           LEVEL VII
         </h2>
         <h1 class="prompt">Conversation with Multiple Exchanges</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.conversationExchange"/>
+          <NegativeChannelScore v-model="d.conversationExchange.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.conversationExchange.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.conversationExchange.comment"/>
 
         <h1 class="prompt">Opposites</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.opposites"/>
+          <NegativeChannelScore v-model="d.opposites.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.opposites.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.opposites.comment"/>
       </div>
-
     </div>
   </div>
 </template>
@@ -193,12 +153,14 @@ import SectionMixin from '@/mixins/section'
 import ChannelScore from "@/components/ChannelScore"
 import NegativeChannelScore from "@/components/NegativeChannelScore"
 import SubChannelScore from "@/components/SubChannelScore"
+import CommentBlock from "@/components/CommentBlock"
 
 export default {
   components: {
     ChannelScore,
     NegativeChannelScore,
     SubChannelScore,
+    CommentBlock
   },
   name:"LanguageChannel",
   mixins: [SectionMixin],

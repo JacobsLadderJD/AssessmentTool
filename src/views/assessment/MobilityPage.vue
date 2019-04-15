@@ -11,7 +11,7 @@ export default {
   },
   data: () => ({
     prevPage: 'language',
-    nextPage: 'sensory'
+    nextPage: 'sensory-seeking'
   })
 }
 </script>

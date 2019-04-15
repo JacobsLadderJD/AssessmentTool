@@ -8,192 +8,148 @@
         </h2>
         <h1 class="prompt">Holds Forearm Prop</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.forearmProp"/>
+          <NegativeChannelScore v-model="d.forearmProp.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.forearmProp.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.forearmProp.comment"/>
 
         <h1 class="prompt">Belly Rotations</h1>
         <div class="subprompts">
           <NegativeChannelScore subName="Right" v-model="d.bellyRotations.right"/>
           <NegativeChannelScore subName="Left" v-model="d.bellyRotations.left"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.bellyRotations.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.bellyRotations.comment"/>
 
         <h2 class="level-head">
           LEVEL III
         </h2>
         <h1 class="prompt">Belly Crawl</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.bellyCrawl"/>
+          <NegativeChannelScore v-model="d.bellyCrawl.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.bellyCrawl.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.bellyCrawl.comment"/>
 
         <h1 class="prompt">From Prone to Cat</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.proneToCat"/>
+          <NegativeChannelScore v-model="d.proneToCat.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.proneToCat.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.proneToCat.comment"/>
 
         <h1 class="prompt">Momentary Sitting</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.momentarySit"/>
+          <NegativeChannelScore v-model="d.momentarySit.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.momentarySit.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.momentarySit.comment"/>
 
         <h1 class="prompt">Move to Upright Sitting</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.moveUprightSit"/>
+          <NegativeChannelScore v-model="d.moveUprightSit.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.moveUprightSit.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.moveUprightSit.comment"/>
 
         <h1 class="prompt">Pulls to Feet</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.pullToFeet"/>
+          <NegativeChannelScore v-model="d.pullToFeet.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.pullToFeet.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.pullToFeet.comment"/>
 
         <h1 class="prompt">Hold Creep Position</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.holdCreep"/>
+          <NegativeChannelScore v-model="d.holdCreep.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.holdCreep.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.holdCreep.comment"/>
 
         <h2 class="level-head">
           LEVEL IV
         </h2>
         <h1 class="prompt">Creep</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.creep"/>
+          <NegativeChannelScore v-model="d.creep.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.creep.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.creep.comment"/>
 
         <h1 class="prompt">From Seated to Standing</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.sitToStand"/>
+          <NegativeChannelScore v-model="d.sitToStand.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.sitToStand.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.sitToStand.comment"/>
 
         <h1 class="prompt">Standing</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.standing"/>
+          <NegativeChannelScore v-model="d.standing.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.standing.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.standing.comment"/>
 
         <h1 class="prompt">Protective Response</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.protectiveResponse"/>
+          <NegativeChannelScore v-model="d.protectiveResponse.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.protectiveResponse.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.protectiveResponse.comment"/>
 
         <h2 class="level-head">
           LEVEL V
         </h2>
         <h1 class="prompt">Walks</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.walks"/>
+          <NegativeChannelScore v-model="d.walks.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.walks.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.walks.comment"/>
 
         <h1 class="prompt">Gait</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.gait"/>
+          <NegativeChannelScore v-model="d.gait.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.gait.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.gait.comment"/>
 
         <h1 class="prompt">Initial March</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.marchInitial"/>
+          <NegativeChannelScore v-model="d.marchInitial.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.marchInitial.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.marchInitial.comment"/>
 
         <h1 class="prompt">Kick Stationary Ball</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.kickStationaryBall"/>
+          <NegativeChannelScore v-model="d.kickStationaryBall.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.kickStationaryBall.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.kickStationaryBall.comment"/>
 
         <h2 class="level-head">
           LEVEL VI
         </h2>
         <h1 class="prompt">Cross March</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.crossMarch"/>
+          <NegativeChannelScore v-model="d.crossMarch.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.crossMarch.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.crossMarch.comment"/>
 
         <h1 class="prompt">Run</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.run"/>
+          <NegativeChannelScore v-model="d.run.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.run.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.run.comment"/>
 
         <h1 class="prompt">Throw a Medium-sized Ball</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.throwBallMedium"/>
+          <NegativeChannelScore v-model="d.throwBallMedium.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.throwBallMedium.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.throwBallMedium.comment"/>
 
         <h1 class="prompt">Throw a Small-sized Ball</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.throwBallSmall"/>
+          <NegativeChannelScore v-model="d.throwBallSmall.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.throwBallSmall.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.throwBallSmall.comment"/>
 
         <h1 class="prompt">Catch a Medium-sized Ball</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.catchBallMedium"/>
+          <NegativeChannelScore v-model="d.catchBallMedium.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.catchBallMedium.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.catchBallMedium.comment"/>
 
         <h1 class="prompt">Jump Over Object</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.jumpObject"/>
+          <NegativeChannelScore v-model="d.jumpObject.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.jumpObject.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.jumpObject.comment"/>
 
         <h2 class="level-head">
           LEVEL VII
@@ -203,76 +159,58 @@
           <NegativeChannelScore subName="Right" v-model="d.balanceEyesOpen.right"/>
           <NegativeChannelScore subName="Left" v-model="d.balanceEyesOpen.left"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.balanceEyesOpen.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.balanceEyesOpen.comment"/>
 
         <h1 class="prompt">Balance on One Foot with Eyes Closed</h1>
         <div class="subprompts">
           <NegativeChannelScore subName="Right" v-model="d.balanceEyesClosed.right"/>
           <NegativeChannelScore subName="Left" v-model="d.balanceEyesClosed.left"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.balanceEyesClosed.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.balanceEyesClosed.comment"/>
 
         <h1 class="prompt">Hop on One Foot</h1>
         <div class="subprompts">
           <NegativeChannelScore subName="Right" v-model="d.oneFootHop.right"/>
           <NegativeChannelScore subName="Left" v-model="d.oneFootHop.left"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.oneFootHop.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.oneFootHop.comment"/>
 
         <h1 class="prompt">Walking On Stairs</h1>
         <div class="subprompts">
           <NegativeChannelScore subName="Up" v-model="d.stairs.up"/>
           <NegativeChannelScore subName="Down" v-model="d.stairs.down"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.oneFootHop.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.stairs.comment"/>
 
         <h1 class="prompt">Walks with Cross-Lateral Arms</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.walksArmsCross.up"/>
+          <NegativeChannelScore v-model="d.walksArmsCross.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.walksArmsCross.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.walksArmsCross.comment"/>
 
         <h1 class="prompt">Initial Skip</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.initialSkip"/>
+          <NegativeChannelScore v-model="d.initialSkip.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.initialSkip.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.initialSkip.comment"/>
 
         <h1 class="prompt">Cross Skip</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.crossSkip"/>
+          <NegativeChannelScore v-model="d.crossSkip.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.crossSkip.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.crossSkip.comment"/>
 
         <h1 class="prompt">Jumping Jacks</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.jumpingJacks"/>
+          <NegativeChannelScore v-model="d.jumpingJacks.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.jumpingJacks.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.jumpingJacks.comment"/>
 
         <h1 class="prompt">4 Piece Cross-over</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.fourPieceCross"/>
+          <NegativeChannelScore v-model="d.fourPieceCross.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.fourPieceCross.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.fourPieceCross.comment"/>
 
       </div>
     </div>
@@ -284,12 +222,14 @@ import SectionMixin from '@/mixins/section'
 import ChannelScore from "@/components/ChannelScore"
 import NegativeChannelScore from "@/components/NegativeChannelScore"
 import SubChannelScore from "@/components/SubChannelScore"
+import CommentBlock from "@/components/CommentBlock"
 
 export default {
   components: {
     ChannelScore,
     NegativeChannelScore,
     SubChannelScore,
+    CommentBlock
   },
   name:"MobilityChannel",
   mixins: [SectionMixin],

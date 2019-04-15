@@ -35,7 +35,7 @@
       <div class="score">
         <label for="">N/A</label>
         <input v-model="val"
-          type="radio" value="N/A"
+          type="radio" value=null
           @input="update($event.target.value)">
       </div>
     </div>

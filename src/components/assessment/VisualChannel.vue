@@ -2,19 +2,15 @@
   <div class="form-page">
     <div class="form-section">
       <h1 class="title" style="text-align:left">Visual Channel</h1>
-
-
       <div class="level">
         <h2 class="level-head">
           LEVEL II
         </h2>
         <h1 class="prompt">Horizontal Tracking</h1>
         <div class="subprompts">
-          <SubChannelScore v-model="d.trackingHorizontal"/>
+          <ChannelScore v-model="d.trackingHorizontal.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.trackingHorizontal.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.trackingHorizontal.comment"/>
       </div>
 
       <div class="level">
@@ -23,11 +19,9 @@
         </h2>
         <h1 class="prompt">Vertical Tracking</h1>
         <div class="subprompts">
-          <SubChannelScore v-model="d.trackingVertical"/>
+          <ChannelScore v-model="d.trackingVertical.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.trackingVertical.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.trackingVertical.comment"/>
       </div>
 
       <div class="level">
@@ -36,43 +30,33 @@
         </h2>
         <h1 class="prompt">Convergence</h1>
         <div class="subprompts">
-          <SubChannelScore v-model="d.convergence"/>
+          <ChannelScore v-model="d.convergence.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.convergence.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.convergence.comment"/>
 
         <h1 class="prompt">Divergence</h1>
         <div class="subprompts">
-          <SubChannelScore v-model="d.divergence"/>
+          <ChannelScore v-model="d.divergence.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.divergence.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.divergence.comment"/>
 
-        <h1 class="prompt">Tracking Figure 8's - Horizontal</h1>
+        <h1 class="prompt">Tracking Figure 8's &ndash; Horizontal</h1>
         <div class="subprompts">
-          <SubChannelScore v-model="d.eightTrackingHorizontal"/>
+          <ChannelScore v-model="d.eightTrackingHorizontal.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.eightTrackingHorizontal.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.eightTrackingHorizontal.comment"/>
 
-        <h1 class="prompt">Tracking Figure 8's - Vertical</h1>
+        <h1 class="prompt">Tracking Figure 8's &ndash; Vertical</h1>
         <div class="subprompts">
-          <SubChannelScore v-model="d.eightTrackingVertical"/>
+          <ChannelScore v-model="d.eightTrackingVertical.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.eightTrackingVertical.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.eightTrackingVertical.comment"/>
 
-        <h1 class="prompt">Tracking Figure 8's - Convergence/Divergence</h1>
+        <h1 class="prompt">Tracking Figure 8's &ndash; Convergence/Divergence</h1>
         <div class="subprompts">
-          <SubChannelScore v-model="d.eightTrackingConDiv"/>
+          <ChannelScore v-model="d.eightTrackingConDiv.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.eightTrackingConDiv.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.eightTrackingConDiv.comment"/>
       </div>
 
       <div class="level">
@@ -81,35 +65,27 @@
         </h2>
         <h1 class="prompt">Do This</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.doThis"/>
+          <NegativeChannelScore v-model="d.doThis.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.doThis.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.doThis.comment"/>
 
-        <h1 class="prompt">Initial Matching - Color</h1>
+        <h1 class="prompt">Initial Matching &ndash; Color</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.initialMatchColors"/>
+          <NegativeChannelScore v-model="d.initialMatchColors.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.initialMatchColors.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.initialMatchColors.comment"/>
 
-        <h1 class="prompt">Initial Matching - Shapes</h1>
+        <h1 class="prompt">Initial Matching &ndash; Shapes</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.initialMatchShapes"/>
+          <NegativeChannelScore v-model="d.initialMatchShapes.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.initialMatchShapes.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.initialMatchShapes.comment"/>
 
-        <h1 class="prompt">Initial Matching - Pictures</h1>
+        <h1 class="prompt">Initial Matching &ndash; Pictures</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.initialMatchPic"/>
+          <NegativeChannelScore v-model="d.initialMatchPic.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.initialMatchPic.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.initialMatchPic.comment"/>
       </div>
 
       <div class="level">
@@ -117,28 +93,64 @@
           LEVEL VI
         </h2>
         <h1 class="prompt">Colors</h1>
+        <div class="prompt-options">
+          <div class="option">
+            <label>FO2</label>
+            <input type="checkbox" v-model="d.colors.f02"/>
+          </div>
+          <div class="option">
+            <label>FO3</label>
+            <input type="checkbox" v-model="d.colors.f03"/>
+          </div>
+          <div class="option">
+            <label>Verbal</label>
+            <input type="checkbox" v-model="d.colors.verbal"/>
+          </div>
+        </div>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.colors"/>
+          <NegativeChannelScore v-model="d.colors.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.colors.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.colors.comment"/>
 
         <h1 class="prompt">Shapes</h1>
+        <div class="prompt-options">
+          <div class="option">
+            <label>FO2</label>
+            <input type="checkbox" v-model="d.shapes.f02"/>
+          </div>
+          <div class="option">
+            <label>FO3</label>
+            <input type="checkbox" v-model="d.shapes.f03"/>
+          </div>
+          <div class="option">
+            <label>Verbal</label>
+            <input type="checkbox" v-model="d.shapes.verbal"/>
+          </div>
+        </div>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.shapes"/>
+          <NegativeChannelScore v-model="d.shapes.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.shapes.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.shapes.comment"/>
 
         <h1 class="prompt">Numbers</h1>
+        <div class="prompt-options">
+          <div class="option">
+            <label>FO2</label>
+            <input type="checkbox" v-model="d.numbers.f02"/>
+          </div>
+          <div class="option">
+            <label>FO3</label>
+            <input type="checkbox" v-model="d.numbers.f03"/>
+          </div>
+          <div class="option">
+            <label>Verbal</label>
+            <input type="checkbox" v-model="d.numbers.verbal"/>
+          </div>
+        </div>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.numbers"/>
+          <NegativeChannelScore v-model="d.numbers.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.numbers.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.numbers.comment"/>
       </div>
 
       <div class="level">
@@ -146,36 +158,70 @@
           LEVEL VII
         </h2>
         <h1 class="prompt">Uppercase Letters</h1>
+        <div class="prompt-options">
+          <div class="option">
+            <label>FO2</label>
+            <input type="checkbox" v-model="d.uppercaseLetters.f02"/>
+          </div>
+          <div class="option">
+            <label>FO3</label>
+            <input type="checkbox" v-model="d.uppercaseLetters.f03"/>
+          </div>
+          <div class="option">
+            <label>Verbal</label>
+            <input type="checkbox" v-model="d.uppercaseLetters.verbal"/>
+          </div>
+        </div>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.uppercaseLetters"/>
+          <NegativeChannelScore v-model="d.uppercaseLetters.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.uppercaseLetters.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.uppercaseLetters.comment"/>
 
         <h1 class="prompt">Lowercase Letters</h1>
+        <div class="prompt-options">
+          <div class="option">
+            <label>FO2</label>
+            <input type="checkbox" v-model="d.lowercaseLetters.f02"/>
+          </div>
+          <div class="option">
+            <label>FO3</label>
+            <input type="checkbox" v-model="d.lowercaseLetters.f03"/>
+          </div>
+          <div class="option">
+            <label>Verbal</label>
+            <input type="checkbox" v-model="d.lowercaseLetters.verbal"/>
+          </div>
+        </div>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.lowercaseLetters"/>
+          <NegativeChannelScore v-model="d.lowercaseLetters.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.lowercaseLetters.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.lowercaseLetters.comment"/>
 
         <h1 class="prompt">Initial Sight Words</h1>
+        <div class="prompt-options">
+          <div class="option">
+            <label>FO2</label>
+            <input type="checkbox" v-model="d.initialSightWords.f02"/>
+          </div>
+          <div class="option">
+            <label>FO3</label>
+            <input type="checkbox" v-model="d.initialSightWords.f03"/>
+          </div>
+          <div class="option">
+            <label>Verbal</label>
+            <input type="checkbox" v-model="d.initialSightWords.verbal"/>
+          </div>
+        </div>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.initialSightWords"/>
+          <NegativeChannelScore v-model="d.initialSightWords.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.initialSightWords.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.initialSightWords.comment"/>
 
         <h1 class="prompt">Visual Sequential Processing Speed</h1>
         <div class="subprompts">
-          <NegativeChannelScore v-model="d.visualProcessingSpeed"/>
+          <NegativeChannelScore v-model="d.visualProcessingSpeed.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.visualProcessingSpeed.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.visualProcessingSpeed.comment"/>
       </div>
     </div>
   </div>
@@ -185,13 +231,13 @@
 import SectionMixin from '@/mixins/section'
 import ChannelScore from "@/components/ChannelScore"
 import NegativeChannelScore from "@/components/NegativeChannelScore"
-import SubChannelScore from "@/components/SubChannelScore"
+import CommentBlock from "@/components/CommentBlock"
 
 export default {
   components: {
     ChannelScore,
     NegativeChannelScore,
-    SubChannelScore,
+    CommentBlock
   },
   name: "VisualChannel",
   mixins: [SectionMixin],
@@ -259,4 +305,30 @@ h2 {
   margin: 0;
   padding: 0;
 }
+
+.prompt-options {
+  display: flex;
+  /* max-width: 50%; */
+  /* background-color: rgba(255, 0, 0, 0.5); */
+}
+.prompt-options .option {
+  display: flex;
+  /* flex: 1 0 50px; */
+  margin-right: 40px;
+  box-sizing: border-box;
+  /* border: 1px solid blue; */
+}
+.prompt-options .option label {
+  flex: 1;
+  display: block;
+  text-align: right;
+}
+
+.prompt-options .option input {
+  flex: 0;
+  height: 100%;
+  display: block;
+  margin-left: 1em;
+}
+
 </style>

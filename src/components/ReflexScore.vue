@@ -6,19 +6,19 @@
       <div class="score">
         <label for="">Not Integrated</label>
         <input v-model="val"
-          type="radio" value="Not Integrated"
+          type="radio" value=false
           @input="update($event.target.value)">
       </div>
       <div class="score">
         <label for="">Integrated</label>
         <input v-model="val"
-          type="radio" value="Integrated"
+          type="radio" value=true
           @input="update($event.target.value)">
       </div>
       <div class="score">
         <label for="">N/A</label>
         <input v-model="val"
-          type="radio" value="N/A"
+          type="radio" value=null
           @input="update($event.target.value)">
       </div>
     </div>
@@ -27,7 +27,7 @@
 
 <script>
 export default {
-  name: "ChannelScore",
+  name: "ReflexScore",
   props: {
     value: {
       required: true,

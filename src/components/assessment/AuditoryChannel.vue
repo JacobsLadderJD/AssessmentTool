@@ -10,11 +10,8 @@
         <div class="subprompts">
           <SubChannelScore subName="Right" v-model="d.vestibularFunction.right"/>
           <SubChannelScore subName="Left" v-model="d.vestibularFunction.left"/>
-
         </div>
-        <div class="comment">
-          <textarea v-model="d.vestibularFunction.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.vestibularFunction.comment"/>
       </div>
 
       <div class="level">
@@ -23,19 +20,15 @@
         </h2>
         <h1 class="prompt">Reaction to Threatening Sounds</h1>
         <div class="subprompts">
-          <SubChannelScore v-model="d.threateningSound"/>
+          <ChannelScore v-model="d.threateningSound.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.threateningSound.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.threateningSound.comment"/>
 
         <h1 class="prompt">Sensitivity to Sound</h1>
         <div class="subprompts">
-          <SubChannelScore v-model="d.soundSensitivity"/>
+          <ChannelScore v-model="d.soundSensitivity.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.soundSensitivity.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.soundSensitivity.comment"/>
       </div>
 
       <div class="level">
@@ -44,11 +37,9 @@
         </h2>
         <h1 class="prompt">Reaction to Change in Tonality</h1>
         <div class="subprompts">
-          <SubChannelScore v-model="d.tonalityChangeReaction"/>
+          <NegativeChannelScore v-model="d.tonalityChangeReaction.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.tonalityChangeReaction.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.tonalityChangeReaction.comment"/>
       </div>
 
       <div class="level">
@@ -57,11 +48,9 @@
         </h2>
         <h1 class="prompt">Initial Receptive Words</h1>
         <div class="subprompts">
-          <SubChannelScore v-model="d.initialReceptiveWords"/>
+          <NegativeChannelScore v-model="d.initialReceptiveWords.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.initialReceptiveWords.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.initialReceptiveWords.comment"/>
       </div>
 
       <div class="level">
@@ -70,19 +59,15 @@
         </h2>
         <h1 class="prompt">Follows One Step Directions</h1>
         <div class="subprompts">
-          <SubChannelScore v-model="d.oneStepDirections"/>
+          <NegativeChannelScore v-model="d.oneStepDirections.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.oneStepDirections.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.oneStepDirections.comment"/>
 
         <h1 class="prompt">Understands 2 - 4 Word Phrases</h1>
         <div class="subprompts">
-          <SubChannelScore v-model="d.shortPhrases"/>
+          <NegativeChannelScore v-model="d.shortPhrases.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.shortPhrases.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.shortPhrases.comment"/>
       </div>
 
       <div class="level">
@@ -91,30 +76,24 @@
         </h2>
         <h1 class="prompt">Follows Two Step Directions</h1>
         <div class="subprompts">
-          <SubChannelScore v-model="d.twoStepDirections"/>
+          <NegativeChannelScore v-model="d.twoStepDirections.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.twoStepDirections.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.twoStepDirections.comment"/>
 
         <h1 class="prompt">Understands 5 - 8 Word Sentences</h1>
         <div class="subprompts">
-          <SubChannelScore v-model="d.sentenceUnderstanding"/>
+          <NegativeChannelScore v-model="d.sentenceUnderstanding.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.sentenceUnderstanding.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.sentenceUnderstanding.comment"/>
 
         <h1 class="prompt">Auditory Sequential Processing Speed</h1>
         <div class="subprompts">
-          <SubChannelScore subName="Line 1" v-model="d.auditoryProcessingSpeed.line1"/>
-          <SubChannelScore subName="Line 2" v-model="d.auditoryProcessingSpeed.line2"/>
-          <SubChannelScore subName="Line 3" v-model="d.auditoryProcessingSpeed.line3"/>
-          <SubChannelScore subName="Line 4" v-model="d.auditoryProcessingSpeed.line4"/>
+          <NegativeChannelScore subName="Line 1" v-model="d.auditoryProcessingSpeed.line1"/>
+          <NegativeChannelScore subName="Line 2" v-model="d.auditoryProcessingSpeed.line2"/>
+          <NegativeChannelScore subName="Line 3" v-model="d.auditoryProcessingSpeed.line3"/>
+          <NegativeChannelScore subName="Line 4" v-model="d.auditoryProcessingSpeed.line4"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.auditoryProcessingSpeed.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.auditoryProcessingSpeed.comment"/>
       </div>
     </div>
   </div>
@@ -124,12 +103,14 @@ import SectionMixin from '@/mixins/section'
 import ChannelScore from "@/components/ChannelScore"
 import NegativeChannelScore from "@/components/NegativeChannelScore"
 import SubChannelScore from "@/components/SubChannelScore"
+import CommentBlock from "@/components/CommentBlock"
 
 export default {
   components: {
     ChannelScore,
     NegativeChannelScore,
     SubChannelScore,
+    CommentBlock
   },
   name:"AuditoryChannel",
   mixins: [SectionMixin],
@@ -162,20 +143,6 @@ h2 {
 
 .prompt {
   grid-area: prompt;
-}
-
-.comment {
-  height: 100%;
-}
-
-.comment textarea {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  resize: none;
-  overflow: auto;
-  width: 75%;
-  height: 100%;
 }
 
 .subprompts {

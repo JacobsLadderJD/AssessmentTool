@@ -4,106 +4,84 @@
       <h1 class="title" style="text-align:left">Sensitivities</h1>
       <div class="level">
         <h2 class="level-head">
-          HEAD SENSITIVITIES
+          Head Sensitivities
         </h2>
         <h1 class="prompt">Haircuts</h1>
         <div class="subprompts">
-          <PositiveChannelScore v-model="d.haircuts"/>
+          <PositiveChannelScore v-model="d.haircuts.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.haircuts.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.haircuts.comment"/>
 
         <h1 class="prompt">Washing Face</h1>
         <div class="subprompts">
-          <PositiveChannelScore v-model="d.washingFace"/>
+          <PositiveChannelScore v-model="d.washingFace.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.washingFace.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.washingFace.comment"/>
 
         <h1 class="prompt">Washing Hair</h1>
         <div class="subprompts">
-          <PositiveChannelScore v-model="d.washingHair"/>
+          <PositiveChannelScore v-model="d.washingHair.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.washingHair.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.washingHair.comment"/>
 
         <h1 class="prompt">Brushing Teeth</h1>
         <div class="subprompts">
-          <PositiveChannelScore v-model="d.brushingTeeth"/>
+          <PositiveChannelScore v-model="d.brushingTeeth.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.brushingTeeth.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.brushingTeeth.comment"/>
       </div>
 
       <div class="level">
         <h2 class="level-head">
-          NAIL SENSITIVITIES
+          Nail Sensitivities
         </h2>
         <h1 class="prompt">Cutting Nails</h1>
         <div class="subprompts">
           <PositiveChannelScore subName="Fingers" v-model="d.nailCutting.fingers"/>
           <PositiveChannelScore subName="Toes" v-model="d.nailCutting.toes"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.nailCutting.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.nailCutting.comment"/>
       </div>
 
       <div class="level">
         <h2 class="level-head">
-          CLOTHING SENSITIVITIES
+          Clothing Sensitivities
         </h2>
         <h1 class="prompt">Tags</h1>
         <div class="subprompts">
-          <PositiveChannelScore v-model="d.tags"/>
+          <PositiveChannelScore v-model="d.tags.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.tags.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.tags.comment"/>
 
         <h1 class="prompt">Shirt</h1>
         <div class="subprompts">
-          <PositiveChannelScore v-model="d.shirt"/>
+          <PositiveChannelScore v-model="d.shirt.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.shirt.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.shirt.comment"/>
 
         <h1 class="prompt">Pants</h1>
         <div class="subprompts">
-          <PositiveChannelScore v-model="d.pants"/>
+          <PositiveChannelScore v-model="d.pants.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.pants.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.pants.comment"/>
 
         <h1 class="prompt">Socks</h1>
         <div class="subprompts">
-          <PositiveChannelScore v-model="d.socks"/>
+          <PositiveChannelScore v-model="d.socks.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.socks.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.socks.comment"/>
 
         <h1 class="prompt">Shoes</h1>
         <div class="subprompts">
-          <PositiveChannelScore v-model="d.shoes"/>
+          <PositiveChannelScore v-model="d.shoes.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.shoes.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.shoes.comment"/>
 
         <h1 class="prompt">Coat</h1>
         <div class="subprompts">
-          <PositiveChannelScore v-model="d.coat"/>
+          <PositiveChannelScore v-model="d.coat.value"/>
         </div>
-        <div class="comment">
-          <textarea v-model="d.coat.comment"></textarea>
-        </div>
+        <CommentBlock v-model="d.coat.comment"/>
       </div>
 
     </div>
@@ -113,16 +91,16 @@
 // import types from '@/store/evaluation/types'
 import SectionMixin from '@/mixins/section'
 import ChannelScore from "@/components/ChannelScore"
-import NegativeChannelScore from "@/components/NegativeChannelScore"
 import SubChannelScore from "@/components/SubChannelScore"
 import PositiveChannelScore from "@/components/PositiveChannelScore"
+import CommentBlock from "@/components/CommentBlock"
 
 export default {
   components: {
     ChannelScore,
-    PositiveChannelScore,
     SubChannelScore,
-    PositiveChannelScore
+    PositiveChannelScore,
+    CommentBlock
   },
   name:"SensitivitiesSection",
   mixins: [SectionMixin],

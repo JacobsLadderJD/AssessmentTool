@@ -10,7 +10,7 @@ export default {
     EvaluationView
   },
   data: () => ({
-    prevPage: 'sensory',
+    prevPage: 'sensory-seeking',
   })
 }
 </script>
