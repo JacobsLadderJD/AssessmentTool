@@ -163,15 +163,11 @@
 <script>
 // import types from '@/store/evaluation/types'
 import SectionMixin from '@/mixins/section'
-import ChannelScore from "@/components/ChannelScore"
-import SubChannelScore from "@/components/SubChannelScore"
 import PositiveChannelScore from "@/components/PositiveChannelScore"
 import CommentBlock from "@/components/CommentBlock"
 
 export default {
   components: {
-    ChannelScore,
-    SubChannelScore,
     PositiveChannelScore,
     CommentBlock
   },

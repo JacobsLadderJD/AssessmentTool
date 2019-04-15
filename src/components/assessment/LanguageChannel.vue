@@ -150,16 +150,12 @@
 </template>
 <script>
 import SectionMixin from '@/mixins/section'
-import ChannelScore from "@/components/ChannelScore"
 import NegativeChannelScore from "@/components/NegativeChannelScore"
-import SubChannelScore from "@/components/SubChannelScore"
 import CommentBlock from "@/components/CommentBlock"
 
 export default {
   components: {
-    ChannelScore,
     NegativeChannelScore,
-    SubChannelScore,
     CommentBlock
   },
   name:"LanguageChannel",
