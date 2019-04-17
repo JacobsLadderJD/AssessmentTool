@@ -49,7 +49,7 @@
     <div class="form-section">
       <div class="item" style="margin-bottom: 4vw;">
         <label for="evaluators-input">Evaluator(s)</label>
-        <h4>{{ evaluator | fullName }}</h4>
+        <h4 v-for="evaluator in evaluators">{{ evaluator | fullName }}</h4>
         <!-- <input id="evaluators-input" type="text" name="evaluators"
         v-model="evaluatorSearch"/> -->
       </div>
@@ -72,12 +72,12 @@ export default {
     name: "studentInfo"
   }),
   computed: {
-    evaluator () {
-      return this.evaluation.evaluator || {
+    evaluators () {
+      return this.evaluation.evaluators || [{
         firstName: "",
         lastName: "",
         id: null
-      }
+      }]
     },
     student () {
       return this.evaluation.student || {

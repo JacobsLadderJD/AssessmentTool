@@ -66,8 +66,7 @@ const students = {
 const evaluations = {
   create (studentId) {
     return axios.post('evaluations/', {
-      student:studentId,
-      evaluator: 4
+      student:studentId
     }).then(resp => {
       console.log(resp.data)
       return resp.data.id

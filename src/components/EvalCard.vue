@@ -5,7 +5,12 @@
       <h4>Last Edited:</h4>
       <p>{{evaluation.editedAt}}</p>
       <h4>By:</h4>
-      <p>{{evaluator | fullName}}</p>
+      <p>
+        <span
+          v-for="evaluator in evaluators">
+          {{evaluator | fullName}}
+        </span>&nbsp;
+      </p>
     </div>
   </div>
 </template>
@@ -22,8 +27,8 @@ export default {
     student () {
       return this.evaluation.student
     },
-    evaluator () {
-      return this.evaluation.evaluator
+    evaluators () {
+      return this.evaluation.evaluators
     }
   },
   methods: {
