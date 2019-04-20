@@ -86,6 +86,15 @@ If data in the pages is not showing up, it may be because the API is not running
 ###### Make sure the database is populated
 Through the Admin Panel, add at least one user, evaluator, evaluation, and student so that the application has data to show.
 
-#### II. Node would not install properly
+#### II. Vue <slot\> elements are not cooperating
+If slots are not working in Vue.js, despite the Vue.js documentation, it is likely an issue with the new changes to slots in Vue.js v2.6. This project is built with Vue.js v2.5, so the syntax is different. See [this documentation]() for details.
 
 #### III. The application won't run
+###### Check the node.js version
+If your node version is below v9.8 the application may not run properly. Download the [latest LTS](https://nodejs.org/en/download/) for your system as instructed in the installation instructions.
+###### Update the npm packages
+If a developer has just added a new dependency to the project, you will need to install it before launching the application. To solve this problem, run the following command in the project's root directory:
+```shell
+$ npm install
+```
+Then the new dependencies will be updated (as long as they are listed in the package.json file).
