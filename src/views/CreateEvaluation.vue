@@ -1,9 +1,15 @@
 <template lang="html">
   <div>
     <h1>New Evaluation</h1>
-    <input v-model="studentQuery" type="text" name="" value="">
+    <div style="background-color:#afcfee">
+      <h2>Students
+        <input v-model="studentQuery" type="text" name="" value="">
+      </h2> 
+
+   </div>
     <ul>
       <li
+        class = "eval-list-item"
         v-for="(student, index) in students"
         :key="index"
         @click="selectStudent(student.id)">
@@ -59,4 +65,33 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
+h2 {
+  margin-left: 30px;
+}
+
+input {
+  float: right;
+  clear: both;
+  width: 20%;
+  max-height: 35px;
+  margin-right: 30px;
+  margin-top: 5px;
+}
+
+
+
+.eval-list-item {
+  display: flex;
+  min-height: 60px;
+  width: 60%;
+  box-sizing: border-box;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.75);
+  padding: 24px 24px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: 500
+}
+
 </style>

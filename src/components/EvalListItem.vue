@@ -6,7 +6,12 @@
         <p style="margin-right: 20px">Last edited:
           <span class="--underlined">{{evaluation.editedAt}}</span>
         </p>
-        <p>By: <span class="--underlined">{{evaluator | fullName}}</span></p>
+        <p>By:
+          <span
+            v-for="evaluator in evaluators"
+            class="--underlined">
+            {{evaluator | fullName}}</span>,&nbsp;
+        </p>
       </div>
     </div>
     <div class="percent-wrap">
@@ -27,8 +32,8 @@ export default {
     student () {
       return this.evaluation.student
     },
-    evaluator () {
-      return this.evaluation.evaluator
+    evaluators () {
+      return this.evaluation.evaluators
     }
   },
   methods: {

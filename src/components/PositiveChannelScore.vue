@@ -6,27 +6,27 @@
     <div class="channel-score">
 
       <div class="score">
-        <label for="">-3</label>
-        <input v-model="val"
-          type="radio" value="-3"
-          @input="update($event.target.value)">
-      </div>
-      <div class="score">
-        <label for="">-2</label>
-        <input v-model="val"
-          type="radio" value="-2"
-          @input="update($event.target.value)">
-      </div>
-      <div class="score">
-        <label for="">-1</label>
-        <input v-model="val"
-          type="radio" value="-1"
-          @input="update($event.target.value)">
-      </div>
-      <div class="score">
         <label for="">0</label>
         <input v-model="val"
           type="radio" value="0"
+          @input="update($event.target.value)">
+      </div>
+      <div class="score">
+        <label for="">1</label>
+        <input v-model="val"
+          type="radio" value="1"
+          @input="update($event.target.value)">
+      </div>
+      <div class="score">
+        <label for="">2</label>
+        <input v-model="val"
+          type="radio" value="2"
+          @input="update($event.target.value)">
+      </div>
+      <div class="score">
+        <label for="">3</label>
+        <input v-model="val"
+          type="radio" value="3"
           @input="update($event.target.value)">
       </div>
       <div class="score"></div>

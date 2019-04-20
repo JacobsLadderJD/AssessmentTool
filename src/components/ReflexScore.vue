@@ -2,36 +2,19 @@
 
   <div>
     <h4> {{ subName }} </h4>
-
     <div class="channel-score">
-
       <div class="score">
-        <label for="">-3</label>
+        <label for="">Not Integrated</label>
         <input v-model="val"
-          type="radio" value="-3"
+          type="radio" value=false
           @input="update($event.target.value)">
       </div>
       <div class="score">
-        <label for="">-2</label>
+        <label for="">Integrated</label>
         <input v-model="val"
-          type="radio" value="-2"
+          type="radio" value=true
           @input="update($event.target.value)">
       </div>
-      <div class="score">
-        <label for="">-1</label>
-        <input v-model="val"
-          type="radio" value="-1"
-          @input="update($event.target.value)">
-      </div>
-      <div class="score">
-        <label for="">0</label>
-        <input v-model="val"
-          type="radio" value="0"
-          @input="update($event.target.value)">
-      </div>
-      <div class="score"></div>
-      <div class="score"></div>
-      <div class="score"></div>
       <div class="score">
         <label for="">N/A</label>
         <input v-model="val"
@@ -44,7 +27,7 @@
 
 <script>
 export default {
-  name: "NegativeChannelScore",
+  name: "ReflexScore",
   props: {
     value: {
       required: true,
@@ -54,7 +37,7 @@ export default {
     },
   },
   data: () => ({
-    val: "N/A",
+    val: "N/A"
   }),
   methods: {
     update (value) {
@@ -66,12 +49,6 @@ export default {
       this.val = newVal
     }
   },
-  methods: {
-    // if score changes, notify the parent with $emit
-    update() {
-      this.$emit("input", this.score);
-    }
-  },
   mounted() {
     this.val = this.value
   }
@@ -81,7 +58,7 @@ export default {
 <style lang="css" scoped>
 .channel-score {
   display: flex;
-  flex-flow: row;
+  width: 50%;
 }
 .channel-score .score {
   flex:1;

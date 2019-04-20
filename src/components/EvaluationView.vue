@@ -1,96 +1,42 @@
 <template lang="html">
   <main style="display: flex">
-    <FormNav :items="[]" style="flex: 0 0 200px; margin-right:24px;"/>
+    <FormNav style="flex: 0 0 200px; margin-right:24px;"/>
     <div class="form-viewer">
-      <div class="form-page" v-if="page===1">
-        <h1 class="title">Neurodevelopmental Profile</h1>
-        <div class="form-section">
-          <div class="row">
-            <div class="item" style="margin-bottom: 4vw;">
-              <label for="date-input">Date</label>
-              <input id="last-edited-input" name="last-edited" type="date"
-              v-model="evaluation.editedAt"/>
-            </div>
-            <div class="item" style="margin-bottom: 4vw;">
-              <label for="status-input">Status</label>
-              <input id="status-input" type="text" name="status" v-model="student.status"/>
-            </div>
-          </div>
-          <div class="row">
-            <div class="item" style="margin-bottom: 4vw;">
-              <label for="code-input">Code</label>
-              <input id="code-input" type="text" name="code" v-model="student.code"/>
-            </div>
-          </div>
-        </div>
-        <div class="form-section">
-          <h2>Student</h2>
-          <div class="row">
-            <div class="item" style="margin-bottom: 4vw;">
-              <label for="name-input">Name</label>
-              <input id="first-name-input" type="text" name="firstName"
-                :value="student.firstName" disabled/>
-              <input id="last-name-input" type="text" name="lastName"
-              :value="student.lastName" disabled/>
-            </div>
-          </div>
-          <div class="row">
-            <div class="item" style="margin-bottom: 4vw;">
-              <label for="sex-input">Sex</label>
-              <select id="sex-input" name="sex" :selected="student.gender" disabled>
-                <option value="m">Male</option>
-                <option value="f">Female</option>
-              </select>
-            </div>
-            <div class="item" style="margin-bottom: 4vw;">
-              <label for="age-input">Birthdate</label>
-              <input id="age-input" type="text" name="birthdate"
-                :value="student.birthdate" disabled/>
-            </div>
-          </div>
-        </div>
-        <div class="form-section">
-          <div class="item" style="margin-bottom: 4vw;">
-            <label for="evaluators-input">Evaluator(s)</label>
-            <h4>{{ evaluator | fullName }}</h4>
-            <!-- <input id="evaluators-input" type="text" name="evaluators"
-            v-model="evaluatorSearch"/> -->
+      <StudentInfoSection  v-if="page===1 && !loading"
+        :evaluation="evaluation"/>
 
-          </div>
-        </div>
-      </div>
-
-      <OverviewPage v-else-if="page===2"
+      <OverviewSection v-else-if="page===2 && !loading"
         :section="evaluation" :evalId="evaluation.id"/>
 
-      <DetailsPage v-else-if="page===3"
+      <DetailsSection v-else-if="page===3 && !loading"
         :section="evaluation" :evalId="evaluation.id"/>
 
-      <ReflexesPage ref="reflex" v-else-if="page===4"
+      <ReflexesSection ref="reflex" v-else-if="page===4 && !loading"
         :section="evaluation.reflexSection" :evalId="evaluation.id"/>
 
-      <TactilityChannel  ref="tactility" v-else-if="page===5"
+      <TactilityChannel  ref="tactility" v-else-if="page===5 && !loading"
         :section="evaluation.tactilitySection" :evalId="evaluation.id"/>
 
-      <AuditoryChannel  ref="auditory" v-else-if="page===6"
+      <AuditoryChannel  ref="auditory" v-else-if="page===6 && !loading"
         :section="evaluation.auditorySection" :evalId="evaluation.id"/>
 
-      <VisualChannel ref="visual" v-else-if="page===7"
+      <VisualChannel ref="visual" v-else-if="page===7 && !loading"
         :section="evaluation.visualSection" :evalId="evaluation.id"/>
 
-      <ManualChannel ref="manual" v-else-if="page===8"
+      <ManualChannel ref="manual" v-else-if="page===8 && !loading"
         :section="evaluation.manualSection" :evalId="evaluation.id"/>
 
-      <LanguageChannel ref="language" v-else-if="page===9"
+      <LanguageChannel ref="language" v-else-if="page===9 && !loading"
         :section="evaluation.languageSection" :evalId="evaluation.id"/>
 
-      <MobilityChannel ref="mobility" v-else-if="page===10"
+      <MobilityChannel ref="mobility" v-else-if="page===10 && !loading"
         :section="evaluation.mobilitySection" :evalId="evaluation.id"/>
 
-      <SensorySeekingPage ref="sensory" v-else-if="page===11"
+      <SensorySection ref="sensory" v-else-if="page===11 && !loading"
         :section="evaluation.sensorySection" :evalId="evaluation.id"/>
 
-      <SensitivitiesPage ref="sensitivities" v-else-if="page===12"
+      <SensitivitiesSection ref="sensitivities"
+        v-else-if="page===12 && !loading"
         :section="evaluation.sensitivitiesSection" :evalId="evaluation.id"/>
 
 
@@ -98,13 +44,19 @@
         <div class="w3-cell-row">
           <div class="w3-container w3-cell">
             <div class="form-section form-page-nav">
-              <button v-if="page !== 1" class="btn btn-info" style="font-size: 1.3em; float:left;" @click.prevent="prevPage()">Previous</button>
+              <button v-if="page !== 1"
+                class="btn btn-info" style="font-size: 1.3em; float:left;"
+                @click.prevent="prev()">Previous</button>
             </div>
           </div>
           <div class="w3-container w3-cell">
             <div class="form-section form-page-nav">
-              <button v-if="page < lastPage" class="btn btn-info" style="font-size: 1.3em;" @click.prevent="nextPage()">Next</button>
-              <button v-if="page === lastPage" class="btn btn-info" style="font-size: 1.3em;" @click.prevent="submit()">Submit</button>
+              <button v-if="page < lastPage"
+                class="btn btn-info" style="font-size: 1.3em;"
+                @click.prevent="next()">Next</button>
+              <button v-if="page === lastPage"
+                class="btn btn-info" style="font-size: 1.3em;"
+                @click.prevent="submit()">Submit</button>
             </div>
           </div>
         </div>
@@ -117,48 +69,70 @@
 import api from '@/api'
 import FormNav from '@/components/FormNav'
 import types from '@/store/evaluation/types'
-import OverviewPage from '@/components/assessmentPages/OverviewPage'
-import DetailsPage from '@/components/assessmentPages/DetailsPage'
-import ReflexesPage from '@/components/assessmentPages/ReflexesPage'
-import TactilityChannel from '@/components/assessmentPages/TactilityChannel'
-import AuditoryChannel from '@/components/assessmentPages/AuditoryChannel'
-import VisualChannel from '@/components/assessmentPages/VisualChannel'
-import ManualChannel from '@/components/assessmentPages/ManualChannel'
-import LanguageChannel from '@/components/assessmentPages/LanguageChannel'
-import MobilityChannel from '@/components/assessmentPages/MobilityChannel'
-import SensorySeekingPage from '@/components/assessmentPages/SensorySeekingPage'
-import SensitivitiesPage from '@/components/assessmentPages/SensitivitiesPage'
+import StudentInfoSection from '@/components/assessment/StudentInfoSection'
+import OverviewSection from '@/components/assessment/OverviewSection'
+import DetailsSection from '@/components/assessment/DetailsSection'
+import ReflexesSection from '@/components/assessment/ReflexesSection'
+import TactilityChannel from '@/components/assessment/TactilityChannel'
+import AuditoryChannel from '@/components/assessment/AuditoryChannel'
+import VisualChannel from '@/components/assessment/VisualChannel'
+import ManualChannel from '@/components/assessment/ManualChannel'
+import LanguageChannel from '@/components/assessment/LanguageChannel'
+import MobilityChannel from '@/components/assessment/MobilityChannel'
+import SensorySection from '@/components/assessment/SensorySection'
+import SensitivitiesSection from '@/components/assessment/SensitivitiesSection'
 
 export default {
   name:"EvaluationViewer",
   components: {
     FormNav,
-    OverviewPage,
-    DetailsPage,
-    ReflexesPage,
+    StudentInfoSection,
+    OverviewSection,
+    DetailsSection,
+    ReflexesSection,
     TactilityChannel,
     AuditoryChannel,
     VisualChannel,
     ManualChannel,
     LanguageChannel,
     MobilityChannel,
-    SensorySeekingPage,
-    SensitivitiesPage,
+    SensorySection,
+    SensitivitiesSection,
+  },
+  props: {
+    page: {
+      required: true,
+      type: Number
+    },
+    nextPage: {
+      default: null,
+      type: String
+    },
+    prevPage: {
+      default: null,
+      type: String
+    }
   },
   data:() => ({
-    page: 1,
     lastPage: 12,
-    evaluation: {}
+    evaluation: {},
+    loading: false
   }),
+
   methods: {
-    nextPage() {
+    next() {
       if (this.currentPage) {
         this.currentPage.submit()
       }
-      this.page++;
+      const path = `/evaluations/${this.$route.params.id}/${this.nextPage}`
+      this.$router.push(path)
     },
-    prevPage() {
-      this.page--;
+    prev() {
+      if (this.currentPage) {
+        this.currentPage.submit()
+      }
+      const path = `/evaluations/${this.$route.params.id}/${this.prevPage}`
+      this.$router.push(path)
     },
     submit () {
       this.$store.dispatch(types.UPDATE_EVALUATION, {
@@ -166,10 +140,6 @@ export default {
     }
   },
   computed: {
-    isNew () {
-      return this.$route.params.id === 'new'
-    },
-
     currentPage () {
       return ({
         4: this.$refs.reflex,
@@ -186,30 +156,16 @@ export default {
 
     // evaluation () {
     //   return this.$store.getters.getEvaluationById(this.$route.params.id)
-    // },
-    evaluator () {
-      return this.evaluation.evaluator || {
-        firstName: "",
-        lastName: "",
-        id: null
-      }
-    },
-    student () {
-      return this.evaluation.student || {
-        status: null,
-        code: null,
-        id: null,
-        firstName: "",
-        lastName: ""
-      }
-    }
+    // }
   },
-  mounted () {
+  created () {
     //this.temp = api.getEvaluationById(this.$route.params.id)
     // this.$store.getters.getEvaluationById(this.$route.params.id)
+    this.loading = true
     api.evaluations.get(this.$route.params.id)
       .then(evaluation => {
         this.evaluation = evaluation
+        this.loading=false
       })
   }
 }

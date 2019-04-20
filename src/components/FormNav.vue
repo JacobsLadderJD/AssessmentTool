@@ -1,32 +1,78 @@
 <template lang="html">
   <nav>
     <ul>
-      <!--
-        <li><a href="#">Student Info</a></li>
-        <li><a>Overview</a></li>
-        <li><a>Details</a></li>
-        <li><a>Reflexes</a></li>
-        <li><a>Tactility Channel</a></li>
-        <li><a>Auditory Channel</a></li>
-        <li><a>Visual Channel</a></li>
-        <li><a>Manual Channel</a></li>
-        <li><a>Language Channel</a></li>
-        <li><a>Mobility Channel</a></li>
-        <li><a>Sensory Seeking</a></li>
-        <li><a>Sensitivities</a></li>
-      -->
-      <li>Start Page</li>
-      <ul>
-        <li>Basic</li>
-        <li>Student</li>
-        <li>Evaluation</li>
-      </ul>
-      <li>Taste and Dominant Limb</li>
-      <ul>
-        <li>Basic</li>
-        <li>Student</li>
-        <li>Evaluation</li>
-      </ul>
+      <li>
+        <router-link
+          :to="{ name: 'eval-info', params: $route.params }">
+          Student Info
+        </router-link>
+      </li>
+      <li>
+        <router-link
+          :to="{ name: 'eval-overview', params: $route.params }">
+          Overview
+        </router-link>
+      </li>
+      <li>
+        <router-link
+          :to="{ name: 'eval-details', params: $route.params }">
+          Details
+        </router-link>
+      </li>
+      <li>
+        <router-link
+          :to="{ name: 'eval-reflexes', params: $route.params }">
+          Reflexes
+        </router-link>
+      </li>
+      <li>
+        <router-link
+          :to="{ name: 'eval-tactility', params: $route.params }">
+          Tactility Channel
+        </router-link>
+      </li>
+      <li>
+        <router-link
+          :to="{ name: 'eval-auditory', params: $route.params }">
+          Auditory Channel
+        </router-link>
+      </li>
+      <li>
+        <router-link
+          :to="{ name: 'eval-visual', params: $route.params }">
+          Visual Channel
+        </router-link>
+      </li>
+      <li>
+        <router-link
+          :to="{ name: 'eval-manual', params: $route.params }">
+          Manual Channel
+        </router-link>
+      </li>
+      <li>
+        <router-link
+          :to="{ name: 'eval-language', params: $route.params }">
+          Language Channel
+        </router-link>
+      </li>
+      <li>
+        <router-link
+          :to="{ name: 'eval-mobility', params: $route.params }">
+          Mobility Channel
+        </router-link>
+      </li>
+      <li>
+        <router-link
+          :to="{ name: 'eval-sensory', params: $route.params }">
+          Sensory Seeking
+        </router-link>
+      </li>
+      <li>
+        <router-link
+          :to="{ name: 'eval-sensitivities', params: $route.params }">
+          Sensitivities
+        </router-link>
+      </li>
     </ul>
   </nav>
 </template>
@@ -34,14 +80,12 @@
 <script>
 export default {
   name: "FormNav",
-  props: {
-    pages: {
-      type: Array
-    }
-  }
+
 }
 </script>
 
 <style lang="css" scoped>
-
+  .router-link-exact-active {
+    font-weight: bold;
+  }
 </style>
