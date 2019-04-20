@@ -82,7 +82,7 @@ $ npm run lint
 Based on experience, a few things may cause problems when attempting to install or run the application. These issues are enumerated below.
 #### I. The data in the pages isn't loading
 ###### Make sure the API is running
-If data in the pages is not showing up, it may be because the API is not running locally. Please see the [AssessmentAPI documentation]() and ensure that you have it configured and running properly.
+If data in the pages is not showing up, it may be because the API is not running locally. Please see the [AssessmentAPI documentation](https://vuejs.org/v2/guide/components-slots.html#Deprecated-Syntax) and ensure that you have it configured and running properly.
 ###### Make sure the database is populated
 Through the Admin Panel, add at least one user, evaluator, evaluation, and student so that the application has data to show.
 
