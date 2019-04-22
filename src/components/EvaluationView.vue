@@ -2,6 +2,27 @@
   <main style="display: flex">
     <FormNav style="flex: 0 0 200px; margin-right:24px;"/>
     <div class="form-viewer">
+      <div class="form-section">
+        <div class="w3-cell-row">
+          <div class="w3-container w3-cell">
+            <div class="form-section form-page-nav">
+              <button v-if="page !== 1"
+                class="btn btn-info" style="font-size: 1.3em; float:left;"
+                @click.prevent="prev()">Previous</button>
+            </div>
+          </div>
+          <div class="w3-container w3-cell">
+            <div class="form-section form-page-nav">
+              <button v-if="page < lastPage"
+                class="btn btn-info" style="font-size: 1.3em;"
+                @click.prevent="next()">Next</button>
+              <button v-if="page === lastPage"
+                class="btn btn-info" style="font-size: 1.3em;"
+                @click.prevent="submit()">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <StudentInfoSection  v-if="page===1 && !loading"
         :evaluation="evaluation"/>
 

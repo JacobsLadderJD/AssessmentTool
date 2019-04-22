@@ -4,7 +4,7 @@
     <div style="background-color:#afcfee">
       <h2>Students
         <input v-model="studentQuery" type="text" name="" value="">
-      </h2> 
+      </h2>
 
    </div>
     <ul>
@@ -47,12 +47,12 @@ export default {
       api.evaluations.create(studentId)
         .then(id => {
           vm.$router.push({
-            name:'evaluation',
+            name:'eval-info',
             params: {id: id}
           })
         })
     }
-  }, 
+  },
   mounted() {
     api.students.getAll()
         .then(data => {

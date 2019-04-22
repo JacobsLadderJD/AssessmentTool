@@ -44,7 +44,7 @@
 
 <script>
 export default {
-  name: "NegativeChannelScore",
+  name: "PositiveChannelScore",
   props: {
     value: {
       required: true,

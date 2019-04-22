@@ -70,6 +70,8 @@ const evaluations = {
     }).then(resp => {
       console.log(resp.data)
       return resp.data.id
+    }).catch(err => {
+      console.log(err);
     })
   },
   get (id) {
@@ -88,7 +90,11 @@ const evaluations = {
     const d = {
       [section]: data
     }
+    console.log(d);
     return axios.patch(`evaluations/${id}/`, d)
+      .catch(err => {
+        console.log(err.response);
+      })
   }
 }
 

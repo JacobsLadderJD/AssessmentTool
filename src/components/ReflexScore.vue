@@ -6,13 +6,13 @@
       <div class="score">
         <label for="">Not Integrated</label>
         <input v-model="val"
-          type="radio" value=false
+          type="radio" value="false"
           @input="update($event.target.value)">
       </div>
       <div class="score">
         <label for="">Integrated</label>
         <input v-model="val"
-          type="radio" value=true
+          type="radio" value="true"
           @input="update($event.target.value)">
       </div>
       <div class="score">

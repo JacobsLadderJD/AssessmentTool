@@ -7,7 +7,11 @@
     <div class="recent-evals">
       <div class="recent-evals__title">
         <h1 class="title">Recent Evaluations</h1>
-        <input class="search" type="text" id="search" placeholder="Search"/>
+        <form @submit.prevent="search">
+        <input class="search" type="text" id="search"
+          placeholder="Search"
+          v-model="query"/>
+        </form>
       </div>
       <div class="evaluation-list">
         <EvalCard
@@ -35,15 +39,31 @@ export default {
     EvalCard
   },
   data: () => ({
-    recentEvaluations: []
+    recentEvaluations: [],
+    query: ""
   }),
+  methods: {
+    search () {
+      this.$router.push({
+        name: 'evaluations',
+        query: {
+          query: this.query
+        }
+      })
+    }
+  },
+  computed: {
+    filteredEvaluations () {
+      return this.recentEvaluations.filter(ev => {
+        const fullStudentName = ev.student.firstName + ' ' + ev.student.lastName
+        return !this.query || fullStudentName.toLowerCase().includes(this.query.toLowerCase())
+      })
+    }
+  },
   mounted () {
     api.evaluations.getAll()
       .then(({results}) => {
-        console.log(results);
-        this.recentEvaluations = results
-          .sort((d1,d2) => (d1.lastEdited >= d2.lastEdited) ? -1 : 1)
-          .slice(0,3)
+        this.recentEvaluations = results.slice(0,3)
       })
   }
 }
