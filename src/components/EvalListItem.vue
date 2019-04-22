@@ -1,6 +1,6 @@
 <template lang="html">
-  <li class="eval-list-item" @click="openEvaluation()">
-    <div class="info-wrap">
+  <li class="eval-list-item">
+    <div class="info-wrap" @click="openEvaluation()">
       <h2 class="title">{{student | fullName}}</h2>
       <div style="display:flex; width:100%;">
         <p style="margin-right: 20px">Last edited:
@@ -15,13 +15,17 @@
       </div>
     </div>
     <div class="percent-wrap">
-
+      <ExcelExportButton :evaluationId="evaluation.id"/>
     </div>
   </li>
 </template>
 
 <script>
+import ExcelExportButton from '@/components/ExcelExportButton'
 export default {
+  components: {
+    ExcelExportButton
+  },
   props: {
     evaluation: {
       type: Object,
@@ -62,5 +66,7 @@ export default {
 }
 .percent-wrap {
   flex: 0 0 60px;
+  display: flex;
+  align-items: center; 
 }
 </style>
