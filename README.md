@@ -1,7 +1,7 @@
 # Jacob's Ladder Profile Assessment Tool
 A Vue.js based front-end of the new electronic student assessment system at [Jacob's Ladder Center](https://www.jacobsladdercenter.com/) in Roswell, GA.
 
-The back-end code for the api can be found here: [AssessmentAPI](https://github.com/JacobsLadderJD/AssessmentAPI).
+The back-end code for the API can be found here: [AssessmentAPI](https://github.com/JacobsLadderJD/AssessmentAPI).
 ### Team Members
 - Jack Abrams
 - Adam Hayward
